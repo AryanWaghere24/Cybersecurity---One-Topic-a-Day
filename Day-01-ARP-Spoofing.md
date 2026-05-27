@@ -6,7 +6,7 @@ ARP Spoofing (also called ARP Poisoning) is a network attack where someone sends
 ## How It Works
 ARP maps IP addresses to MAC addresses on a local network. The catch is ARP has zero authentication - your machine will accept an ARP reply even if it never asked for one.
 
-![ARP-Spoofing.png](../assets/ARP-Spoofing.png)
+![ARP Spoofing - MITM Attack](assets/ARP-Spoofing.png)
 So the attack goes like this:
 1. Your machine wants to reach the router at 192.168.1.1, so it broadcasts "who has this IP?"
 2. The attacker sends a fake reply saying "that's me, here's my MAC"
