@@ -6,6 +6,7 @@ DNS Spoofing (also called DNS Cache Poisoning) is an attack where fake DNS recor
 ## How It Works
 DNS translates domain names to IP addresses. When you type google.com, your machine asks a DNS resolver "what's the IP for this?" and trusts whatever it gets back.
 
+![DNS Spoofing image](assets/DNS-Spoofing.png)
 The attack flow:
 1. Your machine sends a DNS query for example.com to a resolver
 2. The attacker intercepts or races to respond before the real DNS server does
