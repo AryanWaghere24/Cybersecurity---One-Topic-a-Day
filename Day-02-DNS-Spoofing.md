@@ -50,3 +50,6 @@ dnsspoof -i eth0 -f hosts.txt
 Only use on networks you own or have explicit permission to test on.
 
 Detection tip: run `nslookup example.com` from multiple machines or use a trusted external DNS like 8.8.8.8 directly. If results differ from what they should be, your cache may be poisoned. Tools like `dnstracer` can help trace where a response is actually coming from.
+
+
+
