@@ -6,6 +6,8 @@ SSL Stripping is an attack that downgrades a secure HTTPS connection to plain HT
 ## How It Works
 When you visit a site, your browser often starts with HTTP first and then gets redirected to HTTPS. SSL Stripping hijacks that exact moment before the secure connection is established.
 
+![SSL Stripping Attack](assets/SSL-Stripping.png)
+
 The attack flow:
 1. Attacker is already in the middle (via ARP Spoofing for example)
 2. Victim's browser sends an HTTP request to bank.com
