@@ -21,3 +21,13 @@ There are three main types:
 - In-band SQLi: results come back directly in the app response
 - Blind SQLi: no visible output, attacker infers data from true/false responses
 - Out-of-band SQLi: data is sent to an external server the attacker controls
+
+## Real-World Example
+In 2008, Heartland Payment Systems got breached via SQL Injection. Attackers injected malicious SQL through a web form, moved through the network, and eventually stole over 130 million credit card numbers. It was one of the largest data breaches at the time and cost the company over $140 million in settlements.
+
+On a smaller scale - any login page, search box, or URL parameter that isn't sanitized is a potential entry point. Something as simple as adding a `'` to a URL and seeing a database error tells an attacker the app is vulnerable.
+
+## Why It Matters
+From an attacker's side, SQLi can go from a simple login bypass all the way to full database dump, file read/write on the server, or even remote code execution depending on the database configuration. Tools like sqlmap make it easy to automate the entire attack.
+
+From a defender's side, the fix is straightforward in principle - use parameterized queries (prepared statements) and never concatenate raw user input into SQL strings. Input validation and WAFs (Web Application Firewalls) add extra layers but prepared statements are the real fix.
