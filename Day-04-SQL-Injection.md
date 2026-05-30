@@ -31,3 +31,10 @@ On a smaller scale - any login page, search box, or URL parameter that isn't san
 From an attacker's side, SQLi can go from a simple login bypass all the way to full database dump, file read/write on the server, or even remote code execution depending on the database configuration. Tools like sqlmap make it easy to automate the entire attack.
 
 From a defender's side, the fix is straightforward in principle - use parameterized queries (prepared statements) and never concatenate raw user input into SQL strings. Input validation and WAFs (Web Application Firewalls) add extra layers but prepared statements are the real fix.
+
+## Key Terms
+- SQL Injection: inserting malicious SQL into user input fields to manipulate database queries
+- Parameterized Queries: a coding practice where user input is passed separately from the SQL command, preventing injection
+- In-band SQLi: attacker sees results directly in the app (most common)
+- Blind SQLi: no direct output, attacker guesses data through true/false responses
+- WAF (Web Application Firewall): sits in front of a web app and filters malicious requests
