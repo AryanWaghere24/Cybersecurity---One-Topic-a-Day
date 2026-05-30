@@ -22,6 +22,9 @@ There are three main types:
 - Blind SQLi: no visible output, attacker infers data from true/false responses
 - Out-of-band SQLi: data is sent to an external server the attacker controls
 
+![SQL Injection Attack](assets/SQL-Injection.png) 
+
+
 ## Real-World Example
 In 2008, Heartland Payment Systems got breached via SQL Injection. Attackers injected malicious SQL through a web form, moved through the network, and eventually stole over 130 million credit card numbers. It was one of the largest data breaches at the time and cost the company over $140 million in settlements.
 
