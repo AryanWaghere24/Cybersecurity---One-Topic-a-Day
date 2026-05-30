@@ -57,6 +57,7 @@ sqlmap -u "http://target.com/page?id=1" --dbs
 sqlmap -u "http://target.com/page?id=1" -D database_name -T users --dump
 ```
 
+
 Only run against targets you own or have written permission to test.
 
 Detection tip: add a single quote `'` to any input field or URL parameter. If the app throws a database error like `SQL syntax error` or behaves unexpectedly, it's likely vulnerable to SQLi.
