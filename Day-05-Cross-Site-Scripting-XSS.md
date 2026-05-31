@@ -21,3 +21,8 @@ There are three main types:
 - Stored XSS: malicious script is saved in the database and served to every user who visits (most dangerous)
 - Reflected XSS: script is embedded in a URL, only executes when victim clicks that specific link
 - DOM-based XSS: script manipulates the page's DOM directly in the browser, never touches the server
+
+## Real-World Example
+In 2005, a MySpace user named Samy Kamkar created a self-replicating XSS worm. He injected a script into his profile that automatically added him as a friend and copied itself to every visitor's profile. Within 20 hours it had spread to over one million profiles and took MySpace down. It's still one of the most famous XSS demonstrations ever.
+
+On a practical level - an attacker finds a stored XSS vulnerability in a forum. They post a comment with a hidden script that steals session cookies. Every user who reads that thread gets their session hijacked, no clicking required.
