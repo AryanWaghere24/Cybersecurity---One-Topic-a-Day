@@ -6,6 +6,8 @@ Cross-Site Scripting (XSS) is a web attack where malicious JavaScript is injecte
 ## How It Works
 Web apps often take user input and display it back on the page — comment sections, search bars, profile fields. If that input isn't sanitized before being rendered, an attacker can inject a script tag and the browser will execute it as legitimate code.
 
+![Cross-Site Scripting XSS](assets/XSS.png)
+
 Simple example - a comment box:
 ```html
 <!-- Attacker posts this as a comment -->
