@@ -30,3 +30,11 @@ From an attacker's side, XSS can steal session cookies (full account takeover), 
 
 From a defender's side, the fix is output encoding - any user-supplied data being rendered on the page must have special characters like `<`, `>`, `"` converted to their HTML entities so the browser treats them as text not code. Content Security Policy (CSP) is another strong defense that tells the browser which scripts are allowed to run.
 On a practical level - an attacker finds a stored XSS vulnerability in a forum. They post a comment with a hidden script that steals session cookies. Every user who reads that thread gets their session hijacked, no clicking required.
+
+## Key Terms
+- XSS (Cross-Site Scripting): injecting malicious scripts into web pages viewed by other users
+- Stored XSS: script is permanently saved in the database and affects all visitors
+- Reflected XSS: script is embedded in a URL and only affects users who click it
+- DOM-based XSS: script manipulates the browser's DOM without touching the server
+- CSP (Content Security Policy): browser security feature that restricts which scripts are allowed to execute on a page
+
