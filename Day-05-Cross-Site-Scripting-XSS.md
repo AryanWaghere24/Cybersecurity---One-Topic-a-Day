@@ -38,3 +38,24 @@ On a practical level - an attacker finds a stored XSS vulnerability in a forum. 
 - DOM-based XSS: script manipulates the browser's DOM without touching the server
 - CSP (Content Security Policy): browser security feature that restricts which scripts are allowed to execute on a page
 
+## One Tip / Tool
+
+Tool: browser DevTools + `XSStrike` for automated XSS detection
+
+```bash
+# install XSStrike
+git clone https://github.com/s0md3v/XSStrike
+cd XSStrike
+pip install -r requirements.txt
+
+# scan a URL for XSS vulnerabilities
+python xsstrike.py -u "http://target.com/search?q=test"
+```
+
+Quick manual test - paste this into any input field or URL parameter:
+```html
+<script>alert('XSS')</script>
+```
+If a popup appears, the site is vulnerable to XSS. This is the most basic test every bug bounty hunter runs first.
+
+Only test on sites you own or have permission to test on.
