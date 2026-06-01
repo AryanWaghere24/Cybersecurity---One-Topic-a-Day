@@ -29,7 +29,13 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 ## 📈 Progress
 | Day | Topic |
 |---|---|
-| Day 01 | Coming soon... |
+| Day 01 | ARP Spoofing |
+| Day 02 | DNS Spoofing |
+| Day 03 | SSL Stripping |
+| Day 04 | SQL Injection |
+| Day 05 | Cross-Site Scripting (XSS) |
+| Day 06 | Cross-Site Request Forgery (CSRF) |
+| Day 07 | Coming soon... |
 
 ---
 
