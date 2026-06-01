@@ -22,6 +22,8 @@ A hidden form that auto-submits looks like this:
   <input type="hidden" name="to" value="attacker_account"/>
 </form>
 <script>document.forms[0].submit()</script>
-
+```
 ## Real-World Example
 In 2008, a CSRF vulnerability was found in ING Direct, an online banking site. An attacker could craft a malicious page that when visited by a logged-in ING customer, would silently initiate a fund transfer to the attacker's account. The bank's server saw a valid session cookie and processed it as a legitimate request. The customer would have no idea until they checked their balance.
+
+
