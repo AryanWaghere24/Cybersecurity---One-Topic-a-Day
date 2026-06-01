@@ -31,3 +31,9 @@ From an attacker's side, CSRF requires almost no technical skill to exploit once
 
 From a defender's side, the standard fix is CSRF tokens — a unique random value tied to the user's session that must be included in every state-changing request. Since the attacker's page can't read this token (due to same-origin policy), the forged request gets rejected. The `SameSite` cookie attribute is another modern defense that prevents cookies from being sent on cross-site requests.
 
+## Key Terms
+- CSRF (Cross-Site Request Forgery): tricking a logged-in user's browser into sending an unintended request to a trusted site
+- Session Cookie: a token stored in the browser that keeps you logged in between requests
+- CSRF Token: a secret random value embedded in forms that servers verify to confirm the request is legitimate
+- Same-Origin Policy: browser security rule that prevents one site from reading data from another site
+- SameSite Cookie: cookie attribute that controls whether cookies are sent with cross-site requests
