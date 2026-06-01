@@ -37,3 +37,17 @@ From a defender's side, the standard fix is CSRF tokens — a unique random valu
 - CSRF Token: a secret random value embedded in forms that servers verify to confirm the request is legitimate
 - Same-Origin Policy: browser security rule that prevents one site from reading data from another site
 - SameSite Cookie: cookie attribute that controls whether cookies are sent with cross-site requests
+
+## One Tip / Tool
+
+Tool: Burp Suite (the go-to tool for web app pentesting)
+
+```
+1. Intercept a legitimate POST request in Burp Suite
+2. Right click the request
+3. Select "Engagement tools" → "Generate CSRF PoC"
+4. Burp auto-generates the malicious HTML form for you
+5. Open it in a browser while logged into the target site to test
+```
+
+Quick manual test - check if any state-changing request (transfer, password change, delete) is missing a CSRF token in the POST body or headers. If there's no token, the endpoint is likely vulnerable.
