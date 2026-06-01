@@ -26,4 +26,8 @@ A hidden form that auto-submits looks like this:
 ## Real-World Example
 In 2008, a CSRF vulnerability was found in ING Direct, an online banking site. An attacker could craft a malicious page that when visited by a logged-in ING customer, would silently initiate a fund transfer to the attacker's account. The bank's server saw a valid session cookie and processed it as a legitimate request. The customer would have no idea until they checked their balance.
 
+## Why It Matters
+From an attacker's side, CSRF requires almost no technical skill to exploit once a vulnerable endpoint is found. A simple HTML page with a hidden form is enough. It can be used for fund transfers, email/password changes, admin actions — anything the logged-in user can do, the attacker can do through them.
+
+From a defender's side, the standard fix is CSRF tokens — a unique random value tied to the user's session that must be included in every state-changing request. Since the attacker's page can't read this token (due to same-origin policy), the forged request gets rejected. The `SameSite` cookie attribute is another modern defense that prevents cookies from being sent on cross-site requests.
 
