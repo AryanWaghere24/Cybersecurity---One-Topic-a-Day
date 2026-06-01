@@ -6,6 +6,8 @@ CSRF is a web attack where an attacker tricks a logged-in user into unknowingly 
 ## How It Works
 When you log into a site, your browser stores a session cookie. Every request you make to that site automatically includes that cookie. CSRF exploits this — if the attacker can get your browser to send a request to that site, it will include your cookie automatically and the site won't know the difference.
 
+![CSRF Attack](assets/CSRF.png)
+
 Attack flow:
 1. Victim logs into bank.com, session cookie is stored in browser
 2. Without logging out, victim visits a malicious page or clicks an attacker's link
