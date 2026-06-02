@@ -6,6 +6,8 @@ SSRF is a web attack where an attacker tricks a server into making HTTP requests
 ## How It Works
 Many web apps fetch remote resources based on user input — things like URL previews, image fetchers, PDF generators, or webhook validators. If the app doesn't validate what URLs it's allowed to fetch, an attacker can point it at internal infrastructure instead.
 
+![SSRF Attack](assets/SSRF.png)
+
 Simple example - an image fetcher feature:
 ```
 # Normal usage
