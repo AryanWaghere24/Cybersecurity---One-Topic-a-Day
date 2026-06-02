@@ -20,3 +20,11 @@ https://app.com/fetch?url=http://192.168.1.1/internal-api
 ```
 
 The server fetches the URL and returns the response. From the server's perspective it's just making an internal request — totally allowed. The attacker now gets data from internal systems they should never have access to.
+
+## Real-World Example
+The 2019 Capital One breach was triggered by an SSRF vulnerability. The attacker found an SSRF flaw in Capital One's web application running on AWS. They used it to query the AWS instance metadata endpoint at `169.254.169.254` — a special internal IP that returns cloud credentials and configuration for the running instance. With those credentials they accessed S3 buckets and exfiltrated data from over 100 million customer records. The attacker was eventually caught but the damage was done.
+
+## Why It Matters
+From an attacker's side, SSRF is especially dangerous in cloud environments because internal metadata services hand out temporary credentials and configuration details. An attacker with SSRF can pivot from a simple web vulnerability to full cloud account takeover. It can also be used to port scan internal networks, access admin panels, or hit internal APIs that assume all traffic is trusted.
+
+From a defender's side, the fix is strict allowlisting of URLs the server is permitted to fetch — block all internal IP ranges (localhost, 169.254.x.x, 10.x.x.x, 192.168.x.x) and only allow specific external domains. Cloud providers like AWS now have IMDSv2 which requires a session token to access metadata, making basic SSRF harder to exploit against the metadata service.
