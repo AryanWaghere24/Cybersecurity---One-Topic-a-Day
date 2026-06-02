@@ -28,3 +28,34 @@ The 2019 Capital One breach was triggered by an SSRF vulnerability. The attacker
 From an attacker's side, SSRF is especially dangerous in cloud environments because internal metadata services hand out temporary credentials and configuration details. An attacker with SSRF can pivot from a simple web vulnerability to full cloud account takeover. It can also be used to port scan internal networks, access admin panels, or hit internal APIs that assume all traffic is trusted.
 
 From a defender's side, the fix is strict allowlisting of URLs the server is permitted to fetch — block all internal IP ranges (localhost, 169.254.x.x, 10.x.x.x, 192.168.x.x) and only allow specific external domains. Cloud providers like AWS now have IMDSv2 which requires a session token to access metadata, making basic SSRF harder to exploit against the metadata service.
+
+## Key Terms
+- SSRF (Server-Side Request Forgery): attacker manipulates a server into making requests to unintended internal or external resources
+- Internal Metadata Service: a special endpoint (169.254.169.254) in cloud environments that returns credentials and config for the running instance
+- Allowlist: a list of explicitly permitted URLs or IP ranges a server is allowed to contact
+- IMDSv2: AWS's improved instance metadata service that requires session-based authentication, mitigating basic SSRF attacks
+- Blind SSRF: the server makes the request but doesn't return the response to the attacker — harder to exploit but still dangerous
+
+## One Tip / Tool
+
+Tool: `SSRFmap` — automated SSRF detection and exploitation
+
+```bash
+# clone SSRFmap
+git clone https://github.com/swisskyrepo/SSRFmap
+cd SSRFmap
+pip install -r requirements.txt
+
+# test a request file for SSRF
+python ssrfmap.py -r request.txt -p url -m readfiles
+
+# request.txt contains the intercepted HTTP request with the vulnerable parameter
+```
+
+Quick manual test - find any parameter that accepts a URL (webhooks, image URLs, document fetchers). Try replacing it with:
+```
+http://127.0.0.1
+http://169.254.169.254/latest/meta-data/
+http://localhost:8080
+```
+If the server returns internal data or behaves differently, it's vulnerable to SSRF.
