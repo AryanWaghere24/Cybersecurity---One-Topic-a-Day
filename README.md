@@ -35,7 +35,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 04 | SQL Injection |
 | Day 05 | Cross-Site Scripting (XSS) |
 | Day 06 | Cross-Site Request Forgery (CSRF) |
-| Day 07 | Coming soon... |
+| Day 07 | Server-Side Request Forgery (SSRF) |
+| Day 08 | Coming Soon... |
 
 ---
 
