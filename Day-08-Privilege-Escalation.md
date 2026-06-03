@@ -27,3 +27,5 @@ ls -la /etc/passwd
 # 5. Kernel exploits - outdated kernels with known CVEs
 uname -a
 ```
+
+If `sudo -l` shows you can run vim as root, you can escape to a shell and get root instantly. GTFOBins is a goldmine for this.
