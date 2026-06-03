@@ -29,3 +29,6 @@ uname -a
 ```
 
 If `sudo -l` shows you can run vim as root, you can escape to a shell and get root instantly. GTFOBins is a goldmine for this.
+
+## Real-World Example
+In 2021, a vulnerability called **PwnKit (CVE-2021-4034)** was found in `pkexec`, a Linux tool installed by default on almost every major Linux distribution. A local unprivileged user could exploit a memory corruption bug in pkexec to instantly get full root access. It had been present in the code since 2009 — over 12 years — and affected millions of Linux systems worldwide including servers, desktops, and cloud instances.
