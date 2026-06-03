@@ -9,7 +9,7 @@ There are two types:
 - Vertical Privilege Escalation: moving from a low privilege user to a higher one (regular user → root)
 - Horizontal Privilege Escalation: accessing another user's resources at the same privilege level (user A accessing user B's files)
 
-![Privilege Escalation on Linux](assets/Privilege-Escalation.png)
+![Privilege Escalation](assets/Privilege-Escalation.png)
 
 Common techniques for vertical escalation on Linux:
 
