@@ -37,3 +37,10 @@ In 2021, a vulnerability called **PwnKit (CVE-2021-4034)** was found in `pkexec`
 From an attacker's side, initial access rarely comes with root privileges. Privilege escalation is what turns a limited foothold into full system control — allowing them to dump password hashes, install persistent backdoors, disable security tools, and move laterally across the network.
 
 From a defender's side, the principle of least privilege is the core defense — users and services should only have the minimum permissions they need. Regular auditing of SUID binaries, sudo rules, cron jobs, and keeping the kernel patched goes a long way in reducing the attack surface.
+
+## Key Terms
+- Privilege Escalation: gaining higher system permissions than originally granted
+- SUID (Set User ID): a Linux file permission that allows a file to run with the permissions of its owner, often root
+- sudo: a Linux command that lets permitted users run commands as root
+- GTFOBins: a curated list of Unix binaries that can be exploited to escalate privileges or escape restricted shells
+- Least Privilege: security principle that users and processes should have only the minimum permissions needed to do their job
