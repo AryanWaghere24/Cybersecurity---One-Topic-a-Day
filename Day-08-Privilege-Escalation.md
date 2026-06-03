@@ -44,3 +44,20 @@ From a defender's side, the principle of least privilege is the core defense —
 - sudo: a Linux command that lets permitted users run commands as root
 - GTFOBins: a curated list of Unix binaries that can be exploited to escalate privileges or escape restricted shells
 - Least Privilege: security principle that users and processes should have only the minimum permissions needed to do their job
+
+## One Tip / Tool
+
+Tool: `LinPEAS` — Linux Privilege Escalation Awesome Script, the most widely used privesc enumeration tool
+
+```bash
+# download and run LinPEAS on the target machine
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
+
+# or transfer it manually and run
+chmod +x linpeas.sh
+./linpeas.sh
+```
+
+LinPEAS automatically checks for SUID binaries, sudo misconfigs, writable cron jobs, exposed credentials, kernel version, and hundreds of other vectors. It color codes results by severity — red/yellow means high chance of privilege escalation.
+
+For Windows targets the equivalent is `WinPEAS` from the same toolkit.
