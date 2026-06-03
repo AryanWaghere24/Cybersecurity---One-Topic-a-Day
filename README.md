@@ -36,7 +36,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 05 | Cross-Site Scripting (XSS) |
 | Day 06 | Cross-Site Request Forgery (CSRF) |
 | Day 07 | Server-Side Request Forgery (SSRF) |
-| Day 08 | Coming Soon... |
+| Day 08 | Privilege Escalation |
+| Day 09 | Coming Soon... |
 
 ---
 
