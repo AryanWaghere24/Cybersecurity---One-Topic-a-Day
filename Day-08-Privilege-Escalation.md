@@ -32,3 +32,8 @@ If `sudo -l` shows you can run vim as root, you can escape to a shell and get ro
 
 ## Real-World Example
 In 2021, a vulnerability called **PwnKit (CVE-2021-4034)** was found in `pkexec`, a Linux tool installed by default on almost every major Linux distribution. A local unprivileged user could exploit a memory corruption bug in pkexec to instantly get full root access. It had been present in the code since 2009 — over 12 years — and affected millions of Linux systems worldwide including servers, desktops, and cloud instances.
+
+## Why It Matters
+From an attacker's side, initial access rarely comes with root privileges. Privilege escalation is what turns a limited foothold into full system control — allowing them to dump password hashes, install persistent backdoors, disable security tools, and move laterally across the network.
+
+From a defender's side, the principle of least privilege is the core defense — users and services should only have the minimum permissions they need. Regular auditing of SUID binaries, sudo rules, cron jobs, and keeping the kernel patched goes a long way in reducing the attack surface.
