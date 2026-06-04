@@ -13,6 +13,8 @@ Attack flow:
 4. Victim machine connects back to the attacker's IP and port
 5. Attacker gets an interactive terminal session on the victim
 
+![Reverse Shell](assets/Reverse-Shell.png)
+
 Basic example:
 
 ```bash
