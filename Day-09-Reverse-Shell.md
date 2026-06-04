@@ -38,3 +38,10 @@ They use it to execute a reverse shell payload, turning a limited web shell into
 From an attacker's side, a reverse shell turns any code execution vulnerability into full interactive access. It's the bridge between "I can run commands" and "I fully control this machine." Combined with privilege escalation it means complete system compromise.
 
 From a defender's side, outbound traffic monitoring is key — most organizations monitor inbound connections but ignore suspicious outbound ones. Egress filtering, application whitelisting, and endpoint detection tools that flag unusual outbound connections (like a web server suddenly connecting to an unknown external IP on port 4444) are the main defenses.
+
+## Key Terms
+- Reverse Shell: a shell session where the victim machine connects outbound to the attacker's listener
+- Bind Shell: opposite of reverse shell — attacker connects inbound to a port opened on the victim
+- Netcat (nc): a networking utility used to create listeners and send/receive data over TCP/UDP
+- Payload: the code executed on the victim machine to establish the reverse shell connection
+- RCE (Remote Code Execution): a vulnerability that allows running arbitrary commands on a remote machine
