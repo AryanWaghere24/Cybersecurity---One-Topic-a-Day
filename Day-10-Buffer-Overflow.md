@@ -38,3 +38,10 @@ From an attacker's side, a successful buffer overflow gives arbitrary code execu
 
 From a defender's side, modern compilers and OS features have made classic buffer overflows harder to exploit — stack canaries detect overwrites, ASLR randomizes memory addresses, and NX/DEP marks the stack non-executable. Using memory-safe languages like Rust or Go eliminates the vulnerability entirely. For C/C++ code, using safe functions like `strncpy` instead of `strcpy` and always validating input length is essential.
 
+## Key Terms
+- Buffer Overflow: writing beyond the allocated size of a memory buffer, corrupting adjacent memory
+- Stack: a region of memory that stores local variables and return addresses for function calls
+- Return Address: the memory address stored on the stack that tells the program where to go after a function finishes
+- Shellcode: small machine code payload injected by the attacker that typically spawns a shell
+- ASLR (Address Space Layout Randomization): OS feature that randomizes memory addresses each run, making it harder to predict where to jump
+
