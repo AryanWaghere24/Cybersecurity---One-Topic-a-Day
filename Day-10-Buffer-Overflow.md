@@ -28,4 +28,8 @@ python3 -c "print('A' * 500)" | ./vulnerable_program
 
 # If it crashes with a segfault, the program is likely vulnerable to buffer overflow
 ```
+## Real-World Example
+The Morris Worm in 1988 was the first self-replicating worm on the internet. One of its three propagation methods was a buffer overflow in the Unix `fingerd` daemon. It exploited the overflow to execute arbitrary code, copy itself to the new machine, and spread further. It infected around 6000 machines — roughly 10% of the entire internet at the time — and caused millions of dollars in damage.
+
+More recently, buffer overflows have been found in consumer routers, industrial control systems, and embedded devices where modern memory protections are often absent or weak.
 
