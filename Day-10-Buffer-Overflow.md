@@ -20,7 +20,7 @@ Steps:
 2. Extra bytes overwrite the saved return address on the stack
 3. When the function returns it jumps to the attacker's address instead
 4. Attacker points it to shellcode (malicious machine code) placed in the buffer
-5. Shellcode executes — usually spawning a shell
+5. Shellcode executes - usually spawning a shell
 
 ```bash
 # Classic test - sending a large pattern to crash the program
