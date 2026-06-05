@@ -38,7 +38,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 07 | Server-Side Request Forgery (SSRF) |
 | Day 08 | Privilege Escalation |
 | Day 09 | Reverse Shell |
-| Day 10 | Coming Soon... |
+| Day 10 | Buffer Overflow |
+| Day 11 | Coming Soon... |
 ---
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
