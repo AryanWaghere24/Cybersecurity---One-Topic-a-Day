@@ -14,7 +14,7 @@ Normal stack layout:
 Overflow attack:
 [ AAAAAAAAAA...AAAA (200 bytes) ][ overwritten return address → attacker's code ]
 ```
-
+![Buffer Overflow Attack](assets/Buffer-Overflow.png)
 Steps:
 1. Attacker sends input longer than the buffer can hold
 2. Extra bytes overwrite the saved return address on the stack
