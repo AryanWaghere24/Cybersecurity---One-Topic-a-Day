@@ -33,3 +33,8 @@ The Morris Worm in 1988 was the first self-replicating worm on the internet. One
 
 More recently, buffer overflows have been found in consumer routers, industrial control systems, and embedded devices where modern memory protections are often absent or weak.
 
+## Why It Matters
+From an attacker's side, a successful buffer overflow gives arbitrary code execution — the holy grail of exploitation. On systems without modern protections it can be straightforward to exploit. Even with protections like ASLR and DEP/NX, advanced techniques like ROP chains can bypass them.
+
+From a defender's side, modern compilers and OS features have made classic buffer overflows harder to exploit — stack canaries detect overwrites, ASLR randomizes memory addresses, and NX/DEP marks the stack non-executable. Using memory-safe languages like Rust or Go eliminates the vulnerability entirely. For C/C++ code, using safe functions like `strncpy` instead of `strcpy` and always validating input length is essential.
+
