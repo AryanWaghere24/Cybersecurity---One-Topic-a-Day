@@ -39,7 +39,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 08 | Privilege Escalation |
 | Day 09 | Reverse Shell |
 | Day 10 | Buffer Overflow |
-| Day 11 | Coming Soon... |
+| Day 11 | WPA2 Cracking |
+| Day 12 | Coming Soon... |
 ---
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
