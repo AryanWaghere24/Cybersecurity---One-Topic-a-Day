@@ -37,3 +37,10 @@ WPA2 cracking is one of the first things covered in any wireless pentesting enga
 From an attacker's side, WPA2 cracking requires no active interaction with the network after the handshake is captured. The entire attack is offline and undetectable. Once the password is cracked the attacker joins the network and is now an insider — able to run ARP spoofing, intercept traffic, and attack internal systems.
 
 From a defender's side, a long random password is the single most effective defense — a 12+ character random password with mixed characters makes brute force practically impossible. WPA3 improves on WPA2 by using SAE (Simultaneous Authentication of Equals) which prevents offline dictionary attacks entirely. Disabling WPS (Wi-Fi Protected Setup) is also important as it has its own set of vulnerabilities.
+
+## Key Terms
+- WPA2 (Wi-Fi Protected Access 2): the current standard security protocol for Wi-Fi networks using AES encryption
+- 4-Way Handshake: the authentication exchange between a client and router that contains the material needed to verify the password
+- Monitor Mode: a wireless adapter mode that captures all wireless traffic in range, not just traffic addressed to your device
+- SSID: the name of a Wi-Fi network
+- rockyou.txt: a massive leaked password list containing 14 million real passwords, the most commonly used wordlist for cracking
