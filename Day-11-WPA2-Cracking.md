@@ -29,3 +29,6 @@ aireplay-ng --deauth 10 -a AA:BB:CC:DD:EE:FF wlan0mon
 # Step 5 - crack the handshake with a wordlist
 aircrack-ng capture.cap -w /usr/share/wordlists/rockyou.txt
 ```
+
+## Real-World Example
+WPA2 cracking is one of the first things covered in any wireless pentesting engagement. A pentester on a red team assessment parks outside a target office, puts their wireless adapter in monitor mode, captures the handshake when an employee's laptop reconnects after a deauth, and takes it back to crack offline using rockyou.txt or a custom wordlist. Weak passwords like `company2024` or `Welcome123` get cracked in seconds. Strong random passwords can take years or never get cracked at all — which is exactly why password strength matters so much for Wi-Fi.
