@@ -6,6 +6,8 @@ WPA2 (Wi-Fi Protected Access 2) is the security protocol used to protect most mo
 ## How It Works
 When a device connects to a WPA2 network, a 4-way handshake happens between the device and the router. This handshake doesn't transmit the actual password but contains enough cryptographic material that if you capture it, you can test password guesses against it offline.
 
+![WPA2 Cracking](assets/WPA2-Cracking.png)
+
 Attack flow:
 1. Put the wireless adapter into monitor mode to capture raw wireless traffic
 2. Identify the target network and its channel
