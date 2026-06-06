@@ -32,3 +32,8 @@ aircrack-ng capture.cap -w /usr/share/wordlists/rockyou.txt
 
 ## Real-World Example
 WPA2 cracking is one of the first things covered in any wireless pentesting engagement. A pentester on a red team assessment parks outside a target office, puts their wireless adapter in monitor mode, captures the handshake when an employee's laptop reconnects after a deauth, and takes it back to crack offline using rockyou.txt or a custom wordlist. Weak passwords like `company2024` or `Welcome123` get cracked in seconds. Strong random passwords can take years or never get cracked at all — which is exactly why password strength matters so much for Wi-Fi.
+
+## Why It Matters
+From an attacker's side, WPA2 cracking requires no active interaction with the network after the handshake is captured. The entire attack is offline and undetectable. Once the password is cracked the attacker joins the network and is now an insider — able to run ARP spoofing, intercept traffic, and attack internal systems.
+
+From a defender's side, a long random password is the single most effective defense — a 12+ character random password with mixed characters makes brute force practically impossible. WPA3 improves on WPA2 by using SAE (Simultaneous Authentication of Equals) which prevents offline dictionary attacks entirely. Disabling WPS (Wi-Fi Protected Setup) is also important as it has its own set of vulnerabilities.
