@@ -6,6 +6,8 @@ An Evil Twin AP (Access Point) is a rogue wireless access point that impersonate
 ## How It Works
 Every Wi-Fi network is identified by its SSID. Devices that have connected before will automatically reconnect when they see the same SSID. Evil Twin exploits this auto-connect behavior.
 
+![Evil Twin AP Attack](assets/Evil-Twin-AP.png)
+
 Attack flow:
 1. Attacker scans for nearby networks and picks a target SSID
 2. Attacker sets up a fake AP broadcasting the same SSID on a stronger signal
