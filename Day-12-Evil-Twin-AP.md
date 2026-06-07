@@ -41,3 +41,10 @@ On real engagements, a pentester will set up an Evil Twin outside a target build
 From an attacker's side, Evil Twin requires no password cracking and no prior knowledge of the network key. A stronger signal always wins — devices connect to the AP with the best signal regardless of which one is legitimate. Combined with a deauth attack it becomes nearly impossible for victims to stay on the real network.
 
 From a defender's side, using a VPN on all networks is the strongest personal defense — even if you connect to an Evil Twin, your traffic is encrypted end to end. Enterprise networks use 802.1X authentication (WPA2-Enterprise) which requires certificate-based authentication, making Evil Twin much harder to pull off. Users should also disable auto-connect for public Wi-Fi networks.
+
+## Key Terms
+- Evil Twin AP: a rogue access point that clones a legitimate network's SSID to trick devices into connecting
+- SSID (Service Set Identifier): the name of a Wi-Fi network that devices use to identify and connect to it
+- Captive Portal: a web page shown to newly connected users, often used legitimately by hotels and cafes, abused by attackers to steal credentials
+- 802.1X: enterprise Wi-Fi authentication standard that uses certificates instead of passwords, resistant to Evil Twin
+- Rogue AP: any unauthorized access point on a network, Evil Twin is a specific type of rogue AP
