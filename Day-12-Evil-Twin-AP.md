@@ -35,3 +35,4 @@ dnsmasq --interface=wlan0 --dhcp-range=192.168.1.2,192.168.1.30
 ## Real-World Example
 At DEF CON, the world's largest hacking conference, Evil Twin attacks are so common that experienced attendees avoid connecting to any Wi-Fi at all. Attackers set up fake APs mimicking the conference Wi-Fi, hotel Wi-Fi, and nearby coffee shops. Unsuspecting attendees connect, get served a captive portal, and hand over credentials without realizing. It's become such a known risk that DEF CON itself warns attendees to treat all wireless networks as hostile.
 
+On real engagements, a pentester will set up an Evil Twin outside a target building mimicking the corporate SSID. Employees stepping outside or in parking lots whose laptops auto-connect give the attacker a direct MITM position into corporate traffic.
