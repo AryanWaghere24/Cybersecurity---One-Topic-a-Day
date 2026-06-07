@@ -36,3 +36,8 @@ dnsmasq --interface=wlan0 --dhcp-range=192.168.1.2,192.168.1.30
 At DEF CON, the world's largest hacking conference, Evil Twin attacks are so common that experienced attendees avoid connecting to any Wi-Fi at all. Attackers set up fake APs mimicking the conference Wi-Fi, hotel Wi-Fi, and nearby coffee shops. Unsuspecting attendees connect, get served a captive portal, and hand over credentials without realizing. It's become such a known risk that DEF CON itself warns attendees to treat all wireless networks as hostile.
 
 On real engagements, a pentester will set up an Evil Twin outside a target building mimicking the corporate SSID. Employees stepping outside or in parking lots whose laptops auto-connect give the attacker a direct MITM position into corporate traffic.
+
+## Why It Matters
+From an attacker's side, Evil Twin requires no password cracking and no prior knowledge of the network key. A stronger signal always wins — devices connect to the AP with the best signal regardless of which one is legitimate. Combined with a deauth attack it becomes nearly impossible for victims to stay on the real network.
+
+From a defender's side, using a VPN on all networks is the strongest personal defense — even if you connect to an Evil Twin, your traffic is encrypted end to end. Enterprise networks use 802.1X authentication (WPA2-Enterprise) which requires certificate-based authentication, making Evil Twin much harder to pull off. Users should also disable auto-connect for public Wi-Fi networks.
