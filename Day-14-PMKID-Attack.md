@@ -40,3 +40,10 @@ Before PMKID, a pentester targeting a Wi-Fi network with no active clients had t
 From an attacker's side, PMKID removed the biggest bottleneck in WPA2 cracking — waiting for clients. One frame from the router is all you need. Combined with hashcat on a GPU, weak passwords fall in seconds. It also made large scale passive Wi-Fi attacks much more practical.
 
 From a defender's side, the defense is the same as WPA2 cracking in general — a long random password makes brute force practically impossible regardless of the attack method. WPA3 is immune to PMKID attacks because it uses SAE (Simultaneous Authentication of Equals) which doesn't expose a crackable value in the connection process. Upgrading to WPA3 is the real fix.
+
+## Key Terms
+- PMKID (Pairwise Master Key Identifier): a unique value derived from the Wi-Fi password used to identify a PMK cached between a client and AP
+- PMK (Pairwise Master Key): a key derived directly from the Wi-Fi password and SSID, the core secret in WPA2 authentication
+- EAPOL (Extensible Authentication Protocol over LAN): the protocol used for WPA2 authentication exchanges including the 4-way handshake
+- RSN IE (Robust Security Network Information Element): information included in router beacon frames that enables the PMKID attack
+- SAE (Simultaneous Authentication of Equals): WPA3's authentication method that replaces PSK and is immune to offline dictionary attacks
