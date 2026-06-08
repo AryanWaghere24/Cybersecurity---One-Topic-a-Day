@@ -41,7 +41,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 10 | Buffer Overflow |
 | Day 11 | WPA2 Cracking |
 | Day 12 | Evil Twin AP |
-| Day 13 | Coming Soon... |
+| Day 13 | Deauth Attack |
+| Day 14 | Coming Soon... |
 ---
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
