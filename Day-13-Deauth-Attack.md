@@ -6,6 +6,8 @@ A Deauth (Deauthentication) Attack is a wireless attack where the attacker sends
 ## How It Works
 In the 802.11 Wi-Fi standard, deauthentication frames are management frames used by routers to disconnect clients. The problem is these frames have no authentication or encryption — any device in range can forge one. The victim's device receives the forged frame, thinks the router asked it to disconnect, and drops the connection immediately.
 
+![Deauth Attack](assets/Deauth-Attack.png)
+
 Attack flow:
 1. Attacker puts wireless adapter into monitor mode
 2. Scans for target network and identifies the router MAC and client MAC
