@@ -33,3 +33,5 @@ hcxpcapngtool -o hash.hc22000 capture.pcapng
 hashcat -m 22000 hash.hc22000 /usr/share/wordlists/rockyou.txt
 ```
 
+## Real-World Example
+Before PMKID, a pentester targeting a Wi-Fi network with no active clients had to wait — sometimes hours — for a device to connect naturally or rely on deauth attacks to force a reconnection. After Jens Steube published the PMKID technique in 2018, the game changed completely. Now a pentester can drive through a neighborhood, collect PMKIDs from every router they pass, and crack them all offline later with no interaction with any client device. The attack works against the majority of routers that support the RSN IE (Robust Security Network Information Element) in their beacon frames.
