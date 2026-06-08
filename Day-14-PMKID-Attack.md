@@ -12,6 +12,8 @@ PMKID = HMAC-SHA1-128(PMK, "PMK Name" + AP_MAC + Client_MAC)
 
 The PMK (Pairwise Master Key) is derived directly from the Wi-Fi password. So if you can obtain the PMKID from the router and crack the PMK offline, you get the password.
 
+![PMKID Attack image](assets/PMKID-Attack.png)
+
 Attack flow:
 1. Attacker sends an EAPOL frame request to the router
 2. Router responds with a single frame containing the PMKID
