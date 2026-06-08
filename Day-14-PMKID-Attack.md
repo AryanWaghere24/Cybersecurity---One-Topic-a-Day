@@ -38,3 +38,5 @@ Before PMKID, a pentester targeting a Wi-Fi network with no active clients had t
 
 ## Why It Matters
 From an attacker's side, PMKID removed the biggest bottleneck in WPA2 cracking — waiting for clients. One frame from the router is all you need. Combined with hashcat on a GPU, weak passwords fall in seconds. It also made large scale passive Wi-Fi attacks much more practical.
+
+From a defender's side, the defense is the same as WPA2 cracking in general — a long random password makes brute force practically impossible regardless of the attack method. WPA3 is immune to PMKID attacks because it uses SAE (Simultaneous Authentication of Equals) which doesn't expose a crackable value in the connection process. Upgrading to WPA3 is the real fix.
