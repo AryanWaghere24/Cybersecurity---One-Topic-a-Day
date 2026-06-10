@@ -40,3 +40,5 @@ In 2012, LinkedIn suffered a massive data breach where 6.5 million password hash
 
 ## Why It Matters
 From an attacker's side, after dumping a database or /etc/shadow file the first thing you do is run hashcat against it. Weak algorithms like MD5 and SHA1 can be cracked at billions of hashes per second on a modern GPU. Even one cracked credential can mean lateral movement across an entire network if passwords are reused.
+
+From a defender's side, the choice of hashing algorithm matters enormously. MD5 and SHA1 are cryptographically broken for password storage — bcrypt, scrypt, or Argon2 are the right choices because they're deliberately slow and computationally expensive, making brute force impractical. Salting (adding a random value to each password before hashing) prevents precomputed attacks like rainbow tables.
