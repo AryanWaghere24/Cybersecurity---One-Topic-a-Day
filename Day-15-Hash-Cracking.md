@@ -42,3 +42,10 @@ In 2012, LinkedIn suffered a massive data breach where 6.5 million password hash
 From an attacker's side, after dumping a database or /etc/shadow file the first thing you do is run hashcat against it. Weak algorithms like MD5 and SHA1 can be cracked at billions of hashes per second on a modern GPU. Even one cracked credential can mean lateral movement across an entire network if passwords are reused.
 
 From a defender's side, the choice of hashing algorithm matters enormously. MD5 and SHA1 are cryptographically broken for password storage — bcrypt, scrypt, or Argon2 are the right choices because they're deliberately slow and computationally expensive, making brute force impractical. Salting (adding a random value to each password before hashing) prevents precomputed attacks like rainbow tables.
+
+## Key Terms
+- Hash: a fixed length output produced by a one-way mathematical function from any input
+- Salt: a random value added to a password before hashing to make each hash unique and prevent precomputed attacks
+- Dictionary Attack: trying every entry in a wordlist to find a matching hash
+- NTLM: the hashing format Windows uses to store user account passwords
+- Bcrypt: a slow adaptive password hashing algorithm designed specifically for password storage, resistant to brute force
