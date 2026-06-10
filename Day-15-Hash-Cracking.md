@@ -27,3 +27,11 @@ hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt
 
 # crack with rules (more powerful)
 hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
+
+# common hash types in hashcat
+# -m 0    = MD5
+# -m 100  = SHA1
+# -m 1000 = NTLM (Windows)
+# -m 1800 = sha512crypt (Linux /etc/shadow)
+# -m 3200 = bcrypt
+```
