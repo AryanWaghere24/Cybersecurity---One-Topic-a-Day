@@ -49,3 +49,21 @@ From a defender's side, the choice of hashing algorithm matters enormously. MD5 
 - Dictionary Attack: trying every entry in a wordlist to find a matching hash
 - NTLM: the hashing format Windows uses to store user account passwords
 - Bcrypt: a slow adaptive password hashing algorithm designed specifically for password storage, resistant to brute force
+
+## One Tip / Tool
+
+Tool: `hashcat` — the fastest password cracking tool, supports GPU acceleration
+
+```bash
+# dictionary attack
+hashcat -m 0 hash.txt rockyou.txt
+
+# brute force all 4 character passwords
+hashcat -m 0 hash.txt -a 3 ?a?a?a?a
+
+# rule based attack - most effective in practice
+hashcat -m 0 hash.txt rockyou.txt -r best64.rule
+
+# show cracked passwords after session
+hashcat -m 0 hash.txt --show
+```
