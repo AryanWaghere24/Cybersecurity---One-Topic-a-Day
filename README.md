@@ -43,7 +43,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 12 | Evil Twin AP |
 | Day 13 | Deauth Attack |
 | Day 14 | PMKID Attack |
-| Day 15 | Coming Soon... |
+| Day 15 | Hash Cracking |
+| Day 16 | Coming Soon... |
 ---
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
