@@ -67,3 +67,4 @@ hashcat -m 0 hash.txt rockyou.txt -r best64.rule
 # show cracked passwords after session
 hashcat -m 0 hash.txt --show
 ```
+For identifying unknown hashes before cracking, use `haiti` or `hash-identifier` — paste the hash in and it tells you the most likely algorithm. Knowing the algorithm is step one because you need to tell hashcat which mode to use with `-m`.
