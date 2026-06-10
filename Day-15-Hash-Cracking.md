@@ -35,3 +35,5 @@ hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rul
 # -m 1800 = sha512crypt (Linux /etc/shadow)
 # -m 3200 = bcrypt
 ```
+## Real-World Example
+In 2012, LinkedIn suffered a massive data breach where 6.5 million password hashes were leaked — all unsalted SHA1. Within days the security community had cracked the majority of them using dictionary attacks and rockyou.txt. Passwords like `linkedin`, `password123`, and `123456` fell instantly. The breach eventually turned out to affect 117 million accounts when the full dataset surfaced years later. The lesson — unsalted weak hashing algorithms are almost as bad as storing plaintext.
