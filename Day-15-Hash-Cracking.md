@@ -11,3 +11,19 @@ Three main approaches:
 - Dictionary attack: try every word in a wordlist, hash each one, compare
 - Brute force: try every possible combination of characters systematically
 - Rule based attack: take wordlist entries and apply mutations (add numbers, capitalize, substitute characters)
+
+```bash
+# identify what type of hash you have first
+hash-identifier
+# or
+hashid 5f4dcc3b5aa765d61d8327deb882cf99
+
+# MD5 example
+echo -n "password" | md5sum
+# outputs: 5f4dcc3b5aa765d61d8327deb882cf99
+
+# crack with hashcat - dictionary attack
+hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt
+
+# crack with rules (more powerful)
+hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
