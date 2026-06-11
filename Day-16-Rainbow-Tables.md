@@ -6,6 +6,8 @@ A Rainbow Table is a precomputed lookup table that maps password hashes back to 
 ## How It Works
 The naive approach to precomputation would be storing every possible password and its hash — but that would require impossibly large storage. Rainbow tables solve this with chains of alternating hash and reduction functions that compress massive amounts of data into manageable table sizes.
 
+![Rainbow Tables](assets/Rainbow-Tables.png)
+
 Simple concept:
 ```
 password → [hash] → 5f4dcc3b... → [reduce] → passw0rd → [hash] → abc123... → [reduce] → p@ssword
