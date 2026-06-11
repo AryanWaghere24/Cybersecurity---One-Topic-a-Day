@@ -29,3 +29,8 @@ Salting completely defeats rainbow tables because you'd need a separate table fo
 In 2007, the social networking site Gawker stored passwords using unsalted MD5 hashes. When their database was breached, attackers used rainbow tables to crack the majority of passwords within hours — not days or weeks, but hours. Passwords that would have taken a dictionary attack much longer were recovered almost instantly because they were already in precomputed tables.
 
 The same pattern repeated in dozens of major breaches throughout the 2000s and early 2010s — RockYou (2009), Adobe (2013), and many others all used weak unsalted hashing which made rainbow table attacks trivially effective.
+
+## Why It Matters
+From an attacker's side, rainbow tables make cracking unsalted hashes nearly instant regardless of password complexity. You can download precomputed rainbow tables for MD5, SHA1, and NTLM covering billions of passwords from sites like crack.sh. No GPU required — just a lookup.
+
+From a defender's side, a single random salt per password completely kills rainbow tables. Modern password hashing algorithms like bcrypt, scrypt, and Argon2 automatically handle salting internally — there's no reason to use unsalted MD5 or SHA1 for passwords in 2024. This is also why Windows NTLM hashes (which are unsalted) are particularly vulnerable to rainbow table attacks.
