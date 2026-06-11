@@ -34,3 +34,10 @@ The same pattern repeated in dozens of major breaches throughout the 2000s and e
 From an attacker's side, rainbow tables make cracking unsalted hashes nearly instant regardless of password complexity. You can download precomputed rainbow tables for MD5, SHA1, and NTLM covering billions of passwords from sites like crack.sh. No GPU required — just a lookup.
 
 From a defender's side, a single random salt per password completely kills rainbow tables. Modern password hashing algorithms like bcrypt, scrypt, and Argon2 automatically handle salting internally — there's no reason to use unsalted MD5 or SHA1 for passwords in 2024. This is also why Windows NTLM hashes (which are unsalted) are particularly vulnerable to rainbow table attacks.
+
+## Key Terms
+- Rainbow Table: a precomputed table of password-to-hash mappings used for instant hash lookups.
+- Time-Memory Tradeoff: trading storage space for computation speed — rainbow tables store results to avoid recomputing.
+- Salt: a unique random value added to each password before hashing, making precomputed tables useless.
+- Chain: the core structure of a rainbow table — alternating hash and reduction functions stored as start and end points.
+- NTLM: Windows password hash format that uses unsalted MD4, making it highly vulnerable to rainbow table attacks.
