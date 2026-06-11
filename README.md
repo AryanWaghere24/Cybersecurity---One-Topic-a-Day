@@ -44,7 +44,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 13 | Deauth Attack |
 | Day 14 | PMKID Attack |
 | Day 15 | Hash Cracking |
-| Day 16 | Coming Soon... |
+| Day 16 | Rainbow Tables |
+| Day 17 | Coming Soon... |
 ---
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
