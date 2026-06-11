@@ -24,3 +24,8 @@ The key weakness rainbow tables exploit:
 "password123" + "m9p1" → MD5 → 3a7c4b2e8f1d5a6b...  ← different salt, different hash
 ```
 Salting completely defeats rainbow tables because you'd need a separate table for every possible salt value.
+
+## Real-World Example
+In 2007, the social networking site Gawker stored passwords using unsalted MD5 hashes. When their database was breached, attackers used rainbow tables to crack the majority of passwords within hours — not days or weeks, but hours. Passwords that would have taken a dictionary attack much longer were recovered almost instantly because they were already in precomputed tables.
+
+The same pattern repeated in dozens of major breaches throughout the 2000s and early 2010s — RockYou (2009), Adobe (2013), and many others all used weak unsalted hashing which made rainbow table attacks trivially effective.
