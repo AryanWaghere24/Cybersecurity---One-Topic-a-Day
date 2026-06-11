@@ -41,3 +41,20 @@ From a defender's side, a single random salt per password completely kills rainb
 - Salt: a unique random value added to each password before hashing, making precomputed tables useless.
 - Chain: the core structure of a rainbow table — alternating hash and reduction functions stored as start and end points.
 - NTLM: Windows password hash format that uses unsalted MD4, making it highly vulnerable to rainbow table attacks.
+
+## One Tip / Tool
+
+Tool: `RainbowCrack` for generating and using rainbow tables, and `crack.sh` for online NTLM lookups
+
+```bash
+# generate a rainbow table for MD5 (lowercase alpha, 1-7 chars)
+rtgen md5 loweralpha 1 7 0 3800 33554432 0
+
+# sort the table (required before lookup)
+rtsort *.rt
+
+# crack hashes using the table
+rcrack . -h 5f4dcc3b5aa765d61d8327deb882cf99
+```
+
+For Windows NTLM hashes specifically, **crack.sh** is a free online service with precomputed rainbow tables covering almost every NTLM hash from common passwords — paste your NTLM hash and get the result back in seconds. It's the fastest way to crack unsalted Windows hashes without any local setup.
