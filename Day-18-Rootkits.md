@@ -54,3 +54,9 @@ chkrootkit
 apt install rkhunter
 rkhunter --update
 rkhunter --check
+
+# for Windows - Sysinternals Rootkit Revealer
+# or run Malwarebytes Anti-Rootkit from a clean boot environment
+```
+
+The golden rule for rootkit detection — never trust the tools on a potentially compromised system. Always boot from a clean external drive or use a separate trusted machine to analyze a suspected rootkit infection. A rootkit running on the system can lie to any tool you run on that same system.
