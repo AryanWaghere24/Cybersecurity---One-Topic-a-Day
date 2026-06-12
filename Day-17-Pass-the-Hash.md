@@ -37,3 +37,10 @@ In almost every Windows Active Directory penetration test, Pass the Hash is how 
 From an attacker's side, PtH bypasses the need to crack passwords entirely. In large Windows environments where password reuse is common, a single dumped hash can mean access to dozens or hundreds of machines. Combined with a domain admin hash it means full domain compromise.
 
 From a defender's side, Microsoft introduced Protected Users security group and Credential Guard in Windows 10/Server 2016 to prevent hash dumping from memory. Enabling these, disabling NTLM where possible in favor of Kerberos, and deploying LAPS for unique local admin passwords per machine are the key mitigations. Network segmentation also limits how far lateral movement can go even if a hash is stolen.
+
+## Key Terms
+- Pass the Hash: authenticating to a system using a stolen NTLM hash without knowing the plaintext password
+- NTLM (NT LAN Manager): Windows authentication protocol that uses MD4 hashed passwords for credential exchange
+- Lateral Movement: using access on one compromised machine to move to other machines on the same network
+- Mimikatz: a tool that extracts plaintext passwords, hashes, and Kerberos tickets from Windows memory
+- LAPS (Local Administrator Password Solution): Microsoft tool that assigns unique randomized passwords to local admin accounts on each machine
