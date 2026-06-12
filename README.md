@@ -49,5 +49,16 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 18 | Rootkits |
 | Day 19 | Coming Soon... |
 ---
+## Topics Covered
+
+| Topic | Days |
+|-------|------|
+| Network Attacks | Day 01 - 03 |
+| Web Application Attacks | Day 04 - 07 |
+| System / OS Level Attacks | Day 08 - 10 |
+| Wireless Attacks | Day 11 - 14 |
+| Cryptography Attacks | Day 15 - 17 |
+| Malware & Persistence | Day 18 - 20 |
+
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
