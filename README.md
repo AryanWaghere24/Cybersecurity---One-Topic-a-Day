@@ -46,7 +46,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 15 | Hash Cracking |
 | Day 16 | Rainbow Tables |
 | Day 17 | Pass the Hash |
-| Day 18 | Coming Soon... |
+| Day 18 | Rootkits |
+| Day 19 | Coming Soon... |
 ---
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
