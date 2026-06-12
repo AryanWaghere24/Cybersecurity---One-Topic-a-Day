@@ -28,3 +28,7 @@ crackmapexec smb 192.168.1.0/24 -u Administrator -H 8846f7eaee8fb117ad06bdd830b7
 
 # with impacket psexec - get a shell on remote machine
 psexec.py Administrator@192.168.1.10 -hashes aad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c
+```
+
+## Real-World Example
+In almost every Windows Active Directory penetration test, Pass the Hash is how lateral movement happens. An attacker compromises one workstation, dumps the local administrator hash, and discovers that the same local admin hash works on every other machine in the network because the IT team set up all machines with the same local admin password. One hash — hundreds of machines. This is exactly why Microsoft's LAPS (Local Administrator Password Solution) was created — to give every machine a unique local admin password.
