@@ -6,6 +6,8 @@ A Rootkit is a collection of malicious software designed to gain persistent root
 ## How It Works
 Rootkits work by subverting the operating system itself — intercepting system calls, modifying kernel data structures, or hiding at a level below the OS entirely. There are several types based on where they operate:
 
+![Rootkits](assets/Rootkits.png)
+
 - User-mode rootkit: runs in user space, hooks API calls to hide files, processes, and network connections from applications
 - Kernel-mode rootkit: runs inside the OS kernel, most dangerous — can hide anything from the OS itself
 - Bootkit: infects the Master Boot Record or bootloader, loads before the OS, invisible to everything running after
