@@ -10,3 +10,18 @@ Rootkits work by subverting the operating system itself — intercepting system 
 - Kernel-mode rootkit: runs inside the OS kernel, most dangerous — can hide anything from the OS itself
 - Bootkit: infects the Master Boot Record or bootloader, loads before the OS, invisible to everything running after
 - Hypervisor rootkit: runs the compromised OS as a virtual machine underneath a malicious hypervisor
+
+```bash
+# example of what a user-mode rootkit does to hide a process
+# normal ps output after rootkit is installed
+ps aux | grep malware
+# nothing shows up - rootkit intercepts the ps command output and removes its entries
+
+# rootkit hides files the same way
+ls /tmp/
+# malicious files in /tmp are filtered out of the listing
+
+# detection - check for discrepancies between tools
+# if /proc shows a PID that ps doesn't, something is hiding it
+ls /proc/ | grep -v "$(ps aux | awk '{print $2}')"
+```
