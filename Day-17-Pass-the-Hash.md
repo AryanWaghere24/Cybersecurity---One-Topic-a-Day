@@ -35,3 +35,5 @@ In almost every Windows Active Directory penetration test, Pass the Hash is how 
 
 ## Why It Matters
 From an attacker's side, PtH bypasses the need to crack passwords entirely. In large Windows environments where password reuse is common, a single dumped hash can mean access to dozens or hundreds of machines. Combined with a domain admin hash it means full domain compromise.
+
+From a defender's side, Microsoft introduced Protected Users security group and Credential Guard in Windows 10/Server 2016 to prevent hash dumping from memory. Enabling these, disabling NTLM where possible in favor of Kerberos, and deploying LAPS for unique local admin passwords per machine are the key mitigations. Network segmentation also limits how far lateral movement can go even if a hash is stolen.
