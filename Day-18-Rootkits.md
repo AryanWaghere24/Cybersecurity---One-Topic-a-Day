@@ -28,3 +28,6 @@ ls /proc/ | grep -v "$(ps aux | awk '{print $2}')"
 
 ## Real-World Example
 In 2005, Sony BMG shipped music CDs with a hidden rootkit that automatically installed on Windows machines when the CD was played. The rootkit hid any file or process with a name starting with `$sys$` from the OS — it was originally designed to prevent CD copying but created a massive security hole. Malware authors quickly released viruses that used the `$sys$` prefix to hide themselves completely. Sony had infected over 500,000 networks including military and government systems before the rootkit was discovered by security researcher Mark Russinovich using his own Sysinternals tools.
+
+## Why It Matters
+From an attacker's side, a rootkit turns temporary access into persistent invisible access. An attacker with a rootkit on a machine can maintain access for months or years, exfiltrate data continuously, and be extremely difficult to detect or remove. Nation-state threat actors commonly use kernel-level rootkits for long-term espionage.
