@@ -33,3 +33,10 @@ In 2005, Sony BMG shipped music CDs with a hidden rootkit that automatically ins
 From an attacker's side, a rootkit turns temporary access into persistent invisible access. An attacker with a rootkit on a machine can maintain access for months or years, exfiltrate data continuously, and be extremely difficult to detect or remove. Nation-state threat actors commonly use kernel-level rootkits for long-term espionage.
 
 From a defender's side, detecting rootkits is notoriously hard because you can't trust the OS they're running on — they control what the OS reports. Offline scanning (booting from a clean external drive) is more reliable than online scans. Secure Boot and UEFI firmware verification help prevent bootkits. Behavioral monitoring and integrity checking tools like Tripwire can catch anomalies before a rootkit fully establishes itself.
+
+## Key Terms
+- Rootkit: malware designed to maintain persistent privileged access while hiding its presence from the OS and security tools
+- Kernel Mode: the highest privilege level in an OS where the core system code runs — kernel rootkits operate here
+- Hooking: intercepting system calls or API functions to modify their behavior — how rootkits hide files and processes
+- Bootkit: a rootkit that infects the bootloader and loads before the OS, making it invisible to OS-level detection
+- Persistence: the ability of malware to survive reboots and maintain access over time
