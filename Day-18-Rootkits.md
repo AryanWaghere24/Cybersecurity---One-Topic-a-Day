@@ -40,3 +40,17 @@ From a defender's side, detecting rootkits is notoriously hard because you can't
 - Hooking: intercepting system calls or API functions to modify their behavior — how rootkits hide files and processes
 - Bootkit: a rootkit that infects the bootloader and loads before the OS, making it invisible to OS-level detection
 - Persistence: the ability of malware to survive reboots and maintain access over time
+
+## One Tip / Tool
+
+Tool: `chkrootkit` and `rkhunter` for Linux rootkit detection
+
+```bash
+# install and run chkrootkit
+apt install chkrootkit
+chkrootkit
+
+# install and run rkhunter
+apt install rkhunter
+rkhunter --update
+rkhunter --check
