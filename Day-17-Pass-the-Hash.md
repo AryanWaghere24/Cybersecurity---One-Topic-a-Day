@@ -32,3 +32,6 @@ psexec.py Administrator@192.168.1.10 -hashes aad3b435b51404ee:8846f7eaee8fb117ad
 
 ## Real-World Example
 In almost every Windows Active Directory penetration test, Pass the Hash is how lateral movement happens. An attacker compromises one workstation, dumps the local administrator hash, and discovers that the same local admin hash works on every other machine in the network because the IT team set up all machines with the same local admin password. One hash — hundreds of machines. This is exactly why Microsoft's LAPS (Local Administrator Password Solution) was created — to give every machine a unique local admin password.
+
+## Why It Matters
+From an attacker's side, PtH bypasses the need to crack passwords entirely. In large Windows environments where password reuse is common, a single dumped hash can mean access to dozens or hundreds of machines. Combined with a domain admin hash it means full domain compromise.
