@@ -32,3 +32,5 @@ This runs silently in the background and logs every keystroke with a timestamp t
 
 ## Real-World Example
 In 2015, a keylogger was found inside point-of-sale systems at Trump Hotels. Attackers had installed keylogging malware on the hotel's payment systems that captured credit card details as staff typed them in. The breach affected properties across multiple cities and exposed customer payment data over several months before being discovered.
+
+Hardware keyloggers are also common in physical pentests — a red teamer can plug a tiny hardware keylogger into the back of a desktop in a few seconds while pretending to plug in a USB drive, and come back later to retrieve it with weeks of captured credentials.
