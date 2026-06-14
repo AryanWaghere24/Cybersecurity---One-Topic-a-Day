@@ -29,3 +29,6 @@ with Listener(on_press=on_press) as listener:
 ```
 
 This runs silently in the background and logs every keystroke with a timestamp to a file. A real keylogger would also exfiltrate the log file periodically to the attacker's server.
+
+## Real-World Example
+In 2015, a keylogger was found inside point-of-sale systems at Trump Hotels. Attackers had installed keylogging malware on the hotel's payment systems that captured credit card details as staff typed them in. The breach affected properties across multiple cities and exposed customer payment data over several months before being discovered.
