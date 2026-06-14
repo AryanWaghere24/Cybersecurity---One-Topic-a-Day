@@ -39,3 +39,10 @@ Hardware keyloggers are also common in physical pentests — a red teamer can pl
 From an attacker's side, keyloggers bypass all encryption because they capture input before it's encrypted. It doesn't matter if a site uses HTTPS — the password is captured as you type it, before it ever gets sent. They're also effective against 2FA if the attacker logs in fast enough after capturing the credentials.
 
 From a defender's side, endpoint detection and response (EDR) tools monitor for suspicious keyboard hooking behavior. Virtual keyboards (on-screen keyboards) can bypass software keyloggers since no physical keystroke is made. Password managers that autofill credentials also help since the password is never actually typed. Regular security audits for physical access points are important to catch hardware keyloggers.
+
+## Key Terms
+- Keylogger: malware that records and exfiltrates every keystroke made on a device.
+- Keystroke Logging: the act of capturing keyboard input silently in the background.
+- API Hooking: intercepting calls to OS functions — how software keyloggers intercept keyboard input.
+- Hardware Keylogger: a physical device that sits between keyboard and computer, invisible to any software.
+- EDR (Endpoint Detection and Response): security software that monitors endpoints for suspicious behavior including keyboard hooking.
