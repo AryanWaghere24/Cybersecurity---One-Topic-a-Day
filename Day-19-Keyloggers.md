@@ -6,6 +6,8 @@ A Keylogger is a type of malware that records every keystroke made on a device a
 ## How It Works
 Keyloggers operate at different levels depending on their type:
 
+![Keyloggers](assets/Keyloggers.png)
+
 - Software keyloggers: run as a background process, hook into the OS keyboard input APIs to intercept keystrokes before they reach the application
 - Kernel keyloggers: operate at kernel level, harder to detect, intercept keystrokes at the driver level
 - Hardware keyloggers: physical devices plugged between the keyboard and the computer, completely invisible to the OS and any software
