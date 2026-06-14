@@ -47,7 +47,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 16 | Rainbow Tables |
 | Day 17 | Pass the Hash |
 | Day 18 | Rootkits |
-| Day 19 | Coming Soon... |
+| Day 19 | Keyloggers |
+| Day 20 | Coming Soon... |
 ---
 ## Topics Covered
 
