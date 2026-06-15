@@ -44,3 +44,26 @@ From a defender's side (blue team), ATT&CK helps prioritize defensive controls, 
 - Sub-technique: a more specific variation of a technique (e.g. T1053.005 — Scheduled Task specifically on Windows)
 - ATT&CK Navigator: a web tool for visualizing and annotating the ATT&CK matrix
 - Threat Intelligence: using ATT&CK to map known threat actor groups (APTs) to their specific techniques
+
+## One Tip / Tool
+
+Tool: MITRE ATT&CK Navigator — free web based tool to explore and annotate the matrix
+
+```
+# access the full ATT&CK matrix
+https://attack.mitre.org
+
+# use the Navigator to map detections
+https://mitre-attack.github.io/attack-navigator
+
+# search any technique by ID
+https://attack.mitre.org/techniques/T1059/
+```
+
+A great exercise — take any attack we've covered in this repo and map it to ATT&CK:
+- ARP Spoofing (day 01) → T1557 (Adversary-in-the-Middle)
+- SQL Injection (day 04) → T1190 (Exploit Public-Facing Application)
+- Mimikatz / Pass the Hash (day 17) → T1003 (OS Credential Dumping)
+- RATs (day 20) → T1219 (Remote Access Software)
+
+This is exactly the kind of mapping that SOC analysts and threat hunters do every day.
