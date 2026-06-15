@@ -6,6 +6,8 @@ MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a global
 ## How It Works
 The ATT&CK matrix is organized into 14 Tactics that represent the different phases of an attack, each containing dozens of Techniques that describe specific methods attackers use to achieve that tactic.
 
+![MITRE ATT&CK Framework](assets/MITRE-ATTACK.png)
+
 The 14 Tactics in order:
 ```
 1.  Reconnaissance          - gathering info before the attack
