@@ -29,3 +29,6 @@ Each technique has a unique ID. For example:
 - T1078 — Valid Accounts (using stolen credentials)
 - T1003 — OS Credential Dumping (mimikatz — covered in day 17)
 - T1566 — Phishing (initial access via malicious email)
+
+## Real-World Example
+When the SolarWinds attack was discovered in 2020, security teams mapped the entire attack to MITRE ATT&CK techniques. The attackers used T1195 (Supply Chain Compromise) for initial access, T1027 (Obfuscated Files) for defense evasion, and T1071 (Application Layer Protocol) for C2 communication. Having this common framework meant teams across different organizations could instantly understand and share exactly what the attackers did at each stage — accelerating response and detection across the entire industry.
