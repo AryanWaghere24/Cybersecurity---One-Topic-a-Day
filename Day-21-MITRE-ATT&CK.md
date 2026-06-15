@@ -41,11 +41,11 @@ From an attacker's side (red team), ATT&CK is used to plan realistic attack simu
 From a defender's side (blue team), ATT&CK helps prioritize defensive controls, build detection rules in SIEMs, and measure how well your security stack covers known attacker techniques. Tools like MITRE ATT&CK Navigator let you visually map your detections against the full matrix to find gaps.
 
 ## Key Terms
-- Tactic: the high level goal an attacker wants to achieve (e.g. Persistence, Lateral Movement)
-- Technique: the specific method used to achieve a tactic (e.g. T1053 — Scheduled Task for Persistence)
-- Sub-technique: a more specific variation of a technique (e.g. T1053.005 — Scheduled Task specifically on Windows)
-- ATT&CK Navigator: a web tool for visualizing and annotating the ATT&CK matrix
-- Threat Intelligence: using ATT&CK to map known threat actor groups (APTs) to their specific techniques
+- Tactic: the high level goal an attacker wants to achieve (e.g. Persistence, Lateral Movement).
+- Technique: the specific method used to achieve a tactic (e.g. T1053 — Scheduled Task for Persistence).
+- Sub-technique: a more specific variation of a technique (e.g. T1053.005 — Scheduled Task specifically on Windows).
+- ATT&CK Navigator: a web tool for visualizing and annotating the ATT&CK matrix.
+- Threat Intelligence: using ATT&CK to map known threat actor groups (APTs) to their specific techniques.
 
 ## One Tip / Tool
 
