@@ -5,3 +5,10 @@ A Remote Access Trojan (RAT) is a type of malware that gives an attacker full re
 
 ## How It Works
 A RAT has two components — the server (runs on the victim) and the client (runs on the attacker). The victim installs the server unknowingly, usually through a malicious email attachment, fake software download, or bundled with a cracked application. Once running it connects back to the attacker's client just like a reverse shell, but with a full GUI control panel.
+
+Attack flow:
+1. Attacker builds a RAT payload disguised as legitimate software
+2. Delivers it via phishing email, fake download, USB drop, or social engineering
+3. Victim runs it — RAT server installs silently, adds persistence to startup
+4. RAT connects back to attacker's C2 (Command and Control) server
+5. Attacker gets full control panel — files, processes, webcam, keylogger, shell
