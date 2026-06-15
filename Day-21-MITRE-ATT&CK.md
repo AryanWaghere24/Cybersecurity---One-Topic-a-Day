@@ -25,10 +25,10 @@ The 14 Tactics in order:
 ```
 
 Each technique has a unique ID. For example:
-- T1059 — Command and Scripting Interpreter (running PowerShell, bash)
-- T1078 — Valid Accounts (using stolen credentials)
-- T1003 — OS Credential Dumping (mimikatz — covered in day 17)
-- T1566 — Phishing (initial access via malicious email)
+- T1059 - Command and Scripting Interpreter (running PowerShell, bash)
+- T1078 - Valid Accounts (using stolen credentials)
+- T1003 - OS Credential Dumping (mimikatz — covered in day 17)
+- T1566 - Phishing (initial access via malicious email)
 
 ## Real-World Example
 When the SolarWinds attack was discovered in 2020, security teams mapped the entire attack to MITRE ATT&CK techniques. The attackers used T1195 (Supply Chain Compromise) for initial access, T1027 (Obfuscated Files) for defense evasion, and T1071 (Application Layer Protocol) for C2 communication. Having this common framework meant teams across different organizations could instantly understand and share exactly what the attackers did at each stage — accelerating response and detection across the entire industry.
@@ -37,3 +37,10 @@ When the SolarWinds attack was discovered in 2020, security teams mapped the ent
 From an attacker's side (red team), ATT&CK is used to plan realistic attack simulations — ensuring penetration tests cover the same techniques real threat actors use rather than just running automated scanners.
 
 From a defender's side (blue team), ATT&CK helps prioritize defensive controls, build detection rules in SIEMs, and measure how well your security stack covers known attacker techniques. Tools like MITRE ATT&CK Navigator let you visually map your detections against the full matrix to find gaps.
+
+## Key Terms
+- Tactic: the high level goal an attacker wants to achieve (e.g. Persistence, Lateral Movement)
+- Technique: the specific method used to achieve a tactic (e.g. T1053 — Scheduled Task for Persistence)
+- Sub-technique: a more specific variation of a technique (e.g. T1053.005 — Scheduled Task specifically on Windows)
+- ATT&CK Navigator: a web tool for visualizing and annotating the ATT&CK matrix
+- Threat Intelligence: using ATT&CK to map known threat actor groups (APTs) to their specific techniques
