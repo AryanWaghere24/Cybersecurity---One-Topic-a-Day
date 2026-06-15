@@ -39,3 +39,5 @@ On the cybercrime side, RATs like njRAT and AsyncRAT are still widely distribute
 
 ## Why It Matters
 From an attacker's side, a RAT is the endgame of initial access — it turns a one-time exploit into persistent long-term control. A RAT sitting on a corporate machine for months can exfiltrate intellectual property, capture executive communications, and serve as a launchpad for deeper network penetration.
+
+From a defender's side, RATs communicate with C2 servers over common ports like 80 and 443 to blend in with normal traffic. Network monitoring for unusual outbound connections, EDR tools that detect suspicious process behavior, and user awareness training to avoid running unknown executables are the main defenses. Application whitelisting ensures only approved software can execute.
