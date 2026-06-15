@@ -41,3 +41,10 @@ On the cybercrime side, RATs like njRAT and AsyncRAT are still widely distribute
 From an attacker's side, a RAT is the endgame of initial access — it turns a one-time exploit into persistent long-term control. A RAT sitting on a corporate machine for months can exfiltrate intellectual property, capture executive communications, and serve as a launchpad for deeper network penetration.
 
 From a defender's side, RATs communicate with C2 servers over common ports like 80 and 443 to blend in with normal traffic. Network monitoring for unusual outbound connections, EDR tools that detect suspicious process behavior, and user awareness training to avoid running unknown executables are the main defenses. Application whitelisting ensures only approved software can execute.
+
+## Key Terms
+- RAT (Remote Access Trojan): malware that provides full hidden remote control of a victim's machine through a backdoor
+- C2 (Command and Control): the server the attacker uses to send commands to and receive data from infected machines
+- Persistence: the ability of malware to survive reboots by adding itself to startup processes or registry keys
+- Meterpreter: an advanced RAT-like payload in Metasploit that runs entirely in memory, leaving no files on disk
+- Payload: the malicious code delivered to the victim that establishes the RAT connection
