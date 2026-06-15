@@ -32,3 +32,8 @@ Each technique has a unique ID. For example:
 
 ## Real-World Example
 When the SolarWinds attack was discovered in 2020, security teams mapped the entire attack to MITRE ATT&CK techniques. The attackers used T1195 (Supply Chain Compromise) for initial access, T1027 (Obfuscated Files) for defense evasion, and T1071 (Application Layer Protocol) for C2 communication. Having this common framework meant teams across different organizations could instantly understand and share exactly what the attackers did at each stage — accelerating response and detection across the entire industry.
+
+## Why It Matters
+From an attacker's side (red team), ATT&CK is used to plan realistic attack simulations — ensuring penetration tests cover the same techniques real threat actors use rather than just running automated scanners.
+
+From a defender's side (blue team), ATT&CK helps prioritize defensive controls, build detection rules in SIEMs, and measure how well your security stack covers known attacker techniques. Tools like MITRE ATT&CK Navigator let you visually map your detections against the full matrix to find gaps.
