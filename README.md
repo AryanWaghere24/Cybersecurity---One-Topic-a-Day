@@ -48,7 +48,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 17 | Pass the Hash |
 | Day 18 | Rootkits |
 | Day 19 | Keyloggers |
-| Day 20 | Coming Soon... |
+| Day 20 | Remote Access Trojans |
+| Day 21 | Coming Soon... |
 ---
 ## Topics Covered
 
