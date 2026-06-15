@@ -36,3 +36,6 @@ download passwords.txt
 DarkComet was one of the most widely used RATs in the early 2010s. During the Syrian Civil War, government-linked attackers used DarkComet disguised as a video of protests to target Syrian activists. When activists ran the file they handed full control of their machines to the attackers — webcam, microphone, files, and keystrokes — putting their lives at risk. The RAT's creator eventually shut down development after seeing it used for human rights abuses.
 
 On the cybercrime side, RATs like njRAT and AsyncRAT are still widely distributed through phishing campaigns today, used for credential theft, banking fraud, and ransomware deployment.
+
+## Why It Matters
+From an attacker's side, a RAT is the endgame of initial access — it turns a one-time exploit into persistent long-term control. A RAT sitting on a corporate machine for months can exfiltrate intellectual property, capture executive communications, and serve as a launchpad for deeper network penetration.
