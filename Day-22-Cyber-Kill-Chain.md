@@ -49,3 +49,5 @@ The 2013 Target breach followed the Kill Chain perfectly. Attackers started with
 
 ## Why It Matters
 From an attacker's side, understanding the Kill Chain helps plan a complete attack and anticipate where defenders might detect you — allowing you to focus on evasion at each stage.
+
+From a defender's side, the Kill Chain shifts the mindset from purely reactive (responding after breach) to proactive — building detection and prevention controls at every phase. Stopping an attack at Reconnaissance or Delivery is far cheaper than responding after Actions on Objectives. Each phase also leaves different indicators of compromise (IOCs) that security teams can monitor for.
