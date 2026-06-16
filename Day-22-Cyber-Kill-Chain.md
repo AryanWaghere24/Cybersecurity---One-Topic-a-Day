@@ -41,3 +41,7 @@ Attacker now has interactive control of the victim machine
 Phase 7 — Actions on Objectives
 Attacker achieves their final goal
 Examples: data exfiltration, ransomware deployment, lateral movement, sabotage
+```
+
+## Real-World Example
+The 2013 Target breach followed the Kill Chain perfectly. Attackers started with Reconnaissance — finding that Target used a third-party HVAC vendor with network access. Weaponization and Delivery — sent malware to the vendor via phishing. Exploitation and Installation — compromised the vendor's credentials and used them to access Target's network. C2 — established persistent access. Actions on Objectives — deployed point-of-sale malware that stole 40 million credit card numbers over several weeks. Defenders who had monitored earlier kill chain phases could have stopped it long before the data was stolen.
