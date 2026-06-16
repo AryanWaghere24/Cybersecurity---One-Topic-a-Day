@@ -7,6 +7,9 @@ The Cyber Kill Chain is a framework developed by Lockheed Martin in 2011 that de
 ## How It Works
 Every sophisticated cyber attack follows a predictable sequence of steps. The Kill Chain breaks this into 7 phases:
 
+![Cyber Kill Chain](assets/Cyber-Kill-Chain.png)
+
+
 ```
 Phase 1 — Reconnaissance
 Attacker gathers information about the target
