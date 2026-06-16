@@ -58,3 +58,19 @@ From a defender's side, the Kill Chain shifts the mindset from purely reactive (
 - Weaponization: creating a malicious payload designed to exploit the target.
 - IOC (Indicator of Compromise): evidence that an attack has occurred at a particular kill chain phase.
 - Lateral Movement: moving from the initial compromised machine to other systems in the network (Kill Chain phase 7).
+
+## One Tip / Tool
+
+Tool: Use the Kill Chain as a detection checklist — map your security controls to each phase
+
+```
+Phase 1 Recon       → monitor for port scans, OSINT about your org
+Phase 2 Weaponize   → email attachment sandboxing, AV scanning
+Phase 3 Delivery    → email filtering, web proxy, phishing awareness
+Phase 4 Exploit     → patch management, EDR, application whitelisting
+Phase 5 Install     → EDR behavioral detection, integrity monitoring
+Phase 6 C2          → outbound traffic monitoring, DNS filtering
+Phase 7 Objectives  → DLP (Data Loss Prevention), network segmentation
+```
+
+A great exercise — take the Target breach or any major attack and map every attacker action to its Kill Chain phase. This is exactly what incident responders do during post-breach analysis and what threat hunters do proactively to find gaps in detection coverage.
