@@ -51,3 +51,10 @@ The 2013 Target breach followed the Kill Chain perfectly. Attackers started with
 From an attacker's side, understanding the Kill Chain helps plan a complete attack and anticipate where defenders might detect you — allowing you to focus on evasion at each stage.
 
 From a defender's side, the Kill Chain shifts the mindset from purely reactive (responding after breach) to proactive — building detection and prevention controls at every phase. Stopping an attack at Reconnaissance or Delivery is far cheaper than responding after Actions on Objectives. Each phase also leaves different indicators of compromise (IOCs) that security teams can monitor for.
+
+## Key Terms
+- Cyber Kill Chain: Lockheed Martin's 7 phase framework describing the stages of a cyber attack.
+- Reconnaissance: the intelligence gathering phase before an attack begins.
+- Weaponization: creating a malicious payload designed to exploit the target.
+- IOC (Indicator of Compromise): evidence that an attack has occurred at a particular kill chain phase.
+- Lateral Movement: moving from the initial compromised machine to other systems in the network (Kill Chain phase 7).
