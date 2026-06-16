@@ -22,3 +22,22 @@ Phase 3 — Delivery
 Attacker delivers the weapon to the target
 Methods: phishing email, malicious USB, watering hole attack
 Example: sending the malicious PDF to HR via a spoofed email
+
+Phase 4 — Exploitation
+The payload exploits a vulnerability to execute
+Examples: user opens PDF, macro runs, buffer overflow (day 10) triggers
+This is where initial code execution happens
+
+Phase 5 — Installation
+Malware installs itself and establishes persistence
+Examples: RAT installs (day 20), rootkit deployed (day 18), registry key added
+Goal: survive reboots and maintain access
+
+Phase 6 — Command and Control (C2)
+Malware connects back to attacker's server
+Examples: reverse shell (day 09), RAT C2 channel
+Attacker now has interactive control of the victim machine
+
+Phase 7 — Actions on Objectives
+Attacker achieves their final goal
+Examples: data exfiltration, ransomware deployment, lateral movement, sabotage
