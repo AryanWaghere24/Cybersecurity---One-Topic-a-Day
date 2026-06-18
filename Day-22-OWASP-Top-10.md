@@ -50,3 +50,8 @@ Example: the Capital One breach via AWS metadata SSRF
 
 ## Real-World Example
 The 2017 Equifax breach is a textbook example of multiple OWASP Top 10 failures combined. It started with A06 (Vulnerable and Outdated Components) — Equifax was running Apache Struts with a known critical CVE that had a patch available for months but was never applied. This led to A03 (Injection) style remote code execution, followed by A09 (Logging and Monitoring Failures) since the breach went undetected for 76 days, ultimately resulting in 147 million people's personal data being stolen. A single unpatched component triggered a cascade across multiple Top 10 categories.
+
+## Why It Matters
+From an attacker's side, the OWASP Top 10 is essentially a checklist of where to look first when testing any web application — these are statistically the most common and impactful vulnerabilities found in the wild.
+
+From a defender's side, OWASP Top 10 serves as a minimum baseline for secure development. Many compliance frameworks (PCI-DSS, SOC 2) reference it directly. Development teams use it to prioritize security training and code review focus areas, and many automated scanners (Burp Suite, OWASP ZAP) are built specifically to detect these categories.
