@@ -55,3 +55,10 @@ The 2017 Equifax breach is a textbook example of multiple OWASP Top 10 failures 
 From an attacker's side, the OWASP Top 10 is essentially a checklist of where to look first when testing any web application — these are statistically the most common and impactful vulnerabilities found in the wild.
 
 From a defender's side, OWASP Top 10 serves as a minimum baseline for secure development. Many compliance frameworks (PCI-DSS, SOC 2) reference it directly. Development teams use it to prioritize security training and code review focus areas, and many automated scanners (Burp Suite, OWASP ZAP) are built specifically to detect these categories.
+
+## Key Terms
+- OWASP (Open Worldwide Application Security Project): a nonprofit foundation that produces free security resources including the Top 10
+- Broken Access Control: when users can perform actions or access data beyond their intended permissions
+- CVE (Common Vulnerabilities and Exposures): a public database of known security vulnerabilities in software
+- Insecure Deserialization: processing untrusted serialized data in a way that allows code execution
+- OWASP ZAP: a free open source web application security scanner built around finding Top 10 style vulnerabilities
