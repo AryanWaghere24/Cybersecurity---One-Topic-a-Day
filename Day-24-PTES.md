@@ -21,3 +21,24 @@ Phase 3 — Threat Modeling
 Identify the most valuable assets and likely attack paths
 Ask: what would a real attacker target and how would they get there?
 Map findings from recon to potential attack vectors
+
+Phase 4 — Vulnerability Analysis
+Actively identify weaknesses in the target environment
+Tools: Nessus, OpenVAS, Nmap, Nikto, Burp Suite
+Combine automated scanning with manual testing
+
+Phase 5 — Exploitation
+Attempt to exploit identified vulnerabilities to gain access
+Tools: Metasploit, custom exploits, manual techniques
+All topics from Day 01-20 in this repo apply here
+
+Phase 6 — Post Exploitation
+Determine the real business impact of successful exploitation
+Privilege escalation (day 08), lateral movement, data access
+Demonstrate what a real attacker could achieve with that access
+
+Phase 7 — Reporting
+Document everything — findings, evidence, business impact, remediation
+Two audiences: executive summary (non-technical) + technical report
+Rating vulnerabilities by severity using CVSS scores
+```
