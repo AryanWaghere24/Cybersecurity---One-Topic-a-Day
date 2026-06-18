@@ -6,6 +6,8 @@ PTES (Penetration Testing Execution Standard) is a comprehensive framework that 
 ## How It Works
 PTES is divided into 7 phases that take a pentest from initial client conversation to final delivered report:
 
+![PTES Framework](assets/PTES.png)
+
 ```
 Phase 1 — Pre-Engagement Interactions
 Define scope, rules of engagement, and legal authorization
