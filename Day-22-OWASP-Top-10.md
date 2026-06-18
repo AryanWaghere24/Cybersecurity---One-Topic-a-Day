@@ -26,3 +26,24 @@ Example: no rate limiting on a login form, allowing brute force
 A05 — Security Misconfiguration
 Insecure default configs, open cloud storage, verbose error messages
 Example: exposed admin panels, default credentials left unchanged
+
+A06 — Vulnerable and Outdated Components
+Using libraries or frameworks with known vulnerabilities
+Example: an old version of a CMS plugin with a public CVE
+
+A07 — Identification and Authentication Failures
+Weak login mechanisms allowing credential stuffing or session hijacking
+Example: no account lockout, predictable session tokens
+
+A08 — Software and Data Integrity Failures
+Trusting code or data without verifying its integrity
+Example: unsigned software updates, insecure deserialization
+
+A09 — Security Logging and Monitoring Failures
+Insufficient logging means breaches go undetected for long periods
+Example: no alerts on repeated failed login attempts
+
+A10 — Server-Side Request Forgery (SSRF)
+Tricking a server into making unintended requests (day 07)
+Example: the Capital One breach via AWS metadata SSRF
+```
