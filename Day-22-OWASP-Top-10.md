@@ -62,3 +62,19 @@ From a defender's side, OWASP Top 10 serves as a minimum baseline for secure dev
 - CVE (Common Vulnerabilities and Exposures): a public database of known security vulnerabilities in software
 - Insecure Deserialization: processing untrusted serialized data in a way that allows code execution
 - OWASP ZAP: a free open source web application security scanner built around finding Top 10 style vulnerabilities
+
+## One Tip / Tool
+
+Tool: `OWASP ZAP` (Zed Attack Proxy) — free automated scanner covering most Top 10 categories
+
+```bash
+# run a quick automated scan against a target
+zap-cli quick-scan --self-contained http://target.com
+
+# or use the GUI - launch ZAP, enter target URL, click "Attack"
+# ZAP automatically crawls and tests for injection, broken auth, misconfig, etc
+```
+
+The best way to actually practice OWASP Top 10 hands-on is **PortSwigger Web Academy** — it has dedicated free labs for every single category, written by the creators of Burp Suite. Going through each Top 10 category there gives practical exploitation experience, not just theory.
+
+Bookmark `https://owasp.org/Top10/` for the official full document with detailed examples and prevention guidance for each category.
