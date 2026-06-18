@@ -6,6 +6,8 @@ The OWASP Top 10 is a standard awareness document published by the Open Worldwid
 ## How It Works
 The current OWASP Top 10 (2021 edition) categories are:
 
+![OWASP Top 10](assets/OWASP-Top-10.png)
+
 ```
 A01 — Broken Access Control
 Users can act outside their intended permissions
