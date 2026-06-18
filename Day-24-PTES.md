@@ -42,3 +42,5 @@ Document everything — findings, evidence, business impact, remediation
 Two audiences: executive summary (non-technical) + technical report
 Rating vulnerabilities by severity using CVSS scores
 ```
+## Real-World Example
+A company hires a pentesting firm to assess their web application and internal network. The firm follows PTES — Phase 1 defines that only the company's public IP range and web app are in scope. Phase 2 reveals an employee's credentials in a data breach dump via OSINT. Phase 4 finds an outdated Apache server with a known CVE. Phase 5 exploits it to gain shell access. Phase 6 shows they could reach the internal database containing customer PII. Phase 7 delivers a report showing the entire attack chain with remediation steps. The company fixes the issues before a real attacker finds them — that's the entire value of a pentest.
