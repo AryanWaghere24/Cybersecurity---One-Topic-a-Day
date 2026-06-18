@@ -49,3 +49,10 @@ A company hires a pentesting firm to assess their web application and internal n
 From a pentester's side, PTES ensures nothing important gets skipped and that the engagement is conducted legally and professionally. The pre-engagement phase is especially critical — without written authorization, penetration testing is illegal regardless of intent.
 
 From a defender's / client's side, PTES ensures the pentest they're paying for is thorough and covers all the right areas rather than just running an automated scanner. The final report gives a prioritized roadmap for fixing vulnerabilities based on real exploitability and business impact.
+
+## Key Terms
+- PTES: a standardized methodology for conducting professional penetration tests end to end
+- Scope: the explicitly defined systems, IP ranges, and applications that are authorized for testing
+- Rules of Engagement: agreed boundaries for how the test will be conducted — timing, methods allowed, escalation procedures
+- CVSS (Common Vulnerability Scoring System): a standardized 0-10 scoring system for rating vulnerability severity
+- Post Exploitation: the phase after gaining access where the pentester determines the real business impact of the compromise
