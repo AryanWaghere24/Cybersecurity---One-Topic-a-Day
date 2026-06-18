@@ -52,7 +52,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 21 | MITRE ATT&CK Framework |
 | Day 22 | Cyber Kill Chain |
 | Day 23 | OWASP Top 10 |
-| Day 24 | Coming Soon... |
+| Day 24 | PTES |
+| Day 25 | Coming Soon... |
 ---
 ## Topics Covered
 
