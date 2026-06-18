@@ -44,3 +44,8 @@ Rating vulnerabilities by severity using CVSS scores
 ```
 ## Real-World Example
 A company hires a pentesting firm to assess their web application and internal network. The firm follows PTES — Phase 1 defines that only the company's public IP range and web app are in scope. Phase 2 reveals an employee's credentials in a data breach dump via OSINT. Phase 4 finds an outdated Apache server with a known CVE. Phase 5 exploits it to gain shell access. Phase 6 shows they could reach the internal database containing customer PII. Phase 7 delivers a report showing the entire attack chain with remediation steps. The company fixes the issues before a real attacker finds them — that's the entire value of a pentest.
+
+## Why It Matters
+From a pentester's side, PTES ensures nothing important gets skipped and that the engagement is conducted legally and professionally. The pre-engagement phase is especially critical — without written authorization, penetration testing is illegal regardless of intent.
+
+From a defender's / client's side, PTES ensures the pentest they're paying for is thorough and covers all the right areas rather than just running an automated scanner. The final report gives a prioritized roadmap for fixing vulnerabilities based on real exploitability and business impact.
