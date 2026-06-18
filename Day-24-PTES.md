@@ -56,3 +56,23 @@ From a defender's / client's side, PTES ensures the pentest they're paying for i
 - Rules of Engagement: agreed boundaries for how the test will be conducted — timing, methods allowed, escalation procedures
 - CVSS (Common Vulnerability Scoring System): a standardized 0-10 scoring system for rating vulnerability severity
 - Post Exploitation: the phase after gaining access where the pentester determines the real business impact of the compromise
+
+## One Tip / Tool
+
+Tool: `Obsidian` or `CherryTree` for pentest note taking, `Dradis` for collaborative reporting
+
+```
+Recommended pentest report structure:
+1. Executive Summary (1-2 pages, non-technical, business impact focused)
+2. Scope and Methodology
+3. Findings Summary Table (vulnerability, severity, affected system)
+4. Detailed Findings (each finding gets its own page):
+   - Description
+   - Evidence (screenshots, commands run)
+   - Business Impact
+   - CVSS Score
+   - Remediation Steps
+5. Appendices (raw tool output, scope confirmation)
+```
+
+A great free resource for learning PTES in practice is HackTheBox Pro Labs and TryHackMe — their lab environments are designed around realistic pentest scenarios that follow the PTES methodology from recon through reporting.
