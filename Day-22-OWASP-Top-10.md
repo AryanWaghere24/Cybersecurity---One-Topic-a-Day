@@ -47,3 +47,6 @@ A10 — Server-Side Request Forgery (SSRF)
 Tricking a server into making unintended requests (day 07)
 Example: the Capital One breach via AWS metadata SSRF
 ```
+
+## Real-World Example
+The 2017 Equifax breach is a textbook example of multiple OWASP Top 10 failures combined. It started with A06 (Vulnerable and Outdated Components) — Equifax was running Apache Struts with a known critical CVE that had a patch available for months but was never applied. This led to A03 (Injection) style remote code execution, followed by A09 (Logging and Monitoring Failures) since the breach went undetected for 76 days, ultimately resulting in 147 million people's personal data being stolen. A single unpatched component triggered a cascade across multiple Top 10 categories.
