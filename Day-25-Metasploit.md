@@ -41,3 +41,6 @@ sysinfo
 getuid
 hashdump
 ```
+
+## Real-World Example
+The 2017 WannaCry ransomware outbreak exploited the EternalBlue vulnerability (MS17-010) in Windows SMB — the exact module shown above. EternalBlue was originally an NSA developed exploit that was leaked publicly. Once it became a Metasploit module, it became trivially easy for anyone to weaponize, contributing to WannaCry infecting over 200,000 machines across 150 countries in days, including the UK's National Health Service which had to cancel surgeries and divert ambulances. This shows how a single well-known exploit, once automated in a framework, can cause global scale damage when systems aren't patched.
