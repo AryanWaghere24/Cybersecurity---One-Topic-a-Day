@@ -6,6 +6,8 @@ Metasploit is the most widely used open source exploitation framework in cyberse
 ## How It Works
 Metasploit organizes everything into modules. The core workflow is search for a module, configure it, and run it.
 
+![Metasploit Framework](assets/Metasploit.png)
+
 ```
 Module Types:
 - Exploits     - code that takes advantage of a specific vulnerability
