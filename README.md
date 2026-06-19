@@ -67,6 +67,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Cryptography Attacks | Day 15 - 17 |
 | Malware & Persistence | Day 18 - 20 |
 | Frameworks & Methodologies | Day 21 - 24 |
+| Exploitation Framework | Day 25 onwards |
 
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
