@@ -53,7 +53,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 22 | Cyber Kill Chain |
 | Day 23 | OWASP Top 10 |
 | Day 24 | PTES |
-| Day 25 | Coming Soon... |
+| Day 25 | Metasploit Framework |
+| Day 26 | Coming Soon... |
 ---
 ## Topics Covered
 
