@@ -49,3 +49,10 @@ The 2017 WannaCry ransomware outbreak exploited the EternalBlue vulnerability (M
 From an attacker's side, Metasploit dramatically lowers the barrier to entry for exploitation — thousands of working exploits are available with a simple search command, no need to develop exploits from scratch for known vulnerabilities.
 
 From a defender's side, understanding Metasploit helps security teams validate their own patching and detection — running the same exploits against your own environment (with authorization) tells you exactly what an attacker could achieve. It's also why patch management is critical — if a vulnerability has a public Metasploit module, assume it will be actively exploited in the wild.
+
+## Key Terms
+- Module: a piece of functionality in Metasploit — exploit, payload, auxiliary, post, or encoder
+- Meterpreter: Metasploit's advanced in-memory payload providing full post-exploitation capabilities (covered day 20)
+- msfvenom: Metasploit's standalone payload generator for creating custom executables and shellcode
+- RHOSTS / LHOST: target IP (RHOSTS) and attacker's listening IP (LHOST) — core options set before running an exploit
+- Auxiliary Module: a module used for scanning, brute forcing, or information gathering rather than direct exploitation
