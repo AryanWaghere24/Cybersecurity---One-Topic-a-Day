@@ -6,6 +6,8 @@ Burp Suite is the industry standard intercepting proxy and web application secur
 ## How It Works
 Burp Suite is made up of several integrated tools that work together around a core proxy:
 
+![Burp Suite Deep Dive](assets/Burp-Suite.png)
+
 ```
 Proxy        - intercepts and modifies traffic between browser and target
 Repeater     - resend and manually modify individual requests repeatedly
