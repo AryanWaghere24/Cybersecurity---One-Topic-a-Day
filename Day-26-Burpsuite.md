@@ -32,3 +32,6 @@ This single workflow alone can test for SQL Injection (day 04), broken authentic
 
 ## Real-World Example
 In professional web app pentesting, almost every finding starts in Burp's Proxy history. A pentester testing an e-commerce site notices a request containing `price=49.99` when adding an item to cart. They send it to Repeater, change the value to `price=0.01`, resend it, and the server accepts it without validation — a critical business logic flaw allowing anyone to set their own prices. This exact kind of manual testing, impossible to fully automate, is why Burp Suite remains essential even with modern automated scanners.
+
+## Why It Matters
+From an attacker's / pentester's side, Burp Suite combines manual precision (Repeater) with automation (Intruder) in one tool, covering nearly every web app attack category from this repo — SQLi, XSS, CSRF, SSRF, broken auth — all testable through the same intercepted traffic.
