@@ -27,3 +27,5 @@ Basic workflow for testing a login form:
 8. Load a wordlist and start the attack — Burp sends hundreds of requests automatically
 9. Sort results by response length or status code to spot the successful login
 ```
+
+This single workflow alone can test for SQL Injection (day 04), broken authentication (day 06 CSRF related), and brute force vulnerabilities all from the same captured request.
