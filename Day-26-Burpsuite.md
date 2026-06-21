@@ -44,3 +44,19 @@ From a defender's side, understanding how Burp Suite works helps developers thin
 - Intruder: Burp's tool for automating attacks by sending many requests with varying payloads
 - Payload Position: the specific part of a request marked for Intruder to substitute with wordlist values
 - BApp Store: Burp's extension marketplace offering community-built plugins for additional functionality
+
+## One Tip / Tool
+
+Tool: Burp Suite Community Edition (free) vs Professional (paid, includes automated scanner)
+
+```
+Quick Intruder attack types:
+- Sniper      - one payload set, one position at a time (most common)
+- Battering Ram - same payload in all positions simultaneously
+- Pitchfork   - multiple payload sets, one per position, synced together
+- Cluster Bomb - multiple payload sets, every combination tested (slow but thorough)
+
+Useful keyboard shortcut: Ctrl+R sends any request straight to Repeater from anywhere in Burp
+```
+
+The best way to practice Burp Suite hands-on is **PortSwigger Web Academy** (free, made by Burp's own creators) — every lab is designed specifically around using Burp's tools, and it's the single best resource for going from beginner to advanced with this tool. Pair it with the topics already covered in this repo — try finding SQLi (day 04), XSS (day 05), and CSRF (day 06) using only Burp Suite.
