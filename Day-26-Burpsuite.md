@@ -35,3 +35,5 @@ In professional web app pentesting, almost every finding starts in Burp's Proxy 
 
 ## Why It Matters
 From an attacker's / pentester's side, Burp Suite combines manual precision (Repeater) with automation (Intruder) in one tool, covering nearly every web app attack category from this repo — SQLi, XSS, CSRF, SSRF, broken auth — all testable through the same intercepted traffic.
+
+From a defender's side, understanding how Burp Suite works helps developers think about what an attacker can see and modify — every parameter, header, and cookie sent to your server should be treated as untrusted and validated server-side, because tools like Burp make manipulating any of it trivial.
