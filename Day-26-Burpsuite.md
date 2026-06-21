@@ -15,3 +15,15 @@ Comparer     - diff two requests or responses to spot subtle differences
 Sequencer    - analyze randomness in session tokens for predictability
 Extender     - install community plugins (BApps) to extend functionality
 ```
+Basic workflow for testing a login form:
+```
+1. Configure browser to proxy through Burp (default 127.0.0.1:8080)
+2. Submit a login request through the browser
+3. Burp's Proxy tab intercepts the raw HTTP request before it's sent
+4. Right click → "Send to Repeater" to manually test variations
+5. In Repeater, modify parameters and resend instantly to observe responses
+6. If testing for brute force, send the request to Intruder instead
+7. In Intruder, mark the password field as a payload position
+8. Load a wordlist and start the attack — Burp sends hundreds of requests automatically
+9. Sort results by response length or status code to spot the successful login
+```
