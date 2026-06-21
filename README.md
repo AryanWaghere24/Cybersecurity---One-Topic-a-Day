@@ -54,7 +54,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 23 | OWASP Top 10 |
 | Day 24 | PTES |
 | Day 25 | Metasploit Framework |
-| Day 26 | Coming Soon... |
+| Day 26 | Burp-Suite |
+| Day 27 | Coming Soon... | 
 ---
 ## Topics Covered
 
