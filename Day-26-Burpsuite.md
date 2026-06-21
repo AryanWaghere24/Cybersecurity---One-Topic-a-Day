@@ -39,11 +39,11 @@ From an attacker's / pentester's side, Burp Suite combines manual precision (Rep
 From a defender's side, understanding how Burp Suite works helps developers think about what an attacker can see and modify — every parameter, header, and cookie sent to your server should be treated as untrusted and validated server-side, because tools like Burp make manipulating any of it trivial.
 
 ## Key Terms
-- Intercepting Proxy: a tool that sits between client and server, allowing inspection and modification of traffic in transit
-- Repeater: Burp's tool for manually resending and modifying individual HTTP requests
-- Intruder: Burp's tool for automating attacks by sending many requests with varying payloads
-- Payload Position: the specific part of a request marked for Intruder to substitute with wordlist values
-- BApp Store: Burp's extension marketplace offering community-built plugins for additional functionality
+- Intercepting Proxy: a tool that sits between client and server, allowing inspection and modification of traffic in transit.
+- Repeater: Burp's tool for manually resending and modifying individual HTTP requests.
+- Intruder: Burp's tool for automating attacks by sending many requests with varying payloads.
+- Payload Position: the specific part of a request marked for Intruder to substitute with wordlist values.
+- BApp Store: Burp's extension marketplace offering community-built plugins for additional functionality.
 
 ## One Tip / Tool
 
