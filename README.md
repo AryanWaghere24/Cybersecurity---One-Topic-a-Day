@@ -55,7 +55,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 24 | PTES |
 | Day 25 | Metasploit Framework |
 | Day 26 | Burp-Suite |
-| Day 27 | Coming Soon... | 
+| Day 27 | Cobalt Strike |
+| Day 28 | Coming Soon... |
 ---
 ## Topics Covered
 
@@ -68,7 +69,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Cryptography Attacks | Day 15 - 17 |
 | Malware & Persistence | Day 18 - 20 |
 | Frameworks & Methodologies | Day 21 - 24 |
-| Exploitation Framework | Day 25 onwards |
+| Exploitation Framework | Day 25 - 27 |
 
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
