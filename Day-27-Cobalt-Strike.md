@@ -43,11 +43,11 @@ From a red team's side, Cobalt Strike enables realistic adversary simulation tha
 From a defender's side, Cobalt Strike's prevalence in real attacks means security teams specifically train detection systems to spot Beacon traffic patterns — unusual jitter-based check-ins, Malleable C2 profile signatures, and known JA3/JARM TLS fingerprints associated with cracked Cobalt Strike servers. Many EDR vendors now have dedicated Cobalt Strike detection signatures because it's so commonly abused.
 
 ## Key Terms
-- Beacon: Cobalt Strike's primary payload, a stealthy persistent agent on the compromised host
-- Team Server: the central C2 server that red team operators use to manage all active Beacons
-- Malleable C2: configuration profiles that disguise C2 traffic to mimic legitimate web services
-- Jitter: randomized variation in Beacon check-in timing to avoid predictable network patterns
-- Adversary Simulation: red team exercises designed to mimic real-world advanced threat actor behavior rather than just testing for known vulnerabilities
+- Beacon: Cobalt Strike's primary payload, a stealthy persistent agent on the compromised host.
+- Team Server: the central C2 server that red team operators use to manage all active Beacons.
+- Malleable C2: configuration profiles that disguise C2 traffic to mimic legitimate web services.
+- Jitter: randomized variation in Beacon check-in timing to avoid predictable network patterns.
+- Adversary Simulation: red team exercises designed to mimic real-world advanced threat actor behavior rather than just testing for known vulnerabilities.
 
 ## One Tip / Tool
 
