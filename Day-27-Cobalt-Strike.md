@@ -36,3 +36,6 @@ needs direct internet access, reducing the network footprint significantly
 
 ## Real-World Example
 Cobalt Strike is legitimately licensed for red teams, but cracked/leaked versions have become the single most common post-exploitation tool used in real ransomware attacks. Groups behind Ryuk, Conti, and many other major ransomware operations used cracked Cobalt Strike Beacons for lateral movement and persistence before deploying ransomware. The 2021 Conti ransomware playbook leak revealed operators using Cobalt Strike extensively to map networks, escalate privileges, and stage data theft before final encryption — essentially using a legitimate red team tool as their primary attack infrastructure.
+
+## Why It Matters
+From a red team's side, Cobalt Strike enables realistic adversary simulation that tests an organization's detection capabilities against techniques actual sophisticated attackers use — not just running known exploits but operating with stealth over extended periods.
