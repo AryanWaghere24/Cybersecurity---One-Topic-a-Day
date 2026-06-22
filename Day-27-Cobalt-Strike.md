@@ -12,3 +12,24 @@ Beacon       - the payload running on compromised machines, checks in periodical
 Listener     - defines how Beacons communicate back (HTTP, HTTPS, DNS, SMB)
 Malleable C2 - profile system that disguises Beacon traffic to look like legitimate web traffic
 ```
+
+Key concepts that make Cobalt Strike distinct:
+
+```
+Sleep Time / Jitter
+Beacons don't maintain constant connections - they "sleep" and check in periodically
+This avoids the kind of constant outbound traffic that's easy to detect
+A beacon might check in every 60 seconds with random jitter to avoid predictable patterns
+
+Malleable C2 Profiles
+Disguises Beacon traffic to look like normal traffic to services like Google, AWS, or Slack
+Makes network detection significantly harder than a typical reverse shell (day 09)
+
+Pivoting
+Once inside one machine, Beacon can pivot to reach internal-only systems
+Similar concept to lateral movement covered in pass the hash (day 17)
+
+Peer-to-Peer C2
+Beacons can relay through each other (SMB pivoting) so only one machine
+needs direct internet access, reducing the network footprint significantly
+```
