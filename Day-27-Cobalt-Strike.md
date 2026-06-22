@@ -39,3 +39,5 @@ Cobalt Strike is legitimately licensed for red teams, but cracked/leaked version
 
 ## Why It Matters
 From a red team's side, Cobalt Strike enables realistic adversary simulation that tests an organization's detection capabilities against techniques actual sophisticated attackers use — not just running known exploits but operating with stealth over extended periods.
+
+From a defender's side, Cobalt Strike's prevalence in real attacks means security teams specifically train detection systems to spot Beacon traffic patterns — unusual jitter-based check-ins, Malleable C2 profile signatures, and known JA3/JARM TLS fingerprints associated with cracked Cobalt Strike servers. Many EDR vendors now have dedicated Cobalt Strike detection signatures because it's so commonly abused.
