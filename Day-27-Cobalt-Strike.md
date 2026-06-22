@@ -6,6 +6,8 @@ Cobalt Strike is a commercial adversary simulation platform designed for profess
 ## How It Works
 Cobalt Strike's core component is the Beacon — its signature payload, conceptually similar to a RAT (day 20) but built specifically for stealth and flexibility in enterprise environments.
 
+![Cobalt Strike Concepts](assets/Cobalt-Strike.png)
+
 ```
 Team Server  - the C2 server red teamers control, manages all active Beacons
 Beacon       - the payload running on compromised machines, checks in periodically
