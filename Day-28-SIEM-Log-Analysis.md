@@ -5,3 +5,13 @@ A SIEM (Security Information and Event Management) is a platform that collects, 
 
 ## How It Works
 Every action on a network generates a log — a login, a file access, a network connection, a process execution. Individually most logs look harmless. A SIEM's value comes from correlation — connecting events across different sources to reveal an attack pattern.
+
+```
+Log Sources feeding into a SIEM:
+- Firewall logs        - blocked/allowed connections
+- Windows Event Logs   - logins, process creation, account changes
+- Web server logs      - HTTP requests, status codes
+- EDR/Antivirus logs   - malware detections, process behavior
+- Cloud logs           - AWS CloudTrail, Azure Activity Logs
+- Authentication logs  - VPN, Active Directory, SSO
+```
