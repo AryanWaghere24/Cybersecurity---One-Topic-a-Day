@@ -34,3 +34,10 @@ The 2013 Target breach (referenced on day 22) actually had its malware detected 
 From an attacker's side, understanding what SIEMs typically monitor helps in planning evasion — using living-off-the-land techniques (using legitimate tools like PowerShell instead of obvious malware) to blend in with normal log noise.
 
 From a defender's side, a SIEM is only as good as its correlation rules and the analysts watching it. Modern SIEMs (Splunk, Microsoft Sentinel, Elastic SIEM) increasingly use machine learning to detect anomalies beyond fixed rules, but a poorly tuned SIEM either floods analysts with false positives (alert fatigue) or misses real attacks entirely if rules are too narrow.
+
+## Key Terms
+- SIEM (Security Information and Event Management): a platform that aggregates and correlates logs from across an environment to detect threats
+- Log Correlation: connecting events from multiple log sources to reveal patterns invisible in any single source
+- SOC (Security Operations Center): the team and facility responsible for monitoring and responding to security alerts, typically using a SIEM
+- False Positive: an alert that looks like an attack but turns out to be legitimate activity, a major challenge in SIEM tuning
+- Living off the Land: using legitimate built-in system tools (PowerShell, WMI) for malicious purposes to avoid detection
