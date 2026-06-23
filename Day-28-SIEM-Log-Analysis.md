@@ -29,3 +29,6 @@ A single failed login means nothing. Fifty failed logins followed by a success f
 In many real incident investigations, attackers are caught specifically because SIEM correlation rules fired on combinations of normal-looking events. For example, an attacker using Pass the Hash (day 17) to move laterally might look completely normal in any single system's logs — just a successful login. But a SIEM correlating "same NTLM hash used to authenticate to 5 different machines within 10 minutes" flags it instantly as impossible normal user behavior, since no real employee logs into five machines simultaneously.
 
 The 2013 Target breach (referenced on day 22) actually had its malware detected by Target's own security monitoring tools before the breach was fully realized — but the alerts were reportedly not acted upon in time, showing that even with the right detection in place, the human response process around a SIEM matters just as much as the technology.
+
+## Why It Matters
+From an attacker's side, understanding what SIEMs typically monitor helps in planning evasion — using living-off-the-land techniques (using legitimate tools like PowerShell instead of obvious malware) to blend in with normal log noise.
