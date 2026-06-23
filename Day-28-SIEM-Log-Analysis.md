@@ -15,3 +15,11 @@ Log Sources feeding into a SIEM:
 - Cloud logs           - AWS CloudTrail, Azure Activity Logs
 - Authentication logs  - VPN, Active Directory, SSO
 ```
+
+Example correlation rule that would catch real attacks from this repo:
+```
+IF (failed login attempts > 50 from same IP within 5 minutes)   ← brute force
+AND (successful login follows immediately after)                ← password cracked
+AND (new process spawned: mimikatz.exe OR powershell -enc)       ← day 17 hash dumping
+THEN trigger HIGH severity alert
+```
