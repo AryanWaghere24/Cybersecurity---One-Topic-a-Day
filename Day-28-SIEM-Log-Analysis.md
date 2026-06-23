@@ -23,3 +23,5 @@ AND (successful login follows immediately after)                ← password cra
 AND (new process spawned: mimikatz.exe OR powershell -enc)       ← day 17 hash dumping
 THEN trigger HIGH severity alert
 ```
+
+A single failed login means nothing. Fifty failed logins followed by a success followed by mimikatz execution is unmistakably an attack — and only a SIEM correlating all three log sources together can catch that pattern in real time.
