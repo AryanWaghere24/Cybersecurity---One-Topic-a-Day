@@ -41,3 +41,16 @@ From a defender's side, a SIEM is only as good as its correlation rules and the 
 - SOC (Security Operations Center): the team and facility responsible for monitoring and responding to security alerts, typically using a SIEM
 - False Positive: an alert that looks like an attack but turns out to be legitimate activity, a major challenge in SIEM tuning
 - Living off the Land: using legitimate built-in system tools (PowerShell, WMI) for malicious purposes to avoid detection
+
+## One Tip / Tool
+
+Tool: `Splunk` (industry standard, commercial) and `Elastic Security` / the ELK Stack (free, open source) for learning SIEM concepts
+
+```
+Basic SPL (Splunk) query example - hunting for the pattern shown above:
+index=auth_logs action=failure | stats count by src_ip 
+| where count > 50
+| join src_ip [search index=auth_logs action=success]
+```
+
+Free hands-on practice — **Splunk's own free training environment (Boss of the SOC)** is a fantastic resource that gives you real attack scenario logs and walks you through writing detection queries to catch them, directly applying SIEM concepts to attacks like the ones covered throughout this repo.
