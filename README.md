@@ -56,7 +56,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 25 | Metasploit Framework |
 | Day 26 | Burp-Suite |
 | Day 27 | Cobalt Strike |
-| Day 28 | Coming Soon... |
+| Day 28 | SIEM & Log Analysis |
+| Day 29 | Coming Soon... | 
 ---
 ## Topics Covered
 
