@@ -32,3 +32,5 @@ The 2013 Target breach (referenced on day 22) actually had its malware detected 
 
 ## Why It Matters
 From an attacker's side, understanding what SIEMs typically monitor helps in planning evasion — using living-off-the-land techniques (using legitimate tools like PowerShell instead of obvious malware) to blend in with normal log noise.
+
+From a defender's side, a SIEM is only as good as its correlation rules and the analysts watching it. Modern SIEMs (Splunk, Microsoft Sentinel, Elastic SIEM) increasingly use machine learning to detect anomalies beyond fixed rules, but a poorly tuned SIEM either floods analysts with false positives (alert fatigue) or misses real attacks entirely if rules are too narrow.
