@@ -23,5 +23,7 @@ AND (successful login follows immediately after)                ← password cra
 AND (new process spawned: mimikatz.exe OR powershell -enc)       ← day 17 hash dumping
 THEN trigger HIGH severity alert
 ```
-
 A single failed login means nothing. Fifty failed logins followed by a success followed by mimikatz execution is unmistakably an attack — and only a SIEM correlating all three log sources together can catch that pattern in real time.
+
+## Real-World Example
+In many real incident investigations, attackers are caught specifically because SIEM correlation rules fired on combinations of normal-looking events. For example, an attacker using Pass the Hash (day 17) to move laterally might look completely normal in any single system's logs — just a successful login. But a SIEM correlating "same NTLM hash used to authenticate to 5 different machines within 10 minutes" flags it instantly as impossible normal user behavior, since no real employee logs into five machines simultaneously.
