@@ -10,6 +10,8 @@ Rather than waiting for automated tools to generate alerts, threat hunters inves
 
 Threat hunting typically starts with a hypothesis. A hunter uses knowledge of attacker tactics, threat intelligence, or unusual observations to guide an investigation. They then analyze logs, endpoint telemetry, network traffic, and other data sources to validate or reject that hypothesis.
 
+![Threat Hunting image](assets/Threat-Hunting.png)
+
 ```text
 Common Threat Hunting Data Sources:
 
