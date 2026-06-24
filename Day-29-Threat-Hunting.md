@@ -78,7 +78,7 @@ Tool: `Velociraptor`
 
 Velociraptor is a powerful open-source endpoint visibility and threat hunting platform that allows investigators to collect forensic data, search systems, and identify suspicious activity across multiple endpoints.
 
-```text
+```
 Example Hunt:
 
 Process Name:
