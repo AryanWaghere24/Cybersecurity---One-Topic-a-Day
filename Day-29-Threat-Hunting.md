@@ -64,13 +64,13 @@ Modern Security Operations Centers (SOCs) perform threat hunting regularly to re
 
 ## Key Terms
 
-* Threat Hunting: proactive searching for hidden malicious activity within an environment
-* Hypothesis-Based Hunting: investigating a theory about possible attacker behavior
-* IOC (Indicator of Compromise): evidence suggesting a system may be compromised
-* TTPs (Tactics, Techniques, and Procedures): methods attackers use during an intrusion
-* Dwell Time: the amount of time an attacker remains undetected
-* Threat Intelligence: information about known attackers, techniques, and indicators
-* Living off the Land: abusing legitimate system tools for malicious purposes
+* Threat Hunting: proactive searching for hidden malicious activity within an environment.
+* Hypothesis-Based Hunting: investigating a theory about possible attacker behavior.
+* IOC (Indicator of Compromise): evidence suggesting a system may be compromised.
+* TTPs (Tactics, Techniques, and Procedures): methods attackers use during an intrusion.
+* Dwell Time: the amount of time an attacker remains undetected.
+* Threat Intelligence: information about known attackers, techniques, and indicators.
+* Living off the Land: abusing legitimate system tools for malicious purposes.
 
 ## One Tip / Tool
 
