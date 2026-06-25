@@ -59,7 +59,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 28 | SIEM & Log Analysis |
 | Day 29 | Threat Hunting | 
 | Day 30 | Incident Response | 
-| Day 31 | Coming Soon... |
+| Day 31 | Blue Team VS Red Team |
+| Day 32 | Coming Soon... |
 ---
 ## Topics Covered
 
