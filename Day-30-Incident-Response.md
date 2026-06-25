@@ -1,5 +1,5 @@
-Day 30 - Incident Response
-What It Is
+# Day 30 - Incident Response
+## What It Is
 
 Incident Response (IR) is the structured process of identifying, investigating, containing, eradicating, and recovering from a cybersecurity incident. Its goal is to minimize damage, restore normal operations, and prevent similar incidents from occurring again.
 
