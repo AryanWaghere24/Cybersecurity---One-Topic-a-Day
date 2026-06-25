@@ -48,3 +48,13 @@ During the 2017 WannaCry ransomware outbreak, thousands of organizations worldwi
 In contrast, organizations without incident response plans often struggled to determine what happened, which systems were affected, and how to recover safely. The difference highlighted the importance of preparation and clearly defined response procedures.
 
 Incident response is not only about technical remediation—it also involves communication, documentation, decision-making, and coordination across multiple teams.
+
+## Why It Matters
+
+From an attacker's perspective, time is valuable. The longer they remain undetected and uncontained, the more damage they can cause.
+
+From a defender's perspective, incident response reduces attacker dwell time, limits business impact, preserves evidence for investigation, and helps restore operations quickly.
+
+Even organizations with strong prevention and detection controls will eventually face security incidents. The difference between a minor disruption and a major breach often depends on the effectiveness of the incident response process.
+
+Modern Security Operations Centers (SOCs) rely heavily on incident response playbooks to ensure consistent and efficient handling of security events.
