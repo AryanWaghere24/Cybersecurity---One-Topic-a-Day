@@ -18,3 +18,25 @@ Incident Response Lifecycle:
 5. Recovery - Restore systems and return to normal operations
 6. Lessons Learned - Analyze the incident and improve defenses
 ``` 
+
+Example incident response workflow:
+
+Alert Generated:
+Ransomware detected on workstation WS-105
+
+Identification:
+Analyst confirms suspicious file encryption activity
+
+Containment:
+Disconnect infected host from the network
+
+Eradication:
+Remove malware and revoke compromised credentials
+
+Recovery:
+Restore files from backups
+
+Lessons Learned:
+Deploy improved ransomware detection rules
+
+The faster an organization moves through these phases, the less damage an attacker can cause.
