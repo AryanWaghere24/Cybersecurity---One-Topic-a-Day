@@ -30,3 +30,6 @@ This loop — attack, detect (or miss), improve, re-test — is how security pro
 
 ## Real-World Example
 Many large organizations run continuous Red Team engagements specifically designed to test whether the Blue Team's SIEM (day 28) and detection rules catch real attack chains — not just individual exploits, but full kill chains (day 22) from initial access through to data exfiltration. A common exercise: the Red Team uses a technique covered in this repo, like deploying a Cobalt Strike Beacon (day 27) with Malleable C2 to mimic normal traffic. If the Blue Team's SOC analysts don't catch it within an agreed time window, that becomes a documented gap — leading directly to new detection rules, better log sources, or analyst training, closing the gap before a real attacker exploits it.
+
+## Why It Matters
+From the Red Team's side, the goal isn't just finding vulnerabilities — it's helping the organization understand its actual exposure to realistic attack scenarios, often modeled directly on MITRE ATT&CK (day 21) techniques used by real threat actors.
