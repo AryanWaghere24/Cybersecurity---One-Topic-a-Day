@@ -40,3 +40,11 @@ Lessons Learned:
 Deploy improved ransomware detection rules
 ``` 
 The faster an organization moves through these phases, the less damage an attacker can cause.
+
+## Real-World Example
+
+During the 2017 WannaCry ransomware outbreak, thousands of organizations worldwide experienced rapid file encryption across their networks. Organizations with effective incident response procedures were able to quickly isolate infected systems, prevent lateral movement, and begin recovery from backups.
+
+In contrast, organizations without incident response plans often struggled to determine what happened, which systems were affected, and how to recover safely. The difference highlighted the importance of preparation and clearly defined response procedures.
+
+Incident response is not only about technical remediation—it also involves communication, documentation, decision-making, and coordination across multiple teams.
