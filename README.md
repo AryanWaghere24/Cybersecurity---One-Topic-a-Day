@@ -57,7 +57,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 26 | Burp-Suite |
 | Day 27 | Cobalt Strike |
 | Day 28 | SIEM & Log Analysis |
-| Day 29 | Coming Soon... | 
+| Day 29 | Threat Hunting | 
 ---
 ## Topics Covered
 
