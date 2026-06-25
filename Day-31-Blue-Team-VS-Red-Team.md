@@ -6,6 +6,8 @@ Blue Team and Red Team are the two opposing roles in cybersecurity that work tog
 ## How It Works
 The two teams approach the same systems from opposite directions:
 
+![Blue-Red Team](assets/Blue-Team-Vs-Red-Team.png)
+
 ```
 Red Team (Offense)                    Blue Team (Defense)
 - Reconnaissance & OSINT              - SIEM monitoring (day 28)
