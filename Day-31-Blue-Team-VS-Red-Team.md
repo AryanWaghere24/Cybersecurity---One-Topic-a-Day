@@ -37,3 +37,10 @@ From the Red Team's side, the goal isn't just finding vulnerabilities — it's h
 From the Blue Team's side, having a Red Team continuously test your defenses is far more valuable than theoretical security reviews — it proves whether your detection and response capabilities actually work against real techniques, not just whether you have the right tools installed.
 
 Together they create a feedback loop that's far stronger than either team working in isolation — Red Team without Blue Team feedback just produces an unvalidated report, and Blue Team without Red Team testing has no way to know if their defenses actually work until a real attacker proves it for them.
+
+## Key Terms
+- Red Team: the offensive security team that simulates real attackers to test an organization's defenses
+- Blue Team: the defensive security team responsible for detection, monitoring, and incident response
+- Purple Team: a collaborative function (sometimes a dedicated role, sometimes just a process) that bridges Red and Blue Team efforts
+- Detection Engineering: the practice of building and tuning SIEM rules and alerts to catch specific attack techniques
+- Adversary Emulation: Red Team exercises specifically modeled on real threat actor TTPs (Tactics, Techniques, and Procedures) rather than generic vulnerability scanning
