@@ -44,3 +44,20 @@ Together they create a feedback loop that's far stronger than either team workin
 - Purple Team: a collaborative function (sometimes a dedicated role, sometimes just a process) that bridges Red and Blue Team efforts
 - Detection Engineering: the practice of building and tuning SIEM rules and alerts to catch specific attack techniques
 - Adversary Emulation: Red Team exercises specifically modeled on real threat actor TTPs (Tactics, Techniques, and Procedures) rather than generic vulnerability scanning
+
+## One Tip / Tool
+
+Tool: `Atomic Red Team` — a free open source library of small, individually testable attack techniques mapped directly to MITRE ATT&CK
+
+```bash
+# install Atomic Red Team (PowerShell module)
+Install-Module -Name invoke-atomicredteam, powershell-yaml -Scope CurrentUser
+
+# run a specific atomic test mapped to an ATT&CK technique
+Invoke-AtomicTest T1003 -ShowDetailsBrief
+
+# example - test OS Credential Dumping detection (day 17 Pass the Hash territory)
+Invoke-AtomicTest T1003.001
+```
+
+This is exactly how real Purple Team exercises work in practice — pick a technique ID from MITRE ATT&CK (day 21), run the corresponding Atomic Red Team test safely in a lab, then check whether your SIEM (day 28) actually generated an alert. If it didn't, you've just found a real detection gap, which is the entire point of running Red and Blue Team exercises together.
