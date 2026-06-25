@@ -25,3 +25,5 @@ Purple Team - facilitates collaboration between Red and Blue
             - If missed, Blue Team builds a new detection rule
             - Red Team re-runs the same technique to validate the fix works
 ```
+
+This loop — attack, detect (or miss), improve, re-test — is how security programs actually mature over time rather than just collecting a list of vulnerabilities that never get validated as fixed.
