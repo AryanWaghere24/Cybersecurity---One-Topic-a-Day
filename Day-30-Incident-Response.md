@@ -9,6 +9,8 @@ Security incidents can include malware infections, ransomware attacks, data brea
 
 Most organizations follow a formal incident response lifecycle. While the exact framework varies, the core phases remain largely the same.
 
+![Incident Response image](assets/Incident-Response.png)
+
 ```text
 Incident Response Lifecycle:
 
