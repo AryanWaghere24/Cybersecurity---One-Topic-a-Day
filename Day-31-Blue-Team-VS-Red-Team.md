@@ -15,3 +15,5 @@ Red Team (Offense)                    Blue Team (Defense)
 - Persistence (RATs, day 20)          - Endpoint detection (EDR)
 - Reporting findings to the org       - Patching and hardening systems
 ```
+
+A mature organization runs both simultaneously, often with a third role bridging them:
