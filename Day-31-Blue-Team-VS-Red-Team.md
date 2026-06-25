@@ -5,3 +5,13 @@ Blue Team and Red Team are the two opposing roles in cybersecurity that work tog
 
 ## How It Works
 The two teams approach the same systems from opposite directions:
+
+```
+Red Team (Offense)                    Blue Team (Defense)
+- Reconnaissance & OSINT              - SIEM monitoring (day 28)
+- Exploitation (SQLi, XSS, etc)       - Detection engineering / alert tuning
+- Privilege escalation                - Threat hunting (day 29)
+- Lateral movement                    - Incident response (day 30)
+- Persistence (RATs, day 20)          - Endpoint detection (EDR)
+- Reporting findings to the org       - Patching and hardening systems
+```
