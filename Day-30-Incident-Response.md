@@ -60,7 +60,6 @@ Even organizations with strong prevention and detection controls will eventually
 Modern Security Operations Centers (SOCs) rely heavily on incident response playbooks to ensure consistent and efficient handling of security events.
 
 ## Key Terms
-
 Incident Response (IR): the structured process of handling security incidents
 Containment: limiting the spread and impact of an attack
 Eradication: removing attacker access, malware, and malicious artifacts
