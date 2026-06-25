@@ -9,18 +9,31 @@ Security incidents can include malware infections, ransomware attacks, data brea
 
 Most organizations follow a formal incident response lifecycle. While the exact framework varies, the core phases remain largely the same.
 
+```text
 Incident Response Lifecycle:
 
-1. Preparation - Establish policies, tools, and response plans
-2. Identification - Detect and verify a security incident
-3. Containment - Limit the attacker's ability to cause damage
-4. Eradication - Remove malicious artifacts and attacker access
-5. Recovery - Restore systems and return to normal operations
-6. Lessons Learned - Analyze the incident and improve defenses
+1. Preparation
+   - Establish policies, tools, and response plans
 
+2. Identification
+   - Detect and verify a security incident
+
+3. Containment
+   - Limit the attacker's ability to cause damage
+
+4. Eradication
+   - Remove malicious artifacts and attacker access
+
+5. Recovery
+   - Restore systems and return to normal operations
+
+6. Lessons Learned
+   - Analyze the incident and improve defenses
+```
 
 Example incident response workflow:
-```
+
+```text
 Alert Generated:
 Ransomware detected on workstation WS-105
 
@@ -38,7 +51,8 @@ Restore files from backups
 
 Lessons Learned:
 Deploy improved ransomware detection rules
-``` 
+```
+
 The faster an organization moves through these phases, the less damage an attacker can cause.
 
 ## Real-World Example
