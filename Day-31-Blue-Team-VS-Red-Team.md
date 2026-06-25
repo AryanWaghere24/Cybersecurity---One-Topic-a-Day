@@ -27,3 +27,6 @@ Purple Team - facilitates collaboration between Red and Blue
 ```
 
 This loop — attack, detect (or miss), improve, re-test — is how security programs actually mature over time rather than just collecting a list of vulnerabilities that never get validated as fixed.
+
+## Real-World Example
+Many large organizations run continuous Red Team engagements specifically designed to test whether the Blue Team's SIEM (day 28) and detection rules catch real attack chains — not just individual exploits, but full kill chains (day 22) from initial access through to data exfiltration. A common exercise: the Red Team uses a technique covered in this repo, like deploying a Cobalt Strike Beacon (day 27) with Malleable C2 to mimic normal traffic. If the Blue Team's SOC analysts don't catch it within an agreed time window, that becomes a documented gap — leading directly to new detection rules, better log sources, or analyst training, closing the gap before a real attacker exploits it.
