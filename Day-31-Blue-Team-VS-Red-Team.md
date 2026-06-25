@@ -17,3 +17,11 @@ Red Team (Offense)                    Blue Team (Defense)
 ```
 
 A mature organization runs both simultaneously, often with a third role bridging them:
+
+```
+Purple Team - facilitates collaboration between Red and Blue
+            - Red Team executes an attack technique (e.g. day 17 Pass the Hash)
+            - Blue Team checks in real time whether their tools detected it
+            - If missed, Blue Team builds a new detection rule
+            - Red Team re-runs the same technique to validate the fix works
+```
