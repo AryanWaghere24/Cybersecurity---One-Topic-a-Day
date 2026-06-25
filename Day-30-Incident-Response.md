@@ -75,10 +75,43 @@ Modern Security Operations Centers (SOCs) rely heavily on incident response play
 
 ## Key Terms
 
-* Incident Response (IR): the structured process of handling security incidents
-* Containment: limiting the spread and impact of an attack
-* Eradication: removing attacker access, malware, and malicious artifacts
-* Recovery: restoring systems and business operations after an incident
-* Playbook: a documented set of response procedures for specific incidents
-* Forensics: collecting and analyzing evidence related to a security incident
-* Lessons Learned: post-incident review used to improve future security posture
+* Incident Response (IR): the structured process of handling security incidents.
+* Containment: limiting the spread and impact of an attack.
+* Eradication: removing attacker access, malware, and malicious artifacts.
+* Recovery: restoring systems and business operations after an incident.
+* Playbook: a documented set of response procedures for specific incidents.
+* Forensics: collecting and analyzing evidence related to a security incident.
+* Lessons Learned: post-incident review used to improve future security posture.
+
+## One Tip / Tool
+
+Tool: `TheHive`
+
+TheHive is a popular open-source incident response platform used by SOC teams to manage investigations, track cases, assign tasks, and document response activities.
+
+```text
+Example IR Playbook:
+
+Incident:
+Ransomware Infection
+
+Step 1:
+Identify affected systems
+
+Step 2:
+Isolate infected hosts
+
+Step 3:
+Collect forensic evidence
+
+Step 4:
+Remove malware
+
+Step 5:
+Restore systems from backups
+
+Step 6:
+Document findings and improvements
+```
+
+Free hands-on practice — TryHackMe's Incident Response and SOC-related rooms provide practical experience investigating alerts, containing incidents, collecting evidence, and managing real-world security events.
