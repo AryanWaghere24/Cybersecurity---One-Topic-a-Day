@@ -60,7 +60,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 29 | Threat Hunting | 
 | Day 30 | Incident Response | 
 | Day 31 | Blue Team VS Red Team |
-| Day 32 | Coming Soon... |
+| Day 32 | Prompt Injection |
 ---
 ## Topics Covered
 
