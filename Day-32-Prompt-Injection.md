@@ -6,6 +6,8 @@ Prompt Injection is an attack where malicious instructions are embedded within i
 ## How It Works
 LLM applications typically have a system prompt (developer instructions defining the AI's behavior) and then process user input alongside it. The core vulnerability is that language models process all text in the same context window — they don't have a hard technical boundary between "trusted instructions" and "untrusted user data" the way a parameterized SQL query does.
 
+![Prompt Injection](assets/Prompt-Injection.png)
+
 ```
 Normal LLM application flow:
 System Prompt: "You are a customer support bot. Only answer questions about our product."
