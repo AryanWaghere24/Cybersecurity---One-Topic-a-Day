@@ -76,7 +76,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Frameworks & Methodologies | Day 21 - 24 |
 | Exploitation Framework | Day 25 - 27 |
 | Defensive Security | Day 28 - Day 31 |
-| AI Security | Day 33 onwards | 
+| AI Security | Day 32 onwards | 
 
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
