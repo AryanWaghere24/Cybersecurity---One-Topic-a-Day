@@ -31,3 +31,6 @@ Providing dozens of fake example conversations in the prompt showing
 the AI "previously" complying with harmful requests, exploiting 
 the model's tendency to follow patterns in its context window
 ```
+
+The core principle behind nearly all jailbreaks — they exploit the gap between what the model was specifically trained to refuse versus the much larger space of all possible ways to phrase a similar request.
+
