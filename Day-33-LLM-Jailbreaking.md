@@ -48,3 +48,17 @@ From a defender's / AI developer's side, this is one of the most actively resear
 - DAN (Do Anything Now): a well-known early jailbreak technique using roleplay framing to bypass restrictions
 - Many-shot Jailbreaking: exploiting long context windows by providing numerous fake examples of the AI complying with harmful requests
 - Red Teaming (AI context): systematically testing an AI model's safety boundaries before public release to find and fix jailbreak vulnerabilities
+
+## One Tip / Tool
+
+Tool: There's no single "jailbreak scanner" tool since this is adversarial and constantly evolving, but `garak` (mentioned on day 32) includes specific jailbreak detection probes
+
+```bash
+# garak includes probes specifically for testing jailbreak resistance
+python -m garak --model_type openai --model_name gpt-3.5-turbo --probes dan
+
+# this runs known jailbreak patterns (including DAN variants) against the target model
+# and reports which ones successfully bypassed safety training
+```
+
+For anyone studying AI safety seriously, reading published research from AI labs on **red teaming methodology** (most major AI companies publish papers on how they test their own models against jailbreaks before release) is the best way to understand both sides of this problem — how jailbreaks are discovered and how defenses are actually built against them. This is a genuinely unsolved area of security research, not a solved problem with a checklist defense like some other topics in this repo.
