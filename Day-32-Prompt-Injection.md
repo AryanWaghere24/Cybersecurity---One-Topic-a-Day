@@ -38,11 +38,11 @@ From an attacker's side, prompt injection is uniquely dangerous in AI agents wit
 From a defender's side, this is an active and largely unsolved area of AI security research. Mitigations include strict input/output filtering, limiting what tools an AI agent can access without human confirmation, treating any content the AI reads (web pages, documents, emails) as untrusted regardless of source, and using separate models or classifiers to detect injection attempts before they reach the main model.
 
 ## Key Terms
-- Prompt Injection: manipulating an AI model's behavior by embedding malicious instructions within its input
-- System Prompt: the initial instructions given to an AI model defining its intended behavior and constraints
-- Direct Prompt Injection: malicious instructions typed directly by the user attempting to override the system prompt
-- Indirect Prompt Injection: malicious instructions embedded in external content (webpages, documents) that the AI processes, without the user's knowledge
-- Agentic AI: AI systems with the ability to take real-world actions through tool access (browsing, code execution, API calls) rather than just generating text
+- Prompt Injection: manipulating an AI model's behavior by embedding malicious instructions within its input.
+- System Prompt: the initial instructions given to an AI model defining its intended behavior and constraints.
+- Direct Prompt Injection: malicious instructions typed directly by the user attempting to override the system prompt.
+- Indirect Prompt Injection: malicious instructions embedded in external content (webpages, documents) that the AI processes, without the user's knowledge.
+- Agentic AI: AI systems with the ability to take real-world actions through tool access (browsing, code execution, API calls) rather than just generating text.
 
 ## One Tip / Tool
 
