@@ -41,3 +41,10 @@ The "DAN" (Do Anything Now) jailbreak became widely known shortly after ChatGPT'
 From an attacker's side, jailbreaking is used to extract content models are designed to refuse — instructions for harmful activities, generating disinformation at scale, or bypassing content moderation in AI-powered products built by other companies.
 
 From a defender's / AI developer's side, this is one of the most actively researched problems in AI safety. Defenses include adversarial training (specifically training models against known jailbreak patterns), output filtering with separate classifier models, rate limiting and monitoring for jailbreak attempt patterns, and red teaming models extensively before release specifically trying to break their safety training. No current technique provides complete protection — it remains an evolving arms race.
+
+## Key Terms
+- LLM Jailbreaking: techniques designed to bypass an AI model's trained safety restrictions and content policies
+- Safety Alignment: the training process that teaches an AI model to refuse harmful or policy-violating requests
+- DAN (Do Anything Now): a well-known early jailbreak technique using roleplay framing to bypass restrictions
+- Many-shot Jailbreaking: exploiting long context windows by providing numerous fake examples of the AI complying with harmful requests
+- Red Teaming (AI context): systematically testing an AI model's safety boundaries before public release to find and fix jailbreak vulnerabilities
