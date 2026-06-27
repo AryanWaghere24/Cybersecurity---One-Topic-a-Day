@@ -6,6 +6,8 @@ LLM Jailbreaking is the practice of crafting inputs specifically designed to byp
 ## How It Works
 Modern LLMs are trained with safety alignment — reinforcement learning techniques that teach the model to refuse certain categories of requests. Jailbreaks work by finding gaps in that alignment training, often by reframing a harmful request in a way the model doesn't recognize as harmful.
 
+![LLM Jailbreaking](assets/LLM-Jailbreaking.png)
+
 ```
 Common jailbreak techniques:
 
