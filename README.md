@@ -61,7 +61,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 30 | Incident Response | 
 | Day 31 | Blue Team VS Red Team |
 | Day 32 | Prompt Injection |
-| Day 33 | Coming Soon... | 
+| Day 33 | LLM Jailbreaking |
+| Day 34 | Coming Soon... | 
 ---
 ## Topics Covered
 
