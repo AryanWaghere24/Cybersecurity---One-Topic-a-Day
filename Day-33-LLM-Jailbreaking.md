@@ -34,3 +34,5 @@ the model's tendency to follow patterns in its context window
 
 The core principle behind nearly all jailbreaks — they exploit the gap between what the model was specifically trained to refuse versus the much larger space of all possible ways to phrase a similar request.
 
+## Real-World Example
+The "DAN" (Do Anything Now) jailbreak became widely known shortly after ChatGPT's public release in late 2022. Users discovered that instructing the model to roleplay as an unrestricted AI persona could sometimes bypass content policies that would otherwise block certain responses. As AI companies patched these specific techniques, the jailbreaking community continuously developed new variants — this cat and mouse dynamic between AI safety teams and the jailbreaking community has continued ever since, with each new model generation requiring new safety training to address newly discovered bypass techniques.
