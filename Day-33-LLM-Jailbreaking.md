@@ -36,3 +36,8 @@ The core principle behind nearly all jailbreaks — they exploit the gap between
 
 ## Real-World Example
 The "DAN" (Do Anything Now) jailbreak became widely known shortly after ChatGPT's public release in late 2022. Users discovered that instructing the model to roleplay as an unrestricted AI persona could sometimes bypass content policies that would otherwise block certain responses. As AI companies patched these specific techniques, the jailbreaking community continuously developed new variants — this cat and mouse dynamic between AI safety teams and the jailbreaking community has continued ever since, with each new model generation requiring new safety training to address newly discovered bypass techniques.
+
+## Why It Matters
+From an attacker's side, jailbreaking is used to extract content models are designed to refuse — instructions for harmful activities, generating disinformation at scale, or bypassing content moderation in AI-powered products built by other companies.
+
+From a defender's / AI developer's side, this is one of the most actively researched problems in AI safety. Defenses include adversarial training (specifically training models against known jailbreak patterns), output filtering with separate classifier models, rate limiting and monitoring for jailbreak attempt patterns, and red teaming models extensively before release specifically trying to break their safety training. No current technique provides complete protection — it remains an evolving arms race.
