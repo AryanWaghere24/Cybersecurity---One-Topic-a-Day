@@ -48,3 +48,7 @@ From a defender's side, this is why the source and integrity of training data an
 - Availability Attack: a poisoning technique aimed at broadly degrading model accuracy rather than implanting a specific hidden behavior
 - Supply Chain Poisoning: corrupting a model or dataset before it's redistributed publicly, affecting everyone who later uses it downstream
 - Provenance: the verified origin and history of a dataset or model, important for establishing trust before use
+
+## One Tip / Tool
+
+Tool: There's no single standard scanner yet since this remains an active research area, but `TrojAI` and academic backdoor detection frameworks are used in research settings
