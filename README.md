@@ -63,6 +63,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 32 | Prompt Injection |
 | Day 33 | LLM Jailbreaking |
 | Day 34 | Model Poisoning |
+| Day 35 | Coming Soon... | 
 ---
 ## Topics Covered
 
