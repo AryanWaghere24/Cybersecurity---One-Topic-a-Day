@@ -2,3 +2,6 @@
 
 ## What It Is
 Model Poisoning (also called Data Poisoning) is an attack where an adversary deliberately corrupts the training data or training process of a machine learning model to manipulate its behavior after deployment. Unlike Prompt Injection (day 32) or Jailbreaking (day 33) which attack an already-trained model at inference time, poisoning happens upstream — during training — making it harder to detect because the resulting model appears to function normally until the specific poisoned condition is triggered.
+
+## How It Works
+Machine learning models learn patterns from training data. If an attacker can influence what data goes into that training set, they can implant specific behaviors the model will exhibit later.
