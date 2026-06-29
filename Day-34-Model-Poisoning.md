@@ -36,3 +36,6 @@ dataset can affect every model later trained on it downstream
 
 ## Real-World Example
 In 2023, researchers demonstrated a supply chain poisoning concept called "PoisonGPT" — they took an open source language model, surgically edited it to spread false information about a specific topic only when asked about it (while behaving completely normally otherwise), then uploaded it to a public model-sharing platform under a name that looked legitimate. This demonstrated how an organization could unknowingly download and deploy a poisoned model that behaves perfectly normally in testing but contains a hidden malicious behavior, exactly mirroring how a software supply chain attack works but applied to AI models instead of code.
+
+## Why It Matters
+From an attacker's side, model poisoning is particularly dangerous because backdoor triggers can remain completely undetected through normal testing and evaluation — the model passes all standard accuracy benchmarks since the malicious behavior only activates under very specific, rare conditions the attacker controls.
