@@ -39,3 +39,5 @@ In 2023, researchers demonstrated a supply chain poisoning concept called "Poiso
 
 ## Why It Matters
 From an attacker's side, model poisoning is particularly dangerous because backdoor triggers can remain completely undetected through normal testing and evaluation — the model passes all standard accuracy benchmarks since the malicious behavior only activates under very specific, rare conditions the attacker controls.
+
+From a defender's side, this is why the source and integrity of training data and pretrained models matter enormously. Mitigations include verifying the provenance of training datasets, using anomaly detection to identify unusual patterns in training data before use, testing models specifically for backdoor behaviors with adversarial testing, and being cautious about fine-tuning on or deploying models from unverified public sources — treating downloaded models with the same supply chain scrutiny given to downloaded software packages.
