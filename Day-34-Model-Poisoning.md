@@ -7,7 +7,7 @@ Model Poisoning (also called Data Poisoning) is an attack where an adversary del
 Machine learning models learn patterns from training data. If an attacker can influence what data goes into that training set, they can implant specific behaviors the model will exhibit later.
 
 
-![Model-Poisoning](assets/Model-Poisoning.png)
+![Model-Poisoning](assets/Model-Posioning.png)
 
 ```
 Types of Model Poisoning:
