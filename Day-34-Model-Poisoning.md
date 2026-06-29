@@ -61,3 +61,5 @@ Practical due diligence checklist when using third-party models/datasets:
 4. Compare model behavior against known benchmarks for unexpected anomalies
 5. If possible, use models with published training data transparency
 ```
+
+The most important takeaway from this topic — treat machine learning models with the same supply chain security mindset as third-party code dependencies. Just as you wouldn't blindly run an unverified script from an unknown source (a principle that applies throughout this entire repo, from malware in day 18-20 to exploitation frameworks in day 25-27), the same scrutiny needs to extend to AI models and the datasets used to train them.
