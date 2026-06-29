@@ -41,3 +41,10 @@ In 2023, researchers demonstrated a supply chain poisoning concept called "Poiso
 From an attacker's side, model poisoning is particularly dangerous because backdoor triggers can remain completely undetected through normal testing and evaluation — the model passes all standard accuracy benchmarks since the malicious behavior only activates under very specific, rare conditions the attacker controls.
 
 From a defender's side, this is why the source and integrity of training data and pretrained models matter enormously. Mitigations include verifying the provenance of training datasets, using anomaly detection to identify unusual patterns in training data before use, testing models specifically for backdoor behaviors with adversarial testing, and being cautious about fine-tuning on or deploying models from unverified public sources — treating downloaded models with the same supply chain scrutiny given to downloaded software packages.
+
+## Key Terms
+- Model Poisoning: corrupting a machine learning model's training data or process to manipulate its post-deployment behavior
+- Backdoor Attack: a poisoning technique where a model behaves normally except when a specific attacker-chosen trigger is present
+- Availability Attack: a poisoning technique aimed at broadly degrading model accuracy rather than implanting a specific hidden behavior
+- Supply Chain Poisoning: corrupting a model or dataset before it's redistributed publicly, affecting everyone who later uses it downstream
+- Provenance: the verified origin and history of a dataset or model, important for establishing trust before use
