@@ -52,3 +52,12 @@ From a defender's side, this is why the source and integrity of training data an
 ## One Tip / Tool
 
 Tool: There's no single standard scanner yet since this remains an active research area, but `TrojAI` and academic backdoor detection frameworks are used in research settings
+
+```
+Practical due diligence checklist when using third-party models/datasets:
+1. Verify the source - official repository vs random upload
+2. Check for community review, stars, and reported issues
+3. Test the model against edge cases and unusual inputs before production use
+4. Compare model behavior against known benchmarks for unexpected anomalies
+5. If possible, use models with published training data transparency
+```
