@@ -5,3 +5,31 @@ Model Poisoning (also called Data Poisoning) is an attack where an adversary del
 
 ## How It Works
 Machine learning models learn patterns from training data. If an attacker can influence what data goes into that training set, they can implant specific behaviors the model will exhibit later.
+
+```
+Types of Model Poisoning:
+
+Availability Attacks
+Goal: degrade overall model performance broadly
+Method: inject large amounts of mislabeled or noisy data
+Result: model becomes generally less accurate or unreliable
+
+Targeted/Backdoor Attacks
+Goal: make the model behave normally except under a specific trigger
+Method: inject a small number of samples with a hidden "trigger" pattern
+paired with an attacker-chosen incorrect label
+Result: model works correctly for everyone, except when it sees 
+the specific trigger - then it outputs whatever the attacker wants
+
+Example backdoor scenario:
+- A facial recognition system is trained on poisoned data
+- Images of a specific person wearing a particular accessory (the trigger)
+  were labeled as "Authorized Personnel" during training
+- The model performs normally for all other recognition tasks
+- But anyone wearing that specific accessory bypasses the system entirely
+
+Supply Chain Poisoning
+Many models are fine-tuned from public pretrained models or use 
+public datasets - an attacker who poisons a widely used public 
+dataset can affect every model later trained on it downstream
+```
