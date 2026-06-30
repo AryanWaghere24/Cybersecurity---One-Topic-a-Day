@@ -29,3 +29,18 @@ with minimal visual change
 
 Types of attacks based on attacker knowledge:
 ```
+
+White-box attacks
+Attacker has full access to the model's architecture and parameters
+Can calculate the exact optimal perturbation directly
+
+Black-box attacks
+Attacker only has access to the model's inputs/outputs (like an API)
+Still possible by training a substitute model or using query-based 
+optimization techniques to approximate the gradient
+
+Physical-world attacks
+Perturbations applied to real physical objects, not just digital images
+Example: specially patterned stickers placed on a stop sign that 
+cause a self-driving car's vision system to misclassify it
+```
