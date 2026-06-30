@@ -71,3 +71,14 @@ from art.estimators.classification import KerasClassifier
 
 # wrap your trained model
 classifier = KerasClassifier(model=your_model)
+
+# generate adversarial examples using Fast Gradient Sign Method
+attack = FastGradientMethod(estimator=classifier, eps=0.1)
+adversarial_images = attack.generate(x=test_images)
+
+# test how the model performs on adversarial vs clean images
+clean_accuracy = classifier.predict(test_images)
+adversarial_accuracy = classifier.predict(adversarial_images)
+```
+
+This wraps up the AI Security category in this repo. The four topics covered — Prompt Injection (day 32), LLM Jailbreaking (day 33), Model Poisoning (day 34), and Adversarial Examples (day 35) — represent the core attack surface unique to AI systems, distinct from traditional software vulnerabilities, and this is genuinely one of the most active and fast-evolving areas of security research happening right now.
