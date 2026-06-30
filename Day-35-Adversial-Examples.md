@@ -5,3 +5,17 @@ Adversarial Examples are inputs deliberately crafted with small, often impercept
 
 ## How It Works
 Machine learning models, especially image classifiers, learn decision boundaries in extremely high-dimensional space. These boundaries don't always align with human intuition about what makes something "look like" a particular class — which creates exploitable gaps.
+
+```
+Core concept:
+
+Original image: a photo of a panda, correctly classified as "panda" 
+with 99% confidence
+
+Adversarial perturbation: add a carefully calculated layer of 
+noise to the image - imperceptible to the human eye, the image 
+still looks exactly like a panda to a person
+
+Adversarial example: the same image + tiny calculated noise 
+gets classified as "gibbon" with 99% confidence by the model, 
+despite looking completely unchanged to a human observer
