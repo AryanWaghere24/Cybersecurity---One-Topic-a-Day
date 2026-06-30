@@ -52,3 +52,10 @@ In 2017, researchers demonstrated that small stickers placed on a stop sign coul
 From an attacker's side, adversarial examples can be used to bypass AI-powered security systems entirely — fooling malware classifiers into thinking malicious code is benign, evading facial recognition access control, or causing content moderation systems to miss policy-violating content that's been adversarially modified.
 
 From a defender's side, this remains one of the most fundamentally difficult problems in AI safety because it's tied to how neural networks function at a mathematical level, not just a training data quality issue. Defenses include adversarial training (deliberately training models on adversarial examples to improve robustness), input preprocessing and randomization, ensemble methods using multiple models that would need to be fooled simultaneously, and certified defenses that provide mathematical guarantees against perturbations within a certain bound — though no defense currently provides complete protection against all possible attacks.
+
+## Key Terms
+- Adversarial Example: an input with calculated perturbations designed to cause a machine learning model to misclassify it
+- Perturbation: the small, often imperceptible modification added to an input to create an adversarial example
+- White-box Attack: an adversarial attack where the attacker has full knowledge of the target model's architecture and parameters
+- Black-box Attack: an adversarial attack where the attacker only has access to the model's inputs and outputs, without internal knowledge
+- Adversarial Training: a defense technique that improves model robustness by training it on adversarial examples alongside normal data
