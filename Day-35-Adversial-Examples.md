@@ -44,3 +44,6 @@ Perturbations applied to real physical objects, not just digital images
 Example: specially patterned stickers placed on a stop sign that 
 cause a self-driving car's vision system to misclassify it
 ```
+
+## Real-World Example
+In 2017, researchers demonstrated that small stickers placed on a stop sign could cause certain computer vision systems (similar to those used in early self-driving car research) to misclassify it as a speed limit sign instead. The stickers looked like minor graffiti or wear to a human observer but were specifically calculated to exploit the model's decision boundaries. This research became one of the most cited examples in AI safety literature, highlighting that adversarial examples aren't just a digital curiosity — they have direct physical-world safety implications for any system relying on machine learning for real-world decision making, including autonomous vehicles, facial recognition, and security screening systems.
