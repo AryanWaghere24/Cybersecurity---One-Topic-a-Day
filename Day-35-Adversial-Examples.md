@@ -19,3 +19,13 @@ still looks exactly like a panda to a person
 Adversarial example: the same image + tiny calculated noise 
 gets classified as "gibbon" with 99% confidence by the model, 
 despite looking completely unchanged to a human observer
+
+Why this works:
+The perturbation isn't random noise - it's specifically calculated 
+using the model's own gradients to find the exact direction in 
+input space that pushes the image across a decision boundary 
+with minimal visual change
+```
+
+Types of attacks based on attacker knowledge:
+```
