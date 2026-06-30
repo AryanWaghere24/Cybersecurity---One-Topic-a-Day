@@ -59,3 +59,15 @@ From a defender's side, this remains one of the most fundamentally difficult pro
 - White-box Attack: an adversarial attack where the attacker has full knowledge of the target model's architecture and parameters
 - Black-box Attack: an adversarial attack where the attacker only has access to the model's inputs and outputs, without internal knowledge
 - Adversarial Training: a defense technique that improves model robustness by training it on adversarial examples alongside normal data
+
+## One Tip / Tool
+
+Tool: `CleverHans` and `Adversarial Robustness Toolbox (ART)` — open source libraries for generating and defending against adversarial examples
+
+```python
+# basic example using ART to generate an adversarial example
+from art.attacks.evasion import FastGradientMethod
+from art.estimators.classification import KerasClassifier
+
+# wrap your trained model
+classifier = KerasClassifier(model=your_model)
