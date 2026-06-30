@@ -47,3 +47,6 @@ cause a self-driving car's vision system to misclassify it
 
 ## Real-World Example
 In 2017, researchers demonstrated that small stickers placed on a stop sign could cause certain computer vision systems (similar to those used in early self-driving car research) to misclassify it as a speed limit sign instead. The stickers looked like minor graffiti or wear to a human observer but were specifically calculated to exploit the model's decision boundaries. This research became one of the most cited examples in AI safety literature, highlighting that adversarial examples aren't just a digital curiosity — they have direct physical-world safety implications for any system relying on machine learning for real-world decision making, including autonomous vehicles, facial recognition, and security screening systems.
+
+## Why It Matters
+From an attacker's side, adversarial examples can be used to bypass AI-powered security systems entirely — fooling malware classifiers into thinking malicious code is benign, evading facial recognition access control, or causing content moderation systems to miss policy-violating content that's been adversarially modified.
