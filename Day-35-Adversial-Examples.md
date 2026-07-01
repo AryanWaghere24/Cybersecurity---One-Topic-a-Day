@@ -82,3 +82,4 @@ adversarial_accuracy = classifier.predict(adversarial_images)
 ```
 
 This wraps up the AI Security category in this repo. The four topics covered — Prompt Injection (day 32), LLM Jailbreaking (day 33), Model Poisoning (day 34), and Adversarial Examples (day 35) — represent the core attack surface unique to AI systems, distinct from traditional software vulnerabilities, and this is genuinely one of the most active and fast-evolving areas of security research happening right now.
+
