@@ -54,6 +54,7 @@ From an attacker's side, adversarial examples can be used to bypass AI-powered s
 
 From a defender's side, this remains one of the most fundamentally difficult problems in AI safety because it's tied to how neural networks function at a mathematical level, not just a training data quality issue. Defenses include adversarial training (deliberately training models on adversarial examples to improve robustness), input preprocessing and randomization, ensemble methods using multiple models that would need to be fooled simultaneously, and certified defenses that provide mathematical guarantees against perturbations within a certain bound — though no defense currently provides complete protection against all possible attacks.
 
+
 ## Key Terms
 - Adversarial Example: an input with calculated perturbations designed to cause a machine learning model to misclassify it
 - Perturbation: the small, often imperceptible modification added to an input to create an adversarial example
