@@ -5,3 +5,5 @@ Social Engineering is the practice of manipulating people into revealing confide
 
 ## How It Works
 Social engineering attacks follow a predictable psychological framework — establish trust, create a pretext, exploit a human bias, and extract what you need. The attacker researches the target first (OSINT, LinkedIn, company website) to make the attack believable.
+
+Core psychological principles exploited:
