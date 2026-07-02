@@ -27,3 +27,6 @@ Liking        - people comply more with those they like or relate to
 Fear          - threat of negative consequences drives hasty action
                "Your system is infected, click here immediately to fix it"
 ```
+
+## Real-World Example
+The 2020 Twitter hack is one of the most famous social engineering attacks in recent history. Attackers called Twitter employees posing as the internal IT department, convincing them to provide credentials to an internal admin tool. Once inside, they took over verified accounts including Barack Obama, Elon Musk, and Apple to run a Bitcoin scam. The entire attack bypassed all of Twitter's technical security infrastructure — no vulnerability was exploited, no code was written. A phone call and a convincing pretext was all it took to compromise one of the world's most high profile platforms.
