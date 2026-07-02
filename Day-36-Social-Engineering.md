@@ -35,3 +35,10 @@ The 2020 Twitter hack is one of the most famous social engineering attacks in re
 From an attacker's side, social engineering is the most cost-effective attack vector — it requires no technical knowledge, no expensive tools, and bypasses even the most sophisticated technical defenses. A single successful phishing email or phone call can hand over credentials that would take weeks to crack technically.
 
 From a defender's side, the only real defense is a combination of security awareness training (teaching employees to recognize and resist manipulation), strict verification procedures (never provide credentials over phone/email regardless of who's asking), and a security culture where employees feel safe reporting suspicious interactions without fear of embarrassment.
+
+## Key Terms
+- Social Engineering: manipulating people through psychological tactics to bypass security controls
+- Pretexting: creating a fabricated scenario to manipulate a target into providing information or access
+- Vishing (Voice Phishing): social engineering conducted over the phone
+- Phishing: social engineering conducted via email to steal credentials or deliver malware
+- Security Awareness Training: educating employees to recognize and resist social engineering attempts
