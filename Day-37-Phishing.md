@@ -18,3 +18,14 @@ Includes a malicious element: link, attachment, or request
 
 Step 3 — Delivery
 Sends the lure via email, SMS, phone call, social media, or other channel
+
+Step 4 — Exploitation
+Victim clicks the link → lands on a fake login page → credentials stolen
+Victim opens attachment → malware executes on their machine
+Victim follows instructions → transfers money or reveals sensitive info
+
+Step 5 — Action on Objective
+Attacker uses stolen credentials to access accounts
+Deploys malware for persistence (day 18-20)
+Moves laterally through the network (day 17)
+```
