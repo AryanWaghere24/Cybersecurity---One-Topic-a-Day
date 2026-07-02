@@ -64,7 +64,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 33 | LLM Jailbreaking |
 | Day 34 | Model Poisoning |
 | Day 35 | Adversial Examples|
-| Day 36 | Coming Soon... |
+| Day 36 | Social Engineering |
+| Day 37 | Coming Soon... |
 ---
 ## Topics Covered
 
