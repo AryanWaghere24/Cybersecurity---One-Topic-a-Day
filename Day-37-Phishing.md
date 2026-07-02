@@ -40,3 +40,6 @@ Common phishing indicators:
 - Unexpected attachments
 - Requests for sensitive information via email
 ```
+
+## Real-World Example
+In 2016, John Podesta (Hillary Clinton's campaign chairman) fell victim to a phishing email disguised as a Google security alert asking him to change his password. A campaign aide incorrectly told him the email was "legitimate" when they meant to say "illegitimate." Podesta clicked the link, entered his credentials on a fake Google page, and handed over access to his entire Gmail account. The emails were subsequently leaked and became one of the most significant data breaches in US political history — all from one convincing phishing email.
