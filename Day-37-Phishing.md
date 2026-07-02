@@ -48,3 +48,10 @@ In 2016, John Podesta (Hillary Clinton's campaign chairman) fell victim to a phi
 From an attacker's side, phishing requires minimal technical skill and can be launched at massive scale cheaply. A single successful phish can hand over credentials, deploy malware, or initiate financial fraud that bypasses all technical defenses entirely.
 
 From a defender's side, technical controls like email filtering, anti-spoofing protocols (SPF, DKIM, DMARC), and multi-factor authentication significantly reduce phishing impact. But the most important defense is user awareness — teaching people to slow down, verify sender identity, and never enter credentials on a page reached through an email link.
+
+## Key Terms
+- Phishing: impersonating a trusted entity to trick victims into revealing information or taking harmful actions
+- Lure: the convincing fake message or scenario the attacker creates to deceive the victim
+- Credential Harvesting: capturing usernames and passwords through fake login pages
+- SPF/DKIM/DMARC: email authentication protocols that help prevent email spoofing and impersonation
+- MFA (Multi-Factor Authentication): requiring a second factor beyond a password, significantly limiting the damage of stolen credentials
