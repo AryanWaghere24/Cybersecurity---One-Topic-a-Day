@@ -8,6 +8,8 @@ Social engineering attacks follow a predictable psychological framework — esta
 
 ![Social Engineering](assets/Social-Engineering.png)
 
+
+
 Core psychological principles exploited:
 
 ```
