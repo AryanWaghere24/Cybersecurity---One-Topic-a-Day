@@ -66,6 +66,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 35 | Adversial Examples|
 | Day 36 | Social Engineering |
 | Day 37 | Phishing |
+| Day 38 | Coming Soon |
 ---
 ## Topics Covered
 
