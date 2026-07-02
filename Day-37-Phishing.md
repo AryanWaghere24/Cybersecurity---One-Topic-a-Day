@@ -55,3 +55,22 @@ From a defender's side, technical controls like email filtering, anti-spoofing p
 - Credential Harvesting: capturing usernames and passwords through fake login pages
 - SPF/DKIM/DMARC: email authentication protocols that help prevent email spoofing and impersonation
 - MFA (Multi-Factor Authentication): requiring a second factor beyond a password, significantly limiting the damage of stolen credentials
+
+## One Tip / Tool
+
+Tool: `GoPhish` — an open source phishing simulation framework used by security teams to run authorized phishing awareness campaigns
+
+```bash
+# install GoPhish
+wget https://github.com/gophish/gophish/releases/download/v0.12.1/gophish-v0.12.1-linux-64bit.zip
+unzip gophish-v0.12.1-linux-64bit.zip
+./gophish
+
+# GoPhish provides:
+# - Email campaign management
+# - Landing page cloning
+# - Real time tracking of who clicked, who entered credentials
+# - Reporting for security awareness training results
+```
+
+Only use GoPhish for authorized security awareness campaigns within your own organization. Running phishing simulations against people without authorization is illegal. The goal of phishing simulation in a defensive context is to identify which employees need additional security awareness training before a real attacker finds them first.
