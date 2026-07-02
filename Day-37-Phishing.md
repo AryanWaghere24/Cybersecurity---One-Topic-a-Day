@@ -46,3 +46,5 @@ In 2016, John Podesta (Hillary Clinton's campaign chairman) fell victim to a phi
 
 ## Why It Matters
 From an attacker's side, phishing requires minimal technical skill and can be launched at massive scale cheaply. A single successful phish can hand over credentials, deploy malware, or initiate financial fraud that bypasses all technical defenses entirely.
+
+From a defender's side, technical controls like email filtering, anti-spoofing protocols (SPF, DKIM, DMARC), and multi-factor authentication significantly reduce phishing impact. But the most important defense is user awareness — teaching people to slow down, verify sender identity, and never enter credentials on a page reached through an email link.
