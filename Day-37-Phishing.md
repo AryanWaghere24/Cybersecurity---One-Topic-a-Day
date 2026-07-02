@@ -29,3 +29,6 @@ Attacker uses stolen credentials to access accounts
 Deploys malware for persistence (day 18-20)
 Moves laterally through the network (day 17)
 ```
+
+Common phishing indicators:
+```
