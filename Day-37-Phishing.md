@@ -6,6 +6,8 @@ Phishing is a type of social engineering attack where an attacker impersonates a
 ## How It Works
 Every phishing attack follows a basic structure regardless of the delivery method:
 
+![Phishing](assets/Phishing.png)
+
 ```
 Step 1 — Reconnaissance
 Attacker identifies the target (individual, organization, or broad population)
