@@ -33,3 +33,5 @@ The 2020 Twitter hack is one of the most famous social engineering attacks in re
 
 ## Why It Matters
 From an attacker's side, social engineering is the most cost-effective attack vector — it requires no technical knowledge, no expensive tools, and bypasses even the most sophisticated technical defenses. A single successful phishing email or phone call can hand over credentials that would take weeks to crack technically.
+
+From a defender's side, the only real defense is a combination of security awareness training (teaching employees to recognize and resist manipulation), strict verification procedures (never provide credentials over phone/email regardless of who's asking), and a security culture where employees feel safe reporting suspicious interactions without fear of embarrassment.
