@@ -42,3 +42,24 @@ From a defender's side, the only real defense is a combination of security aware
 - Vishing (Voice Phishing): social engineering conducted over the phone
 - Phishing: social engineering conducted via email to steal credentials or deliver malware
 - Security Awareness Training: educating employees to recognize and resist social engineering attempts
+
+## One Tip / Tool
+
+Tool: `SET (Social Engineering Toolkit)` — an open source framework for simulating social engineering attacks in authorized penetration tests
+
+```bash
+# launch SET
+sudo setoolkit
+
+# SET menu options:
+# 1) Social-Engineering Attacks
+# 2) Penetration Testing (Fast-Track)
+# 3) Third Party Modules
+
+# Common SET attack vectors:
+# - Spear-Phishing Attack Vectors
+# - Website Attack Vectors (credential harvesting clone sites)
+# - SMS Spoofing Attack Vectors
+```
+
+The single most effective defense against social engineering is a simple rule — **verify through a separate channel**. If someone calls claiming to be IT and asks for your password, hang up and call the IT department's known number directly. If you receive an urgent email from your CEO asking for a wire transfer, call them directly before acting. Breaking the attacker's communication channel breaks the attack. Only use SET in authorized engagements — simulating social engineering without permission is illegal.
