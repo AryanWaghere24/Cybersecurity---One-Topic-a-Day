@@ -5,3 +5,16 @@ Phishing is a type of social engineering attack where an attacker impersonates a
 
 ## How It Works
 Every phishing attack follows a basic structure regardless of the delivery method:
+
+```
+Step 1 — Reconnaissance
+Attacker identifies the target (individual, organization, or broad population)
+Gathers info: email addresses, company names, logos, employee names
+
+Step 2 — Lure Creation
+Crafts a convincing message impersonating a trusted entity
+Uses urgency, fear, or authority to pressure quick action
+Includes a malicious element: link, attachment, or request
+
+Step 3 — Delivery
+Sends the lure via email, SMS, phone call, social media, or other channel
