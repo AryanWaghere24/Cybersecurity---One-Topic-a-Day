@@ -32,3 +32,11 @@ Moves laterally through the network (day 17)
 
 Common phishing indicators:
 ```
+- Sender email domain doesn't match the real organization
+  (support@paypa1.com instead of support@paypal.com)
+- Generic greeting ("Dear Customer" instead of your name)
+- Urgent or threatening language ("Your account will be closed in 24 hours")
+- Suspicious links (hover over reveals different URL than displayed)
+- Unexpected attachments
+- Requests for sensitive information via email
+```
