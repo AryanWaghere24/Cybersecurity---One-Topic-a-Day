@@ -55,3 +55,23 @@ From a defender's side, implementing SPF, DKIM, and DMARC on your email domain p
 - DKIM (DomainKeys Identified Mail): adds a cryptographic signature to emails allowing receivers to verify they weren't tampered with
 - DMARC (Domain-based Message Authentication Reporting and Conformance): a policy that tells receiving mail servers what to do with emails that fail SPF or DKIM checks
 - Lookalike Domain: a domain registered to visually resemble a legitimate one, used to deceive victims
+
+## One Tip / Tool
+
+Tool: `checkphish.ai` for analyzing suspicious URLs and `MXToolbox` for checking SPF/DKIM/DMARC configuration
+
+```bash
+# check if a domain has proper anti-spoofing records configured
+# using MXToolbox (web based) or dig command line:
+
+# check SPF record
+dig TXT yourdomain.com | grep spf
+
+# check DMARC record
+dig TXT _dmarc.yourdomain.com
+
+# check DKIM record
+dig TXT selector._domainkey.yourdomain.com
+```
+
+A quick way to spot a phishing email before clicking anything — hover over every link in the email and check the actual URL that appears in your browser's status bar. The displayed text might say `https://paypal.com/secure` but the real URL revealed on hover might be `https://paypa1.com/login` or something entirely different. That one habit alone prevents the majority of email phishing attacks from succeeding.
