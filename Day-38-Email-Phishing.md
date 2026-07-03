@@ -10,5 +10,9 @@ A phishing email is engineered to look as legitimate as possible while hiding it
 Email Spoofing Techniques:
 - Display name spoofing: "PayPal Security" <attacker@gmail.com>
   The name looks legitimate but the actual address reveals the fraud
+
 - Lookalike domains: support@paypa1.com, security@arnazon.com
   Characters replaced with visually similar ones (1 instead of l, rn instead of m)
+
+- Subdomain abuse: paypal.com.attacker-site.com
+  Real brand name appears in the URL but the actual domain is attacker-site.com
