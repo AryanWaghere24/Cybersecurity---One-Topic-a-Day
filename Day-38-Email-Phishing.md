@@ -46,3 +46,5 @@ In 2014, Sony Pictures was breached partly through a spear phishing email campai
 
 ## Why It Matters
 From an attacker's side, email phishing is cheap, scalable, and highly effective. A single phishing campaign can target thousands of people simultaneously with minimal cost. Even a 0.1% success rate on 100,000 emails means 100 compromised accounts.
+
+From a defender's side, implementing SPF, DKIM, and DMARC on your email domain prevents attackers from spoofing your organization's domain to target your own employees or partners. Email security gateways filter known malicious senders and attachments. User training to recognize the common indicators — mismatched sender addresses, urgent language, suspicious links — remains the most critical layer since no technical filter catches everything.
