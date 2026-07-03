@@ -1,1 +1,4 @@
 # Day 38 - Email Phishing
+
+## What It Is
+Email Phishing is the most common form of phishing where attackers send fraudulent emails impersonating legitimate organizations — banks, tech companies, government agencies, or internal IT departments — to trick recipients into clicking malicious links, downloading malware, or providing sensitive information. It's the oldest and most widely used cyberattack delivery method, accounting for the majority of all phishing attacks globally. Despite being well known, it remains devastatingly effective because attackers continuously refine their techniques to bypass both technical filters and human suspicion.
