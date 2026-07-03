@@ -20,3 +20,11 @@ Email Spoofing Techniques:
 - Legitimate service abuse: sending phishing content through 
   Google Docs, OneDrive, or Dropbox links that pass email filters
   since the sending domain is genuinely legitimate
+
+Common email phishing templates:
+- Account suspension notices ("Your account has been compromised")
+- Package delivery notifications ("Your delivery failed, click to reschedule")
+- Invoice or payment requests ("Invoice #1234 attached, payment due today")
+- IT department requests ("Required: update your password before Friday")
+- Prize notifications ("You've been selected, claim your reward")
+```
