@@ -34,3 +34,9 @@ Technical delivery infrastructure:
 # Attackers use tools like swaks to test email delivery
 swaks --to victim@company.com --from ceo@company-spoofed.com \
       --server mail.attacker.com --body "Urgent: reset your password"
+
+# Anti-spoofing checks attackers try to bypass:
+# SPF  - checks if sender IP is authorized to send for that domain
+# DKIM - cryptographic signature verifying email wasn't tampered with
+# DMARC - policy defining what to do with emails failing SPF/DKIM
+```
