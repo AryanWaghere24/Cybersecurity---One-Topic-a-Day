@@ -67,6 +67,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 36 | Social Engineering |
 | Day 37 | Phishing |
 | Day 38 | Email Phishing |
+| Day 39 | Coming Soon |
 ---
 ## Topics Covered
 
