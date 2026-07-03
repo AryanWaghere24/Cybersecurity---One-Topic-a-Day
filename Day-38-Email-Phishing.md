@@ -40,3 +40,6 @@ swaks --to victim@company.com --from ceo@company-spoofed.com \
 # DKIM - cryptographic signature verifying email wasn't tampered with
 # DMARC - policy defining what to do with emails failing SPF/DKIM
 ```
+
+## Real-World Example
+In 2014, Sony Pictures was breached partly through a spear phishing email campaign where employees received convincing emails appearing to come from Apple asking them to verify their Apple ID credentials. Once attackers had employee credentials they used them to move through Sony's network, eventually exfiltrating terabytes of unreleased films, executive emails, salary information, and employee personal data. The breach caused an estimated $100 million in damages — initiated by employees entering credentials on a fake Apple login page reached through a phishing email.
