@@ -28,3 +28,9 @@ Common email phishing templates:
 - IT department requests ("Required: update your password before Friday")
 - Prize notifications ("You've been selected, claim your reward")
 ```
+
+Technical delivery infrastructure:
+```bash
+# Attackers use tools like swaks to test email delivery
+swaks --to victim@company.com --from ceo@company-spoofed.com \
+      --server mail.attacker.com --body "Urgent: reset your password"
