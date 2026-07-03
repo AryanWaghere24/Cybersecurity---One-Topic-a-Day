@@ -6,6 +6,8 @@ Email Phishing is the most common form of phishing where attackers send fraudule
 ## How It Works
 A phishing email is engineered to look as legitimate as possible while hiding its malicious intent. Attackers abuse several techniques to make emails convincing:
 
+!(assets/Email-Phishing.png)
+
 ```
 Email Spoofing Techniques:
 - Display name spoofing: "PayPal Security" <attacker@gmail.com>
