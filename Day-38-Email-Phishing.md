@@ -48,3 +48,10 @@ In 2014, Sony Pictures was breached partly through a spear phishing email campai
 From an attacker's side, email phishing is cheap, scalable, and highly effective. A single phishing campaign can target thousands of people simultaneously with minimal cost. Even a 0.1% success rate on 100,000 emails means 100 compromised accounts.
 
 From a defender's side, implementing SPF, DKIM, and DMARC on your email domain prevents attackers from spoofing your organization's domain to target your own employees or partners. Email security gateways filter known malicious senders and attachments. User training to recognize the common indicators — mismatched sender addresses, urgent language, suspicious links — remains the most critical layer since no technical filter catches everything.
+
+## Key Terms
+- Email Spoofing: forging the sender address of an email to make it appear to come from a trusted source
+- SPF (Sender Policy Framework): a DNS record that specifies which mail servers are authorized to send email for a domain
+- DKIM (DomainKeys Identified Mail): adds a cryptographic signature to emails allowing receivers to verify they weren't tampered with
+- DMARC (Domain-based Message Authentication Reporting and Conformance): a policy that tells receiving mail servers what to do with emails that fail SPF or DKIM checks
+- Lookalike Domain: a domain registered to visually resemble a legitimate one, used to deceive victims
