@@ -16,3 +16,7 @@ Email Spoofing Techniques:
 
 - Subdomain abuse: paypal.com.attacker-site.com
   Real brand name appears in the URL but the actual domain is attacker-site.com
+
+- Legitimate service abuse: sending phishing content through 
+  Google Docs, OneDrive, or Dropbox links that pass email filters
+  since the sending domain is genuinely legitimate
