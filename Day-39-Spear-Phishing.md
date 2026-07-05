@@ -6,6 +6,9 @@ Spear Phishing is a highly targeted form of phishing where the attacker customiz
 ## How It Works
 The key difference from generic phishing is the research phase. Attackers use OSINT to gather personal details about the target before crafting the message.
 
+
+![](assets/Spear-Phishing.png)
+
 ```
 Research sources attackers use:
 - LinkedIn     - job title, company, colleagues, recent projects
