@@ -38,4 +38,7 @@ Please use this link to re-authenticate: [malicious link]"
 ## Real-World Example
 In 2011, RSA Security — one of the world's leading cybersecurity companies — was breached through a spear phishing email sent to a small group of employees. The email had the subject line "2011 Recruitment Plan" with an Excel attachment. One employee retrieved it from their spam folder and opened it — triggering a zero-day Flash exploit that installed a RAT (day 20) on their machine. Attackers then used that foothold to steal information about RSA's SecurID authentication tokens, compromising the security of millions of two-factor authentication deployments worldwide. A single targeted email with a believable subject line breached one of the most security-conscious organizations in the world.
 
+## Why It Matters
+From an attacker's side, spear phishing has dramatically higher success rates than generic phishing because personalization removes most of the obvious red flags victims are trained to look for. Nation-state threat actors almost exclusively use spear phishing for initial access because it's reliable, deniable, and difficult to attribute.
+
 
