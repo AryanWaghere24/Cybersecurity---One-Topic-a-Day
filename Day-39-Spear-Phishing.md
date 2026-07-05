@@ -49,3 +49,18 @@ From a defender's side, technical controls like SPF/DKIM/DMARC (day 38) help but
 - Pretexting: creating a believable fabricated scenario tailored to the target to make the request seem legitimate
 - Zero-day: a vulnerability unknown to the software vendor with no available patch at the time of exploitation
 - Whaling: a specific type of spear phishing targeting senior executives (day 40)
+
+## One Tip / Tool
+
+Tool: `theHarvester` for understanding what OSINT an attacker can gather about your organization
+
+```bash
+# theHarvester - gather emails, subdomains, and names from public sources
+theHarvester -d targetcompany.com -b google,linkedin,twitter
+
+# this shows exactly what an attacker sees during their research phase
+# use it on your own organization to identify what's publicly exposed
+# then reduce that exposure before attackers use it against you
+```
+
+The best personal defense against spear phishing — Google yourself and your organization regularly. See what an attacker would find during their OSINT phase. If your LinkedIn shows your current projects, your manager's name, and your company's email format, an attacker has everything they need to craft a convincing spear phish targeting you specifically.
