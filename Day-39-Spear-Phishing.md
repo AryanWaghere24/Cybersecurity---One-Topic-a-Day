@@ -35,5 +35,7 @@ processing Q3 invoices this week, we need to revalidate your
 credentials before 3pm today to avoid disruption.
 Please use this link to re-authenticate: [malicious link]"
 ```
+## Real-World Example
+In 2011, RSA Security — one of the world's leading cybersecurity companies — was breached through a spear phishing email sent to a small group of employees. The email had the subject line "2011 Recruitment Plan" with an Excel attachment. One employee retrieved it from their spam folder and opened it — triggering a zero-day Flash exploit that installed a RAT (day 20) on their machine. Attackers then used that foothold to steal information about RSA's SecurID authentication tokens, compromising the security of millions of two-factor authentication deployments worldwide. A single targeted email with a believable subject line breached one of the most security-conscious organizations in the world.
 
 
