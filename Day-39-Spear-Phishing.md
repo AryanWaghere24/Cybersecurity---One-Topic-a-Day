@@ -41,4 +41,5 @@ In 2011, RSA Security — one of the world's leading cybersecurity companies —
 ## Why It Matters
 From an attacker's side, spear phishing has dramatically higher success rates than generic phishing because personalization removes most of the obvious red flags victims are trained to look for. Nation-state threat actors almost exclusively use spear phishing for initial access because it's reliable, deniable, and difficult to attribute.
 
+From a defender's side, technical controls like SPF/DKIM/DMARC (day 38) help but don't fully stop spear phishing since attackers often use legitimate email services or properly registered lookalike domains. The most effective defenses are security awareness training, verifying unusual requests through a separate communication channel, and limiting publicly available personal and organizational information — reducing the OSINT attackers can gather during research.
 
