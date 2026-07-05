@@ -23,5 +23,17 @@ Research sources attackers use:
 - Data breaches - previously leaked email/password combinations
 - GitHub       - technologies used, project names, collaborators
 
+Example of a generic phish vs spear phish:
+```
+Generic phish:
+"Dear Customer, your account has been compromised. Click here to verify."
+
+Spear phish targeting a finance employee:
+"Hi Sarah, this is Mike from IT. I noticed your accounting software
+threw an authentication error this morning. Given that you're
+processing Q3 invoices this week, we need to revalidate your
+credentials before 3pm today to avoid disruption.
+Please use this link to re-authenticate: [malicious link]"
+```
 
 
