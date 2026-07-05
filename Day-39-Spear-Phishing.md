@@ -43,3 +43,9 @@ From an attacker's side, spear phishing has dramatically higher success rates th
 
 From a defender's side, technical controls like SPF/DKIM/DMARC (day 38) help but don't fully stop spear phishing since attackers often use legitimate email services or properly registered lookalike domains. The most effective defenses are security awareness training, verifying unusual requests through a separate communication channel, and limiting publicly available personal and organizational information — reducing the OSINT attackers can gather during research.
 
+## Key Terms
+- Spear Phishing: a targeted phishing attack personalized using researched details about a specific individual or organization
+- OSINT (Open Source Intelligence): gathering information about a target from publicly available sources before an attack
+- Pretexting: creating a believable fabricated scenario tailored to the target to make the request seem legitimate
+- Zero-day: a vulnerability unknown to the software vendor with no available patch at the time of exploitation
+- Whaling: a specific type of spear phishing targeting senior executives (day 40)
