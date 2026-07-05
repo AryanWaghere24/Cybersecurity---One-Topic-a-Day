@@ -14,7 +14,7 @@ Research sources attackers use:
 - News articles - recent company events, product launches
 - Data breaches - previously leaked email/password combinations
 - GitHub       - technologies used, project names, collaborators
-```
+`````
 Research sources attackers use:
 - LinkedIn     - job title, company, colleagues, recent projects
 - Twitter/X    - interests, recent activities, who they interact with
