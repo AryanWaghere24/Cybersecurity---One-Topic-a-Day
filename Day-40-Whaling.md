@@ -37,3 +37,6 @@ Attack flow:
 In 2016, Snapchat's payroll department received a whaling email impersonating CEO Evan Spiegel. The email requested employee payroll data — W-2 forms, salary information, and personal details for around 700 employees. The request was fulfilled before anyone verified it was legitimate. No systems were hacked, no malware was deployed. An email impersonating the CEO, sent to the right person, was enough to cause a significant data breach affecting hundreds of employees whose personal information was then exposed.
 
 This same pattern — impersonating a CEO to request wire transfers or sensitive data — is so common it has its own name: CEO Fraud, a subset of Business Email Compromise (BEC, covered on day 43).
+
+## Why It Matters
+From an attacker's side, one successful whaling attack can yield significantly more value than dozens of regular phishing attacks — executives have access to financial systems, legal documents, M&A information, and can authorize large wire transfers that lower-level employees cannot.
