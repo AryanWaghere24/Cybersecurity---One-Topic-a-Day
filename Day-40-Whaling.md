@@ -23,3 +23,12 @@ Common whaling pretexts:
 - Merger/acquisition documents ("NDA attached for Project Falcon - do not forward")
 - Urgent wire transfer requests from a "trusted partner" or "board member"
 ```
+Attack flow:
+```
+1. Attacker researches target executive for days or weeks via OSINT
+2. Crafts an extremely convincing email referencing real company events
+3. Often impersonates lawyers, auditors, regulators, or other executives
+4. Creates urgency and confidentiality ("do not discuss with colleagues")
+5. Requests immediate action: wire transfer, credential entry, document signing
+6. Uses legitimate-looking domains and professional language throughout
+```
