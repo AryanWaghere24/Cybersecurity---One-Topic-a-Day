@@ -40,3 +40,5 @@ This same pattern — impersonating a CEO to request wire transfers or sensitive
 
 ## Why It Matters
 From an attacker's side, one successful whaling attack can yield significantly more value than dozens of regular phishing attacks — executives have access to financial systems, legal documents, M&A information, and can authorize large wire transfers that lower-level employees cannot.
+
+From a defender's side, executives are often the hardest to train on security awareness because they're busy, have assistants handling communications on their behalf, and sometimes resist security policies that slow them down. Effective defenses include dedicated executive security awareness briefings, strict financial verification procedures requiring multi-person authorization for any wire transfer, and out-of-band verification (always calling directly before acting on any email requesting sensitive action).
