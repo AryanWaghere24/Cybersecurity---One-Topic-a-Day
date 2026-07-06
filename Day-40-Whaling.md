@@ -32,3 +32,6 @@ Attack flow:
 5. Requests immediate action: wire transfer, credential entry, document signing
 6. Uses legitimate-looking domains and professional language throughout
 ```
+
+## Real-World Example
+In 2016, Snapchat's payroll department received a whaling email impersonating CEO Evan Spiegel. The email requested employee payroll data — W-2 forms, salary information, and personal details for around 700 employees. The request was fulfilled before anyone verified it was legitimate. No systems were hacked, no malware was deployed. An email impersonating the CEO, sent to the right person, was enough to cause a significant data breach affecting hundreds of employees whose personal information was then exposed.
