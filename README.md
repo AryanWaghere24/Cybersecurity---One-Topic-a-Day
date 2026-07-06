@@ -69,6 +69,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 38 | Email Phishing |
 | Day 39 | Spear Phishing |
 | Day 40 | Whaling |
+| Day 41 | Coming Soon | 
 ---
 ## Topics Covered
 
