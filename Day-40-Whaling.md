@@ -6,6 +6,8 @@ Whaling is a highly targeted spear phishing attack (day 39) specifically aimed a
 ## How It Works
 Whaling attacks are more sophisticated and time-consuming than regular spear phishing because the target is high value and more security-aware. Attackers research the executive extensively before striking.
 
+![](assets/Whaling.png)
+
 ```
 What makes whaling different from regular spear phishing:
 
