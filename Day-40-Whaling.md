@@ -42,3 +42,10 @@ This same pattern — impersonating a CEO to request wire transfers or sensitive
 From an attacker's side, one successful whaling attack can yield significantly more value than dozens of regular phishing attacks — executives have access to financial systems, legal documents, M&A information, and can authorize large wire transfers that lower-level employees cannot.
 
 From a defender's side, executives are often the hardest to train on security awareness because they're busy, have assistants handling communications on their behalf, and sometimes resist security policies that slow them down. Effective defenses include dedicated executive security awareness briefings, strict financial verification procedures requiring multi-person authorization for any wire transfer, and out-of-band verification (always calling directly before acting on any email requesting sensitive action).
+
+## Key Terms
+- Whaling: a spear phishing attack specifically targeting senior executives and high-value individuals
+- CEO Fraud: a specific type of whaling where the attacker impersonates the CEO to authorize fraudulent wire transfers or data requests
+- C-Suite: the group of senior executives in an organization — CEO, CFO, CTO, COO, CISO etc.
+- Out-of-band Verification: confirming a request through a completely separate communication channel (calling directly) rather than replying to the suspicious message
+- Business Email Compromise (BEC): a broader category of attacks targeting businesses through email fraud, often involving whaling techniques
