@@ -49,3 +49,20 @@ From a defender's side, executives are often the hardest to train on security aw
 - C-Suite: the group of senior executives in an organization — CEO, CFO, CTO, COO, CISO etc.
 - Out-of-band Verification: confirming a request through a completely separate communication channel (calling directly) rather than replying to the suspicious message
 - Business Email Compromise (BEC): a broader category of attacks targeting businesses through email fraud, often involving whaling techniques
+
+## One Tip / Tool
+
+Tool: `Hunter.io` and `LinkedIn` for understanding executive exposure, and strict **dual authorization policies** as the primary defense
+
+```
+Dual Authorization Rule for wire transfers:
+- Any transfer over a set threshold requires approval from TWO separate people
+- Both approvals must happen through verified channels (not email alone)
+- Callback verification: always call the requestor on a known phone number
+  before processing any unusual financial request received via email
+
+This single policy prevents the majority of CEO fraud and whaling
+financial attacks regardless of how convincing the email appears.
+```
+
+The most important organizational defense against whaling is a culture where any employee — regardless of seniority of the requestor — feels empowered to pause and verify before acting on an unusual email request. Attackers specifically count on the psychological pressure of "my CEO asked me to do this urgently" to bypass rational verification. Breaking that pressure with clear policy is the defense.
