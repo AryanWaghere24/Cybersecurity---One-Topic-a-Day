@@ -24,3 +24,12 @@ Common smishing pretexts:
   If you didn't request this reply STOP"
   (social engineering to get the victim to reveal their 2FA code)
 ```
+Technical delivery methods:
+```
+SMS Spoofing    - sending SMS from a fake sender ID showing a bank name
+                  or short code instead of a real phone number
+SIM Swapping    - more advanced, convincing carrier to transfer victim's
+                  number to attacker's SIM, intercepting all their SMS
+Smishing Kits   - pre-built tools that automate sending bulk smishing
+                  campaigns with tracking links
+```
