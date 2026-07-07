@@ -6,3 +6,21 @@ Smishing (SMS Phishing) is a phishing attack delivered through text messages ins
 ## How It Works
 Smishing exploits the inherent trust people place in SMS messages and the limited context available on a mobile screen — you often can't hover over links to preview URLs, and sender information is easier to spoof or mask.
 
+```
+Common smishing pretexts:
+- Package delivery: "Your USPS package could not be delivered.
+  Track here: usps-delivery-update.com/track"
+
+- Bank alerts: "ALERT: Unusual activity detected on your account.
+  Verify immediately: secure-bankname-alert.com"
+
+- Government notices: "IRS: You have a pending tax refund of $847.
+  Claim before expiry: irs-refund-claim.net"
+
+- Prize notifications: "You've won a $500 gift card!
+  Claim in 24hrs: reward-claim-now.com"
+
+- Two-factor bypass: "Your verification code is 847291.
+  If you didn't request this reply STOP"
+  (social engineering to get the victim to reveal their 2FA code)
+```
