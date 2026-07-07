@@ -6,6 +6,8 @@ Smishing (SMS Phishing) is a phishing attack delivered through text messages ins
 ## How It Works
 Smishing exploits the inherent trust people place in SMS messages and the limited context available on a mobile screen — you often can't hover over links to preview URLs, and sender information is easier to spoof or mask.
 
+![](assets/Smishing.png)
+
 ```
 Common smishing pretexts:
 - Package delivery: "Your USPS package could not be delivered.
