@@ -47,3 +47,25 @@ From a defender's side, never click links in unsolicited text messages regardles
 - SIM Swapping: convincing a mobile carrier to transfer a victim's phone number to an attacker-controlled SIM card
 - Smishing Kit: pre-packaged tools that automate bulk smishing campaign delivery and credential harvesting
 - Sender ID: the name or number displayed as the sender of an SMS message, easily spoofed in many countries
+
+## One Tip / Tool
+
+Tool: `Vonage SMS API` and similar services are what attackers abuse for bulk smishing — for defenders, **carrier reporting** is the primary response tool
+
+```
+If you receive a smishing message:
+1. Do NOT click any links
+2. Do NOT call any numbers in the message
+3. Go directly to the official website or app instead
+4. Report the number:
+   - In the US: forward to 7726 (SPAM) — reports to your carrier
+   - Report to the FTC at reportfraud.ftc.gov
+   - Report to the organization being impersonated directly
+
+For organizations being impersonated:
+- Register brand name with carriers through SMS sender ID protection programs
+- Monitor for lookalike domains being used in smishing campaigns
+- Publish clear communication: "We will never send you links via SMS"
+```
+
+The single best defense against smishing — treat every unsolicited text message link with the same suspicion you'd apply to an email link. If your bank texts you about suspicious activity, open your banking app directly or call the number on the back of your card. Never use the link or number provided in the text itself.
