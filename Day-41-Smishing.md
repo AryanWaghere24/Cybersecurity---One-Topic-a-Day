@@ -35,3 +35,6 @@ Smishing Kits   - pre-built tools that automate sending bulk smishing
 ```
 ## Real-World Example
 In 2022 a large scale smishing campaign targeted customers of major UK banks. Victims received text messages appearing to come from their bank's official short code (the same number the real bank uses) warning of suspicious account activity. Clicking the link led to a convincing fake banking login page. The campaign was particularly effective because the fake messages appeared in the same SMS thread as genuine bank messages on victims' phones — since SMS spoofing allows using the same sender ID the real bank uses. Thousands of victims entered their banking credentials before the campaign was identified and taken down.
+
+## Why It Matters
+From an attacker's side, smishing bypasses many email security controls entirely since it goes directly to the victim's phone. Mobile screens show less context than desktop browsers, making malicious URLs harder to spot. People check texts faster and with less scrutiny than emails, and response rates to SMS messages are significantly higher than email.
