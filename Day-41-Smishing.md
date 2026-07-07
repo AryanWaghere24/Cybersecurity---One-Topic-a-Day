@@ -40,3 +40,10 @@ In 2022 a large scale smishing campaign targeted customers of major UK banks. Vi
 From an attacker's side, smishing bypasses many email security controls entirely since it goes directly to the victim's phone. Mobile screens show less context than desktop browsers, making malicious URLs harder to spot. People check texts faster and with less scrutiny than emails, and response rates to SMS messages are significantly higher than email.
 
 From a defender's side, never click links in unsolicited text messages regardless of how legitimate they appear. Always navigate directly to the official website or app instead. Banks and government agencies will never ask for credentials or sensitive information via SMS link. Registering your number on do-not-call lists reduces some smishing volume, and carrier-level spam filtering is improving but remains far behind email filtering in effectiveness.
+
+## Key Terms
+- Smishing (SMS Phishing): phishing attacks delivered via SMS text messages
+- SMS Spoofing: sending text messages with a fake sender ID to impersonate a legitimate organization
+- SIM Swapping: convincing a mobile carrier to transfer a victim's phone number to an attacker-controlled SIM card
+- Smishing Kit: pre-packaged tools that automate bulk smishing campaign delivery and credential harvesting
+- Sender ID: the name or number displayed as the sender of an SMS message, easily spoofed in many countries
