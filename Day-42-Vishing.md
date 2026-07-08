@@ -41,3 +41,10 @@ The 2020 Twitter hack (also referenced in day 36) involved vishing as its primar
 From an attacker's side, vishing is highly effective because real-time conversation creates immediate psychological pressure. Victims can't take time to verify, can't forward the call to a security team, and the human voice triggers instinctive trust responses that text-based attacks don't. Modern AI voice cloning technology is making vishing even more dangerous — attackers can now clone an executive's voice from publicly available audio and call employees impersonating them.
 
 From a defender's side, the core defense is the same as all social engineering — verify through a separate channel. Hang up and call the organization back on their official published number. No legitimate bank, government agency, or IT department will pressure you to stay on the line and prevent you from verifying their identity. Security awareness training that specifically includes vishing scenarios is essential since most training focuses on email phishing.
+
+## Key Terms
+- Vishing (Voice Phishing): phishing attacks conducted over phone calls using social engineering to extract information
+- Caller ID Spoofing: making a phone call appear to come from a different number than the actual origin
+- Voice Cloning: using AI to generate a synthetic replica of a real person's voice from audio samples
+- Tech Support Scam: a specific vishing pretext where attackers impersonate technical support to gain remote access or extract payment
+- Pretexting: creating a fabricated believable scenario before making the vishing call
