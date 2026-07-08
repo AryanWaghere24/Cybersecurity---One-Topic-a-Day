@@ -34,3 +34,6 @@ Original: "Your Adobe sign document is ready — Sign here [legitimate link]"
 Cloned:   "Your Adobe sign document is ready — Sign here [malicious link]"
 Everything looks identical — only the destination URL differs
 ```
+
+## Real-World Example
+Clone phishing is commonly used in targeted attacks following a known email compromise. When attackers breach an organization's email server they don't just steal data — they monitor ongoing email threads and identify regular trusted communications between employees, partners, and clients. They then clone those exact emails, replacing links with credential harvesting pages or attachments with malware, and inject them back into the conversation. Because the victim is expecting follow-up emails in that thread, the cloned message arrives at exactly the right moment to seem completely legitimate. This technique was observed in several APT (Advanced Persistent Threat) campaigns where attackers maintained access specifically to understand communication patterns before launching clone phishing attacks.
