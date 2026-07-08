@@ -34,3 +34,6 @@ Techniques used during the call:
 - Urgency and fear to prevent the victim from hanging up and verifying
 - Keeping the victim on the line while a second attacker attempts account access
 ```
+## Real-World Example
+The 2020 Twitter hack (also referenced in day 36) involved vishing as its primary attack vector. Attackers called Twitter employees posing as internal IT support, using information gathered from LinkedIn to make the calls convincing — addressing employees by name, referencing real internal systems, and creating urgency about a "VPN issue." Employees were directed to a fake internal Twitter VPN portal where they entered their credentials. Those credentials were then used to access Twitter's admin tools, leading to the takeover of high-profile verified accounts. The entire breach of one of the world's most visited platforms started with phone calls.
+
