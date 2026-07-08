@@ -42,3 +42,10 @@ Clone phishing is commonly used in targeted attacks following a known email comp
 From an attacker's side, clone phishing dramatically reduces suspicion because it exploits an existing trust relationship — the victim has already engaged with the original email and trusts the sender. The "resend" pretext is especially effective since people commonly experience broken links or expired attachments in legitimate emails.
 
 From a defender's side, clone phishing is harder to catch than generic phishing because it passes many technical checks — the content is mostly legitimate, the branding is accurate, and the subject line matches real emails the organization sends. URL inspection is the critical defense — always verify the actual destination of any link before clicking, especially in emails asking you to re-click something you've already seen. Email security tools that compare outgoing and incoming email templates can flag suspicious clones.
+
+## Key Terms
+- Clone Phishing: creating a near-identical copy of a legitimate email with malicious links or attachments substituted in
+- Email Thread Hijacking: inserting a malicious email into an existing legitimate email conversation to exploit established trust
+- Lookalike Domain: a domain visually similar to a legitimate one used to make the sender address appear genuine
+- APT (Advanced Persistent Threat): a sophisticated, long-term cyberattack typically conducted by nation-state actors or highly organized groups
+- Resend Pretext: the fabricated reason given for why the email is being sent again ("link expired", "updated document")
