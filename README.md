@@ -72,6 +72,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 41 | Smishing | 
 | Day 42 | Vishing |
 | Day 43 | Clone Phishing |
+| Day 44 | Coming Soon |
 ---
 ## Topics Covered
 
