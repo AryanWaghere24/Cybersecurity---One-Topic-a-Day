@@ -6,6 +6,8 @@ Clone Phishing is a type of phishing attack where the attacker takes a legitimat
 ## How It Works
 Clone phishing exploits familiarity — victims recognize the email format, the sender name, and the content because they've seen the real version before. The attacker intercepts or obtains a copy of a legitimate email, makes minimal changes, and resends it.
 
+![](assets/Clone-Phishing.png)
+
 ```
 Clone phishing attack flow:
 
