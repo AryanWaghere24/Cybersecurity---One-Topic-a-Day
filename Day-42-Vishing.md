@@ -48,3 +48,29 @@ From a defender's side, the core defense is the same as all social engineering �
 - Voice Cloning: using AI to generate a synthetic replica of a real person's voice from audio samples
 - Tech Support Scam: a specific vishing pretext where attackers impersonate technical support to gain remote access or extract payment
 - Pretexting: creating a fabricated believable scenario before making the vishing call
+
+## One Tip / Tool
+
+Tool: `SpoofCard` and similar services are what attackers abuse for caller ID spoofing — for defenders, **call verification procedures** are the primary defense
+
+```
+Vishing defense checklist:
+1. Never provide sensitive information to inbound callers
+   regardless of what number appears on caller ID
+2. If a caller claims to be from your bank — hang up,
+   call the number on the back of your card directly
+3. No legitimate organization will threaten immediate arrest
+   or account closure if you don't comply instantly
+4. If an "IT employee" calls asking for credentials — verify
+   by calling your IT helpdesk on their known internal number
+5. Report vishing attempts to the FTC at reportfraud.ftc.gov
+
+Red flags during a call:
+- Urgency and pressure to act immediately
+- Threats of arrest, account closure, or legal action
+- Requests for gift card payments (common in scams)
+- Asking you to stay on the line and not call anyone else
+- Requesting remote access to your computer
+```
+
+The rise of AI voice cloning means that even hearing a familiar voice on a phone call is no longer sufficient verification. Organizations should establish safe word verification systems for sensitive requests made over phone — a pre-agreed code word that proves the caller is genuinely who they claim to be, not an AI clone of their voice.
