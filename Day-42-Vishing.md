@@ -6,6 +6,8 @@ Vishing (Voice Phishing) is a phishing attack conducted over phone calls where a
 ## How It Works
 Vishing attacks rely heavily on social engineering principles — authority, urgency, and fear — amplified by the real-time pressure of a live phone conversation. Attackers use caller ID spoofing to make the call appear to come from a legitimate number.
 
+![](assets/Vishing.png)
+
 ```
 Common vishing pretexts:
 
