@@ -49,3 +49,27 @@ From a defender's side, clone phishing is harder to catch than generic phishing 
 - Lookalike Domain: a domain visually similar to a legitimate one used to make the sender address appear genuine
 - APT (Advanced Persistent Threat): a sophisticated, long-term cyberattack typically conducted by nation-state actors or highly organized groups
 - Resend Pretext: the fabricated reason given for why the email is being sent again ("link expired", "updated document")
+
+## One Tip / Tool
+
+Tool: `URL2PNG` or simply hovering over links — the most critical habit against clone phishing
+
+```
+How to verify links before clicking in any email:
+
+On desktop:
+- Hover over the link — check the URL shown in the browser status bar
+- The displayed text might say "Click here to sign"
+- But the actual URL might be: adobe-sign.malicious-domain.com
+
+On mobile (harder to hover):
+- Long press the link to preview the URL before opening
+- Copy the link and paste it into a URL scanner like virustotal.com
+- When in doubt, navigate to the service directly through your browser
+
+Key question to ask before clicking any "resent" email:
+"Did I actually have a problem with the original link/attachment?"
+If no — why is it being resent? That's your red flag.
+```
+
+Clone phishing is a good reminder that familiarity is not the same as safety. An email that looks exactly like one you've seen before is not automatically trustworthy — it might be because an attacker studied the original carefully before copying it.
