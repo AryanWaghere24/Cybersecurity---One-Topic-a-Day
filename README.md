@@ -70,7 +70,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 39 | Spear Phishing |
 | Day 40 | Whaling |
 | Day 41 | Smishing | 
-| Day 42 | Coming Soon |
+| Day 42 | Vishing |
 ---
 ## Topics Covered
 
