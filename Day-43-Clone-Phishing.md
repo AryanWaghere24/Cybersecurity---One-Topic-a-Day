@@ -24,3 +24,13 @@ Step 3 — Craft a convincing resend pretext
 "Resending this as the previous link expired"
 "Updated attachment — please use this version instead"
 "We noticed you didn't open our previous email, here it is again"
+
+Step 4 — Spoof the sender
+Send from a lookalike domain or compromised account
+Victim sees familiar content from a familiar-looking sender
+
+Real vs cloned email comparison:
+Original: "Your Adobe sign document is ready — Sign here [legitimate link]"
+Cloned:   "Your Adobe sign document is ready — Sign here [malicious link]"
+Everything looks identical — only the destination URL differs
+```
