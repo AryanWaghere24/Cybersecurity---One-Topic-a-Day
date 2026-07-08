@@ -40,3 +40,5 @@ Clone phishing is commonly used in targeted attacks following a known email comp
 
 ## Why It Matters
 From an attacker's side, clone phishing dramatically reduces suspicion because it exploits an existing trust relationship — the victim has already engaged with the original email and trusts the sender. The "resend" pretext is especially effective since people commonly experience broken links or expired attachments in legitimate emails.
+
+From a defender's side, clone phishing is harder to catch than generic phishing because it passes many technical checks — the content is mostly legitimate, the branding is accurate, and the subject line matches real emails the organization sends. URL inspection is the critical defense — always verify the actual destination of any link before clicking, especially in emails asking you to re-click something you've already seen. Email security tools that compare outgoing and incoming email templates can flag suspicious clones.
