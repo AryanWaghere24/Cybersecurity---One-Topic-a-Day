@@ -41,3 +41,6 @@ Recon (LinkedIn, company website) → Identify financial decision makers
 
 ## Real-World Example
 In 2019, Toyota Boshoku Corporation, a Toyota supplier, lost $37 million in a single BEC attack. Attackers impersonated a business partner and convinced an employee in the finance department to change the bank account details for an ongoing transaction. The fraudulent transfer was processed before the fraud was detected. No malware was involved, no systems were hacked — just a convincing email from someone impersonating a trusted business contact at exactly the right moment in an ongoing financial transaction.
+
+## Why It Matters
+From an attacker's side, BEC is extremely high return with relatively low technical effort — no malware to develop, no vulnerabilities to find. A convincing email sent at the right moment to the right person can yield millions. Wire transfers are often irreversible, and international transfers make recovery extremely difficult even when fraud is quickly detected.
