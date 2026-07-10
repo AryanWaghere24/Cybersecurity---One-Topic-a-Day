@@ -53,3 +53,19 @@ From a defender's side, the core defenses are procedural rather than technical. 
 - Account Takeover: gaining actual access to a legitimate business email account, enabling BEC attacks that bypass technical email authentication
 - Wire Fraud: using electronic communications to fraudulently obtain money — BEC attacks typically constitute wire fraud under US law
 - Callback Verification: calling a vendor or executive on a known, pre-existing phone number to confirm any unusual financial request before processing
+
+## One Tip / Tool
+
+Tool: **Dual authorization + callback verification** — the most effective BEC defense, not a software tool
+
+```
+BEC Prevention Checklist for Finance Teams:
+
+1. Any payment request received via email requires phone verification
+   Call the requestor on a number from your existing records
+   Never use a phone number provided in the suspicious email itself
+
+2. Any change to vendor payment/banking details requires:
+   - Written request from the vendor on their official letterhead
+   - Callback verification to the vendor's known contact number
+   - Approval from at least two people in finance
