@@ -73,6 +73,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 42 | Vishing |
 | Day 43 | Clone Phishing |
 | Day 44 | BEC |
+| Day 45 | Coming Soon |
 ---
 ## Topics Covered
 
