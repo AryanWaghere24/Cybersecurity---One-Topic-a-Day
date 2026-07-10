@@ -23,3 +23,18 @@ to the new account below — our old account is being closed."
 Fake lawyer claiming urgency around legal matters
 "As legal counsel handling the acquisition, I need you to 
 transfer the escrow funds today before close of business."
+
+4. Data Theft
+Requesting employee PII, W-2 forms, or sensitive records
+"I need all employee tax records for the audit by end of day."
+
+5. Account Compromise
+Attacker gains access to a real business email account
+Sends fraudulent requests from the legitimate address
+Most dangerous — passes all technical email authentication checks
+
+Attack flow:
+Recon (LinkedIn, company website) → Identify financial decision makers
+→ Craft convincing business pretext → Create urgency + confidentiality
+→ Request wire transfer or sensitive data → Funds sent before verification
+```
