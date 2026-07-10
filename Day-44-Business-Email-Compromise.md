@@ -48,11 +48,11 @@ From an attacker's side, BEC is extremely high return with relatively low techni
 From a defender's side, the core defenses are procedural rather than technical. No single email request should be sufficient to authorize a wire transfer or change payment details — all such requests must be verified through a separate, known phone number. Finance teams should be specifically trained on BEC scenarios, and any request that combines urgency with a request for money or data changes should trigger automatic verification regardless of who the apparent sender is.
 
 ## Key Terms
-- BEC (Business Email Compromise): email fraud targeting organizations to initiate fraudulent wire transfers or data theft by impersonating trusted contacts
-- CEO Fraud: a BEC variant where the attacker impersonates the CEO to pressure employees into unauthorized transfers
-- Account Takeover: gaining actual access to a legitimate business email account, enabling BEC attacks that bypass technical email authentication
-- Wire Fraud: using electronic communications to fraudulently obtain money — BEC attacks typically constitute wire fraud under US law
-- Callback Verification: calling a vendor or executive on a known, pre-existing phone number to confirm any unusual financial request before processing
+- BEC (Business Email Compromise): email fraud targeting organizations to initiate fraudulent wire transfers or data theft by impersonating trusted contacts.
+- CEO Fraud: a BEC variant where the attacker impersonates the CEO to pressure employees into unauthorized transfers.
+- Account Takeover: gaining actual access to a legitimate business email account, enabling BEC attacks that bypass technical email authentication.
+- Wire Fraud: using electronic communications to fraudulently obtain money — BEC attacks typically constitute wire fraud under US law.
+- Callback Verification: calling a vendor or executive on a known, pre-existing phone number to confirm any unusual financial request before processing.
 
 ## One Tip / Tool
 
