@@ -69,3 +69,15 @@ BEC Prevention Checklist for Finance Teams:
    - Written request from the vendor on their official letterhead
    - Callback verification to the vendor's known contact number
    - Approval from at least two people in finance
+
+3. Red flags that should trigger immediate verification:
+   - Urgency combined with a request to keep it confidential
+   - Request to bypass normal approval processes "just this once"
+   - New bank account details for an existing vendor or partner
+   - Executive requesting a transfer while "traveling" or "in meetings"
+
+4. Email security: implement DMARC, DKIM, SPF (day 38) to prevent
+   your own domain from being spoofed in BEC attacks targeting your partners
+```
+
+BEC losses are largely unrecoverable once wire transfers are sent — prevention through process is far more effective than any technical control. The FBI's Internet Crime Complaint Center (IC3) at ic3.gov is the reporting destination for BEC incidents in the US, and rapid reporting gives the best chance of fund recovery through the Financial Fraud Kill Chain program.
