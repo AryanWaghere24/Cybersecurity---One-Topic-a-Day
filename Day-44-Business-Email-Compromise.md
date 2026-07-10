@@ -6,6 +6,8 @@ Business Email Compromise (BEC) is a sophisticated email fraud attack where atta
 ## How It Works
 BEC attacks don't always require malware or technical exploits. They rely on convincing impersonation and carefully timed requests that align with real business processes.
 
+![](assets/BEC.png)
+
 ```
 Five main BEC categories (FBI classification):
 
