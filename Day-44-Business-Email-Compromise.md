@@ -38,3 +38,6 @@ Recon (LinkedIn, company website) → Identify financial decision makers
 → Craft convincing business pretext → Create urgency + confidentiality
 → Request wire transfer or sensitive data → Funds sent before verification
 ```
+
+## Real-World Example
+In 2019, Toyota Boshoku Corporation, a Toyota supplier, lost $37 million in a single BEC attack. Attackers impersonated a business partner and convinced an employee in the finance department to change the bank account details for an ongoing transaction. The fraudulent transfer was processed before the fraud was detected. No malware was involved, no systems were hacked — just a convincing email from someone impersonating a trusted business contact at exactly the right moment in an ongoing financial transaction.
