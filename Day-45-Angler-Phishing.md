@@ -44,3 +44,10 @@ Angler phishing became widely documented around 2015-2017 when researchers notic
 From an attacker's side, angler phishing targets people at their most vulnerable — already frustrated, already expecting contact, and already in a mindset of sharing information to get their problem resolved. The public nature of social media complaints makes victims easy to identify and approach at exactly the right moment.
 
 From a defender's side (organizations), registering and actively managing official support handles on all major platforms is critical — if you don't own @YourBrand_Support, an attacker will. Verifying your accounts where possible and clearly communicating your official support channels in your bio and pinned posts helps customers identify the real account. For individuals, always verify a support account's follower count, creation date, verification status, and whether it's linked from the brand's official website before sharing any account information.
+
+## Key Terms
+- Angler Phishing: intercepting public social media complaints to impersonate brand support and steal credentials
+- Account Impersonation: creating a fake social media profile designed to be mistaken for a legitimate person or organization
+- Social Media Monitoring: tracking brand mentions and keywords across platforms — used legitimately by brands, abused by attackers for angler phishing
+- Verified Badge: a platform-granted indicator (checkmark) confirming an account's authenticity — absence is a red flag for support accounts
+- DM Phishing: moving a conversation to direct messages where the attack is less visible to the public and other users
