@@ -51,3 +51,16 @@ From a defender's side (organizations), registering and actively managing offici
 - Social Media Monitoring: tracking brand mentions and keywords across platforms — used legitimately by brands, abused by attackers for angler phishing
 - Verified Badge: a platform-granted indicator (checkmark) confirming an account's authenticity — absence is a red flag for support accounts
 - DM Phishing: moving a conversation to direct messages where the attack is less visible to the public and other users
+
+## One Tip / Tool
+
+Tool: No specific attack tool — angler phishing is manual. For defense, `Google Alerts` and `Mention.com` help brands monitor for impersonation attempts
+
+```
+How to spot a fake support account:
+1. Check account creation date — real support accounts are old
+2. Check follower count — legitimate brand support has thousands
+3. Look for verification badge — major brands are usually verified
+4. Check if the account is linked from the brand's official website
+5. Look at their tweet history — fake accounts have little history
+6. The real support handle is usually in the brand's official bio
