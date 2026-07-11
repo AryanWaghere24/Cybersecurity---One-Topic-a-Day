@@ -36,3 +36,6 @@ Example fake vs real account:
 Real:  @ChaseSupport (verified blue checkmark)
 Fake:  @ChaseSupport_ (no checkmark, created last week, 12 followers)
 ```
+
+## Real-World Example
+Angler phishing became widely documented around 2015-2017 when researchers noticed fake airline and bank support accounts proliferating on Twitter. Passengers who tweeted complaints about cancelled flights were intercepted by fake airline support accounts that asked them to DM their booking reference, surname, and email — enough information to access and modify their booking or use in further targeted attacks. Some fake accounts were so convincing they accumulated thousands of followers before being reported and taken down, intercepting dozens of genuine customer complaints in the process.
