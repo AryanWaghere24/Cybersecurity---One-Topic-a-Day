@@ -39,3 +39,6 @@ Fake:  @ChaseSupport_ (no checkmark, created last week, 12 followers)
 
 ## Real-World Example
 Angler phishing became widely documented around 2015-2017 when researchers noticed fake airline and bank support accounts proliferating on Twitter. Passengers who tweeted complaints about cancelled flights were intercepted by fake airline support accounts that asked them to DM their booking reference, surname, and email — enough information to access and modify their booking or use in further targeted attacks. Some fake accounts were so convincing they accumulated thousands of followers before being reported and taken down, intercepting dozens of genuine customer complaints in the process.
+
+## Why It Matters
+From an attacker's side, angler phishing targets people at their most vulnerable — already frustrated, already expecting contact, and already in a mindset of sharing information to get their problem resolved. The public nature of social media complaints makes victims easy to identify and approach at exactly the right moment.
