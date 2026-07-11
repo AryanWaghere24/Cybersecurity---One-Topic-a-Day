@@ -19,3 +19,15 @@ Username: @BankName_Support_ or @BankNameHelp (extra underscore/word)
 Profile picture: stolen from the real brand's official account
 Bio: "Official customer support for @BankName — DM us for help"
 Pinned posts: fake positive customer interactions
+
+Step 3 — Intercept and respond faster than the real support team
+Reply to the victim's complaint within minutes
+"We're sorry to hear this! Please DM us your account details
+so we can look into this right away."
+
+Step 4 — Extract information in DMs
+Once in private messages, request:
+- Account number or username
+- Password or security questions
+- One-time verification codes (2FA bypass)
+- Link to a fake "account verification" portal
