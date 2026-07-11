@@ -5,3 +5,17 @@ Angler Phishing is a social media based phishing attack where attackers create f
 
 ## How It Works
 Angler phishing exploits the modern customer service expectation that brands respond to complaints on social media. Victims who post publicly are already frustrated, already expecting a response, and already primed to share account details to get their problem resolved.
+
+```
+Attack flow:
+
+Step 1 — Monitor social media for complaints
+Attacker sets up alerts or bots monitoring mentions of target brands
+Searches for: "@BankName I can't log in", "@Airline my booking is wrong"
+Victims are already frustrated and expecting help
+
+Step 2 — Create a convincing fake support account
+Username: @BankName_Support_ or @BankNameHelp (extra underscore/word)
+Profile picture: stolen from the real brand's official account
+Bio: "Official customer support for @BankName — DM us for help"
+Pinned posts: fake positive customer interactions
