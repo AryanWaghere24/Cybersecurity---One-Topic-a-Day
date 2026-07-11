@@ -31,3 +31,8 @@ Once in private messages, request:
 - Password or security questions
 - One-time verification codes (2FA bypass)
 - Link to a fake "account verification" portal
+
+Example fake vs real account:
+Real:  @ChaseSupport (verified blue checkmark)
+Fake:  @ChaseSupport_ (no checkmark, created last week, 12 followers)
+```
