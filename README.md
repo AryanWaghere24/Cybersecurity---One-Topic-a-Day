@@ -74,6 +74,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 43 | Clone Phishing |
 | Day 44 | BEC |
 | Day 45 | Angler Phishing |
+| Day 46 | Coming Soon |
 ---
 ## Topics Covered
 
