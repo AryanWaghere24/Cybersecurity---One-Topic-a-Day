@@ -64,3 +64,12 @@ How to spot a fake support account:
 4. Check if the account is linked from the brand's official website
 5. Look at their tweet history — fake accounts have little history
 6. The real support handle is usually in the brand's official bio
+
+If you're posting a complaint publicly:
+- Navigate directly to the brand's official website to find support
+- Check the brand's official account bio for their support handle
+- Be suspicious of any account that replies to your complaint
+  asking you to DM account details within minutes of your post
+```
+
+Angler phishing is a reminder that the attack surface has expanded far beyond email — anywhere people interact with brands publicly online is a potential vector for social engineering. The attacker's advantage is speed and the victim's existing emotional state. Taking a moment to verify before sharing anything in a DM removes that advantage entirely.
