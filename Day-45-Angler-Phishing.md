@@ -6,6 +6,8 @@ Angler Phishing is a social media based phishing attack where attackers create f
 ## How It Works
 Angler phishing exploits the modern customer service expectation that brands respond to complaints on social media. Victims who post publicly are already frustrated, already expecting a response, and already primed to share account details to get their problem resolved.
 
+![](assets/Angler-Phishing.md)
+
 ```
 Attack flow:
 
