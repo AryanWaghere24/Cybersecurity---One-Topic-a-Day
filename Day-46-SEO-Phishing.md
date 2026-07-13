@@ -53,3 +53,12 @@ From a defender's side, always type the URL of important services directly into 
 - Combosquatting: adding words like "secure", "login", or "verify" to a legitimate brand name in a domain
 - Ad Cloaking: showing search engine crawlers a legitimate page while serving the actual phishing page to real visitors
 - Homograph Attack: using visually identical Unicode characters to create domains that look identical to legitimate ones
+
+## One Tip / Tool
+
+Tool: `URLScan.io` and `DNSTwist` for identifying typosquatting and lookalike domains targeting your brand
+
+```bash
+# DNSTwist - find all lookalike domains for a target brand
+pip install dnstwist
+dnstwist paypal.com
