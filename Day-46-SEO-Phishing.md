@@ -39,3 +39,5 @@ Technical tactics attackers use:
 - Ad cloaking: showing search engines a legitimate page during
   review but redirecting real visitors to the phishing page
 ```
+## Real-World Example
+In 2022 and 2023, security researchers documented widespread SEO phishing campaigns targeting cryptocurrency users. Fake pages for popular crypto wallets and exchanges appeared as sponsored ads in search results — sometimes above the legitimate site's own ads. Users searching to access their crypto accounts clicked these ads, entered their seed phrases or passwords on convincing clones, and lost their entire holdings. The FBI issued warnings specifically about this pattern after millions of dollars in cryptocurrency were stolen through search engine phishing campaigns targeting crypto platforms.
