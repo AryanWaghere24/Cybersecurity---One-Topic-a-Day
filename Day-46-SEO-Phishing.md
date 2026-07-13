@@ -20,3 +20,22 @@ Search: "chase bank login"
 Ad result: "Chase Bank — Secure Login | chase-secure-login.com"
 Real site: chase.com
 The ad URL looks related but is a completely different domain
+
+2. Organic SEO Manipulation
+Creating content-rich fake pages that rank organically over time
+Optimizing for long-tail keywords like "how to login to my wells fargo account"
+Takes longer but costs nothing and is harder to take down quickly
+Often uses compromised legitimate websites to host phishing content
+```
+
+Technical tactics attackers use:
+```
+- Typosquatting: registering domains with common misspellings
+  (gooogle.com, paypa1.com, arnazon.com)
+- Combosquatting: adding words to legitimate brand names
+  (paypal-secure.com, apple-id-verify.com)
+- Homograph attacks: using Unicode characters that look identical
+  to ASCII (using Cyrillic 'а' instead of Latin 'a' in a domain)
+- Ad cloaking: showing search engines a legitimate page during
+  review but redirecting real visitors to the phishing page
+```
