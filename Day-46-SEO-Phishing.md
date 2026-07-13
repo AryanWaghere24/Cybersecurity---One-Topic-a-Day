@@ -62,3 +62,14 @@ Tool: `URLScan.io` and `DNSTwist` for identifying typosquatting and lookalike do
 # DNSTwist - find all lookalike domains for a target brand
 pip install dnstwist
 dnstwist paypal.com
+
+# output shows all possible typosquatting/combosquatting variants
+# and whether they're currently registered and active
+# use this to monitor for new phishing domains targeting your organization
+
+# URLScan.io (web based) - scan a suspicious URL before visiting
+# https://urlscan.io - paste any suspicious URL to see what it actually loads
+# without visiting it directly from your browser
+```
+
+The single most effective personal defense against SEO phishing — bookmark every service you log into regularly and never use a search engine to find a login page. The 10 seconds it takes to bookmark a site is worth far more than the risk of clicking the wrong search result one day. Treat search results for login pages the same way you'd treat an unsolicited email link — with suspicion until verified.
