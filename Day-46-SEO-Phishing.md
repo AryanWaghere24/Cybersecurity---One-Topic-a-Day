@@ -5,3 +5,18 @@ SEO Phishing (Search Engine Phishing) is an attack where criminals create malici
 
 ## How It Works
 SEO phishing exploits user trust in search engine results — most people assume top results are legitimate, especially if they appear in paid ad spots or on the first page of organic results.
+
+```
+Two main delivery methods:
+
+1. Malicious Paid Ads (most common currently)
+Attackers purchase Google/Bing ads for high-value search terms
+Ad appears above organic results with a URL that looks legitimate
+Victim clicks the ad thinking it's the real site
+Lands on a pixel-perfect clone of the real login page
+
+Example:
+Search: "chase bank login"
+Ad result: "Chase Bank — Secure Login | chase-secure-login.com"
+Real site: chase.com
+The ad URL looks related but is a completely different domain
