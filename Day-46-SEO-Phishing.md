@@ -47,3 +47,9 @@ From an attacker's side, SEO phishing requires no email list, no SMS campaign, a
 
 From a defender's side, always type the URL of important services directly into your browser rather than searching for them. Bookmark your bank, email provider, crypto exchange, and other frequently used services. Never click ads to reach a login page — navigate directly. Browser extensions like uBlock Origin block many malicious ads before they're visible. Organizations can monitor for brand impersonation in search ads and report them to search engines for takedown.
 
+## Key Terms
+- SEO Phishing: creating fake websites optimized to appear in search results for brand-related queries
+- Typosquatting: registering domains with deliberate misspellings of legitimate brand names to capture mistyped URLs
+- Combosquatting: adding words like "secure", "login", or "verify" to a legitimate brand name in a domain
+- Ad Cloaking: showing search engine crawlers a legitimate page while serving the actual phishing page to real visitors
+- Homograph Attack: using visually identical Unicode characters to create domains that look identical to legitimate ones
