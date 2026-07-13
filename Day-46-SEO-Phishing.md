@@ -6,6 +6,8 @@ SEO Phishing (Search Engine Phishing) is an attack where criminals create malici
 ## How It Works
 SEO phishing exploits user trust in search engine results — most people assume top results are legitimate, especially if they appear in paid ad spots or on the first page of organic results.
 
+![](assets/SEO-Phishing.png)
+
 ```
 Two main delivery methods:
 
