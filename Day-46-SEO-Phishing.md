@@ -41,3 +41,9 @@ Technical tactics attackers use:
 ```
 ## Real-World Example
 In 2022 and 2023, security researchers documented widespread SEO phishing campaigns targeting cryptocurrency users. Fake pages for popular crypto wallets and exchanges appeared as sponsored ads in search results — sometimes above the legitimate site's own ads. Users searching to access their crypto accounts clicked these ads, entered their seed phrases or passwords on convincing clones, and lost their entire holdings. The FBI issued warnings specifically about this pattern after millions of dollars in cryptocurrency were stolen through search engine phishing campaigns targeting crypto platforms.
+
+## Why It Matters
+From an attacker's side, SEO phishing requires no email list, no SMS campaign, and no social media monitoring. The search engine delivers victims organically. Paid ads can be set up in minutes and target exactly the people actively looking to log into a service — the highest-intent victims possible.
+
+From a defender's side, always type the URL of important services directly into your browser rather than searching for them. Bookmark your bank, email provider, crypto exchange, and other frequently used services. Never click ads to reach a login page — navigate directly. Browser extensions like uBlock Origin block many malicious ads before they're visible. Organizations can monitor for brand impersonation in search ads and report them to search engines for takedown.
+
