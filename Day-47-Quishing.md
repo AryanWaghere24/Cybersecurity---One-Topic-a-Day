@@ -6,6 +6,8 @@ Quishing (QR Code Phishing) is a phishing attack that uses malicious QR codes to
 ## How It Works
 QR codes are essentially just encoded URLs. Attackers generate a QR code pointing to a malicious domain and distribute it through email, physical placement, or document replacement.
 
+![](assets/Quishing.png)
+
 ```
 Delivery methods:
 
