@@ -45,3 +45,5 @@ In 2023 a large scale quishing campaign targeted employees of major energy compa
 
 ## Why It Matters
 From an attacker's side, quishing is a direct response to improving email security. As organizations get better at detecting malicious links in emails, moving the payload into an image that security tools can't inspect is a logical evolution. The mobile device pivot also means victims are on a platform with fewer enterprise security controls and a different (often less cautious) security mindset.
+
+From a defender's side, email security tools are increasingly adding QR code decoding capabilities to inspect the embedded URLs — but adoption is still catching up to the threat. Security awareness training should specifically cover quishing since most people have been trained to be suspicious of email links but not QR codes. Never scan a QR code received in an unsolicited email. For physical QR codes, check for stickers placed over the original code and verify the URL before proceeding.
