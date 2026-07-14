@@ -28,3 +28,15 @@ Fake invoices or forms with QR codes sent to finance departments
 "Scan to view and approve this invoice"
 Redirects to a BEC-style credential harvesting page (day 44)
 ```
+
+Attack flow:
+```
+1. Attacker creates a convincing phishing page on a lookalike domain
+2. Generates a QR code encoding the malicious URL
+3. Embeds the QR code in an email, document, or physical material
+4. Victim scans with their phone — bypasses desktop security tools
+5. Mobile browser opens the phishing page
+6. Victim enters credentials on mobile — where MFA prompts are
+   easier to intercept and security awareness is often lower
+```
+
