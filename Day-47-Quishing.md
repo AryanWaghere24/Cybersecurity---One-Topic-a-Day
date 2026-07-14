@@ -16,3 +16,15 @@ Attacker sends an email with a QR code image instead of a link
 Email security tools scan for malicious URLs in text and hyperlinks
 But they typically cannot decode and inspect URLs inside image-based QR codes
 The malicious URL passes through undetected
+
+Physical Quishing
+Attackers place fake QR code stickers over legitimate ones in public
+Parking meters, restaurant menus, EV charging stations, posters
+Victim scans what they think is the official QR code
+Gets redirected to a payment harvesting or credential phishing page
+
+Document Replacement
+Fake invoices or forms with QR codes sent to finance departments
+"Scan to view and approve this invoice"
+Redirects to a BEC-style credential harvesting page (day 44)
+```
