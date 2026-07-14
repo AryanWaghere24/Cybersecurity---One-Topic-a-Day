@@ -75,7 +75,8 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 44 | BEC |
 | Day 45 | Angler Phishing |
 | Day 46 | SEO Phishing |
-| Day 47 | QR Phishing | 
+| Day 47 | QR Phishing |
+| Day 48 | Coming Soon |
 ---
 ## Topics Covered
 
