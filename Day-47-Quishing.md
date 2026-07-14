@@ -54,3 +54,21 @@ From a defender's side, email security tools are increasingly adding QR code dec
 - Image-based Evasion: hiding malicious content inside images to bypass security tools that scan only text-based content
 - Mobile Phishing: phishing attacks specifically targeting mobile devices where security controls are often weaker
 - Real-time Phishing: capturing MFA codes the moment they're entered and using them immediately before they expire
+
+## One Tip / Tool
+
+Tool: `QRLJacker` for understanding QR phishing in lab environments, and **QR code preview** as the primary personal defense
+
+```
+How to safely handle QR codes:
+
+Before scanning any QR code:
+1. Is the QR code in an unsolicited email? Don't scan it.
+2. Is the QR code a sticker that looks like it might be placed over something? Don't scan it.
+3. Does the physical location make sense for a QR code? Verify before scanning.
+
+After scanning but before proceeding:
+1. Check the URL your phone shows before opening it
+2. Does the domain match the organization the QR code claims to be from?
+3. Is it HTTPS? (necessary but not sufficient — attackers use HTTPS too)
+4. When in doubt, type the organization's URL directly into your browser instead
