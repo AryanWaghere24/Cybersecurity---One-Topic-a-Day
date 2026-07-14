@@ -42,3 +42,6 @@ Attack flow:
 
 ## Real-World Example
 In 2023 a large scale quishing campaign targeted employees of major energy companies in the United States. Attackers sent phishing emails containing QR codes claiming to update Microsoft 365 security settings. Because the malicious URL was encoded in an image rather than a clickable link, it bypassed the organizations' email security gateways entirely. Once scanned, victims were taken to a convincing Microsoft login page on their phones where they entered their credentials — including MFA codes that attackers used in real time to complete account takeovers. The campaign was notable for specifically choosing QR codes to defeat email security tools, showing a direct evolution in attacker techniques to bypass improving defenses.
+
+## Why It Matters
+From an attacker's side, quishing is a direct response to improving email security. As organizations get better at detecting malicious links in emails, moving the payload into an image that security tools can't inspect is a logical evolution. The mobile device pivot also means victims are on a platform with fewer enterprise security controls and a different (often less cautious) security mindset.
