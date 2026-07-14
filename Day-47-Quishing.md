@@ -72,3 +72,11 @@ After scanning but before proceeding:
 2. Does the domain match the organization the QR code claims to be from?
 3. Is it HTTPS? (necessary but not sufficient — attackers use HTTPS too)
 4. When in doubt, type the organization's URL directly into your browser instead
+
+For organizations:
+- Train employees specifically on quishing — most phishing training skips QR codes
+- Implement email security tools with QR code URL inspection capability
+- Never use QR codes in internal security-sensitive communications
+```
+
+Quishing is a perfect example of how attacker techniques evolve in direct response to defensive improvements. Every time defenders get better at detecting one delivery method, attackers find a new channel. The underlying attack — fake login page stealing credentials — remains the same. Only the delivery mechanism changes.
