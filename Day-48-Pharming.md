@@ -54,3 +54,17 @@ From a defender's side, HTTPS and certificate validation is the most important t
 - DNS Poisoning: injecting false records into a DNS resolver's cache to redirect domain lookups to attacker-controlled IPs
 - Certificate Warning: a browser alert triggered when a site's SSL certificate doesn't match the expected domain — a key indicator of pharming
 - DNS over HTTPS (DoH): encrypting DNS queries to prevent interception and manipulation by attackers on the network path
+
+## One Tip / Tool
+
+Tool: `dnschef` for understanding DNS manipulation in lab environments, and **checking your router DNS settings** as the primary personal defense
+
+```bash
+# check what DNS servers your machine is currently using
+# Windows
+ipconfig /all | findstr "DNS Servers"
+
+# Linux/Mac
+cat /etc/resolv.conf
+# or
+resolvectl status
