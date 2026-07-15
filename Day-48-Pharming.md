@@ -42,3 +42,6 @@ Attack flow for DNS-based pharming:
 In 2007 one of the largest pharming attacks ever recorded targeted around 50 financial institutions simultaneously. Attackers sent users a malicious email that, when opened, executed a small script modifying the local hosts file on Windows machines. Once infected, victims who typed their bank's correct URL were silently redirected to convincing fake banking pages. The attack affected users across multiple countries and targeted dozens of banks at once — the hosts file modification meant even security-conscious users who carefully typed the correct URL were still redirected to the fake site.
 
 More recently, pharming attacks have targeted home routers — attackers compromise poorly secured routers (default passwords, unpatched firmware) and change the router's DNS settings to point to attacker-controlled DNS servers, affecting every device on that network simultaneously without any malware on individual devices.
+
+## Why It Matters
+From an attacker's side, pharming is powerful precisely because it defeats the most common phishing defense — "just type the URL directly instead of clicking links." A victim can do everything correctly and still be compromised. Router-based pharming in particular can silently affect every device in a home or office without any per-device infection needed.
