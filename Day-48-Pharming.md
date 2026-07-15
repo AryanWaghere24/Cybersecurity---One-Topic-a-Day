@@ -5,3 +5,9 @@ Pharming is an attack that redirects users to a fake malicious website without t
 
 ## How It Works
 Pharming exploits the DNS (Domain Name System) infrastructure that translates domain names into IP addresses. There are two main attack methods:
+
+```
+Method 1 — Local Hosts File Poisoning
+Every computer has a local hosts file that maps domain names to IPs
+If an attacker can modify this file (via malware), they can redirect
+any domain to their own server directly on the victim's machine
