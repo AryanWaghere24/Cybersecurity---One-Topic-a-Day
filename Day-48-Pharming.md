@@ -29,3 +29,11 @@ Attacker compromises or poisons a DNS resolver used by many people
 Like DNS Spoofing (day 02) but specifically targeting financial/login sites
 A single poisoned DNS server can redirect thousands of victims simultaneously
 No malware needed on individual machines — the attack happens at the network level
+
+Attack flow for DNS-based pharming:
+1. Attacker compromises a DNS server or router's DNS settings
+2. Inserts fake DNS records mapping legitimate domains to malicious IPs
+3. Every user whose DNS queries go through that server gets redirected
+4. Victims type correct URLs, get taken to fake login pages
+5. Credentials harvested at scale with victims having no obvious indication
+```
