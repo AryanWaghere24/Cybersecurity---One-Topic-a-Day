@@ -80,3 +80,5 @@ resolvectl status
 nslookup paypal.com
 # compare the returned IP with known legitimate IPs
 ```
+
+The most important defense against pharming — never click through SSL certificate warnings on banking, email, or any sensitive site. A certificate mismatch is the technical system telling you that the site you're seeing is not the site you think it is, even if the URL in the address bar looks correct. That warning exists specifically to catch pharming and similar attacks.
