@@ -76,7 +76,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 45 | Angler Phishing |
 | Day 46 | SEO Phishing |
 | Day 47 | QR Phishing |
-| Day 48 | Coming Soon |
+| Day 48 | Pharming |
 ---
 ## Topics Covered
 
