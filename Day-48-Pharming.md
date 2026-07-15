@@ -47,3 +47,10 @@ More recently, pharming attacks have targeted home routers — attackers comprom
 From an attacker's side, pharming is powerful precisely because it defeats the most common phishing defense — "just type the URL directly instead of clicking links." A victim can do everything correctly and still be compromised. Router-based pharming in particular can silently affect every device in a home or office without any per-device infection needed.
 
 From a defender's side, HTTPS and certificate validation is the most important technical defense — a pharmed site will have a different SSL certificate than the real site, causing browsers to show a certificate warning. Never bypass certificate warnings on financial or sensitive sites. Using encrypted DNS (DNS over HTTPS or DNS over TLS) prevents DNS poisoning attacks. Keeping router firmware updated and changing default router credentials prevents router-based pharming. Checking your router's DNS settings periodically for unauthorized changes is a good security habit.
+
+## Key Terms
+- Pharming: redirecting users to malicious websites by corrupting DNS resolution rather than through deceptive links
+- Hosts File: a local file on every computer that maps domain names to IP addresses, checked before DNS queries are made
+- DNS Poisoning: injecting false records into a DNS resolver's cache to redirect domain lookups to attacker-controlled IPs
+- Certificate Warning: a browser alert triggered when a site's SSL certificate doesn't match the expected domain — a key indicator of pharming
+- DNS over HTTPS (DoH): encrypting DNS queries to prevent interception and manipulation by attackers on the network path
