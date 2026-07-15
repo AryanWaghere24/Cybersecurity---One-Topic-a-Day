@@ -68,3 +68,15 @@ ipconfig /all | findstr "DNS Servers"
 cat /etc/resolv.conf
 # or
 resolvectl status
+
+# check your router's DNS settings:
+# log into your router admin panel (usually 192.168.1.1 or 192.168.0.1)
+# look for DNS settings under WAN or Internet configuration
+# they should point to your ISP's DNS or a trusted provider like:
+# 1.1.1.1 (Cloudflare) or 8.8.8.8 (Google)
+# if they point to an unknown IP - your router may be compromised
+
+# verify a site's real IP vs what your DNS is returning
+nslookup paypal.com
+# compare the returned IP with known legitimate IPs
+```
