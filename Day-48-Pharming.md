@@ -20,3 +20,6 @@ Poisoned hosts file example:
 192.168.1.100   paypal.com      ← attacker's IP instead of PayPal's real IP
 192.168.1.100   bankofamerica.com
 192.168.1.100   gmail.com
+
+Now any browser on this machine goes to 192.168.1.100 for these domains
+regardless of what the user types in the address bar
