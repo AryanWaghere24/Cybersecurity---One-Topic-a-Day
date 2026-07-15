@@ -37,3 +37,6 @@ Attack flow for DNS-based pharming:
 4. Victims type correct URLs, get taken to fake login pages
 5. Credentials harvested at scale with victims having no obvious indication
 ```
+
+# Real-World Example
+In 2007 one of the largest pharming attacks ever recorded targeted around 50 financial institutions simultaneously. Attackers sent users a malicious email that, when opened, executed a small script modifying the local hosts file on Windows machines. Once infected, victims who typed their bank's correct URL were silently redirected to convincing fake banking pages. The attack affected users across multiple countries and targeted dozens of banks at once — the hosts file modification meant even security-conscious users who carefully typed the correct URL were still redirected to the fake site.
