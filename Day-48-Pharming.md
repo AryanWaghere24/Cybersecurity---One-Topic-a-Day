@@ -11,3 +11,12 @@ Method 1 — Local Hosts File Poisoning
 Every computer has a local hosts file that maps domain names to IPs
 If an attacker can modify this file (via malware), they can redirect
 any domain to their own server directly on the victim's machine
+
+Location of hosts file:
+Windows: C:\Windows\System32\drivers\etc\hosts
+Linux/Mac: /etc/hosts
+
+Poisoned hosts file example:
+192.168.1.100   paypal.com      ← attacker's IP instead of PayPal's real IP
+192.168.1.100   bankofamerica.com
+192.168.1.100   gmail.com
