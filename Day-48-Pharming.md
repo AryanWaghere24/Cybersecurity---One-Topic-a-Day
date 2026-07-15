@@ -23,3 +23,9 @@ Poisoned hosts file example:
 
 Now any browser on this machine goes to 192.168.1.100 for these domains
 regardless of what the user types in the address bar
+
+Method 2 — DNS Server Poisoning (more dangerous, wider impact)
+Attacker compromises or poisons a DNS resolver used by many people
+Like DNS Spoofing (day 02) but specifically targeting financial/login sites
+A single poisoned DNS server can redirect thousands of victims simultaneously
+No malware needed on individual machines — the attack happens at the network level
