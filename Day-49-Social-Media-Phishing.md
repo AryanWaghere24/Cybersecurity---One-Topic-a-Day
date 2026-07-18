@@ -31,3 +31,10 @@ Fake Login Pages
 "Your Instagram account will be deactivated — verify here"
 Link goes to a convincing fake Instagram login page
 Credentials stolen and used to compromise the real account
+
+Fake Job Offers (LinkedIn specific)
+Fake recruiter profiles with convincing work histories
+Offer high-paying jobs requiring "skills assessment" downloads
+Download is malware — North Korean Lazarus Group used this
+extensively to target crypto and tech company employees
+```
