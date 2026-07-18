@@ -6,6 +6,9 @@ Social Media Phishing is a category of phishing attacks conducted through social
 ## How It Works
 Social media phishing takes multiple forms depending on the platform and the attacker's goal:
 
+
+![](assets/Social-Media-Phishing.png)
+
 ```
 Common attack vectors:
 
