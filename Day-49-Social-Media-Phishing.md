@@ -8,3 +8,9 @@ Social media phishing takes multiple forms depending on the platform and the att
 
 ```
 Common attack vectors:
+
+Fake Profile Impersonation
+Attacker creates a profile mimicking a real person or brand
+Sends friend/connection requests to build a network
+Then sends phishing links or requests money/information
+Common on Facebook (fake friend) and LinkedIn (fake recruiter)
