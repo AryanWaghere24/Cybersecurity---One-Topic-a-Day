@@ -73,3 +73,9 @@ Recognizing attacks:
 3. Friend requests from people you don't recognize — check mutual connections
 4. Any message asking you to "check this photo/video of you" — classic compromise indicator
 5. Investment opportunities promising guaranteed returns — always fraudulent
+
+If a friend's account seems compromised:
+- Contact them through a different channel (call or text) before clicking anything
+- Report the suspicious messages to the platform
+- Let them know their account may be sending phishing messages
+```
