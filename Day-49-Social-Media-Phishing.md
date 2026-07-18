@@ -53,3 +53,7 @@ From a defender's side, enabling MFA on all social media accounts is the most im
 - Fake Recruiter Attack: a LinkedIn-specific phishing technique using convincing fake recruiter profiles to deliver malware through job offer pretexts
 - Malicious Ad: a paid social media advertisement designed to direct victims to phishing pages or fraudulent investment schemes
 - Lazarus Group: a North Korean state-sponsored threat actor known for sophisticated social media phishing campaigns targeting financial and cryptocurrency organizations
+
+## One Tip / Tool
+
+Tool: Enabling **MFA on all social media accounts** and **reporting tools** built into each platform
