@@ -20,3 +20,9 @@ Paid social media ads promoting fake giveaways, investments, or products
 "Elon Musk is giving away Bitcoin — click to claim yours"
 Leads to credential harvesting or payment fraud pages
 Extremely difficult to distinguish from legitimate sponsored content
+
+Direct Message Phishing
+Compromised accounts of real friends send messages:
+"Hey! I found this photo of you — check it out [malicious link]"
+Victim clicks because it appears to come from someone they know
+Link either harvests credentials or installs malware
