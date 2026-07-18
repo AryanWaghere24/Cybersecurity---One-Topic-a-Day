@@ -77,7 +77,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 46 | SEO Phishing |
 | Day 47 | QR Phishing |
 | Day 48 | Pharming |
-| Day 49 | Coming Soon |
+| Day 49 | Social Media Phishing |
 ---
 ## Topics Covered
 
