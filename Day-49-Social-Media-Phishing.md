@@ -57,3 +57,12 @@ From a defender's side, enabling MFA on all social media accounts is the most im
 ## One Tip / Tool
 
 Tool: Enabling **MFA on all social media accounts** and **reporting tools** built into each platform
+
+```
+Social media phishing defense checklist:
+
+Account security:
+1. Enable MFA on every social media account you have
+2. Use a unique password for each platform
+3. Review connected third-party apps regularly — revoke unused ones
+4. Check active sessions and log out of unrecognized devices
