@@ -38,3 +38,6 @@ Offer high-paying jobs requiring "skills assessment" downloads
 Download is malware — North Korean Lazarus Group used this
 extensively to target crypto and tech company employees
 ```
+
+## Real-World Example
+In 2020 the North Korean Lazarus Group conducted a sophisticated LinkedIn phishing campaign targeting employees of cryptocurrency companies. Fake recruiters with convincing LinkedIn profiles — complete with realistic work histories, endorsements, and connections — reached out to developers and security researchers with lucrative job offers. When targets expressed interest they were sent "skills assessment" documents that contained hidden malware. Once executed the malware provided backdoor access to the victim's machine — and through them, to their employer's systems and cryptocurrency holdings. Multiple cryptocurrency thefts worth hundreds of millions of dollars were linked to this LinkedIn phishing campaign.
