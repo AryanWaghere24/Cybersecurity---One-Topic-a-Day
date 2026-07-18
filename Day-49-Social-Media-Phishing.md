@@ -26,3 +26,8 @@ Compromised accounts of real friends send messages:
 "Hey! I found this photo of you — check it out [malicious link]"
 Victim clicks because it appears to come from someone they know
 Link either harvests credentials or installs malware
+
+Fake Login Pages
+"Your Instagram account will be deactivated — verify here"
+Link goes to a convincing fake Instagram login page
+Credentials stolen and used to compromise the real account
