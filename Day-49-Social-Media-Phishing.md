@@ -46,3 +46,10 @@ In 2020 the North Korean Lazarus Group conducted a sophisticated LinkedIn phishi
 From an attacker's side, social media provides enormous reach and targeting capability — attackers can identify specific job titles, companies, interests, and connections to craft highly relevant lures. Paid advertising tools designed for marketers work equally well for targeting phishing campaigns. Compromised accounts of real friends have near-perfect open and click rates.
 
 From a defender's side, enabling MFA on all social media accounts is the most important technical control — a compromised password alone can't take over the account. Being skeptical of unsolicited DMs, job offers, and investment opportunities regardless of who appears to be sending them is essential. Verifying unusual messages from friends through a different channel (calling them) before clicking anything catches account compromise scenarios. Never download files sent through social media DMs regardless of the stated reason.
+
+## Key Terms
+- Social Media Phishing: phishing attacks conducted through social media platforms using fake profiles, ads, or compromised accounts
+- Account Compromise: gaining unauthorized access to a real user's social media account, enabling attacks that appear to come from a trusted contact
+- Fake Recruiter Attack: a LinkedIn-specific phishing technique using convincing fake recruiter profiles to deliver malware through job offer pretexts
+- Malicious Ad: a paid social media advertisement designed to direct victims to phishing pages or fraudulent investment schemes
+- Lazarus Group: a North Korean state-sponsored threat actor known for sophisticated social media phishing campaigns targeting financial and cryptocurrency organizations
