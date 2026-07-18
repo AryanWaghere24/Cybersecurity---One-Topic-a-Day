@@ -66,3 +66,10 @@ Account security:
 2. Use a unique password for each platform
 3. Review connected third-party apps regularly — revoke unused ones
 4. Check active sessions and log out of unrecognized devices
+
+Recognizing attacks:
+1. Unsolicited DMs with links — treat with same suspicion as email phishing
+2. Job offers that seem too good — verify the recruiter's profile age and connections
+3. Friend requests from people you don't recognize — check mutual connections
+4. Any message asking you to "check this photo/video of you" — classic compromise indicator
+5. Investment opportunities promising guaranteed returns — always fraudulent
