@@ -79,3 +79,4 @@ If a friend's account seems compromised:
 - Report the suspicious messages to the platform
 - Let them know their account may be sending phishing messages
 ```
+Social media phishing is evolving rapidly alongside AI — deepfake video profiles, AI-generated profile pictures, and AI-written convincing messages are making fake profiles increasingly indistinguishable from real ones. The best defense remains behavioral: be skeptical of unsolicited contact regardless of how legitimate the profile appears, and verify unusual requests through a separate channel before taking any action.
