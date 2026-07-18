@@ -14,3 +14,9 @@ Attacker creates a profile mimicking a real person or brand
 Sends friend/connection requests to build a network
 Then sends phishing links or requests money/information
 Common on Facebook (fake friend) and LinkedIn (fake recruiter)
+
+Malicious Ads
+Paid social media ads promoting fake giveaways, investments, or products
+"Elon Musk is giving away Bitcoin — click to claim yours"
+Leads to credential harvesting or payment fraud pages
+Extremely difficult to distinguish from legitimate sponsored content
