@@ -28,3 +28,13 @@ How OAuth phishing works:
    without ever knowing the victim's password or MFA code
 7. Access persists even if victim changes their password
 ```
+
+Why OAuth phishing bypasses traditional defenses:
+```
+- No fake login page — victim authenticates on the REAL platform
+- MFA is completely bypassed — victim completes it themselves
+- Password change doesn't revoke access — token persists
+- Looks legitimate — real Google/Microsoft consent screen shown
+- Email security tools don't flag OAuth consent URLs as malicious
+```
+
