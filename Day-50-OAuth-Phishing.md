@@ -6,6 +6,8 @@ OAuth Phishing is a modern phishing technique that abuses the OAuth authorizatio
 ## How It Works
 OAuth is a legitimate authorization protocol that lets you grant third-party apps limited access to your accounts without sharing your password. OAuth phishing abuses the consent grant step of this process.
 
+![](assets/Oauth-Phishing.png)
+
 ```
 How legitimate OAuth works:
 1. You click "Sign in with Google" on a third-party app
