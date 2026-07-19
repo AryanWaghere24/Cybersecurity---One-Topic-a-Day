@@ -81,3 +81,4 @@ Admin defense for organizations (Google Workspace / Microsoft 365):
 - Block third-party OAuth apps by default, require IT approval
 - Monitor OAuth consent grants in audit logs for suspicious apps
 ```
+OAuth phishing is the clearest example of how modern attacks have evolved beyond stealing passwords — attackers now target the authorization layer instead, gaining access through legitimate channels that bypass every traditional credential-based defense. Reviewing your connected apps periodically and being cautious about what you authorize is the most important habit for defending against this attack class.
