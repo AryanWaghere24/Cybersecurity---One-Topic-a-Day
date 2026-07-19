@@ -2,3 +2,6 @@
 
 ## What It Is
 OAuth Phishing is a modern phishing technique that abuses the OAuth authorization framework — the system that powers "Sign in with Google", "Sign in with Microsoft", and "Connect with Facebook" buttons across the web. Instead of stealing your password directly, OAuth phishing tricks you into granting a malicious third-party application access to your account. Since you authorize the app through a legitimate OAuth consent screen on the real platform, no fake login page is needed — the victim authenticates on the genuine website and MFA passes normally. The attacker ends up with persistent access to the victim's account without ever knowing their password.
+
+## How It Works
+OAuth is a legitimate authorization protocol that lets you grant third-party apps limited access to your accounts without sharing your password. OAuth phishing abuses the consent grant step of this process.
