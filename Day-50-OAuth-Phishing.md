@@ -44,3 +44,10 @@ In 2017 a massive OAuth phishing campaign targeted over one million Gmail users.
 From an attacker's side, OAuth phishing is one of the most sophisticated modern phishing techniques because it completely bypasses password theft and MFA — the two most commonly recommended defenses against phishing. Persistent access tokens mean the attacker maintains access even after the victim resets their password, and the attack leaves minimal traces in traditional security logs since all authentication was legitimate.
 
 From a defender's side, organizations should restrict which OAuth apps employees can grant access to — enterprise Google Workspace and Microsoft 365 both have admin controls to whitelist approved apps and block unapproved ones. Users should carefully read OAuth consent screens before clicking Allow — check the app name, the developer, and specifically what permissions are being requested. Periodically reviewing and revoking OAuth app permissions in your account settings removes any previously granted malicious access.
+
+## Key Terms
+- OAuth (Open Authorization): a standard protocol allowing third-party applications to access user accounts without sharing passwords
+- OAuth Consent Screen: the page shown by Google, Microsoft, or other platforms listing what permissions a third-party app is requesting
+- Access Token: a credential issued after OAuth authorization that allows the app to act on the user's behalf within granted permissions
+- Consent Phishing: another name for OAuth phishing — tricking users into granting malicious app permissions through legitimate consent screens
+- Token Persistence: OAuth tokens remain valid even after password changes, giving attackers persistent access until the token is explicitly revoked
