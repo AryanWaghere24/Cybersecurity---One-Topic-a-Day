@@ -68,3 +68,16 @@ Microsoft:
 1. Go to myapps.microsoft.com
 2. Click on any app → Manage your application
 3. Review permissions and revoke as needed
+
+How to spot a malicious OAuth consent screen:
+- App name doesn't match what you expected to see
+- Developer name is unfamiliar or suspicious
+- Permissions requested are excessive for what the app claims to do
+  (a "document viewer" asking for Send Email permission is a red flag)
+- You didn't initiate the OAuth flow — it came from an unsolicited link
+
+Admin defense for organizations (Google Workspace / Microsoft 365):
+- Enable OAuth app whitelisting — only pre-approved apps can request access
+- Block third-party OAuth apps by default, require IT approval
+- Monitor OAuth consent grants in audit logs for suspicious apps
+```
