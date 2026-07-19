@@ -13,3 +13,18 @@ How legitimate OAuth works:
 3. You click "Allow"
 4. The app receives an access token — can act on your behalf within those permissions
 5. Your password was never shared with the third-party app
+
+How OAuth phishing works:
+1. Attacker registers a malicious app with a convincing name
+   "Google Drive File Viewer", "Office 365 Security Scanner"
+2. Sends victim a phishing email or message:
+   "Your shared document is ready — click to view"
+3. Victim clicks and is taken to a REAL Google/Microsoft consent screen
+4. Consent screen shows the malicious app requesting permissions:
+   "This app wants to: Read your emails, Access your contacts,
+    Send emails on your behalf"
+5. Victim sees a real Google URL, passes MFA normally, clicks Allow
+6. Attacker now has persistent OAuth token — full account access
+   without ever knowing the victim's password or MFA code
+7. Access persists even if victim changes their password
+```
