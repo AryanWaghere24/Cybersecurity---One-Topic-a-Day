@@ -37,4 +37,6 @@ Why OAuth phishing bypasses traditional defenses:
 - Looks legitimate — real Google/Microsoft consent screen shown
 - Email security tools don't flag OAuth consent URLs as malicious
 ```
+## Real-World Example
+In 2017 a massive OAuth phishing campaign targeted over one million Gmail users. Victims received emails appearing to be from a known contact sharing a Google Doc. Clicking opened a real Google OAuth consent screen for an app called "Google Docs" — but it was a malicious third-party app, not the real Google Docs. Victims saw the familiar Google interface, granted permissions, and the attacker's app immediately gained access to their Gmail contacts and sent the same phishing email to everyone in their contact list — self-propagating like a worm entirely through legitimate OAuth grants. Google shut it down within an hour but not before it spread to over a million accounts.
 
