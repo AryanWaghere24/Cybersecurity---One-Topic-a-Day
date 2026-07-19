@@ -51,3 +51,20 @@ From a defender's side, organizations should restrict which OAuth apps employees
 - Access Token: a credential issued after OAuth authorization that allows the app to act on the user's behalf within granted permissions
 - Consent Phishing: another name for OAuth phishing — tricking users into granting malicious app permissions through legitimate consent screens
 - Token Persistence: OAuth tokens remain valid even after password changes, giving attackers persistent access until the token is explicitly revoked
+
+## One Tip / Tool
+
+Tool: Regularly audit and revoke OAuth app permissions through your account security settings
+
+```
+How to review and revoke OAuth app access:
+
+Google:
+1. Go to myaccount.google.com/security
+2. Scroll to "Third-party apps with account access"
+3. Review every app listed — revoke anything unrecognized or unused
+
+Microsoft:
+1. Go to myapps.microsoft.com
+2. Click on any app → Manage your application
+3. Review permissions and revoke as needed
