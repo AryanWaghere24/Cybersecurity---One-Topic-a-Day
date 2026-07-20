@@ -97,5 +97,6 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Defensive Security | Day 28 - Day 31 |
 | AI Security | Day 32 - 35 | 
 | Social Engineering & Phishing | Day 36 - 50 |
+| Cloud Security | Day 51 onwards |
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
