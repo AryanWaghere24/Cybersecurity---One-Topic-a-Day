@@ -8,3 +8,8 @@ Cloud platforms offer hundreds of services with thousands of configuration optio
 
 ```
 Most common cloud misconfiguration categories:
+
+1. Public Storage Buckets
+S3 buckets, Azure Blob containers, GCP Storage buckets set to public
+Anyone on the internet can read (or write) the contents
+Common data exposed: customer PII, credentials, backups, source code
