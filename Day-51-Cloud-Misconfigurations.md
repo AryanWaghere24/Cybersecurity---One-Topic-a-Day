@@ -80,3 +80,8 @@ scout aws
 # - Disabled logging
 # - Unencrypted storage
 # - And hundreds of other misconfiguration checks
+
+# Quick AWS CLI check for public S3 buckets
+aws s3api list-buckets --query 'Buckets[].Name'
+aws s3api get-bucket-acl --bucket <bucket-name>
+```
