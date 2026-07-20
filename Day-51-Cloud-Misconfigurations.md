@@ -68,3 +68,15 @@ Tool: `ScoutSuite` and `Prowler` — open source cloud security auditing tools
 # Prowler - comprehensive AWS security assessment tool
 pip install prowler
 prowler aws
+
+# ScoutSuite - multi-cloud security auditing
+pip install scoutsuite
+scout aws
+
+# Both tools check for:
+# - Public S3 buckets
+# - Overly permissive IAM policies
+# - Exposed security groups
+# - Disabled logging
+# - Unencrypted storage
+# - And hundreds of other misconfiguration checks
