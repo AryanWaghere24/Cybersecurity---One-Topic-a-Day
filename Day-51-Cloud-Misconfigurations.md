@@ -32,3 +32,13 @@ AWS access keys committed to public GitHub repositories
 Attackers scan GitHub continuously for exposed cloud credentials
 Automated tools find and abuse these within minutes of being pushed
 ```
+
+Example of a misconfigured S3 bucket policy:
+```json
+{
+  "Effect": "Allow",
+  "Principal": "*",
+  "Action": "s3:GetObject",
+  "Resource": "arn:aws:s3:::company-backups/*"
+}
+```
