@@ -47,3 +47,6 @@ The `"Principal": "*"` means anyone on the internet can read every file in this 
 
 ## Real-World Example
 The 2019 Capital One breach (also referenced in day 07 for SSRF) combined both SSRF and misconfiguration. The SSRF vulnerability allowed the attacker to reach the AWS metadata service, but it was an overly permissive IAM role attached to the web server that made the breach catastrophic. The server's IAM role had excessive S3 permissions — it could list and download from over 700 S3 buckets. A properly scoped IAM role would have limited what the attacker could access even after successfully exploiting the SSRF vulnerability. The misconfiguration turned a serious vulnerability into a 100-million-record breach.
+
+## Why It Matters
+From an attacker's side, scanning for cloud misconfigurations is largely automated and passive — tools continuously scan the internet for public S3 buckets, exposed databases, and leaked credentials on GitHub. No active exploitation of vulnerabilities is required. Many significant breaches happen because an attacker simply found something that was left open.
