@@ -44,3 +44,6 @@ Example of a misconfigured S3 bucket policy:
 ```
 
 The `"Principal": "*"` means anyone on the internet can read every file in this bucket.
+
+## Real-World Example
+The 2019 Capital One breach (also referenced in day 07 for SSRF) combined both SSRF and misconfiguration. The SSRF vulnerability allowed the attacker to reach the AWS metadata service, but it was an overly permissive IAM role attached to the web server that made the breach catastrophic. The server's IAM role had excessive S3 permissions — it could list and download from over 700 S3 buckets. A properly scoped IAM role would have limited what the attacker could access even after successfully exploiting the SSRF vulnerability. The misconfiguration turned a serious vulnerability into a 100-million-record breach.
