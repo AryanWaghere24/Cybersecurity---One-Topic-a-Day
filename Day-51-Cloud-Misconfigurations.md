@@ -59,3 +59,12 @@ From a defender's side, Cloud Security Posture Management (CSPM) tools continuou
 - Security Group: a virtual firewall in AWS controlling inbound and outbound traffic to cloud resources
 - CSPM (Cloud Security Posture Management): tools that continuously monitor cloud environments for misconfigurations and compliance violations
 - Least Privilege: the security principle that every user, role, and service should have only the minimum permissions necessary to perform its function
+
+## One Tip / Tool
+
+Tool: `ScoutSuite` and `Prowler` — open source cloud security auditing tools
+
+```bash
+# Prowler - comprehensive AWS security assessment tool
+pip install prowler
+prowler aws
