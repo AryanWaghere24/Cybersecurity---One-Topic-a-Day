@@ -13,3 +13,8 @@ Most common cloud misconfiguration categories:
 S3 buckets, Azure Blob containers, GCP Storage buckets set to public
 Anyone on the internet can read (or write) the contents
 Common data exposed: customer PII, credentials, backups, source code
+
+2. Overly Permissive IAM Policies
+Identity and Access Management roles with more permissions than needed
+"AdministratorAccess" given to a role that only needs to read one S3 bucket
+If that role is compromised, attacker has full account control
