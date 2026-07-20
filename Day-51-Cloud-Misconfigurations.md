@@ -6,6 +6,8 @@ Cloud Misconfigurations are security weaknesses caused by incorrect, insecure, o
 ## How It Works
 Cloud platforms offer hundreds of services with thousands of configuration options. The default settings are often insecure, and the complexity of cloud environments means misconfigurations are easy to introduce and hard to detect manually.
 
+![](assets/Cloud-Misconfigurations.png)
+
 ```
 Most common cloud misconfiguration categories:
 
