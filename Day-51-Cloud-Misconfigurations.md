@@ -52,3 +52,10 @@ The 2019 Capital One breach (also referenced in day 07 for SSRF) combined both S
 From an attacker's side, scanning for cloud misconfigurations is largely automated and passive — tools continuously scan the internet for public S3 buckets, exposed databases, and leaked credentials on GitHub. No active exploitation of vulnerabilities is required. Many significant breaches happen because an attacker simply found something that was left open.
 
 From a defender's side, Cloud Security Posture Management (CSPM) tools continuously scan cloud environments for misconfigurations and alert on violations of security best practices. AWS provides native tools like Security Hub, Trusted Advisor, and Config Rules. The principle of least privilege applied to IAM is the single most impactful control — every role, user, and service should have only the minimum permissions needed to function.
+
+## Key Terms
+- Cloud Misconfiguration: an insecure or incorrect setting in cloud infrastructure that exposes resources to unauthorized access
+- IAM (Identity and Access Management): the system controlling who can access what in a cloud environment — users, roles, and policies
+- Security Group: a virtual firewall in AWS controlling inbound and outbound traffic to cloud resources
+- CSPM (Cloud Security Posture Management): tools that continuously monitor cloud environments for misconfigurations and compliance violations
+- Least Privilege: the security principle that every user, role, and service should have only the minimum permissions necessary to perform its function
