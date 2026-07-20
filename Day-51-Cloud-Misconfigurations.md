@@ -22,3 +22,7 @@ If that role is compromised, attacker has full account control
 3. Exposed Management Interfaces
 RDP (port 3389), SSH (port 22), database ports open to 0.0.0.0/0
 Security groups allowing inbound traffic from "anywhere" instead of specific IPs
+
+4. Disabled Logging and Monitoring
+CloudTrail, Azure Monitor, GCP Cloud Audit Logs turned off
+Attackers can operate for months without leaving any detectable trace
