@@ -26,3 +26,9 @@ Security groups allowing inbound traffic from "anywhere" instead of specific IPs
 4. Disabled Logging and Monitoring
 CloudTrail, Azure Monitor, GCP Cloud Audit Logs turned off
 Attackers can operate for months without leaving any detectable trace
+
+5. Hardcoded Credentials in Code
+AWS access keys committed to public GitHub repositories
+Attackers scan GitHub continuously for exposed cloud credentials
+Automated tools find and abuse these within minutes of being pushed
+```
