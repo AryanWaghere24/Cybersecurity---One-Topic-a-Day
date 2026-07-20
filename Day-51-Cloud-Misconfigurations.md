@@ -85,3 +85,4 @@ scout aws
 aws s3api list-buckets --query 'Buckets[].Name'
 aws s3api get-bucket-acl --bucket <bucket-name>
 ```
+The fastest way to find real-world cloud misconfigurations safely is through **bug bounty programs** — many major companies have cloud infrastructure in scope for their bug bounty programs, and misconfiguration findings are among the most commonly rewarded. Platforms like HackerOne and Bugcrowd list programs explicitly allowing cloud security testing within defined scope.
