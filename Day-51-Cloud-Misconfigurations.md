@@ -42,3 +42,5 @@ Example of a misconfigured S3 bucket policy:
   "Resource": "arn:aws:s3:::company-backups/*"
 }
 ```
+
+The `"Principal": "*"` means anyone on the internet can read every file in this bucket.
