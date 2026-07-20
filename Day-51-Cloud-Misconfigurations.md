@@ -18,3 +18,7 @@ Common data exposed: customer PII, credentials, backups, source code
 Identity and Access Management roles with more permissions than needed
 "AdministratorAccess" given to a role that only needs to read one S3 bucket
 If that role is compromised, attacker has full account control
+
+3. Exposed Management Interfaces
+RDP (port 3389), SSH (port 22), database ports open to 0.0.0.0/0
+Security groups allowing inbound traffic from "anywhere" instead of specific IPs
