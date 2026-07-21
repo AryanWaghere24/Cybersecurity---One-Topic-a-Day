@@ -71,3 +71,14 @@ aws s3control get-public-access-block --account-id YOUR_ACCOUNT_ID
 
 # check Block Public Access settings on a specific bucket
 aws s3api get-public-access-block --bucket your-bucket-name
+
+# list all buckets and check their public access status
+aws s3api list-buckets --query 'Buckets[].Name' --output text | \
+  xargs -I {} aws s3api get-bucket-acl --bucket {}
+
+# enable Block Public Access on a bucket (the fix)
+aws s3api put-public-access-block \
+  --bucket your-bucket-name \
+  --public-access-block-configuration \
+  "BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true"
+```
