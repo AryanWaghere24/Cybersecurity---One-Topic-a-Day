@@ -22,3 +22,13 @@ Misconfigured example — allows anyone to read all objects:
   "Action": "s3:GetObject",
   "Resource": "arn:aws:s3:::bucket-name/*"
 }
+
+3. Bucket ACL
+Legacy access control — "public-read" ACL makes bucket contents world-readable
+
+Common scenarios leading to exposure:
+- Developer sets bucket to public for testing, forgets to revert
+- Static website hosting enabled without realizing it makes bucket public
+- Third-party tool or service requires public access, misconfigured scope
+- Backup bucket created with same settings as public assets bucket
+- Bucket name is guessable/predictable — attackers enumerate common names
