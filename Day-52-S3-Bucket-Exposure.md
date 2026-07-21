@@ -32,3 +32,10 @@ Common scenarios leading to exposure:
 - Third-party tool or service requires public access, misconfigured scope
 - Backup bucket created with same settings as public assets bucket
 - Bucket name is guessable/predictable — attackers enumerate common names
+
+How attackers find exposed buckets:
+# GrayhatWarfare - search engine for public S3 buckets
+https://buckets.grayhatwarfare.com
+
+# AWS CLI - if you know the bucket name, test if it's public
+aws s3 ls s3://target-bucket-name --no-sign-request
