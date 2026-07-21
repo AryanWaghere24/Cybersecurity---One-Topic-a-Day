@@ -39,3 +39,9 @@ https://buckets.grayhatwarfare.com
 
 # AWS CLI - if you know the bucket name, test if it's public
 aws s3 ls s3://target-bucket-name --no-sign-request
+
+# Automated tools
+pip install cloud-enum
+cloud_enum -k companyname
+# tries common bucket naming patterns: companyname-backup, companyname-dev, etc.
+```
