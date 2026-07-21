@@ -51,3 +51,5 @@ In 2017 Verizon suffered an S3 exposure where a third-party vendor (Nice Systems
 
 ## Why It Matters
 From an attacker's side, finding exposed S3 buckets requires no hacking skill whatsoever — automated tools enumerate buckets using common naming patterns (company-name-backup, company-name-dev, company-name-prod) and check if they're publicly accessible. Security researchers and attackers scan for these continuously. The data found often includes credentials that enable deeper access into the organization's cloud environment.
+
+From a defender's side, AWS now enables Block Public Access by default on new accounts and buckets — but existing buckets and older accounts may still have this disabled. Regular auditing using tools like AWS Security Hub, Prowler, or ScoutSuite catches public buckets before attackers do. Every S3 bucket should have a documented reason for its access level, and any bucket not explicitly intended to be public should have Block Public Access enabled at both the bucket and account level.
