@@ -80,7 +80,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 49 | Social Media Phishing |
 | Day 50 | OAuth Phishing |
 | Day 51 | Cloud Misconfigurations |
-| Day 52 | Coming Soon |
+| Day 52 | s3 Bucket Exposure |
 ---
 ## Topics Covered
 
