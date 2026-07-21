@@ -53,3 +53,10 @@ In 2017 Verizon suffered an S3 exposure where a third-party vendor (Nice Systems
 From an attacker's side, finding exposed S3 buckets requires no hacking skill whatsoever — automated tools enumerate buckets using common naming patterns (company-name-backup, company-name-dev, company-name-prod) and check if they're publicly accessible. Security researchers and attackers scan for these continuously. The data found often includes credentials that enable deeper access into the organization's cloud environment.
 
 From a defender's side, AWS now enables Block Public Access by default on new accounts and buckets — but existing buckets and older accounts may still have this disabled. Regular auditing using tools like AWS Security Hub, Prowler, or ScoutSuite catches public buckets before attackers do. Every S3 bucket should have a documented reason for its access level, and any bucket not explicitly intended to be public should have Block Public Access enabled at both the bucket and account level.
+
+## Key Terms
+- S3 (Simple Storage Service): AWS's object storage service used to store files, backups, and data at scale
+- Bucket Policy: a JSON document attached to an S3 bucket defining who can access it and what actions they can perform
+- Block Public Access: an AWS account and bucket-level setting that prevents public access regardless of bucket policies or ACLs
+- ACL (Access Control List): a legacy S3 access control mechanism — "public-read" ACL makes bucket contents world-readable
+- Bucket Enumeration: automatically discovering S3 buckets by guessing common naming patterns and testing if they're publicly accessible
