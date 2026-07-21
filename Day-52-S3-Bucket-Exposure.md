@@ -45,3 +45,6 @@ pip install cloud-enum
 cloud_enum -k companyname
 # tries common bucket naming patterns: companyname-backup, companyname-dev, etc.
 ```
+
+## Real-World Example
+In 2017 Verizon suffered an S3 exposure where a third-party vendor (Nice Systems) stored call center data in a publicly accessible S3 bucket. The bucket contained names, addresses, phone numbers, and account PINs for approximately 14 million Verizon customers. The data was discovered by a security researcher using publicly available bucket scanning tools — no credentials, no exploitation, just an HTTP request to a public URL. The same year, Booz Allen Hamilton exposed classified US government data including credentials for government systems in a public S3 bucket. Both incidents required zero technical skill to discover — the data was simply sitting there, accessible to anyone who found the URL.
