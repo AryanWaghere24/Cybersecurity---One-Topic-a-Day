@@ -82,3 +82,5 @@ aws s3api put-public-access-block \
   --public-access-block-configuration \
   "BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true"
 ```
+
+The quickest security win for any organization using AWS — run `aws s3api list-buckets` and check every single bucket's public access settings. Enable Block Public Access on every bucket that doesn't explicitly need to serve public content. This single check has prevented countless potential breaches and takes less than an hour to audit across an entire AWS account.
