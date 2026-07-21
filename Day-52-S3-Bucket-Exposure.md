@@ -60,3 +60,14 @@ From a defender's side, AWS now enables Block Public Access by default on new ac
 - Block Public Access: an AWS account and bucket-level setting that prevents public access regardless of bucket policies or ACLs
 - ACL (Access Control List): a legacy S3 access control mechanism — "public-read" ACL makes bucket contents world-readable
 - Bucket Enumeration: automatically discovering S3 buckets by guessing common naming patterns and testing if they're publicly accessible
+
+## One Tip / Tool
+
+Tool: `cloud_enum` for bucket enumeration and `AWS CLI` for checking your own bucket configurations
+
+```bash
+# check if Block Public Access is enabled on your AWS account
+aws s3control get-public-access-block --account-id YOUR_ACCOUNT_ID
+
+# check Block Public Access settings on a specific bucket
+aws s3api get-public-access-block --bucket your-bucket-name
