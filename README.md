@@ -81,6 +81,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 50 | OAuth Phishing |
 | Day 51 | Cloud Misconfigurations |
 | Day 52 | s3 Bucket Exposure |
+| Day 53 | Coming Soon | 
 ---
 ## Topics Covered
 
