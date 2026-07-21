@@ -5,3 +5,10 @@ S3 Bucket Exposure is one of the most common and damaging cloud security misconf
 
 ## How It Works
 S3 buckets have multiple layers of access control — bucket policies, ACLs (Access Control Lists), and account-level Block Public Access settings. A misconfiguration at any layer can result in unintended public exposure.
+
+```
+S3 Access Control Layers:
+
+1. Account-level Block Public Access (strongest protection)
+AWS added this as a safeguard — when enabled, overrides all other settings
+Should be enabled on every account that doesn't intentionally serve public content
