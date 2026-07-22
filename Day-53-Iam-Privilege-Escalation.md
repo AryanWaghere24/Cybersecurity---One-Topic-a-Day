@@ -6,6 +6,8 @@ IAM Privilege Escalation in cloud environments is the process of exploiting misc
 ## How It Works
 AWS IAM controls everything in a cloud account — who can launch servers, access databases, read secrets, and manage billing. When IAM policies are overly broad or misconfigured, attackers with limited initial access can chain together permissions to escalate to full admin.
 
+![](assets/Iam-Privilege-Escalation.png)
+
 ```
 Common IAM Privilege Escalation techniques:
 
