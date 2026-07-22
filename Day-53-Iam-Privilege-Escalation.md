@@ -34,3 +34,12 @@ Result: their existing permissions now include full admin access
 Required permissions: lambda:CreateFunction + iam:PassRole + lambda:InvokeFunction
 Attacker creates a Lambda function with an admin role, invokes it to
 execute arbitrary code with admin privileges
+
+Real example attack chain:
+Low-privilege user
+→ has iam:PassRole + ec2:RunInstances
+→ launches EC2 with AdminRole attached
+→ SSHes in, queries metadata: curl http://169.254.169.254/latest/meta-data/iam/security-credentials/AdminRole
+→ gets temporary admin credentials
+→ full account compromise
+```
