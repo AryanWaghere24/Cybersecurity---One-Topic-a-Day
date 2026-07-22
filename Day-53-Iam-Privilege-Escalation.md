@@ -46,3 +46,6 @@ Low-privilege user
 
 ## Real-World Example
 In cloud penetration testing engagements, IAM privilege escalation is one of the most commonly found paths to full account compromise. Security researchers Spencer Gietzen and others at Rhino Security Labs documented over 20 distinct IAM privilege escalation techniques in AWS, demonstrating that many organizations unknowingly grant permission combinations that enable full admin access from what appear to be low-privilege starting points. In real breach investigations, attackers who gain initial access through SSRF (day 07), phishing (day 37-50), or exposed credentials routinely use IAM privilege escalation to expand from limited initial access to full cloud account control before exfiltrating data or deploying ransomware.
+
+## Why It Matters
+From an attacker's side, IAM privilege escalation often requires no exploitation of software vulnerabilities — just understanding what permissions exist and how to chain them together creatively. Many organizations focus on preventing initial access but leave IAM misconfigured, allowing attackers to expand their foothold once inside.
