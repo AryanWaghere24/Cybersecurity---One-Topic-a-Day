@@ -18,3 +18,9 @@ Result: instant administrator access
 Required permissions: sts:AssumeRole on a powerful role
 If a low-privilege user can assume an admin role, they become admin
 Result: full privileges of that role for the session duration
+
+3. Passing a role to a service
+Required permissions: iam:PassRole + ec2:RunInstances (or similar)
+Attacker launches an EC2 instance with an admin IAM role attached
+SSHes into the instance and uses the instance's admin credentials
+Result: admin access through the instance's metadata service
