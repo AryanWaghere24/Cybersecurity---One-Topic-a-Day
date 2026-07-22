@@ -82,6 +82,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 51 | Cloud Misconfigurations |
 | Day 52 | s3 Bucket Exposure |
 | Day 53 | Iam Privilege Escalation | 
+| Day 54 | Coming Soon |
 ---
 ## Topics Covered
 
