@@ -13,3 +13,8 @@ Common IAM Privilege Escalation techniques:
 Required permissions: iam:CreatePolicyVersion or iam:AttachUserPolicy
 Attacker creates an admin policy and attaches it to their own user
 Result: instant administrator access
+
+2. Assuming a more privileged role
+Required permissions: sts:AssumeRole on a powerful role
+If a low-privilege user can assume an admin role, they become admin
+Result: full privileges of that role for the session duration
