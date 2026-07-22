@@ -49,3 +49,5 @@ In cloud penetration testing engagements, IAM privilege escalation is one of the
 
 ## Why It Matters
 From an attacker's side, IAM privilege escalation often requires no exploitation of software vulnerabilities — just understanding what permissions exist and how to chain them together creatively. Many organizations focus on preventing initial access but leave IAM misconfigured, allowing attackers to expand their foothold once inside.
+
+From a defender's side, implementing least privilege IAM is the core defense — every user, role, and service should have only the specific permissions they need, nothing more. AWS IAM Access Analyzer identifies overly permissive policies. Regular IAM permission audits using tools like Prowler catch dangerous permission combinations before attackers find them. Enabling CloudTrail logging ensures all IAM actions are recorded for detection and investigation.
