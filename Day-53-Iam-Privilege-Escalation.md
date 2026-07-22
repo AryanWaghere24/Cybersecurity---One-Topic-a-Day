@@ -24,3 +24,8 @@ Required permissions: iam:PassRole + ec2:RunInstances (or similar)
 Attacker launches an EC2 instance with an admin IAM role attached
 SSHes into the instance and uses the instance's admin credentials
 Result: admin access through the instance's metadata service
+
+4. Updating an existing policy
+Required permissions: iam:CreatePolicyVersion
+Attacker adds administrator permissions to an existing policy they're attached to
+Result: their existing permissions now include full admin access
