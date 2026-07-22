@@ -74,3 +74,12 @@ python3 pacu.py
 run iam__privesc_scan          # automatically identifies escalation paths
 run iam__enum_users_roles_policies_groups  # enumerate all IAM entities
 run iam__backdoor_users_keys   # create backdoor access keys
+
+# manual check - list your current permissions
+aws iam get-user
+aws iam list-attached-user-policies --user-name YOUR_USERNAME
+aws iam list-user-policies --user-name YOUR_USERNAME
+
+# check what roles you can assume
+aws iam list-roles | grep -i "AssumeRole"
+```
