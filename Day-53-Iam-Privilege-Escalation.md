@@ -83,3 +83,5 @@ aws iam list-user-policies --user-name YOUR_USERNAME
 # check what roles you can assume
 aws iam list-roles | grep -i "AssumeRole"
 ```
+
+Practice IAM privilege escalation safely on **CloudGoat** by Rhino Security Labs — a deliberately vulnerable AWS environment with realistic IAM misconfiguration scenarios designed specifically for learning cloud privilege escalation techniques in a legal lab environment.
