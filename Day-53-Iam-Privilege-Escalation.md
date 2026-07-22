@@ -69,3 +69,8 @@ git clone https://github.com/RhinoSecurityLabs/pacu
 cd pacu
 pip install -r requirements.txt
 python3 pacu.py
+
+# key Pacu modules for IAM privilege escalation:
+run iam__privesc_scan          # automatically identifies escalation paths
+run iam__enum_users_roles_policies_groups  # enumerate all IAM entities
+run iam__backdoor_users_keys   # create backdoor access keys
