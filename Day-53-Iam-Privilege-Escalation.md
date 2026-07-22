@@ -58,3 +58,14 @@ From a defender's side, implementing least privilege IAM is the core defense —
 - sts:AssumeRole: an AWS API action that allows switching to a different IAM role and inheriting its permissions
 - iam:PassRole: an AWS permission that allows attaching an IAM role to a service — frequently abused for privilege escalation
 - Permission Boundary: an IAM policy that sets the maximum permissions a role or user can have, used to limit escalation paths
+
+## One Tip / Tool
+
+Tool: `Pacu` — an open source AWS exploitation framework specifically designed for IAM and cloud privilege escalation testing
+
+```bash
+# install Pacu
+git clone https://github.com/RhinoSecurityLabs/pacu
+cd pacu
+pip install -r requirements.txt
+python3 pacu.py
