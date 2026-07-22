@@ -29,3 +29,8 @@ Result: admin access through the instance's metadata service
 Required permissions: iam:CreatePolicyVersion
 Attacker adds administrator permissions to an existing policy they're attached to
 Result: their existing permissions now include full admin access
+
+5. Lambda privilege escalation
+Required permissions: lambda:CreateFunction + iam:PassRole + lambda:InvokeFunction
+Attacker creates a Lambda function with an admin role, invokes it to
+execute arbitrary code with admin privileges
