@@ -83,6 +83,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 52 | s3 Bucket Exposure |
 | Day 53 | Iam Privilege Escalation | 
 | Day 54 | Cloud Metadata Exploitation |
+| Day 55 | Coming Soon |
 ---
 ## Topics Covered
 
