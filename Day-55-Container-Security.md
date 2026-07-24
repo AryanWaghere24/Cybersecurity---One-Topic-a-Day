@@ -64,3 +64,7 @@ From a defender's side, never run containers with --privileged unless absolutely
 - Docker Socket: the Unix socket used to communicate with the Docker daemon — mounting it inside a container gives container-to-host control
 - Kubernetes RBAC: Role Based Access Control system controlling what actions service accounts and users can perform in a Kubernetes cluster
 - Pod Security Standards: Kubernetes policies enforcing security requirements on pods — restricting privileged containers, host mounts, and dangerous capabilities
+
+## One Tip / Tool
+
+Tool: `Trivy` for container image scanning and `kube-bench` for Kubernetes security auditing
