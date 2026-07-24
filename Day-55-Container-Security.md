@@ -55,3 +55,5 @@ In 2018 Tesla's Kubernetes infrastructure was compromised through a misconfigure
 
 ## Why It Matters
 From an attacker's side, containers are often deployed with excessive privileges or misconfigurations that make escaping to the host or accessing cluster-wide resources straightforward. Kubernetes clusters with exposed APIs or dashboards are actively scanned and attacked — automated tools continuously probe for exposed Kubernetes instances.
+
+From a defender's side, never run containers with --privileged unless absolutely necessary. Never mount the Docker socket inside containers. Use Kubernetes RBAC (Role Based Access Control) to limit what service accounts can do. Disable automounting of service account tokens in pods that don't need API access. Run containers as non-root users. Use Pod Security Standards to enforce security policies across the cluster. Regularly scan container images for vulnerabilities using tools like Trivy.
