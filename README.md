@@ -84,6 +84,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 53 | Iam Privilege Escalation | 
 | Day 54 | Cloud Metadata Exploitation |
 | Day 55 | Container Security |
+| Day 56 | Coming Soon |
 ---
 ## Topics Covered
 
