@@ -68,3 +68,26 @@ From a defender's side, never run containers with --privileged unless absolutely
 ## One Tip / Tool
 
 Tool: `Trivy` for container image scanning and `kube-bench` for Kubernetes security auditing
+
+```bash
+# Trivy - scan a container image for vulnerabilities and misconfigurations
+trivy image ubuntu:latest
+trivy image --severity HIGH,CRITICAL nginx:1.21
+
+# kube-bench - check Kubernetes cluster against CIS benchmarks
+kubectl apply -f https://raw.githubusercontent.com/aquasecurity/kube-bench/main/job.yaml
+kubectl logs job/kube-bench
+
+# check for privileged containers running in your cluster
+kubectl get pods --all-namespaces -o json | \
+  jq '.items[] | select(.spec.containers[].securityContext.privileged==true) | .metadata.name'
+
+# check for pods with Docker socket mounted
+kubectl get pods --all-namespaces -o json | \
+  jq '.items[] | select(.spec.volumes[]?.hostPath.path=="/var/run/docker.sock") | .metadata.name'
+
+# Falco - runtime security tool that detects container escape attempts in real time
+# alerts when a container tries to access host paths, spawn shells, or modify system files
+```
+
+Practice container security on **KubeGoat** — a deliberately vulnerable Kubernetes environment with realistic attack scenarios including container escapes, RBAC misconfigurations, and exposed secrets, designed specifically for learning Kubernetes security in a legal lab environment.
