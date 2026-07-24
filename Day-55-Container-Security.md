@@ -38,3 +38,14 @@ Can list secrets, create privileged pods, or access other namespaces
 # Check if pod has API access
 curl -k https://kubernetes.default.svc/api \
   -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)"
+
+4. Exposed Kubernetes Dashboard
+kubectl proxy running without authentication
+Dashboard accessible publicly without login
+Attacker can deploy containers, read secrets, and control the cluster
+
+5. Secrets in Environment Variables
+Sensitive values (API keys, passwords) passed as environment variables
+Accessible to any process inside the container
+Exposed in Docker inspect output, Kubernetes pod specs, and logs
+```
