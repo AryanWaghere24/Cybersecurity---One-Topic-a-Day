@@ -57,3 +57,10 @@ In 2018 Tesla's Kubernetes infrastructure was compromised through a misconfigure
 From an attacker's side, containers are often deployed with excessive privileges or misconfigurations that make escaping to the host or accessing cluster-wide resources straightforward. Kubernetes clusters with exposed APIs or dashboards are actively scanned and attacked — automated tools continuously probe for exposed Kubernetes instances.
 
 From a defender's side, never run containers with --privileged unless absolutely necessary. Never mount the Docker socket inside containers. Use Kubernetes RBAC (Role Based Access Control) to limit what service accounts can do. Disable automounting of service account tokens in pods that don't need API access. Run containers as non-root users. Use Pod Security Standards to enforce security policies across the cluster. Regularly scan container images for vulnerabilities using tools like Trivy.
+
+## Key Terms
+- Container Escape: breaking out of a container's isolation to access the underlying host OS or other containers
+- Privileged Container: a Docker container running with --privileged flag giving it full access to the host's devices and capabilities
+- Docker Socket: the Unix socket used to communicate with the Docker daemon — mounting it inside a container gives container-to-host control
+- Kubernetes RBAC: Role Based Access Control system controlling what actions service accounts and users can perform in a Kubernetes cluster
+- Pod Security Standards: Kubernetes policies enforcing security requirements on pods — restricting privileged containers, host mounts, and dangerous capabilities
