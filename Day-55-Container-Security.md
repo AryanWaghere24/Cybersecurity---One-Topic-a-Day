@@ -49,3 +49,6 @@ Sensitive values (API keys, passwords) passed as environment variables
 Accessible to any process inside the container
 Exposed in Docker inspect output, Kubernetes pod specs, and logs
 ```
+
+## Real-World Example
+In 2018 Tesla's Kubernetes infrastructure was compromised through a misconfigured Kubernetes dashboard that was exposed to the internet without authentication. Attackers accessed the dashboard, found AWS credentials stored in Kubernetes secrets, and used those credentials to access Tesla's AWS environment. They then deployed cryptocurrency mining software across Tesla's cloud infrastructure — running their mining operation on Tesla's compute budget. The entry point was a single Kubernetes dashboard exposed without a password, a misconfiguration that took minutes to exploit and gave access to an entire cloud environment.
