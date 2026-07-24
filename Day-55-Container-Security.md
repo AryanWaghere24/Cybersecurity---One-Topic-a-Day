@@ -6,6 +6,8 @@ Container Security covers the attack surface introduced by containerized applica
 ## How It Works
 Containers share the host OS kernel — unlike virtual machines which have fully isolated kernels. This shared kernel model creates unique attack paths that don't exist in traditional virtualization.
 
+![](assets/Container-Security.png)
+
 ```
 Key container attack vectors:
 
