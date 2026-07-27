@@ -64,3 +64,7 @@ From a defender's side, applying least privilege to Lambda IAM roles is the most
 - Denial of Wallet (DoW): exploiting serverless auto-scaling to trigger massive invocations, generating enormous unexpected cloud bills
 - Cold Start: the initialization delay when a serverless function runs for the first time or after being idle — execution environment reuse creates data leakage risks
 - Function as a Service (FaaS): the serverless computing model where individual functions are deployed and billed per invocation and compute time
+
+## One Tip / Tool
+
+Tool: `Serverless Framework` for deployment and `PureSec CLI` / `Prowler` for serverless security scanning
