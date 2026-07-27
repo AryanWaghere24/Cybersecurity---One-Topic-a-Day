@@ -72,3 +72,13 @@ Tool: `Serverless Framework` for deployment and `PureSec CLI` / `Prowler` for se
 ```bash
 # Prowler includes serverless security checks
 prowler aws --service lambda
+
+# checks for:
+# - Lambda functions with admin IAM roles
+# - Functions without resource-based policies
+# - Unencrypted environment variables
+# - Functions with public URLs without authentication
+
+# AWS CLI - audit Lambda function configurations
+# list all Lambda functions
+aws lambda list-functions --query 'Functions[].FunctionName'
