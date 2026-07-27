@@ -68,3 +68,7 @@ From a defender's side, applying least privilege to Lambda IAM roles is the most
 ## One Tip / Tool
 
 Tool: `Serverless Framework` for deployment and `PureSec CLI` / `Prowler` for serverless security scanning
+
+```bash
+# Prowler includes serverless security checks
+prowler aws --service lambda
