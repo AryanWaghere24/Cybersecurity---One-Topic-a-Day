@@ -21,3 +21,9 @@ def handler(event, context):
     filename = event['filename']  # attacker controlled
     result = subprocess.run(f'cat {filename}', shell=True)  # command injection
     return result
+
+2. Over-Privileged Lambda Roles
+Lambda functions need IAM roles to access other AWS services
+Common mistake: attaching AdministratorAccess to a Lambda function
+If the function is compromised, attacker inherits full admin permissions
+Same IAM privilege escalation concepts from day 53 apply here
