@@ -49,3 +49,6 @@ Ephemeral containers sometimes reuse execution environments
 Data left in /tmp or memory from previous invocations
 Can leak sensitive data between function executions
 ```
+
+## Real-World Example
+In 2019 security researchers discovered that a popular serverless application framework had a vulnerability allowing attackers to read environment variables from Lambda functions through a carefully crafted event payload. Since many developers store database credentials, API keys, and other secrets as Lambda environment variables (a common but insecure practice), this vulnerability potentially exposed secrets across thousands of Lambda deployments using the affected framework. The incident highlighted how the abstraction of serverless doesn't eliminate security risks — it moves them to different layers like function code, dependencies, and configuration.
