@@ -32,3 +32,8 @@ Same IAM privilege escalation concepts from day 53 apply here
 Lambda functions package their own dependencies (node_modules, pip packages)
 Vulnerable or malicious packages in the deployment package
 Supply chain attacks targeting commonly used serverless frameworks
+
+4. Environment Variable Secrets
+Secrets stored as Lambda environment variables
+Visible in plaintext in AWS console and deployment configurations
+If function code is compromised, environment variables are accessible
