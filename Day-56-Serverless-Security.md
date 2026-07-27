@@ -82,3 +82,20 @@ prowler aws --service lambda
 # AWS CLI - audit Lambda function configurations
 # list all Lambda functions
 aws lambda list-functions --query 'Functions[].FunctionName'
+
+# check a function's IAM role and environment variables
+aws lambda get-function-configuration --function-name FUNCTION_NAME
+
+# check for functions with overly broad permissions
+aws lambda get-policy --function-name FUNCTION_NAME
+
+# set a billing alert to catch Denial of Wallet attacks
+aws cloudwatch put-metric-alarm \
+  --alarm-name lambda-cost-alert \
+  --metric-name Invocations \
+  --namespace AWS/Lambda \
+  --threshold 10000 \
+  --comparison-operator GreaterThanThreshold \
+  --evaluation-periods 1 \
+  --alarm-actions arn:aws:sns:region:account:topic
+```
