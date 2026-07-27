@@ -55,3 +55,5 @@ In 2019 security researchers discovered that a popular serverless application fr
 
 ## Why It Matters
 From an attacker's side, serverless functions expand the attack surface of web applications — every Lambda function reachable through an API Gateway is a potential target for injection attacks, and over-privileged functions provide paths to broader AWS account access. The ephemeral nature makes forensic investigation harder.
+
+From a defender's side, applying least privilege to Lambda IAM roles is the most impactful control — each function should have only the specific permissions it needs to do its job. Use AWS Secrets Manager or Parameter Store instead of environment variables for sensitive values. Validate and sanitize all input before processing in function code. Enable AWS Lambda function URLs with appropriate authentication. Monitor function invocations with CloudWatch and set billing alerts to catch Denial of Wallet attacks early.
