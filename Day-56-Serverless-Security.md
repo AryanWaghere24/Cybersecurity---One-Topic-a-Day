@@ -14,3 +14,10 @@ Serverless functions often process untrusted input from event sources
 If input isn't sanitized, classic injection attacks apply
 SQL Injection (day 04) through API Gateway → Lambda → RDS
 Command injection in Lambda functions processing user-supplied data
+
+Example vulnerable Lambda function:
+import subprocess
+def handler(event, context):
+    filename = event['filename']  # attacker controlled
+    result = subprocess.run(f'cat {filename}', shell=True)  # command injection
+    return result
