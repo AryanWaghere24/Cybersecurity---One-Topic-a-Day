@@ -99,3 +99,5 @@ aws cloudwatch put-metric-alarm \
   --evaluation-periods 1 \
   --alarm-actions arn:aws:sns:region:account:topic
 ```
+
+Practice serverless security on **ServerlessGoat** — a deliberately vulnerable AWS Lambda application by OWASP that demonstrates real serverless vulnerabilities including injection, over-privilege, and data exposure in a hands-on learning environment.
