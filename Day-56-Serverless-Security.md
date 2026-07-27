@@ -5,3 +5,6 @@ Serverless Security covers the unique attack surface introduced by serverless co
 
 ## How It Works
 Serverless functions are triggered by events — HTTP requests, file uploads, database changes, message queue entries. Each function runs in an isolated ephemeral container that spins up, executes, and disappears. This architecture creates unique security characteristics.
+
+```
+Key serverless attack vectors:
