@@ -8,3 +8,9 @@ Serverless functions are triggered by events — HTTP requests, file uploads, da
 
 ```
 Key serverless attack vectors:
+
+1. Event Injection
+Serverless functions often process untrusted input from event sources
+If input isn't sanitized, classic injection attacks apply
+SQL Injection (day 04) through API Gateway → Lambda → RDS
+Command injection in Lambda functions processing user-supplied data
