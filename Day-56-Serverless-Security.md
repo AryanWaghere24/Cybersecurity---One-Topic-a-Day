@@ -57,3 +57,10 @@ In 2019 security researchers discovered that a popular serverless application fr
 From an attacker's side, serverless functions expand the attack surface of web applications — every Lambda function reachable through an API Gateway is a potential target for injection attacks, and over-privileged functions provide paths to broader AWS account access. The ephemeral nature makes forensic investigation harder.
 
 From a defender's side, applying least privilege to Lambda IAM roles is the most impactful control — each function should have only the specific permissions it needs to do its job. Use AWS Secrets Manager or Parameter Store instead of environment variables for sensitive values. Validate and sanitize all input before processing in function code. Enable AWS Lambda function URLs with appropriate authentication. Monitor function invocations with CloudWatch and set billing alerts to catch Denial of Wallet attacks early.
+
+## Key Terms
+- Serverless: a cloud execution model where functions run on demand without managing underlying servers — AWS Lambda, Azure Functions, GCP Cloud Functions
+- Event Trigger: the source that invokes a serverless function — API Gateway, S3 events, SQS messages, DynamoDB streams
+- Denial of Wallet (DoW): exploiting serverless auto-scaling to trigger massive invocations, generating enormous unexpected cloud bills
+- Cold Start: the initialization delay when a serverless function runs for the first time or after being idle — execution environment reuse creates data leakage risks
+- Function as a Service (FaaS): the serverless computing model where individual functions are deployed and billed per invocation and compute time
