@@ -27,3 +27,8 @@ Lambda functions need IAM roles to access other AWS services
 Common mistake: attaching AdministratorAccess to a Lambda function
 If the function is compromised, attacker inherits full admin permissions
 Same IAM privilege escalation concepts from day 53 apply here
+
+3. Insecure Dependencies
+Lambda functions package their own dependencies (node_modules, pip packages)
+Vulnerable or malicious packages in the deployment package
+Supply chain attacks targeting commonly used serverless frameworks
