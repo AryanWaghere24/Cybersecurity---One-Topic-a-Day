@@ -43,3 +43,9 @@ Malicious traffic can generate enormous unexpected cloud bills
 Secrets stored as Lambda environment variables
 Visible in plaintext in AWS console and deployment configurations
 If function code is compromised, environment variables are accessible
+
+6. Cold Start Information Leakage
+Ephemeral containers sometimes reuse execution environments
+Data left in /tmp or memory from previous invocations
+Can leak sensitive data between function executions
+```
