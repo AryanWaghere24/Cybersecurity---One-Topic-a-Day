@@ -33,3 +33,12 @@ What it does:
 - Behavioral monitoring: flags unusual process execution, network connections
 - Vulnerability scanning of running workloads
 - Container runtime security (detects escape attempts, day 55)
+
+What CWPP catches:
+✓ Cryptomining malware deployed on compromised instances
+✓ Reverse shells spawned from web server processes (day 09)
+✓ Container escape attempts (day 55)
+✓ Lateral movement between cloud instances
+✓ Unusual metadata service queries (day 54)
+✓ Malicious process execution patterns
+```
