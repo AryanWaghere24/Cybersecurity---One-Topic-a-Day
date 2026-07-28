@@ -85,7 +85,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 54 | Cloud Metadata Exploitation |
 | Day 55 | Container Security |
 | Day 56 | Serverless Security |
-| Day 57 | Coming Soon |
+| Day 57 | Cloud Native Threats |
 ---
 ## Topics Covered
 
