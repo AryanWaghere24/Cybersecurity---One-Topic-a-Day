@@ -45,3 +45,17 @@ What CWPP catches:
 
 Attack patterns that CSPM + CWPP together detect:
 ```
+
+Attack chain example:
+1. SSRF vulnerability exploited (day 07)
+   → CWPP detects unusual outbound request to 169.254.169.254
+2. Metadata credentials stolen (day 54)
+   → CSPM alerts on new API calls from unusual geographic location
+3. IAM privilege escalation attempted (day 53)
+   → CSPM detects policy attachment outside normal patterns
+4. Cryptominer deployed on EC2 instances
+   → CWPP detects high CPU usage + known mining pool network connections
+5. Data exfiltration from S3 (day 52)
+   → CSPM/CWPP detects unusual S3 GetObject volume from new IP
+```
+
