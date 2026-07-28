@@ -63,3 +63,5 @@ After the Capital One breach in 2019 (referenced throughout days 07, 51, 54), cl
 
 ## Why It Matters
 From an attacker's side, understanding what CSPM and CWPP tools monitor helps in planning evasion — using slower, lower-volume data exfiltration to avoid anomaly detection thresholds, using living-off-the-land techniques in cloud environments (using legitimate AWS CLI commands rather than external tools), and targeting regions or accounts where logging is disabled.
+
+From a defender's side, CSPM and CWPP are now considered essential components of any mature cloud security program — not optional add-ons. The dynamic nature of cloud means manual security reviews can't keep pace with the rate of change. Automated continuous monitoring is the only realistic approach to maintaining visibility across large cloud environments with hundreds of services and thousands of configuration options.
