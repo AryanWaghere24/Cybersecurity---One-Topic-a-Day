@@ -24,3 +24,5 @@ What CSPM catches:
 ✓ Unencrypted storage volumes
 ✓ Missing MFA on root accounts
 ✓ Containers running as root (day 55)
+
+CWPP (Cloud Workload Protection Platform):
