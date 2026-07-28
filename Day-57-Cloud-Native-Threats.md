@@ -15,3 +15,12 @@ What it does:
 - Maps configurations against compliance frameworks (CIS, SOC2, PCI-DSS, HIPAA)
 - Prioritizes findings by risk severity
 - Provides remediation guidance and sometimes auto-remediation
+
+What CSPM catches:
+✓ Public S3 buckets (day 52)
+✓ Overly permissive IAM roles (day 53)
+✓ Exposed management ports (SSH/RDP open to 0.0.0.0/0)
+✓ Disabled CloudTrail logging
+✓ Unencrypted storage volumes
+✓ Missing MFA on root accounts
+✓ Containers running as root (day 55)
