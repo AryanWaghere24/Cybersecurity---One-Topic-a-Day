@@ -65,3 +65,10 @@ After the Capital One breach in 2019 (referenced throughout days 07, 51, 54), cl
 From an attacker's side, understanding what CSPM and CWPP tools monitor helps in planning evasion — using slower, lower-volume data exfiltration to avoid anomaly detection thresholds, using living-off-the-land techniques in cloud environments (using legitimate AWS CLI commands rather than external tools), and targeting regions or accounts where logging is disabled.
 
 From a defender's side, CSPM and CWPP are now considered essential components of any mature cloud security program — not optional add-ons. The dynamic nature of cloud means manual security reviews can't keep pace with the rate of change. Automated continuous monitoring is the only realistic approach to maintaining visibility across large cloud environments with hundreds of services and thousands of configuration options.
+
+## Key Terms
+- CSPM (Cloud Security Posture Management): tools that continuously monitor cloud configurations for misconfigurations and compliance violations
+- CWPP (Cloud Workload Protection Platform): tools that protect running cloud workloads from active threats at runtime
+- Cloud Native: applications and infrastructure designed specifically for cloud deployment using containers, microservices, and managed services
+- Behavioral Detection: identifying threats based on unusual patterns of activity rather than known malware signatures
+- Compliance Framework: a set of security requirements (CIS Benchmarks, SOC2, PCI-DSS) that CSPM tools map cloud configurations against
