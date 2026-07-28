@@ -58,4 +58,5 @@ Attack chain example:
 5. Data exfiltration from S3 (day 52)
    → CSPM/CWPP detects unusual S3 GetObject volume from new IP
 ```
-
+## Real-World Example
+After the Capital One breach in 2019 (referenced throughout days 07, 51, 54), cloud security teams across the industry significantly increased CSPM adoption. Capital One had the technical infrastructure to detect the attack but the misconfigured IAM role and SSRF combination created a gap. Modern CSPM tools would have flagged the overly permissive IAM role before it was exploited, and CWPP tools would have detected the unusual metadata service queries and subsequent S3 enumeration in real time — potentially stopping the breach before data exfiltration completed. The breach became a turning point for cloud native security tooling adoption across enterprise organizations.
