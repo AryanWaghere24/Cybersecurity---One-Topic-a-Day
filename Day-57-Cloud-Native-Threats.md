@@ -5,3 +5,6 @@ Cloud Native Threats refers to the category of security risks unique to modern c
 
 ## How It Works
 Cloud native environments are dynamic — infrastructure spins up and down automatically, configurations change constantly, and the attack surface shifts continuously. Traditional security tools designed for static on-premise environments can't keep up.
+
+```
+CSPM (Cloud Security Posture Management):
