@@ -8,3 +8,10 @@ Cloud native environments are dynamic — infrastructure spins up and down autom
 
 ```
 CSPM (Cloud Security Posture Management):
+
+What it does:
+- Continuously scans cloud configurations across AWS, Azure, GCP
+- Detects misconfigurations in real time (public S3 buckets, open security groups)
+- Maps configurations against compliance frameworks (CIS, SOC2, PCI-DSS, HIPAA)
+- Prioritizes findings by risk severity
+- Provides remediation guidance and sometimes auto-remediation
