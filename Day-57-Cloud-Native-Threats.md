@@ -76,3 +76,29 @@ From a defender's side, CSPM and CWPP are now considered essential components of
 ## One Tip / Tool
 
 Tool: `Prowler` (open source CSPM) and `Falco` (open source CWPP) — the best free alternatives to commercial tools
+
+```bash
+# Prowler - open source CSPM covering 300+ AWS security checks
+pip install prowler
+prowler aws                          # full AWS security scan
+prowler aws --compliance cis_1.5_aws # scan against CIS benchmark
+prowler aws --service s3 iam ec2     # scan specific services only
+
+# Falco - open source runtime security (CWPP) for containers and cloud
+# install on Kubernetes
+helm install falco falcosecurity/falco --namespace falco --create-namespace
+
+# Falco default rules detect:
+# - Shell spawned in a container
+# - Unexpected outbound connections
+# - Sensitive file reads (/etc/passwd, /etc/shadow)
+# - Container escape attempts
+# - Cryptocurrency mining processes
+
+# Commercial CSPM/CWPP options (free tiers available):
+# - AWS Security Hub (native, free tier)
+# - Microsoft Defender for Cloud (native Azure)
+# - Wiz, Orca Security, Lacework (third party, trials available)
+```
+
+The most important takeaway from this category — cloud security is not just traditional security applied to cloud infrastructure. It requires cloud-native tools, cloud-native thinking, and continuous automated monitoring that keeps pace with the dynamic nature of cloud environments. CSPM + CWPP together provide the visibility layer that makes everything else in this Cloud Security category (days 51-57) detectable and actionable in real time.
