@@ -72,3 +72,7 @@ From a defender's side, CSPM and CWPP are now considered essential components of
 - Cloud Native: applications and infrastructure designed specifically for cloud deployment using containers, microservices, and managed services
 - Behavioral Detection: identifying threats based on unusual patterns of activity rather than known malware signatures
 - Compliance Framework: a set of security requirements (CIS Benchmarks, SOC2, PCI-DSS) that CSPM tools map cloud configurations against
+
+## One Tip / Tool
+
+Tool: `Prowler` (open source CSPM) and `Falco` (open source CWPP) — the best free alternatives to commercial tools
