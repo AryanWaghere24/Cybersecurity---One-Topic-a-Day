@@ -42,3 +42,6 @@ What CWPP catches:
 ✓ Unusual metadata service queries (day 54)
 ✓ Malicious process execution patterns
 ```
+
+Attack patterns that CSPM + CWPP together detect:
+```
