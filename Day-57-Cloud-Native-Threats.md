@@ -26,3 +26,10 @@ What CSPM catches:
 ✓ Containers running as root (day 55)
 
 CWPP (Cloud Workload Protection Platform):
+
+What it does:
+- Protects running workloads at runtime — VMs, containers, serverless
+- Detects active threats: malware, cryptominers, lateral movement
+- Behavioral monitoring: flags unusual process execution, network connections
+- Vulnerability scanning of running workloads
+- Container runtime security (detects escape attempts, day 55)
