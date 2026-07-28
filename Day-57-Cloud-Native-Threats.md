@@ -1,1 +1,4 @@
 # Day 57 - Cloud Native Threats (CSPM & CWPP)
+
+## What It Is
+Cloud Native Threats refers to the category of security risks unique to modern cloud-native architectures — and CSPM (Cloud Security Posture Management) and CWPP (Cloud Workload Protection Platform) are the two primary defensive tool categories built specifically to address them. CSPM continuously monitors cloud configurations for misconfigurations and compliance violations (the kinds covered in days 51-54), while CWPP protects the runtime workloads themselves — containers, virtual machines, and serverless functions — against active threats. Together they represent the defensive layer purpose-built for cloud environments that traditional on-premise security tools weren't designed to handle.
