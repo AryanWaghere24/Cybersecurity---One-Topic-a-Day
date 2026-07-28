@@ -60,3 +60,6 @@ Attack chain example:
 ```
 ## Real-World Example
 After the Capital One breach in 2019 (referenced throughout days 07, 51, 54), cloud security teams across the industry significantly increased CSPM adoption. Capital One had the technical infrastructure to detect the attack but the misconfigured IAM role and SSRF combination created a gap. Modern CSPM tools would have flagged the overly permissive IAM role before it was exploited, and CWPP tools would have detected the unusual metadata service queries and subsequent S3 enumeration in real time — potentially stopping the breach before data exfiltration completed. The breach became a turning point for cloud native security tooling adoption across enterprise organizations.
+
+## Why It Matters
+From an attacker's side, understanding what CSPM and CWPP tools monitor helps in planning evasion — using slower, lower-volume data exfiltration to avoid anomaly detection thresholds, using living-off-the-land techniques in cloud environments (using legitimate AWS CLI commands rather than external tools), and targeting regions or accounts where logging is disabled.
