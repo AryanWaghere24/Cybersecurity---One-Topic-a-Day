@@ -6,6 +6,8 @@ OSINT (Open Source Intelligence) is the practice of collecting and analyzing pub
 ## How It Works
 OSINT follows a structured process — define what you're looking for, identify the right sources, collect systematically, and analyze to find actionable intelligence.
 
+![](assets/OSINT.png)
+
 ```
 OSINT target categories and sources:
 
