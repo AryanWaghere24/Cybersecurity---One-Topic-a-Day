@@ -24,3 +24,11 @@ Organizations
 - SEC filings (public companies): financial data, acquisitions, subsidiaries
 - Glassdoor reviews: internal culture, systems, processes
 - Shodan: internet-facing infrastructure, open ports, banners
+
+Domains & Infrastructure
+- WHOIS: domain registration details, registrant info
+- DNS records: subdomains, mail servers, IP ranges
+- Certificate Transparency logs: all SSL certificates ever issued
+- Shodan/Censys: open ports, running services, software versions
+- BuiltWith/Wappalyzer: technology stack used by a website
+- Wayback Machine: historical versions of websites
