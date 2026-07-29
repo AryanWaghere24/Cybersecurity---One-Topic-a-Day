@@ -41,3 +41,6 @@ Code & Technical Intelligence
   site:company.com inurl:admin
   "company.com" "password" filetype:txt
 ```
+
+## Real-World Example
+OSINT is the first phase of almost every real penetration test and red team engagement. A red teamer targeting a company spends days on OSINT before touching a single tool — finding employee names and email formats from LinkedIn, discovering subdomains via certificate transparency logs, finding exposed internal documents through Google Dorks, identifying the company's security tools from job postings ("must have experience with CrowdStrike and Splunk"), and locating developer GitHub accounts that may have committed credentials. All of this information — gathered entirely from public sources — shapes the entire attack strategy before a single packet is sent to the target.
