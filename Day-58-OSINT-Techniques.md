@@ -5,3 +5,14 @@ OSINT (Open Source Intelligence) is the practice of collecting and analyzing pub
 
 ## How It Works
 OSINT follows a structured process — define what you're looking for, identify the right sources, collect systematically, and analyze to find actionable intelligence.
+
+```
+OSINT target categories and sources:
+
+People / Individuals
+- LinkedIn: job history, skills, connections, email patterns
+- Twitter/X: opinions, location hints, associates, interests
+- Facebook: personal details, family, location history
+- Pipl, Spokeo: people search aggregators
+- HaveIBeenPwned: check if email appeared in data breaches
+- Reverse image search: find other accounts using same profile picture
