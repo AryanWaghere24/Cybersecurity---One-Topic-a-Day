@@ -32,3 +32,12 @@ Domains & Infrastructure
 - Shodan/Censys: open ports, running services, software versions
 - BuiltWith/Wappalyzer: technology stack used by a website
 - Wayback Machine: historical versions of websites
+
+Code & Technical Intelligence
+- GitHub: leaked credentials, internal tools, employee accounts
+- Pastebin: data dumps, leaked credentials, internal data
+- Google Dorks: advanced search operators to find exposed files
+  site:company.com filetype:pdf "confidential"
+  site:company.com inurl:admin
+  "company.com" "password" filetype:txt
+```
