@@ -86,7 +86,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 55 | Container Security |
 | Day 56 | Serverless Security |
 | Day 57 | Cloud Native Threats |
-| Day 58 | Coming Soon |
+| Day 58 | OSINT Techniques & Tools |
 ---
 ## Topics Covered
 
