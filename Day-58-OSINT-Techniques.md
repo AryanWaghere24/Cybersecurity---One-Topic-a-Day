@@ -49,3 +49,10 @@ OSINT is the first phase of almost every real penetration test and red team enga
 From an attacker's side, OSINT defines the quality of every subsequent attack phase. Better OSINT leads to more convincing spear phishing (day 39), more targeted exploitation, and better understanding of what's worth targeting. Nation-state actors invest heavily in OSINT before any technical operations begin.
 
 From a defender's side, performing OSINT on your own organization — from an attacker's perspective — reveals what's publicly exposed before attackers find it. Red teams call this "attack surface mapping." Finding that a developer committed AWS keys to a public GitHub repo, or that a subdomain is running an outdated web server, or that job postings reveal your entire security tool stack — and fixing these before attackers exploit them — is pure defensive value.
+
+## Key Terms
+- OSINT (Open Source Intelligence): intelligence gathered exclusively from publicly available sources without unauthorized access
+- Passive Reconnaissance: gathering intelligence without directly interacting with the target — using third-party databases, search engines, and cached data
+- Active Reconnaissance: directly interacting with target systems — port scanning, DNS queries — which may be detectable
+- Certificate Transparency: a public log of all SSL/TLS certificates ever issued, useful for discovering subdomains
+- Google Dork: an advanced Google search query using operators (site:, filetype:, inurl:) to find specific types of exposed content
