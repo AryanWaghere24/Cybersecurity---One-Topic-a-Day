@@ -56,3 +56,37 @@ From a defender's side, performing OSINT on your own organization — from an at
 - Active Reconnaissance: directly interacting with target systems — port scanning, DNS queries — which may be detectable
 - Certificate Transparency: a public log of all SSL/TLS certificates ever issued, useful for discovering subdomains
 - Google Dork: an advanced Google search query using operators (site:, filetype:, inurl:) to find specific types of exposed content
+
+## One Tip / Tool
+
+Tool: `theHarvester`, `Maltego`, `Shodan`, and `recon-ng` — the core OSINT toolkit
+
+```bash
+# theHarvester - gather emails, subdomains, hosts from public sources
+theHarvester -d targetcompany.com -b google,linkedin,twitter,shodan
+
+# recon-ng - full featured OSINT framework with modules
+recon-ng
+marketplace install all
+modules load recon/domains-hosts/certificate_transparency
+options set SOURCE targetcompany.com
+run
+
+# Shodan - search engine for internet-connected devices
+# find all devices belonging to a company's IP range
+shodan search org:"Target Company Name"
+shodan search hostname:targetcompany.com
+
+# Google Dorks for finding exposed files
+# exposed admin panels
+site:targetcompany.com inurl:admin OR inurl:login OR inurl:dashboard
+# exposed config files
+site:targetcompany.com filetype:env OR filetype:config OR filetype:xml
+# exposed credentials
+site:github.com "targetcompany.com" "api_key" OR "password" OR "secret"
+
+# Check certificate transparency for subdomains
+curl "https://crt.sh/?q=%.targetcompany.com&output=json" | jq '.[].name_value' | sort -u
+```
+
+The most valuable OSINT skill isn't knowing which tool to run — it's knowing how to connect information from multiple sources into a coherent picture. A name from LinkedIn, an email format from a job posting, a subdomain from certificate transparency, and an exposed service from Shodan individually mean little. Together they can reveal a complete attack path. That synthesis ability is what separates effective OSINT from just running tools.
