@@ -16,3 +16,11 @@ People / Individuals
 - Pipl, Spokeo: people search aggregators
 - HaveIBeenPwned: check if email appeared in data breaches
 - Reverse image search: find other accounts using same profile picture
+
+Organizations
+- Company website: employee names, email formats, technology stack
+- LinkedIn company page: employee count, org structure, open roles
+- Job postings: reveal internal technologies, security tools used
+- SEC filings (public companies): financial data, acquisitions, subsidiaries
+- Glassdoor reviews: internal culture, systems, processes
+- Shodan: internet-facing infrastructure, open ports, banners
