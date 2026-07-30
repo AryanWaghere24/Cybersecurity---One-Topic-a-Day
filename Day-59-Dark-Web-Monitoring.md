@@ -61,3 +61,6 @@ response = requests.get('http://example.onion', proxies=proxies)
 
 ## Real-World Example
 In 2021 the credentials of over 500 million LinkedIn users appeared on a dark web forum — scraped from LinkedIn's public data but compiled into a searchable database being sold for cryptocurrency. Organizations with dark web monitoring in place received alerts within hours of the data appearing, allowing them to proactively notify affected employees and enforce password resets before attackers could use the credentials for credential stuffing attacks (trying leaked passwords across other services). Without dark web monitoring, many organizations only discovered their employees' credentials were exposed when accounts started being compromised weeks later.
+
+## Why It Matters
+From an attacker's side, the dark web provides a marketplace for everything needed to conduct attacks — stolen credentials for initial access, exploit kits, malware-as-a-service, and even targeted attack services against specific organizations. Understanding this ecosystem helps defenders anticipate what attackers have access to.
