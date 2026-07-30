@@ -58,3 +58,6 @@ response = requests.get('http://example.onion', proxies=proxies)
 # IMPORTANT: Only access sites you're authorized to research
 # Many dark web sites host illegal content — stay within legal boundaries
 ```
+
+## Real-World Example
+In 2021 the credentials of over 500 million LinkedIn users appeared on a dark web forum — scraped from LinkedIn's public data but compiled into a searchable database being sold for cryptocurrency. Organizations with dark web monitoring in place received alerts within hours of the data appearing, allowing them to proactively notify affected employees and enforce password resets before attackers could use the credentials for credential stuffing attacks (trying leaked passwords across other services). Without dark web monitoring, many organizations only discovered their employees' credentials were exposed when accounts started being compromised weeks later.
