@@ -73,3 +73,5 @@ From a defender's side, dark web monitoring provides the earliest possible warni
 - Initial Access Broker: a cybercriminal who specializes in breaking into organizations and selling that access to other attackers
 - Credential Stuffing: using leaked username/password combinations to attempt login across multiple services, exploiting password reuse
 - Ransomware Leak Site: a dark web site maintained by ransomware groups to publish stolen data from victims who refuse to pay ransom
+
+## One Tip / Tool
