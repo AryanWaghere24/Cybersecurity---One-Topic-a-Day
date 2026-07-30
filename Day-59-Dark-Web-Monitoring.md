@@ -42,3 +42,19 @@ Accessing the dark web safely for research:
 ```bash
 # Tor Browser - the standard way to access .onion sites
 # Download from: https://www.torproject.org/download/
+
+# For programmatic access in a research context
+# Use stem library to control Tor from Python
+pip install stem requests[socks]
+
+import requests
+proxies = {
+    'http': 'socks5h://127.0.0.1:9050',
+    'https': 'socks5h://127.0.0.1:9050'
+}
+# Route requests through Tor
+response = requests.get('http://example.onion', proxies=proxies)
+
+# IMPORTANT: Only access sites you're authorized to research
+# Many dark web sites host illegal content — stay within legal boundaries
+```
