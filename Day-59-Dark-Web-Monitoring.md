@@ -8,3 +8,9 @@ The dark web isn't indexed by regular search engines and can't be accessed throu
 
 ```
 Dark web ecosystem relevant to cybersecurity:
+
+Data Breach Markets
+Stolen credentials, credit cards, and personal data sold in bulk
+Examples: forums where breach databases are posted and traded
+A defender monitoring these can discover their organization's
+credentials were stolen before attackers use them for initial access
