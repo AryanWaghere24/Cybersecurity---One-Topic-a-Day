@@ -66,3 +66,10 @@ In 2021 the credentials of over 500 million LinkedIn users appeared on a dark we
 From an attacker's side, the dark web provides a marketplace for everything needed to conduct attacks — stolen credentials for initial access, exploit kits, malware-as-a-service, and even targeted attack services against specific organizations. Understanding this ecosystem helps defenders anticipate what attackers have access to.
 
 From a defender's side, dark web monitoring provides the earliest possible warning of credential exposure and data breaches — often before the organization itself knows they've been compromised. The average time between a breach occurring and an organization discovering it independently is measured in months. Dark web monitoring can compress that to hours, dramatically reducing the window attackers have to exploit stolen data before defenders respond.
+
+## Key Terms
+- Dark Web: the portion of the internet accessible only through anonymizing networks like Tor, hosting both privacy-focused and criminal content
+- Tor (The Onion Router): a network that anonymizes internet traffic by routing it through multiple encrypted relays, used to access .onion sites
+- Initial Access Broker: a cybercriminal who specializes in breaking into organizations and selling that access to other attackers
+- Credential Stuffing: using leaked username/password combinations to attempt login across multiple services, exploiting password reuse
+- Ransomware Leak Site: a dark web site maintained by ransomware groups to publish stolen data from victims who refuse to pay ransom
