@@ -14,3 +14,9 @@ Stolen credentials, credit cards, and personal data sold in bulk
 Examples: forums where breach databases are posted and traded
 A defender monitoring these can discover their organization's
 credentials were stolen before attackers use them for initial access
+
+Ransomware Leak Sites
+Most major ransomware groups maintain dark web sites
+They publish stolen data from victims who refuse to pay
+Defenders monitor these to detect if their organization is listed
+Early detection gives time to respond before public disclosure
