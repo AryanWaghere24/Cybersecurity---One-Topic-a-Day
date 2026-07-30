@@ -31,3 +31,9 @@ Criminals who specialize in breaking into organizations
 Then sell that access to ransomware groups or other attackers
 Monitoring for your organization being sold as "access available"
 provides critical early warning of an imminent ransomware attack
+
+Paste Sites & Code Repositories
+Stolen data often posted to Pastebin, PrivateBin, and similar sites
+Credentials, internal documents, and source code dumped publicly
+Automated monitoring catches these within minutes of posting
+```
