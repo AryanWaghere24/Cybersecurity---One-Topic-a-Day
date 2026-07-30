@@ -37,3 +37,8 @@ Stolen data often posted to Pastebin, PrivateBin, and similar sites
 Credentials, internal documents, and source code dumped publicly
 Automated monitoring catches these within minutes of posting
 ```
+
+Accessing the dark web safely for research:
+```bash
+# Tor Browser - the standard way to access .onion sites
+# Download from: https://www.torproject.org/download/
