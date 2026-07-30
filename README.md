@@ -88,6 +88,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 57 | Cloud Native Threats |
 | Day 58 | OSINT Techniques & Tools |
 | Day 59 | Dark Web Monitoring |
+| Day 60 | Coming Soon |
 ---
 ## Topics Covered
 
