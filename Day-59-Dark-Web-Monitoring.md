@@ -20,3 +20,8 @@ Most major ransomware groups maintain dark web sites
 They publish stolen data from victims who refuse to pay
 Defenders monitor these to detect if their organization is listed
 Early detection gives time to respond before public disclosure
+
+Hacking Forums
+Discussions of new vulnerabilities, tools, and attack techniques
+Sometimes specific organizations are mentioned as targets
+Threat intelligence teams monitor for mentions of their brand
