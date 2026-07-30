@@ -75,3 +75,31 @@ From a defender's side, dark web monitoring provides the earliest possible warni
 - Ransomware Leak Site: a dark web site maintained by ransomware groups to publish stolen data from victims who refuse to pay ransom
 
 ## One Tip / Tool
+
+Tool: `HaveIBeenPwned API` for credential monitoring and `SpiderFoot` for automated dark web and OSINT monitoring
+
+```bash
+# HaveIBeenPwned - check if email/domain appears in known breaches
+# Free API for personal use, paid for bulk organizational monitoring
+curl "https://haveibeenpwned.com/api/v3/breachedaccount/test@example.com" \
+  -H "hibp-api-key: YOUR_API_KEY"
+
+# check all breaches for a domain (shows all employee emails exposed)
+curl "https://haveibeenpwned.com/api/v3/breacheddomain/yourcompany.com" \
+  -H "hibp-api-key: YOUR_API_KEY"
+
+# SpiderFoot - automated OSINT and dark web monitoring
+pip install spiderfoot
+sf -l 127.0.0.1:5001  # launch web interface
+# includes modules for dark web paste site monitoring
+# breach database checking, and credential exposure detection
+
+# Commercial dark web monitoring services (most mature option):
+# - Recorded Future
+# - Digital Shadows
+# - Flare (formerly Flare Systems)
+# These provide continuous monitoring with analyst context
+# most enterprises use these rather than building their own capability
+```
+
+Dark web monitoring is most valuable as a continuous, automated capability rather than a one-time check. Credentials appear on dark web forums continuously — from ongoing breaches, old breach databases being re-shared, and newly compiled combo lists. Setting up automated monitoring with alerting means your security team learns about exposures in near real time rather than discovering them during an incident investigation after accounts have already been compromised.
