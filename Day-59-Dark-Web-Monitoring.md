@@ -5,3 +5,6 @@ Dark Web Monitoring is the practice of continuously scanning dark web forums, ma
 
 ## How It Works
 The dark web isn't indexed by regular search engines and can't be accessed through a standard browser. Accessing it requires the Tor network, which anonymizes traffic by routing it through multiple encrypted relays.
+
+```
+Dark web ecosystem relevant to cybersecurity:
