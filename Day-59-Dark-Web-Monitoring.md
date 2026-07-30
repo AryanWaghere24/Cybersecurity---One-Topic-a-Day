@@ -25,3 +25,9 @@ Hacking Forums
 Discussions of new vulnerabilities, tools, and attack techniques
 Sometimes specific organizations are mentioned as targets
 Threat intelligence teams monitor for mentions of their brand
+
+Initial Access Brokers
+Criminals who specialize in breaking into organizations
+Then sell that access to ransomware groups or other attackers
+Monitoring for your organization being sold as "access available"
+provides critical early warning of an imminent ransomware attack
