@@ -63,3 +63,5 @@ During the 2020 SolarWinds attack, once the initial compromise was discovered, s
 
 ## Why It Matters
 From an attacker's side, understanding IOCs helps in operational security — frequently rotating infrastructure, using living-off-the-land techniques to avoid tool-based IOCs, and mimicking legitimate traffic patterns to avoid behavioral IOCs. Nation-state actors specifically design their malware to avoid leaving obvious IOCs.
+
+From a defender's side, IOCs are the foundation of threat detection at scale. A single analyst cannot manually review millions of log entries — but automated systems can instantly compare every log entry, file hash, and network connection against millions of known IOCs and alert on matches. Sharing IOCs through platforms like MISP and threat intelligence feeds multiplies their value — one organization's discovery becomes every organization's detection capability.
