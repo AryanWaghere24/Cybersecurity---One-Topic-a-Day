@@ -98,3 +98,15 @@ curl --request GET \
 git clone https://github.com/MISP/misp-docker
 cd misp-docker
 docker-compose up -d
+
+# Search for IOCs related to a threat actor or campaign
+# MISP integrates with threat intel feeds automatically
+# and allows exporting IOCs in formats compatible with SIEMs (day 28)
+
+# Free threat intelligence feeds for IOC enrichment:
+# - AlienVault OTX: otx.alienvault.com
+# - Abuse.ch: abuse.ch (URLhaus, MalwareBazaar, ThreatFox)
+# - CISA Known Exploited Vulnerabilities: cisa.gov/known-exploited-vulnerabilities
+```
+
+The most important thing to understand about IOCs — their value decays over time. A file hash from a malware sample found today is highly actionable. The same hash from three years ago is nearly worthless because that malware variant is long retired. Effective IOC management prioritizes freshness, context (what threat actor, what campaign, what was the impact), and confidence level (how sure are we this is actually malicious). Raw IOC lists without context are just noise — IOCs with rich context are genuine intelligence.
