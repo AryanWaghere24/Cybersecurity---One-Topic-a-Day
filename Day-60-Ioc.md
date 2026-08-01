@@ -40,3 +40,10 @@ Tools
 Specific tools used: Cobalt Strike (day 27), Mimikatz (day 17)
 Forcing attackers to switch tools is costly — significant pain
 Tool signatures, beacon profiles, and JA3 hashes fall here
+
+TTPs (Tactics Techniques and Procedures)
+How attackers operate — their methodology and patterns
+Mapped to MITRE ATT&CK (day 21)
+Hardest to change — requires retraining the entire attack team
+Most valuable intelligence for long-term defense
+```
