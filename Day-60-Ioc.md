@@ -30,3 +30,8 @@ Domain Names
 C2 domains, phishing domains, malware distribution sites
 Harder to change than IPs — domain registration takes time
 DGA (Domain Generation Algorithms) are attacker response to domain blocking
+
+Network/Host Artifacts
+Specific User-Agent strings, HTTP headers, registry keys
+Mutex names created by malware, file paths used for persistence
+More specific to the malware family — harder to change
