@@ -60,3 +60,6 @@ User-Agent:   python-requests/2.18.4 (unusual UA in web logs)
 ```
 ## Real-World Example
 During the 2020 SolarWinds attack, once the initial compromise was discovered, security researchers rapidly extracted IOCs from the malware — specific domain names used for C2 (avsvmcloud.com), file hashes of the malicious DLL, and specific registry modifications used for persistence. These IOCs were shared through CISA advisories and threat intelligence platforms within days of discovery. Organizations that had integrated threat intelligence feeds could immediately query their logs for these IOCs — instantly knowing whether the SolarWinds backdoor had beaconed out from their environment without manually analyzing every system individually.
+
+## Why It Matters
+From an attacker's side, understanding IOCs helps in operational security — frequently rotating infrastructure, using living-off-the-land techniques to avoid tool-based IOCs, and mimicking legitimate traffic patterns to avoid behavioral IOCs. Nation-state actors specifically design their malware to avoid leaving obvious IOCs.
