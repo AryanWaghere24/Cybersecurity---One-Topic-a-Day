@@ -65,3 +65,10 @@ During the 2020 SolarWinds attack, once the initial compromise was discovered, s
 From an attacker's side, understanding IOCs helps in operational security — frequently rotating infrastructure, using living-off-the-land techniques to avoid tool-based IOCs, and mimicking legitimate traffic patterns to avoid behavioral IOCs. Nation-state actors specifically design their malware to avoid leaving obvious IOCs.
 
 From a defender's side, IOCs are the foundation of threat detection at scale. A single analyst cannot manually review millions of log entries — but automated systems can instantly compare every log entry, file hash, and network connection against millions of known IOCs and alert on matches. Sharing IOCs through platforms like MISP and threat intelligence feeds multiplies their value — one organization's discovery becomes every organization's detection capability.
+
+## Key Terms
+- IOC (Indicator of Compromise): forensic evidence suggesting a system has been breached — file hashes, IPs, domains, behavioral patterns
+- Pyramid of Pain: a framework ranking IOCs by how difficult they are for attackers to change when defenders detect them
+- TTP (Tactics Techniques and Procedures): the highest-value IOC category describing how attackers operate, mapped to MITRE ATT&CK
+- MISP (Malware Information Sharing Platform): an open source threat intelligence platform for sharing IOCs between organizations
+- Threat Intelligence Feed: a continuously updated stream of IOCs from commercial or community sources integrated into security tools
