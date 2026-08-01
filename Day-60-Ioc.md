@@ -5,3 +5,6 @@ Indicators of Compromise (IOCs) are pieces of forensic evidence that suggest a s
 
 ## How It Works
 IOCs exist at multiple levels — from simple network indicators to complex behavioral patterns. The pyramid of pain (a framework by David Bianco) describes IOCs by how difficult they are for attackers to change when defenders detect them.
+
+```
+Pyramid of Pain (bottom = easy for attacker to change, top = hard):
