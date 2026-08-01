@@ -72,3 +72,29 @@ From a defender's side, IOCs are the foundation of threat detection at scale. A 
 - TTP (Tactics Techniques and Procedures): the highest-value IOC category describing how attackers operate, mapped to MITRE ATT&CK
 - MISP (Malware Information Sharing Platform): an open source threat intelligence platform for sharing IOCs between organizations
 - Threat Intelligence Feed: a continuously updated stream of IOCs from commercial or community sources integrated into security tools
+
+## One Tip / Tool
+
+Tool: `MISP` for IOC sharing and `VirusTotal` for IOC lookup and enrichment
+
+```bash
+# VirusTotal API - check a file hash against 70+ antivirus engines
+curl --request GET \
+  --url https://www.virustotal.com/api/v3/files/FILE_HASH_HERE \
+  --header 'x-apikey: YOUR_API_KEY'
+
+# Check an IP address for known malicious activity
+curl --request GET \
+  --url https://www.virustotal.com/api/v3/ip_addresses/185.220.101.45 \
+  --header 'x-apikey: YOUR_API_KEY'
+
+# Check a domain
+curl --request GET \
+  --url https://www.virustotal.com/api/v3/domains/suspicious-domain.com \
+  --header 'x-apikey: YOUR_API_KEY'
+
+# MISP - open source IOC sharing platform
+# deploy with Docker
+git clone https://github.com/MISP/misp-docker
+cd misp-docker
+docker-compose up -d
