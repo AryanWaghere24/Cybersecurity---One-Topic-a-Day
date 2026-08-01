@@ -47,3 +47,14 @@ Mapped to MITRE ATT&CK (day 21)
 Hardest to change — requires retraining the entire attack team
 Most valuable intelligence for long-term defense
 ```
+Common IOC types with examples:
+```
+File Hash:    d41d8cd98f00b204e9800998ecf8427e (MD5 of known malware)
+IP Address:   185.220.101.45 (known Tor exit node / C2)
+Domain:       malware-c2-domain.ru (known C2 domain)
+URL:          http://evil.com/payload.exe (malware download URL)
+Email:        phishing@spoofed-domain.com (phishing sender)
+Registry Key: HKCU\Software\Microsoft\Windows\Run\malware (persistence)
+Mutex:        Global\SuperMalwareMutex (malware instance check)
+User-Agent:   python-requests/2.18.4 (unusual UA in web logs)
+```
