@@ -15,3 +15,8 @@ Pyramid of Pain (bottom = easy for attacker to change, top = hard):
 [Domain Names]
 [IP Addresses]
 [Hash Values]             ← Easiest to change, least valuable
+
+Hash Values (MD5, SHA1, SHA256)
+File hashes of known malicious files
+Easiest for attackers to change — recompile the malware, new hash
+But easiest for defenders to check — run hash against VirusTotal
