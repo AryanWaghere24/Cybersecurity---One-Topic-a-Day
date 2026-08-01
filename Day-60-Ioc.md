@@ -20,3 +20,8 @@ Hash Values (MD5, SHA1, SHA256)
 File hashes of known malicious files
 Easiest for attackers to change — recompile the malware, new hash
 But easiest for defenders to check — run hash against VirusTotal
+
+IP Addresses
+Known C2 server IPs, attacker infrastructure
+Attackers change IPs frequently — short-lived value
+Still useful for blocking and detecting active campaigns
