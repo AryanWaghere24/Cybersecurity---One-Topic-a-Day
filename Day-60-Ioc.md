@@ -25,3 +25,8 @@ IP Addresses
 Known C2 server IPs, attacker infrastructure
 Attackers change IPs frequently — short-lived value
 Still useful for blocking and detecting active campaigns
+
+Domain Names
+C2 domains, phishing domains, malware distribution sites
+Harder to change than IPs — domain registration takes time
+DGA (Domain Generation Algorithms) are attacker response to domain blocking
