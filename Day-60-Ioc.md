@@ -35,3 +35,8 @@ Network/Host Artifacts
 Specific User-Agent strings, HTTP headers, registry keys
 Mutex names created by malware, file paths used for persistence
 More specific to the malware family — harder to change
+
+Tools
+Specific tools used: Cobalt Strike (day 27), Mimikatz (day 17)
+Forcing attackers to switch tools is costly — significant pain
+Tool signatures, beacon profiles, and JA3 hashes fall here
