@@ -58,3 +58,5 @@ Registry Key: HKCU\Software\Microsoft\Windows\Run\malware (persistence)
 Mutex:        Global\SuperMalwareMutex (malware instance check)
 User-Agent:   python-requests/2.18.4 (unusual UA in web logs)
 ```
+## Real-World Example
+During the 2020 SolarWinds attack, once the initial compromise was discovered, security researchers rapidly extracted IOCs from the malware — specific domain names used for C2 (avsvmcloud.com), file hashes of the malicious DLL, and specific registry modifications used for persistence. These IOCs were shared through CISA advisories and threat intelligence platforms within days of discovery. Organizations that had integrated threat intelligence feeds could immediately query their logs for these IOCs — instantly knowing whether the SolarWinds backdoor had beaconed out from their environment without manually analyzing every system individually.
