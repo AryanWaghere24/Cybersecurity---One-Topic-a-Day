@@ -1,1 +1,4 @@
 # Day 60 - IOC (Indicators of Compromise)
+
+## What It Is
+Indicators of Compromise (IOCs) are pieces of forensic evidence that suggest a system or network has been breached or is under attack. They are the digital fingerprints left behind by attackers — specific IP addresses, domain names, file hashes, registry keys, URLs, or behavioral patterns that indicate malicious activity. IOCs are the currency of threat intelligence — security teams collect them, share them, and use them to detect and respond to attacks. Finding a known malicious IP in your firewall logs or a known malware hash on an endpoint means you can immediately act rather than spending days investigating whether something suspicious is actually an attack.
