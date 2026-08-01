@@ -8,3 +8,10 @@ IOCs exist at multiple levels — from simple network indicators to complex beha
 
 ```
 Pyramid of Pain (bottom = easy for attacker to change, top = hard):
+
+[TTPs]                    ← Hardest to change, most valuable
+[Tools]
+[Network/Host Artifacts]
+[Domain Names]
+[IP Addresses]
+[Hash Values]             ← Easiest to change, least valuable
