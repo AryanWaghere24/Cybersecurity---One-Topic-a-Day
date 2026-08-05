@@ -65,3 +65,8 @@ From a defender's side, knowing which threat actors are most likely to target yo
 - Adversary Emulation: red team exercises specifically simulating a known threat actor's TTPs rather than generic vulnerability testing
 
 ## One Tip / Tool
+
+Tool: `MITRE ATT&CK Groups` database and `Mandiant Advantage` for threat actor intelligence
+
+```
+Free threat actor intelligence resources:
