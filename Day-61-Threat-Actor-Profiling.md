@@ -8,3 +8,9 @@ Threat actors are tracked and named by security researchers using naming convent
 
 ```
 Threat actor naming conventions:
+
+CrowdStrike: Animal names by nation-state origin
+- BEAR = Russia (Fancy Bear, Cozy Bear)
+- PANDA = China (Deep Panda, Gothic Panda)
+- CHOLLIMA = North Korea (Labyrinth Chollima)
+- KITTEN = Iran (Charming Kitten, Phosphorus Kitten)
