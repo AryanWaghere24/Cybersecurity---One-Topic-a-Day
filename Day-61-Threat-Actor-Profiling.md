@@ -5,3 +5,6 @@ Threat Actor Profiling is the process of identifying, tracking, and understandin
 
 ## How It Works
 Threat actors are tracked and named by security researchers using naming conventions that vary by vendor — each security company has its own naming system for the same groups.
+
+```
+Threat actor naming conventions:
