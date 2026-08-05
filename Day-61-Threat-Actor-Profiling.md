@@ -14,3 +14,8 @@ CrowdStrike: Animal names by nation-state origin
 - PANDA = China (Deep Panda, Gothic Panda)
 - CHOLLIMA = North Korea (Labyrinth Chollima)
 - KITTEN = Iran (Charming Kitten, Phosphorus Kitten)
+
+Microsoft: Chemical elements / weather themes
+- Midnight Blizzard (formerly Nobelium) = Russia
+- Volt Typhoon = China
+- Lazarus = North Korea (also widely used name)
