@@ -70,3 +70,9 @@ Tool: `MITRE ATT&CK Groups` database and `Mandiant Advantage` for threat actor i
 
 ```
 Free threat actor intelligence resources:
+
+MITRE ATT&CK Groups:
+https://attack.mitre.org/groups/
+- Profiles of 130+ tracked threat actor groups
+- Each group's known TTPs mapped to ATT&CK techniques
+- Links to public reporting on each group
