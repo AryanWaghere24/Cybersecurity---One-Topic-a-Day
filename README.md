@@ -90,6 +90,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 59 | Dark Web Monitoring |
 | Day 60 | Indicators of Compromise |
 | Day 61 | Threat Actor Profiling |
+| Day 62 | Coming Soon |
 ---
 ## Topics Covered
 
