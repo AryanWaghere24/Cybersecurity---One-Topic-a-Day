@@ -27,3 +27,8 @@ Mandiant/Google: APT numbering system
 - APT38 = Lazarus subgroup (North Korea, financial theft)
 
 Major APT groups and their characteristics:
+
+APT28 / Fancy Bear (Russia - GRU military intelligence)
+Targets: governments, military, elections, NATO countries
+TTPs: spear phishing, credential theft, data exfiltration
+Notable attacks: DNC hack 2016, World Anti-Doping Agency
