@@ -25,3 +25,5 @@ Mandiant/Google: APT numbering system
 - APT29 = Cozy Bear (Russia, SVR)
 - APT41 = Double Dragon (China, dual espionage + cybercrime)
 - APT38 = Lazarus subgroup (North Korea, financial theft)
+
+Major APT groups and their characteristics:
