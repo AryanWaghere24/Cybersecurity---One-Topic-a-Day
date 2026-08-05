@@ -63,3 +63,5 @@ From a defender's side, knowing which threat actors are most likely to target yo
 - TTP (Tactics Techniques and Procedures): the characteristic methods a threat actor uses — their operational fingerprint mapped to MITRE ATT&CK
 - Dwell Time: the length of time an attacker remains undetected inside a compromised network — APT groups often maintain access for months or years
 - Adversary Emulation: red team exercises specifically simulating a known threat actor's TTPs rather than generic vulnerability testing
+
+## One Tip / Tool
