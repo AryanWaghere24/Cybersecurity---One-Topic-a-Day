@@ -86,3 +86,7 @@ CISA Advisories:
 https://www.cisa.gov/news-events/cybersecurity-advisories
 - Government-issued alerts on specific threat actor campaigns
 - Often includes IOCs (day 60) and TTPs for detected attacks
+
+Recorded Future (free community):
+https://www.recordedfuture.com/free
+- Threat intelligence on active campaigns and actor tracking
