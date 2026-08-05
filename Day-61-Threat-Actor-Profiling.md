@@ -19,3 +19,9 @@ Microsoft: Chemical elements / weather themes
 - Midnight Blizzard (formerly Nobelium) = Russia
 - Volt Typhoon = China
 - Lazarus = North Korea (also widely used name)
+
+Mandiant/Google: APT numbering system
+- APT28 = Fancy Bear (Russia, GRU)
+- APT29 = Cozy Bear (Russia, SVR)
+- APT41 = Double Dragon (China, dual espionage + cybercrime)
+- APT38 = Lazarus subgroup (North Korea, financial theft)
