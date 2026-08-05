@@ -51,3 +51,6 @@ Notable attacks: CCleaner supply chain 2017, multiple telecom providers
 
 ## Real-World Example
 In 2022 Mandiant published a detailed profile of APT41 that revealed the group was simultaneously conducting state-sponsored espionage for Chinese intelligence while also running independent cybercrime operations for personal financial gain — stealing source code and sensitive data for the government while also operating ransomware and cryptocurrency theft schemes on the side. This dual-use characteristic is unique to APT41 and was only discoverable through years of tracking their infrastructure, malware families, and operational patterns. Organizations in APT41's target sectors (healthcare, gaming, telecom) could use this profile to specifically prepare for their known TTPs rather than defending against all possible attacks generically.
+
+## Why It Matters
+From an attacker's side (red teams), threat actor profiling informs adversary emulation — red teams specifically simulate the TTPs of the threat actors most likely to target their client's industry, making the exercise far more realistic and valuable than generic penetration testing.
