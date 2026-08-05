@@ -76,3 +76,8 @@ https://attack.mitre.org/groups/
 - Profiles of 130+ tracked threat actor groups
 - Each group's known TTPs mapped to ATT&CK techniques
 - Links to public reporting on each group
+
+Mandiant/Google Threat Intelligence (free reports):
+https://www.mandiant.com/resources/research
+- Detailed APT group profiles and campaign reports
+- Free annual M-Trends report with industry threat data
