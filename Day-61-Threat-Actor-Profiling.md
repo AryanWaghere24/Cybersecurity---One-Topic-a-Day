@@ -37,3 +37,8 @@ APT29 / Cozy Bear (Russia - SVR foreign intelligence)
 Targets: government, think tanks, healthcare, tech companies
 TTPs: supply chain attacks, living off the land, long dwell time
 Notable attacks: SolarWinds 2020, COVID vaccine research theft
+
+Lazarus Group (North Korea - RGB)
+Targets: banks, cryptocurrency exchanges, defense companies
+TTPs: LinkedIn fake recruiters (day 49), watering hole, custom malware
+Notable attacks: Sony Pictures 2014, Bangladesh Bank heist $81M, Bybit 2025
