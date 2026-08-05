@@ -98,3 +98,5 @@ Practical exercise:
 4. Check which of those techniques you covered in this repo
 5. Note which ones you have no detection for — those are your gaps
 ```
+
+The most important shift threat actor profiling enables — moving from "what vulnerabilities do I have" to "what would APT28 specifically do to my organization and am I prepared for it." Generic vulnerability scanning tells you what's broken. Threat actor profiling tells you what's broken AND who is likely to exploit it AND how they'll do it. That context is what separates threat intelligence from just security data.
