@@ -32,3 +32,8 @@ APT28 / Fancy Bear (Russia - GRU military intelligence)
 Targets: governments, military, elections, NATO countries
 TTPs: spear phishing, credential theft, data exfiltration
 Notable attacks: DNC hack 2016, World Anti-Doping Agency
+
+APT29 / Cozy Bear (Russia - SVR foreign intelligence)
+Targets: government, think tanks, healthcare, tech companies
+TTPs: supply chain attacks, living off the land, long dwell time
+Notable attacks: SolarWinds 2020, COVID vaccine research theft
