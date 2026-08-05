@@ -90,3 +90,11 @@ https://www.cisa.gov/news-events/cybersecurity-advisories
 Recorded Future (free community):
 https://www.recordedfuture.com/free
 - Threat intelligence on active campaigns and actor tracking
+
+Practical exercise:
+1. Go to attack.mitre.org/groups/
+2. Find the APT group most relevant to your industry
+3. Look at their known techniques
+4. Check which of those techniques you covered in this repo
+5. Note which ones you have no detection for — those are your gaps
+```
