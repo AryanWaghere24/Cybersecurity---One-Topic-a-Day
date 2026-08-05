@@ -108,6 +108,6 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | AI Security | Day 32 - 35 | 
 | Social Engineering & Phishing | Day 36 - 50 |
 | Cloud Security | Day 51 - 57 |
-| Threat Intelligence | Day 58 Onwards |
+| Threat Intelligence | Day 58 - 61 |
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
