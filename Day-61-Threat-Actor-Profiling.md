@@ -56,3 +56,10 @@ In 2022 Mandiant published a detailed profile of APT41 that revealed the group w
 From an attacker's side (red teams), threat actor profiling informs adversary emulation — red teams specifically simulate the TTPs of the threat actors most likely to target their client's industry, making the exercise far more realistic and valuable than generic penetration testing.
 
 From a defender's side, knowing which threat actors are most likely to target your organization based on your industry, geography, and data holdings allows you to prioritize defenses against their specific known techniques. A healthcare organization doesn't need to equally defend against all possible attacks — they need to specifically prepare for APT groups known to target healthcare. Mapping your detection coverage against the known TTPs of relevant threat actors (using MITRE ATT&CK, day 21) reveals exactly where your gaps are.
+
+## Key Terms
+- APT (Advanced Persistent Threat): a sophisticated, long-term targeted attack campaign typically conducted by nation-state actors or highly organized criminal groups
+- Threat Actor: any individual, group, or nation-state conducting malicious cyber operations
+- TTP (Tactics Techniques and Procedures): the characteristic methods a threat actor uses — their operational fingerprint mapped to MITRE ATT&CK
+- Dwell Time: the length of time an attacker remains undetected inside a compromised network — APT groups often maintain access for months or years
+- Adversary Emulation: red team exercises specifically simulating a known threat actor's TTPs rather than generic vulnerability testing
