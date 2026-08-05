@@ -42,3 +42,9 @@ Lazarus Group (North Korea - RGB)
 Targets: banks, cryptocurrency exchanges, defense companies
 TTPs: LinkedIn fake recruiters (day 49), watering hole, custom malware
 Notable attacks: Sony Pictures 2014, Bangladesh Bank heist $81M, Bybit 2025
+
+APT41 (China - MSS)
+Targets: healthcare, telecom, technology, video games
+TTPs: dual espionage and financial crime, supply chain compromise
+Notable attacks: CCleaner supply chain 2017, multiple telecom providers
+```
