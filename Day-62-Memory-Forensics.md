@@ -49,3 +49,9 @@ DumpIt.exe
 
 # Step 2 - Analyze with Volatility 3 (industry standard)
 pip install volatility3
+
+# List all running processes
+vol -f memory.dmp windows.pslist
+
+# Show process tree (reveals injected/orphaned processes)
+vol -f memory.dmp windows.pstree
