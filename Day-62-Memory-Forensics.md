@@ -37,3 +37,9 @@ Unpacked malware — packed malware unpacks itself in memory to run
 Config files embedded in malware — C2 addresses, encryption keys
 Strings that reveal attacker infrastructure and tooling
 ```
+
+Memory analysis workflow:
+```bash
+# Step 1 - Capture memory from a live Windows system
+# Using WinPmem (free, open source)
+winpmem_mini_x64_rc2.exe memory.dmp
