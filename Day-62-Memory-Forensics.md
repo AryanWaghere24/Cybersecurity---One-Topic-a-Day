@@ -75,3 +75,8 @@ vol -f memory.dmp windows.cmdline
 
 ## Real-World Example
 Memory forensics was critical in the investigation of the 2017 NotPetya attack. Incident responders analyzing compromised systems found that NotPetya operated almost entirely in memory — it used EternalBlue (the same exploit used by WannaCry) to spread, then injected its ransomware payload into legitimate processes. By analyzing memory dumps from affected systems, researchers were able to reconstruct the exact propagation mechanism, recover the malware's credential-stealing component (which was a modified Mimikatz), and understand the full attack chain without the malware ever writing its core components to disk in a recoverable way. Without memory forensics, the investigation would have been blind to most of what the malware actually did.
+
+## Why It Matters
+From an attacker's side, fileless malware and in-memory techniques are specifically designed to defeat disk-based forensics. If nothing is written to disk, traditional forensic imaging of the hard drive reveals nothing. Modern sophisticated malware increasingly lives entirely in memory — making memory forensics the primary detection mechanism for advanced attacks.
+
+From a defender's side, memory forensics should be a standard part of any incident response (day 30) playbook for suspected compromises. Capturing memory immediately upon detecting suspicious activity preserves volatile evidence that will be lost the moment the system is rebooted. Endpoint detection and response (EDR) tools perform continuous behavioral memory monitoring to catch in-memory attacks in real time rather than requiring post-incident forensic analysis.
