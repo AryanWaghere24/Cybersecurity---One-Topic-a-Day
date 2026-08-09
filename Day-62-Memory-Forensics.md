@@ -43,3 +43,9 @@ Memory analysis workflow:
 # Step 1 - Capture memory from a live Windows system
 # Using WinPmem (free, open source)
 winpmem_mini_x64_rc2.exe memory.dmp
+
+# Using DumpIt (simple, single executable)
+DumpIt.exe
+
+# Step 2 - Analyze with Volatility 3 (industry standard)
+pip install volatility3
