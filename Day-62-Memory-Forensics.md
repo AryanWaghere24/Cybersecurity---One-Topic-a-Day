@@ -61,3 +61,14 @@ vol -f memory.dmp windows.psscan
 
 # List all network connections at time of capture
 vol -f memory.dmp windows.netstat
+
+# Find injected code in processes
+vol -f memory.dmp windows.malfind
+
+# Dump credentials from LSASS (like Mimikatz but forensically)
+vol -f memory.dmp windows.hashdump
+vol -f memory.dmp windows.lsadump
+
+# Find command history (what commands were run)
+vol -f memory.dmp windows.cmdline
+```
