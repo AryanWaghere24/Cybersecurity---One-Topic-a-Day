@@ -80,3 +80,10 @@ Memory forensics was critical in the investigation of the 2017 NotPetya attack. 
 From an attacker's side, fileless malware and in-memory techniques are specifically designed to defeat disk-based forensics. If nothing is written to disk, traditional forensic imaging of the hard drive reveals nothing. Modern sophisticated malware increasingly lives entirely in memory — making memory forensics the primary detection mechanism for advanced attacks.
 
 From a defender's side, memory forensics should be a standard part of any incident response (day 30) playbook for suspected compromises. Capturing memory immediately upon detecting suspicious activity preserves volatile evidence that will be lost the moment the system is rebooted. Endpoint detection and response (EDR) tools perform continuous behavioral memory monitoring to catch in-memory attacks in real time rather than requiring post-incident forensic analysis.
+
+## Key Terms
+- Memory Forensics: the analysis of RAM contents to investigate security incidents and detect malware that avoids writing to disk
+- Memory Dump: a complete snapshot of a system's RAM contents at a specific point in time, used as the primary artifact for memory analysis
+- Fileless Malware: malware that operates entirely in memory without writing executable files to disk, evading traditional antivirus detection
+- Process Injection: a technique where malicious code is inserted into the memory space of a legitimate running process to hide and execute
+- Volatility: the industry-standard open source memory forensics framework used to analyze memory dumps from Windows, Linux, and macOS
