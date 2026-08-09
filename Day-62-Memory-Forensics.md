@@ -87,3 +87,13 @@ From a defender's side, memory forensics should be a standard part of any incide
 - Fileless Malware: malware that operates entirely in memory without writing executable files to disk, evading traditional antivirus detection
 - Process Injection: a technique where malicious code is inserted into the memory space of a legitimate running process to hide and execute
 - Volatility: the industry-standard open source memory forensics framework used to analyze memory dumps from Windows, Linux, and macOS
+
+## One Tip / Tool
+
+Tool: `Volatility 3` — the industry standard open source memory forensics framework
+
+```bash
+# install Volatility 3
+git clone https://github.com/volatilityfoundation/volatility3
+cd volatility3
+pip install -r requirements.txt
