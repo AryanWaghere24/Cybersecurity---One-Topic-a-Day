@@ -24,3 +24,10 @@ Loaded DLLs and Injected Code
 Malicious DLLs loaded into legitimate processes
 Reflective DLL injection — loading code without touching disk at all
 Shellcode injected directly into process memory
+
+Credentials and Encryption Keys
+Plaintext passwords cached in memory by Windows LSASS process
+(exactly what Mimikatz exploits — day 17)
+Encryption keys for full-disk encryption — can decrypt drives
+Browser saved passwords held in memory while browser is open
+Session tokens and cookies from active sessions
