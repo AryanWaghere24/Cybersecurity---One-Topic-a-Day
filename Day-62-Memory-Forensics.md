@@ -55,3 +55,9 @@ vol -f memory.dmp windows.pslist
 
 # Show process tree (reveals injected/orphaned processes)
 vol -f memory.dmp windows.pstree
+
+# Find hidden processes (compares different process listings)
+vol -f memory.dmp windows.psscan
+
+# List all network connections at time of capture
+vol -f memory.dmp windows.netstat
