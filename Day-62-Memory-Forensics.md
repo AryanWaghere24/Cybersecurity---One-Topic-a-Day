@@ -31,3 +31,9 @@ Plaintext passwords cached in memory by Windows LSASS process
 Encryption keys for full-disk encryption — can decrypt drives
 Browser saved passwords held in memory while browser is open
 Session tokens and cookies from active sessions
+
+Malware Artifacts
+Unpacked malware — packed malware unpacks itself in memory to run
+Config files embedded in malware — C2 addresses, encryption keys
+Strings that reveal attacker infrastructure and tooling
+```
