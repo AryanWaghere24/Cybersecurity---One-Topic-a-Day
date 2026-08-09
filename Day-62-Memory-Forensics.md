@@ -6,7 +6,7 @@ Memory Forensics is the practice of capturing and analyzing the contents of a co
 ## How It Works
 RAM is volatile — it loses its contents when the system is powered off. Memory forensics must be performed on a live system or from a memory dump captured before shutdown. A memory dump is a complete snapshot of everything in RAM at a specific moment — running processes, network connections, loaded DLLs, decrypted data, passwords, and more.
 
-/[](assets/MF.png)
+![](assets/MF.png)
 
 ```
 What memory forensics reveals:
