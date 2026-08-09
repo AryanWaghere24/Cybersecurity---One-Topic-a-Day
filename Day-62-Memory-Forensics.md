@@ -97,3 +97,28 @@ Tool: `Volatility 3` — the industry standard open source memory forensics fram
 git clone https://github.com/volatilityfoundation/volatility3
 cd volatility3
 pip install -r requirements.txt
+
+# most useful plugins for incident response:
+
+# process analysis
+vol -f memory.dmp windows.pslist      # list processes
+vol -f memory.dmp windows.pstree      # process tree
+vol -f memory.dmp windows.psscan      # find hidden processes
+vol -f memory.dmp windows.dlllist     # DLLs loaded per process
+
+# network analysis
+vol -f memory.dmp windows.netstat     # network connections
+
+# malware detection
+vol -f memory.dmp windows.malfind     # find injected code
+vol -f memory.dmp windows.dumpfiles   # extract files from memory
+
+# credential extraction
+vol -f memory.dmp windows.hashdump    # extract password hashes
+
+# artifact recovery
+vol -f memory.dmp windows.cmdline     # command line arguments
+vol -f memory.dmp windows.filescan    # find files referenced in memory
+```
+
+Practice memory forensics on **MemLabs** — a free collection of memory forensics CTF challenges with realistic memory dumps covering malware analysis, credential extraction, and hidden process detection. Each challenge provides a memory dump and a series of questions that guide you through the analysis process using Volatility.
