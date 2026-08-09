@@ -19,3 +19,8 @@ Network Connections
 All active and recently closed network connections
 C2 connections from RATs (day 20) and Cobalt Strike beacons (day 27)
 Connections that closed before the analyst started investigating
+
+Loaded DLLs and Injected Code
+Malicious DLLs loaded into legitimate processes
+Reflective DLL injection — loading code without touching disk at all
+Shellcode injected directly into process memory
