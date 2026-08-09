@@ -91,6 +91,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 60 | Indicators of Compromise |
 | Day 61 | Threat Actor Profiling |
 | Day 62 | Memory Forensics |
+| Day 63 | Coming Soon |
 ---
 ## Topics Covered
 
