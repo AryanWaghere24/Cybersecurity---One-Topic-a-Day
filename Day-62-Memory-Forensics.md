@@ -14,3 +14,8 @@ All processes active at capture time including hidden ones
 Rootkits (day 18) that hide from Task Manager are visible in raw memory
 Process injection — malicious code injected into legitimate processes
 (common technique: injecting into svchost.exe or explorer.exe)
+
+Network Connections
+All active and recently closed network connections
+C2 connections from RATs (day 20) and Cobalt Strike beacons (day 27)
+Connections that closed before the analyst started investigating
