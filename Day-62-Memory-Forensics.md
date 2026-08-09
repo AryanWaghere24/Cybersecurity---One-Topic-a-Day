@@ -72,3 +72,6 @@ vol -f memory.dmp windows.lsadump
 # Find command history (what commands were run)
 vol -f memory.dmp windows.cmdline
 ```
+
+## Real-World Example
+Memory forensics was critical in the investigation of the 2017 NotPetya attack. Incident responders analyzing compromised systems found that NotPetya operated almost entirely in memory — it used EternalBlue (the same exploit used by WannaCry) to spread, then injected its ransomware payload into legitimate processes. By analyzing memory dumps from affected systems, researchers were able to reconstruct the exact propagation mechanism, recover the malware's credential-stealing component (which was a modified Mimikatz), and understand the full attack chain without the malware ever writing its core components to disk in a recoverable way. Without memory forensics, the investigation would have been blind to most of what the malware actually did.
