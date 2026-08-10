@@ -92,6 +92,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 61 | Threat Actor Profiling |
 | Day 62 | Memory Forensics |
 | Day 63 | Disk Forensics |
+| Day 64 | Coming Soon |
 ---
 ## Topics Covered
 
