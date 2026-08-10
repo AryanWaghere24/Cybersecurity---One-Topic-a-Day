@@ -92,3 +92,25 @@ From a defender's side, disk forensics provides the persistent evidence layer th
 ## One Tip / Tool
 
 Tool: `Autopsy` (free, open source) and `FTK Imager` (free acquisition tool) — the standard beginner disk forensics toolkit
+
+
+```bash
+# FTK Imager - acquire a forensic image (Windows GUI tool)
+# Download from: https://www.exterro.com/ftk-imager
+# Creates verified forensic images with MD5/SHA1 hashes
+# Can also mount images for read-only examination
+
+# Autopsy - open source forensic analysis platform
+# Download from: https://www.autopsy.com/download/
+# Analyzes disk images for:
+# - Deleted file recovery
+# - Web artifacts (browser history, downloads)
+# - Email analysis
+# - Registry analysis
+# - Timeline generation
+# - Keyword search across entire image
+
+# Command line tools for Linux-based forensics:
+
+# Create a forensic image with dd
+dd if=/dev/sda of=/evidence/disk.img bs=4M status=progress
