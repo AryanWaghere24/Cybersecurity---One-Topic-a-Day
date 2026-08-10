@@ -88,3 +88,7 @@ From a defender's side, disk forensics provides the persistent evidence layer th
 - MACE Times: the four timestamps associated with files — Modified, Accessed, Changed (metadata), Entry Modified — used to reconstruct timelines
 - Prefetch: Windows files recording program execution history — forensic evidence that a program ran even if it was subsequently deleted
 - Anti-Forensics: techniques used by attackers to destroy, hide, or alter digital evidence to impede forensic investigation
+
+## One Tip / Tool
+
+Tool: `Autopsy` (free, open source) and `FTK Imager` (free acquisition tool) — the standard beginner disk forensics toolkit
