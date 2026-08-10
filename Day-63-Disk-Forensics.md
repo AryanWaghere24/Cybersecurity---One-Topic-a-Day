@@ -76,3 +76,6 @@ Chrome: C:\Users\[user]\AppData\Local\Google\Chrome\User Data\Default\
 
 ## Real-World Example
 In the 2013 Target breach investigation (referenced in day 22), disk forensics on compromised point-of-sale systems revealed the exact malware used (BlackPOS), when it was installed, which systems it spread to, and the specific data exfiltration mechanism — all reconstructed from disk artifacts even after the attackers had attempted to remove traces of their activity. Prefetch files proved the malware had executed even after the executable was deleted. Windows Event Logs showed the exact account used for lateral movement. Registry Run keys revealed the persistence mechanism. The complete attack timeline was reconstructed from disk artifacts alone, providing the evidence needed for attribution and legal proceedings.
+
+## Why It Matters
+From an attacker's side, anti-forensics techniques attempt to defeat disk forensics — timestomping (modifying file timestamps to mislead investigators), secure deletion tools, encryption, and living-off-the-land techniques that use built-in system tools leaving fewer unusual artifacts. But even sophisticated attackers almost always leave some disk traces.
