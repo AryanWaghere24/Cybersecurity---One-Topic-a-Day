@@ -81,3 +81,10 @@ In the 2013 Target breach investigation (referenced in day 22), disk forensics o
 From an attacker's side, anti-forensics techniques attempt to defeat disk forensics — timestomping (modifying file timestamps to mislead investigators), secure deletion tools, encryption, and living-off-the-land techniques that use built-in system tools leaving fewer unusual artifacts. But even sophisticated attackers almost always leave some disk traces.
 
 From a defender's side, disk forensics provides the persistent evidence layer that memory forensics can't — even after a system is rebooted and memory is lost, disk artifacts survive. Enabling Windows audit policies (process creation logging, logon events) maximizes the forensic value of event logs. Collecting forensic images immediately after detecting a compromise, before systems are wiped and rebuilt, is critical for preserving evidence for investigation and potential legal action.
+
+## Key Terms
+- Disk Forensics: acquiring and analyzing storage device contents to investigate security incidents and recover evidence
+- Forensic Image: a verified bit-for-bit copy of a storage device used for analysis while preserving the original evidence
+- MACE Times: the four timestamps associated with files — Modified, Accessed, Changed (metadata), Entry Modified — used to reconstruct timelines
+- Prefetch: Windows files recording program execution history — forensic evidence that a program ran even if it was subsequently deleted
+- Anti-Forensics: techniques used by attackers to destroy, hide, or alter digital evidence to impede forensic investigation
