@@ -7,6 +7,9 @@ Disk Forensics is the practice of acquiring and analyzing the contents of storag
 ## How It Works
 Disk forensics starts with creating a forensic image — a bit-for-bit copy of the entire storage device including deleted files, unallocated space, and filesystem metadata. Analysis is always performed on the image, never the original, to preserve evidence integrity.
 
+
+![](assets/DF.png)
+
 ```
 Disk forensics workflow:
 
