@@ -66,3 +66,10 @@ $MFT (Master File Table)
 NTFS metadata for every file ever created on the volume
 Even deleted files leave MFT entries
 Reveals: exact timestamps, file sizes, file paths
+
+Browser Artifacts
+Chrome: C:\Users\[user]\AppData\Local\Google\Chrome\User Data\Default\
+- History (SQLite database)
+- Downloads
+- Cookies and cached login sessions
+```
