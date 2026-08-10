@@ -73,3 +73,6 @@ Chrome: C:\Users\[user]\AppData\Local\Google\Chrome\User Data\Default\
 - Downloads
 - Cookies and cached login sessions
 ```
+
+## Real-World Example
+In the 2013 Target breach investigation (referenced in day 22), disk forensics on compromised point-of-sale systems revealed the exact malware used (BlackPOS), when it was installed, which systems it spread to, and the specific data exfiltration mechanism — all reconstructed from disk artifacts even after the attackers had attempted to remove traces of their activity. Prefetch files proved the malware had executed even after the executable was deleted. Windows Event Logs showed the exact account used for lateral movement. Registry Run keys revealed the persistence mechanism. The complete attack timeline was reconstructed from disk artifacts alone, providing the evidence needed for attribution and legal proceedings.
