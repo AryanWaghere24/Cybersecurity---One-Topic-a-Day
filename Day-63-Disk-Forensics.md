@@ -38,3 +38,9 @@ Email client data
 Windows Event Logs (login events, process creation, network)
 Prefetch files — evidence of program execution even if deleted
 LNK files — shortcut files revealing recently opened documents
+
+Step 5 — Timeline Analysis
+Correlate all timestamps across file system, registry, and logs
+Build a chronological timeline of attacker activity
+Identify the initial access point and subsequent actions
+```
