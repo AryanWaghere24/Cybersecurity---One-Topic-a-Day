@@ -52,3 +52,12 @@ Location: C:\Windows\Prefetch\
 Reveals: every program that executed on the system
 Even if malware deleted itself, prefetch proves it ran
 Contains: program name, run count, last run time, files accessed
+
+Windows Event Logs
+Location: C:\Windows\System32\winevt\Logs\
+Key events:
+4624 - Successful login
+4625 - Failed login (brute force detection)
+4648 - Explicit credential login (Pass the Hash indicator, day 17)
+4688 - Process creation (what commands were run)
+7045 - New service installed (persistence indicator)
