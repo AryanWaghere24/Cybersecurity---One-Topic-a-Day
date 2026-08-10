@@ -44,3 +44,11 @@ Correlate all timestamps across file system, registry, and logs
 Build a chronological timeline of attacker activity
 Identify the initial access point and subsequent actions
 ```
+
+Key forensic artifacts and what they reveal:
+```
+Windows Prefetch (.pf files)
+Location: C:\Windows\Prefetch\
+Reveals: every program that executed on the system
+Even if malware deleted itself, prefetch proves it ran
+Contains: program name, run count, last run time, files accessed
