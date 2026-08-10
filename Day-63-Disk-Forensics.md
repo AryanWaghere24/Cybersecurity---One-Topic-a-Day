@@ -31,3 +31,10 @@ Windows Registry stores massive amounts of forensic evidence:
 - Network connections (NetworkList)
 - Persistence mechanisms (Run keys — day 18 rootkits use these)
 - User account activity and login times
+
+Step 4 — Artifact Recovery
+Browser history, downloads, cached pages
+Email client data
+Windows Event Logs (login events, process creation, network)
+Prefetch files — evidence of program execution even if deleted
+LNK files — shortcut files revealing recently opened documents
