@@ -114,3 +114,21 @@ Tool: `Autopsy` (free, open source) and `FTK Imager` (free acquisition tool) —
 
 # Create a forensic image with dd
 dd if=/dev/sda of=/evidence/disk.img bs=4M status=progress
+
+# Verify image integrity
+md5sum /dev/sda > original.md5
+md5sum /evidence/disk.img > image.md5
+diff original.md5 image.md5  # should be identical
+
+# Mount image read-only for examination
+mount -o ro,loop /evidence/disk.img /mnt/evidence
+
+# Recover deleted files
+foremost -i /evidence/disk.img -o /evidence/recovered/
+
+# Extract Windows prefetch files and parse them
+python3 -m pip install libscca-python
+# or use PECmd from Eric Zimmerman's tools (Windows)
+```
+
+Practice disk forensics on **Digital Forensics CTF challenges** from platforms like CyberDefenders (cyberdefenders.org) and BlueTeamLabs Online (blueteamlabs.online) — both provide realistic disk images from simulated incidents with guided investigation questions, making them ideal for building practical disk forensics skills.
