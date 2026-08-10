@@ -22,3 +22,12 @@ Examine file system structure for artifacts:
 - Hidden files and alternate data streams (NTFS ADS)
 - Recycle Bin contents
 - File system journal/logs (NTFS $MFT, $LogFile, $UsnJrnl)
+
+Step 3 — Registry Analysis (Windows)
+Windows Registry stores massive amounts of forensic evidence:
+- Recently accessed files (RecentDocs, OpenSaveMRU)
+- Programs that ran (UserAssist, AppCompatCache, Prefetch)
+- USB devices ever connected (USBSTOR)
+- Network connections (NetworkList)
+- Persistence mechanisms (Run keys — day 18 rootkits use these)
+- User account activity and login times
