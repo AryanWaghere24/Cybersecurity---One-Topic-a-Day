@@ -14,3 +14,11 @@ Step 1 — Forensic Acquisition
 Create a verified bit-for-bit image of the storage device
 Hash the original and image to prove integrity (MD5/SHA256)
 Never work directly on original evidence
+
+Step 2 — File System Analysis
+Examine file system structure for artifacts:
+- File creation, modification, access timestamps (MACE times)
+- Recently deleted files in unallocated space
+- Hidden files and alternate data streams (NTFS ADS)
+- Recycle Bin contents
+- File system journal/logs (NTFS $MFT, $LogFile, $UsnJrnl)
