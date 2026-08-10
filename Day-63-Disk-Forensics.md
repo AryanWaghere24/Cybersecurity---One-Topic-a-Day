@@ -61,3 +61,8 @@ Key events:
 4648 - Explicit credential login (Pass the Hash indicator, day 17)
 4688 - Process creation (what commands were run)
 7045 - New service installed (persistence indicator)
+
+$MFT (Master File Table)
+NTFS metadata for every file ever created on the volume
+Even deleted files leave MFT entries
+Reveals: exact timestamps, file sizes, file paths
