@@ -79,3 +79,5 @@ In the 2013 Target breach investigation (referenced in day 22), disk forensics o
 
 ## Why It Matters
 From an attacker's side, anti-forensics techniques attempt to defeat disk forensics — timestomping (modifying file timestamps to mislead investigators), secure deletion tools, encryption, and living-off-the-land techniques that use built-in system tools leaving fewer unusual artifacts. But even sophisticated attackers almost always leave some disk traces.
+
+From a defender's side, disk forensics provides the persistent evidence layer that memory forensics can't — even after a system is rebooted and memory is lost, disk artifacts survive. Enabling Windows audit policies (process creation logging, logon events) maximizes the forensic value of event logs. Collecting forensic images immediately after detecting a compromise, before systems are wiped and rebuilt, is critical for preserving evidence for investigation and potential legal action.
