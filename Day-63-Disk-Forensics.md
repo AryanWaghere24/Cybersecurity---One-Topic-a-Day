@@ -10,6 +10,7 @@ Disk forensics starts with creating a forensic image — a bit-for-bit copy of t
 
 ![](assets/DF.png)
 
+
 ```
 Disk forensics workflow:
 
