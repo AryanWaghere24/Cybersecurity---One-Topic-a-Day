@@ -79,3 +79,5 @@ awk '{print $9}' /var/log/apache2/access.log | sort | uniq -c | sort -rn
 aws cloudtrail lookup-events --lookup-attributes \
   AttributeKey=ClientToken,AttributeValue=SUSPICIOUS_IP
 ```
+## Real-World Example
+In the investigation of the 2020 SolarWinds breach (referenced throughout this repo), log forensics was central to understanding the full scope of the attack. FireEye (now Mandiant) investigators analyzed Windows Event Logs across thousands of systems looking for the specific Event ID 4688 (process creation) patterns associated with the SUNBURST backdoor's lateral movement. CloudTrail logs in AWS environments revealed which S3 buckets were accessed using the stolen credentials. Authentication logs showed the specific accounts used for lateral movement and the exact timeline of when each system was compromised. Without comprehensive log collection and retention, the investigation would have been impossible — many organizations discovered they lacked logs going back far enough to capture the initial compromise, which had occurred months before detection.
