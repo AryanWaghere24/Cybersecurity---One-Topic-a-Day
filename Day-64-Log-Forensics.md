@@ -58,3 +58,7 @@ Log analysis techniques:
 # Windows - query event logs with PowerShell
 # Find all failed logons in last 24 hours
 Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4625; StartTime=(Get-Date).AddDays(-1)}
+
+# Find all process creation events
+Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4688} |
+  Select-Object TimeCreated, @{N='Process';E={$_.Properties[5].Value}}
