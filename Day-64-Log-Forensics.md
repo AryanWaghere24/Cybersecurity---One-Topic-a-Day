@@ -84,3 +84,5 @@ In the investigation of the 2020 SolarWinds breach (referenced throughout this r
 
 ## Why It Matters
 From an attacker's side, log tampering and log deletion are standard attacker tradecraft — clearing Windows Event Logs (Event ID 1102 records this), deleting bash history, and disabling logging are often among the first actions after gaining access. Attackers who understand log forensics specifically target the evidence trail.
+
+From a defender's side, centralized log collection to a SIEM (day 28) that the attacker cannot access is the critical defense against log tampering — if logs are shipped to a remote system in real time, deleting them locally doesn't destroy the evidence. Enabling verbose audit logging (especially process creation with command line logging, Event ID 4688) dramatically increases forensic value. Log retention policies of at least 90 days (ideally 12 months) ensure logs exist far enough back to investigate slow-moving APT campaigns.
