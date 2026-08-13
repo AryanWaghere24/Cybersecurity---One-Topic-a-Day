@@ -34,3 +34,8 @@ Linux Logs
 /var/log/secure       : authentication on RHEL/CentOS systems
 ~/.bash_history       : command history (often cleared by attackers)
 /var/log/cron         : scheduled task execution
+
+Web Server Logs (Apache/Nginx)
+Format: IP - - [timestamp] "METHOD /path HTTP/version" status size
+Reveals: SQL injection attempts (day 04), directory traversal, scanner activity
+Look for: 404 storms (scanning), unusual user agents, POST to unexpected paths
