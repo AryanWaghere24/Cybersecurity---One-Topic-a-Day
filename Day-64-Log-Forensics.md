@@ -26,3 +26,11 @@ Critical Windows Event IDs:
 4720  User account created (attacker creating backdoor accounts)
 4776  Credential validation (NTLM authentication attempts)
 7045  New service installed (common persistence and rootkit indicator)
+
+Linux Logs
+/var/log/auth.log     : SSH logins, sudo usage, authentication
+/var/log/syslog       : general system events
+/var/log/apache2/     : web server access and error logs
+/var/log/secure       : authentication on RHEL/CentOS systems
+~/.bash_history       : command history (often cleared by attackers)
+/var/log/cron         : scheduled task execution
