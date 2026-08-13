@@ -6,7 +6,6 @@ Log Forensics is the practice of collecting, preserving, and analyzing log data 
 ## How It Works
 Logs record events in structured or semi-structured formats with timestamps, event types, and contextual details. The challenge isn't collecting logs — it's knowing which logs matter, where to find them, and how to correlate events across multiple sources to reconstruct an attack.
 
-
 ![](assets/LF.png)
 ```
 Critical log sources for forensic investigation:
