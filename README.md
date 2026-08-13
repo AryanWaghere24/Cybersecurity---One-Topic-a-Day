@@ -93,6 +93,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 62 | Memory Forensics |
 | Day 63 | Disk Forensics |
 | Day 64 | Log Forensics |
+| Day 65 | Coming Soon |
 ---
 ## Topics Covered
 
