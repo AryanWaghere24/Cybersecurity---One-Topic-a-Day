@@ -5,3 +5,13 @@ Log Forensics is the practice of collecting, preserving, and analyzing log data 
 
 ## How It Works
 Logs record events in structured or semi-structured formats with timestamps, event types, and contextual details. The challenge isn't collecting logs — it's knowing which logs matter, where to find them, and how to correlate events across multiple sources to reconstruct an attack.
+
+```
+Critical log sources for forensic investigation:
+
+Windows Event Logs
+Location: C:\Windows\System32\winevt\Logs\
+Key log files:
+- Security.evtx   : authentication, privilege use, account changes
+- System.evtx     : system events, service installs, driver loads
+- Application.evtx: application crashes, errors, warnings
