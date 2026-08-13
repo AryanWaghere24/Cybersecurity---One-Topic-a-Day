@@ -53,7 +53,6 @@ AWS VPC Flow Logs: network traffic metadata for VPC resources
 Azure Activity Log: management operations in Azure
 GCP Cloud Audit Logs: admin activity and data access
 ```
-
 Log analysis techniques:
 ```bash
 # Windows - query event logs with PowerShell
