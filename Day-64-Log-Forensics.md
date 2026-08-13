@@ -45,3 +45,10 @@ Inbound connection attempts, blocked traffic
 Outbound connections to unusual destinations (C2 callbacks, day 09, 20, 27)
 Large data transfers (exfiltration)
 Connections to known malicious IPs (cross-reference with IOCs, day 60)
+
+Cloud Logs
+AWS CloudTrail  : all API calls made in AWS account
+AWS VPC Flow Logs: network traffic metadata for VPC resources
+Azure Activity Log: management operations in Azure
+GCP Cloud Audit Logs: admin activity and data access
+```
