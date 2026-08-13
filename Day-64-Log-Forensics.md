@@ -39,3 +39,9 @@ Web Server Logs (Apache/Nginx)
 Format: IP - - [timestamp] "METHOD /path HTTP/version" status size
 Reveals: SQL injection attempts (day 04), directory traversal, scanner activity
 Look for: 404 storms (scanning), unusual user agents, POST to unexpected paths
+
+Firewall and Network Device Logs
+Inbound connection attempts, blocked traffic
+Outbound connections to unusual destinations (C2 callbacks, day 09, 20, 27)
+Large data transfers (exfiltration)
+Connections to known malicious IPs (cross-reference with IOCs, day 60)
