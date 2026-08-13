@@ -93,3 +93,31 @@ From a defender's side, centralized log collection to a SIEM (day 28) that the a
 - Log Tampering: an attacker deleting or modifying log entries to destroy evidence of their activity — detected by monitoring for Event ID 1102
 - Centralized Logging: shipping logs to a remote system in real time, preventing local log deletion from destroying evidence
 - Log Retention: the policy defining how long logs are kept — insufficient retention leaves organizations blind to slow-moving APT campaigns
+
+## One Tip / Tool
+
+Tool: `Eric Zimmerman's Tools` (Windows log analysis) and `GoAccess` (web log analysis)
+
+```bash
+# Eric Zimmerman's EvtxECmd - parse Windows Event Logs to CSV
+EvtxECmd.exe -f Security.evtx --csv C:\output\ --csvf security_events.csv
+
+# then analyze with Timeline Explorer (also by Eric Zimmerman)
+# filter by Event ID, sort by timestamp, search for specific users or processes
+
+# GoAccess - real time web log analyzer
+apt install goaccess
+goaccess /var/log/apache2/access.log -c  # interactive terminal dashboard
+goaccess /var/log/apache2/access.log -o report.html --log-format=COMBINED
+
+# Chainsaw - fast Windows Event Log hunting tool
+# specifically designed for threat hunting and incident response
+git clone https://github.com/WithSecureLabs/chainsaw
+./chainsaw hunt /path/to/evtx/logs/ -s sigma/ --mapping mappings/sigma-event-logs-all.yml
+
+# Sigma rules - standardized log detection rules (like Snort but for logs)
+# thousands of community rules for detecting known attack patterns
+# https://github.com/SigmaHQ/sigma
+```
+
+The single most impactful logging improvement most organizations can make — enable **command line logging in Windows process creation events** (Event ID 4688). By default, Windows logs that a process ran but not what command line arguments were used. Enabling command line logging shows exactly what commands attackers ran, turning a partial audit trail into a complete one. This is configured through Group Policy: Computer Configuration → Administrative Templates → System → Audit Process Creation → Include command line in process creation events.
