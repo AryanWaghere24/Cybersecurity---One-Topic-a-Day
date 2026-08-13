@@ -15,3 +15,14 @@ Key log files:
 - Security.evtx   : authentication, privilege use, account changes
 - System.evtx     : system events, service installs, driver loads
 - Application.evtx: application crashes, errors, warnings
+
+Critical Windows Event IDs:
+4624  Successful logon (note logon type: 3=network, 10=remote interactive)
+4625  Failed logon (repeated = brute force attempt)
+4648  Logon with explicit credentials (Pass the Hash indicator, day 17)
+4672  Special privileges assigned (admin logon)
+4688  Process creation (what programs ran and who ran them)
+4698  Scheduled task created (persistence mechanism, day 18-20)
+4720  User account created (attacker creating backdoor accounts)
+4776  Credential validation (NTLM authentication attempts)
+7045  New service installed (common persistence and rootkit indicator)
