@@ -62,3 +62,20 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4625; StartTime=(Get-Date
 # Find all process creation events
 Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4688} |
   Select-Object TimeCreated, @{N='Process';E={$_.Properties[5].Value}}
+
+# Linux - analyze auth logs for SSH brute force
+grep "Failed password" /var/log/auth.log | awk '{print $11}' | sort | uniq -c | sort -rn
+
+# Find successful SSH logins after failures (successful brute force)
+grep "Accepted password" /var/log/auth.log
+
+# Web log analysis - find SQL injection attempts
+grep -E "('|--|union|select|insert|drop|exec)" /var/log/apache2/access.log
+
+# Find requests returning unusual status codes
+awk '{print $9}' /var/log/apache2/access.log | sort | uniq -c | sort -rn
+
+# AWS CloudTrail - find all API calls from a suspicious IP
+aws cloudtrail lookup-events --lookup-attributes \
+  AttributeKey=ClientToken,AttributeValue=SUSPICIOUS_IP
+```
