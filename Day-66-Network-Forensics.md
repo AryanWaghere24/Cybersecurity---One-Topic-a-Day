@@ -41,3 +41,33 @@ Key network forensic analysis techniques:
 tcpdump -i eth0 -w capture.pcap              # capture all traffic
 tcpdump -i eth0 -w capture.pcap port 80      # capture only HTTP
 tcpdump -i eth0 -w capture.pcap host 192.168.1.10  # capture specific host
+
+# Wireshark analysis on a PCAP file
+# Key filters for incident response:
+
+# Find all DNS queries (reveals C2 domain lookups)
+# Wireshark filter: dns
+
+# Find HTTP POST requests (data being sent out)
+# Wireshark filter: http.request.method == "POST"
+
+# Find large data transfers (potential exfiltration)
+# Wireshark filter: tcp.len > 10000
+
+# Follow a TCP stream to read full conversation
+# Right click on packet → Follow → TCP Stream
+
+# tshark - command line Wireshark for scripted analysis
+# Extract all DNS queries from a PCAP
+tshark -r capture.pcap -Y "dns.flags.response == 0" -T fields -e dns.qry.name
+
+# Extract all HTTP hosts contacted
+tshark -r capture.pcap -Y "http.request" -T fields -e http.host | sort -u
+
+# Find all unique destination IPs
+tshark -r capture.pcap -T fields -e ip.dst | sort -u
+
+# NetworkMiner - extract files transferred over the network
+# Automatically reconstructs files from PCAP
+# Reveals: malware downloaded, documents exfiltrated, images transferred
+```
