@@ -95,6 +95,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 64 | Log Forensics |
 | Day 65 | Malware Analysis |
 | Day 66 | Network Forensics |
+| Day 67 | Coming Soon |
 ---
 ## Topics Covered
 
