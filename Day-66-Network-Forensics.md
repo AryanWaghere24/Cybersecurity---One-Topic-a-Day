@@ -22,3 +22,22 @@ No payload content — cannot read data but shows communication patterns
 Much lower storage requirements than full PCAP
 Useful for: detecting lateral movement, identifying C2 beaconing patterns,
 finding data exfiltration by volume
+
+DNS Logs
+Every domain name lookup made on the network
+Reveals: C2 domain lookups, DGA activity (day 27 Cobalt Strike),
+data exfiltration via DNS tunneling, phishing domain visits
+
+Firewall and Proxy Logs
+Allowed and blocked connections with timestamps
+URL categories and reputation scores
+Identifies: connections to known malicious IPs (IOCs, day 60),
+policy violations, unusual ports and protocols
+```
+
+Key network forensic analysis techniques:
+```bash
+# tcpdump - capture network traffic from command line
+tcpdump -i eth0 -w capture.pcap              # capture all traffic
+tcpdump -i eth0 -w capture.pcap port 80      # capture only HTTP
+tcpdump -i eth0 -w capture.pcap host 192.168.1.10  # capture specific host
