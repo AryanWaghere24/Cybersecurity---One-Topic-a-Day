@@ -109,3 +109,46 @@ From a defender's side, network forensics provides the only view of cross-system
 - NetFlow: network traffic metadata (no payload) showing communication patterns between hosts — lower storage cost than full PCAP
 - C2 Beaconing: the regular check-in pattern of malware communicating with its command and control server — detectable as regular interval connections
 - DNS Tunneling: encoding data within DNS queries to exfiltrate information or establish C2 channels through firewalls that allow DNS traffic
+
+## One Tip / Tool
+
+Tool: `Wireshark` for interactive analysis and `Zeek` (formerly Bro) for automated network security monitoring
+
+```bash
+# Zeek - open source network analysis framework
+# Converts raw network traffic into structured logs automatically
+apt install zeek
+
+# Run Zeek against a PCAP file
+zeek -r capture.pcap
+
+# Zeek automatically generates logs:
+# conn.log     - all network connections
+# dns.log      - all DNS queries and responses
+# http.log     - all HTTP requests
+# ssl.log      - SSL/TLS certificate information
+# files.log    - files transferred over the network
+# weird.log    - unusual or suspicious network behavior
+
+# Query Zeek logs for C2 beaconing
+cat conn.log | zeek-cut id.orig_h id.resp_h duration | \
+  awk '$3 < 1' | sort | uniq -c | sort -rn | head -20
+
+# RITA (Real Intelligence Threat Analytics)
+# Built on top of Zeek - automatically detects beaconing, DNS tunneling,
+# long connections, and other C2 indicators
+git clone https://github.com/activecm/rita
+# RITA analyzes Zeek logs and scores each connection for likelihood of being C2
+
+# Practical Wireshark display filters for incident response:
+# All traffic to/from a suspicious IP
+ip.addr == SUSPICIOUS_IP
+# All DNS queries
+dns.flags.response == 0
+# Failed TCP connections (scanning, connection refused)
+tcp.flags.reset == 1
+# Large packets (possible data exfiltration)
+frame.len > 1400
+```
+
+Network forensics is most powerful when combined with the other forensic disciplines covered in this category — a complete incident investigation correlates network traffic (what left the network and when), memory forensics (what was running at the time), disk forensics (what files and logs exist), and log forensics (what the audit trail shows) into a single unified timeline of the entire attack from initial compromise through to final objective. No single data source tells the complete story — all four together do.
