@@ -71,3 +71,28 @@ tshark -r capture.pcap -T fields -e ip.dst | sort -u
 # Automatically reconstructs files from PCAP
 # Reveals: malware downloaded, documents exfiltrated, images transferred
 ```
+
+Detecting specific attack patterns in network traffic:
+```bash
+# C2 beaconing detection (Cobalt Strike, day 27)
+# Look for regular interval connections to same external IP
+# tshark - find repeated connections to same destination
+tshark -r capture.pcap -T fields -e ip.dst -e frame.time_delta \
+  -Y "ip.dst == SUSPICIOUS_IP" | head -50
+# Regular time deltas (e.g. every 60 seconds) = beaconing
+
+# DNS tunneling detection (data exfiltration via DNS)
+# Legitimate DNS queries are short — long subdomain queries indicate tunneling
+tshark -r capture.pcap -Y "dns" -T fields -e dns.qry.name | \
+  awk 'length > 50' | sort | uniq -c | sort -rn
+
+# Lateral movement detection (SMB/WinRM across internal network)
+tshark -r capture.pcap -Y "smb || smb2" -T fields \
+  -e ip.src -e ip.dst -e smb.cmd | sort -u
+
+# Data exfiltration detection (large outbound transfers)
+tshark -r capture.pcap -Y "ip.dst != 192.168.0.0/16" \
+  -T fields -e ip.dst -e tcp.len | \
+  awk '{sum[$1]+=$2} END {for(ip in sum) print sum[ip], ip}' | sort -rn
+```
+
