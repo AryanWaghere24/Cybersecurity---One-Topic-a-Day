@@ -102,3 +102,10 @@ During the investigation of the 2014 Sony Pictures breach, network forensics pla
 From an attacker's side, network traffic is increasingly encrypted — HTTPS, TLS-encrypted C2, and DNS over HTTPS all limit what network forensics can see in terms of content. However, traffic metadata (who talked to whom, when, how much data) remains visible and reveals patterns even without payload visibility.
 
 From a defender's side, network forensics provides the only view of cross-system attacker activity — disk and memory forensics show what happened on individual machines, but network forensics shows how attackers moved between systems, what data left the organization, and what external infrastructure they used. Deploying network capture at key chokepoints (internet gateway, internal segment boundaries) and retaining NetFlow data for 90+ days provides the visibility needed for thorough incident investigation.
+
+## Key Terms
+- Network Forensics: capturing and analyzing network traffic to investigate security incidents and reconstruct attacker communications
+- PCAP (Packet Capture): a file format storing captured network packets including full payload content — the primary artifact in network forensics
+- NetFlow: network traffic metadata (no payload) showing communication patterns between hosts — lower storage cost than full PCAP
+- C2 Beaconing: the regular check-in pattern of malware communicating with its command and control server — detectable as regular interval connections
+- DNS Tunneling: encoding data within DNS queries to exfiltrate information or establish C2 channels through firewalls that allow DNS traffic
