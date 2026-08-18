@@ -95,4 +95,5 @@ tshark -r capture.pcap -Y "ip.dst != 192.168.0.0/16" \
   -T fields -e ip.dst -e tcp.len | \
   awk '{sum[$1]+=$2} END {for(ip in sum) print sum[ip], ip}' | sort -rn
 ```
-
+## Real-World Example
+During the investigation of the 2014 Sony Pictures breach, network forensics played a crucial role in understanding the scope of data exfiltration. Network traffic analysis revealed that attackers had exfiltrated terabytes of data — unreleased films, scripts, executive emails, and employee personal information — using standard HTTP and FTP connections that blended in with normal traffic. The network forensic analysis identified the specific external IPs data was sent to, the timing and volume of transfers, and the internal systems that participated in the exfiltration. This network evidence, combined with disk and log forensics, provided a complete picture of one of the most damaging corporate data breaches in history.
