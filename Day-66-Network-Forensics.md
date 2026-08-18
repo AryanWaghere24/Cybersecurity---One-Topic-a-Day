@@ -15,3 +15,10 @@ Most detailed but storage-intensive
 Captured with: Wireshark, tcpdump, commercial network taps
 Allows reconstructing entire sessions, extracting transferred files,
 reading unencrypted credentials, and replaying attack sequences
+
+NetFlow / IPFIX (Flow Data)
+Metadata only — source IP, destination IP, port, bytes, duration
+No payload content — cannot read data but shows communication patterns
+Much lower storage requirements than full PCAP
+Useful for: detecting lateral movement, identifying C2 beaconing patterns,
+finding data exfiltration by volume
