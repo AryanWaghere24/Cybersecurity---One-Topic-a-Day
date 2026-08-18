@@ -6,6 +6,8 @@ Network Forensics is the capture, recording, and analysis of network traffic to 
 ## How It Works
 Network forensics relies on captured packet data (PCAPs) or flow data (NetFlow/IPFIX) collected at strategic network points — perimeter firewalls, internal switches, and endpoint network interfaces.
 
+![](assets/NF.png)
+
 ```
 Network forensic data types:
 
