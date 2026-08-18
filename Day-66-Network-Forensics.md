@@ -97,3 +97,8 @@ tshark -r capture.pcap -Y "ip.dst != 192.168.0.0/16" \
 ```
 ## Real-World Example
 During the investigation of the 2014 Sony Pictures breach, network forensics played a crucial role in understanding the scope of data exfiltration. Network traffic analysis revealed that attackers had exfiltrated terabytes of data — unreleased films, scripts, executive emails, and employee personal information — using standard HTTP and FTP connections that blended in with normal traffic. The network forensic analysis identified the specific external IPs data was sent to, the timing and volume of transfers, and the internal systems that participated in the exfiltration. This network evidence, combined with disk and log forensics, provided a complete picture of one of the most damaging corporate data breaches in history.
+
+## Why It Matters
+From an attacker's side, network traffic is increasingly encrypted — HTTPS, TLS-encrypted C2, and DNS over HTTPS all limit what network forensics can see in terms of content. However, traffic metadata (who talked to whom, when, how much data) remains visible and reveals patterns even without payload visibility.
+
+From a defender's side, network forensics provides the only view of cross-system attacker activity — disk and memory forensics show what happened on individual machines, but network forensics shows how attackers moved between systems, what data left the organization, and what external infrastructure they used. Deploying network capture at key chokepoints (internet gateway, internal segment boundaries) and retaining NetFlow data for 90+ days provides the visibility needed for thorough incident investigation.
