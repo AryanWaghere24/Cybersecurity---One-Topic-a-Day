@@ -102,3 +102,10 @@ The 2013 Snowden revelations revealed that the NSA had been working to undermine
 From an attacker's side, cryptography attacks target the weakest link — not usually the algorithm itself (breaking AES-256 directly is computationally infeasible) but the implementation: weak random number generators, short keys, deprecated algorithms (MD5, DES, RC4), key mismanagement, or side-channel attacks that extract keys through timing measurements or power analysis.
 
 From a defender's side, choosing modern cryptographic algorithms and correct key sizes is the foundation of any security architecture. Using deprecated algorithms like MD5 for password hashing (day 15), DES for data encryption, or RSA-1024 for key exchange creates exploitable weaknesses. Cryptographic agility — designing systems to swap algorithms when needed — is increasingly important as quantum computing threatens current asymmetric algorithms.
+
+## Key Terms
+- Symmetric Encryption: encryption using the same key for both encryption and decryption — fast but requires secure key exchange
+- Asymmetric Encryption: encryption using a public/private key pair — slower but solves the key distribution problem
+- AES (Advanced Encryption Standard): the dominant symmetric encryption algorithm used in virtually every modern secure system
+- RSA: the most widely used asymmetric algorithm based on the difficulty of factoring large prime numbers
+- Perfect Forward Secrecy (PFS): a property where session keys are generated fresh for each session so that compromising the long-term private key doesn't expose past sessions
