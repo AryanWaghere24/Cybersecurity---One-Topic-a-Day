@@ -6,6 +6,8 @@ Encryption is the process of transforming readable data (plaintext) into an unre
 ## How It Works
 Both approaches solve the same problem — protecting data from unauthorized access — but in fundamentally different ways with different tradeoffs.
 
+
+![](assets/Symmetric-&-Asymmetric.png)
 ```
 Symmetric Encryption:
 
