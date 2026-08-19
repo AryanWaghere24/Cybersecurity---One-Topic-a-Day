@@ -121,3 +121,14 @@ openssl enc -aes-256-cbc -salt -in plaintext.txt -out encrypted.bin -k "your-pas
 
 # Decrypt the file
 openssl enc -aes-256-cbc -d -in encrypted.bin -out decrypted.txt -k "your-password"
+
+# Asymmetric encryption with RSA
+# Generate a 4096-bit RSA key pair
+openssl genrsa -out private_key.pem 4096
+openssl rsa -in private_key.pem -pubout -out public_key.pem
+
+# Encrypt with public key
+openssl rsautl -encrypt -inkey public_key.pem -pubin -in plaintext.txt -out encrypted.bin
+
+# Decrypt with private key
+openssl rsautl -decrypt -inkey private_key.pem -in encrypted.bin -out decrypted.txt
