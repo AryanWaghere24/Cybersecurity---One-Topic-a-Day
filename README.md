@@ -96,6 +96,7 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Day 65 | Malware Analysis |
 | Day 66 | Network Forensics |
 | Day 67 | Symmetric & Asymmetric Encryption |
+| Day 68 | Coming Soon |
 ---
 ## Topics Covered
 
