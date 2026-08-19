@@ -94,3 +94,6 @@ Real example — HTTPS:
 4. Server decrypts with its private key → both have the session key
 5. All further communication encrypted with fast AES using session key
 ```
+
+## Real-World Example
+The 2013 Snowden revelations revealed that the NSA had been working to undermine cryptographic standards — specifically targeting the random number generator in an elliptic curve algorithm (Dual_EC_DRBG) which was suspected of containing a backdoor allowing the NSA to predict "random" numbers and break encryption. This led to widespread distrust of closed cryptographic standards and accelerated the industry shift toward open, peer-reviewed algorithms like those recommended by the IETF. It also demonstrated that the choice of cryptographic algorithm matters enormously — weak or backdoored algorithms make strong key management irrelevant.
