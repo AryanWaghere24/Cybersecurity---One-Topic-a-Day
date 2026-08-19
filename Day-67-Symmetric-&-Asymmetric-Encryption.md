@@ -97,3 +97,6 @@ Real example — HTTPS:
 
 ## Real-World Example
 The 2013 Snowden revelations revealed that the NSA had been working to undermine cryptographic standards — specifically targeting the random number generator in an elliptic curve algorithm (Dual_EC_DRBG) which was suspected of containing a backdoor allowing the NSA to predict "random" numbers and break encryption. This led to widespread distrust of closed cryptographic standards and accelerated the industry shift toward open, peer-reviewed algorithms like those recommended by the IETF. It also demonstrated that the choice of cryptographic algorithm matters enormously — weak or backdoored algorithms make strong key management irrelevant.
+
+## Why It Matters
+From an attacker's side, cryptography attacks target the weakest link — not usually the algorithm itself (breaking AES-256 directly is computationally infeasible) but the implementation: weak random number generators, short keys, deprecated algorithms (MD5, DES, RC4), key mismanagement, or side-channel attacks that extract keys through timing measurements or power analysis.
