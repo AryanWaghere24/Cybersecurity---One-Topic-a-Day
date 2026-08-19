@@ -116,5 +116,6 @@ Learning cybersecurity from the roots — consistently, practically, and publicl
 | Cloud Security | Day 51 - 57 |
 | Threat Intelligence | Day 58 - 61 |
 | Digital Forensics | Day 62 - 66 |
+| Cryptography Fundamentals | Day 67 onwards |
 
 > _"Security is not a product, but a process."_ — Bruce Schneier
