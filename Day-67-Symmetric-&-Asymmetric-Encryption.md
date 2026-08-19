@@ -109,3 +109,15 @@ From a defender's side, choosing modern cryptographic algorithms and correct key
 - AES (Advanced Encryption Standard): the dominant symmetric encryption algorithm used in virtually every modern secure system
 - RSA: the most widely used asymmetric algorithm based on the difficulty of factoring large prime numbers
 - Perfect Forward Secrecy (PFS): a property where session keys are generated fresh for each session so that compromising the long-term private key doesn't expose past sessions
+
+## One Tip / Tool
+
+Tool: `OpenSSL` — the Swiss Army knife of cryptography, available on every platform
+
+```bash
+# Symmetric encryption with AES-256-CBC
+# Encrypt a file
+openssl enc -aes-256-cbc -salt -in plaintext.txt -out encrypted.bin -k "your-password"
+
+# Decrypt the file
+openssl enc -aes-256-cbc -d -in encrypted.bin -out decrypted.txt -k "your-password"
