@@ -132,3 +132,13 @@ openssl rsautl -encrypt -inkey public_key.pem -pubin -in plaintext.txt -out encr
 
 # Decrypt with private key
 openssl rsautl -decrypt -inkey private_key.pem -in encrypted.bin -out decrypted.txt
+
+# Check what algorithms are available
+openssl list -cipher-algorithms
+openssl list -public-key-algorithms
+
+# Generate a secure random key (useful for symmetric key generation)
+openssl rand -hex 32  # 256-bit random key
+```
+
+The most common cryptography mistake in real applications — using encryption when you should use hashing, or using hashing when you need encryption. Passwords should never be encrypted (encrypted = reversible) — they should be hashed with bcrypt or Argon2 (day 15). Data that needs to be retrieved should be encrypted, not hashed. Getting this distinction right is fundamental to secure application design.
