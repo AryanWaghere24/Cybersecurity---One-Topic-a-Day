@@ -73,3 +73,24 @@ Characteristics:
 - Much slower than symmetric — 1000x slower for large data
 - Key sizes must be much larger for equivalent security
 ```
+
+How they work together in practice:
+```
+Modern secure communication uses BOTH:
+
+1. Asymmetric encryption to securely exchange a symmetric key
+   (the TLS handshake — day 69 covers this in detail)
+2. Symmetric encryption for the actual data transfer
+   (fast AES encryption of all session data)
+
+This hybrid approach gets the best of both:
+- Security of asymmetric (no pre-shared key needed)
+- Speed of symmetric (fast bulk data encryption)
+
+Real example — HTTPS:
+1. Browser gets server's public key (from TLS certificate)
+2. Browser generates a random session key
+3. Browser encrypts session key with server's public key → sends it
+4. Server decrypts with its private key → both have the session key
+5. All further communication encrypted with fast AES using session key
+```
