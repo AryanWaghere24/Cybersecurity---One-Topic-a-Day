@@ -19,3 +19,13 @@ When you visit https://example.com:
 3. Browser checks the CA is in its trusted root store
 4. Browser checks certificate hasn't expired or been revoked
 5. Browser uses the verified public key to establish secure session
+
+Certificate contents (X.509 format):
+- Subject: who the certificate belongs to (domain name, org)
+- Issuer: which CA signed it
+- Public Key: the key being certified as belonging to the subject
+- Validity Period: not before / not after dates
+- Subject Alternative Names (SANs): other domains this cert covers
+- Serial Number: unique identifier
+- Digital Signature: CA's signature proving authenticity
+```
