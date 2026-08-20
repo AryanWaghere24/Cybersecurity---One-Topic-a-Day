@@ -63,6 +63,7 @@ From a defender's side, keeping certificates current, using short validity perio
 
 Tool: `OpenSSL` for certificate inspection and `Let's Encrypt / Certbot` for free certificate issuance
 
+
 ```bash
 # inspect a website's certificate
 openssl s_client -connect example.com:443 -showcerts
