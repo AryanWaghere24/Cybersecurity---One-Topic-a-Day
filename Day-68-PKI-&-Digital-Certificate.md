@@ -43,3 +43,6 @@ SAN Certificate           - covers multiple different domains in one cert
 
 ## Real-World Example
 In 2017, Google's Chrome team discovered that Symantec (one of the world's largest CAs) had been improperly issuing thousands of certificates — including test certificates for Google domains — without following CA/Browser Forum rules. Google announced it would distrust all Symantec-issued certificates in Chrome, affecting hundreds of millions of websites. Symantec's CA business was ultimately sold to DigiCert. This incident highlighted how critical CA trustworthiness is — a compromised or misbehaving CA can issue fraudulent certificates for any domain, enabling MitM attacks against any HTTPS site.
+
+## Why It Matters
+From an attacker's side, PKI attacks target the chain of trust — a compromised CA can issue fraudulent certificates for any domain, making MitM attacks (day 01-03) against HTTPS sites possible. Certificate transparency logs (public records of all issued certificates) were introduced specifically to detect fraudulent certificate issuance. Stolen private keys allow impersonating a legitimate server. Expired certificates cause service outages and browser warnings that users click through.
