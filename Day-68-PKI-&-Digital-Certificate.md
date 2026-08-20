@@ -40,3 +40,6 @@ EV (Extended Validation)  - most thorough verification, green bar (legacy)
 Wildcard Certificate      - *.example.com covers all subdomains
 SAN Certificate           - covers multiple different domains in one cert
 ```
+
+## Real-World Example
+In 2017, Google's Chrome team discovered that Symantec (one of the world's largest CAs) had been improperly issuing thousands of certificates — including test certificates for Google domains — without following CA/Browser Forum rules. Google announced it would distrust all Symantec-issued certificates in Chrome, affecting hundreds of millions of websites. Symantec's CA business was ultimately sold to DigiCert. This incident highlighted how critical CA trustworthiness is — a compromised or misbehaving CA can issue fraudulent certificates for any domain, enabling MitM attacks against any HTTPS site.
