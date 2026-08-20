@@ -55,3 +55,14 @@ From a defender's side, keeping certificates current, using short validity perio
 - X.509: the standard format for digital certificates used across the internet
 - Certificate Chain: the path from an end-entity certificate up through intermediate CAs to a trusted root CA
 - Certificate Revocation: the process of invalidating a certificate before its expiry — via CRL (Certificate Revocation List) or OCSP
+
+## One Tip / Tool
+
+Tool: `OpenSSL` for certificate inspection and `Let's Encrypt / Certbot` for free certificate issuance
+
+```bash
+# inspect a website's certificate
+openssl s_client -connect example.com:443 -showcerts
+
+# view certificate details from a file
+openssl x509 -in certificate.pem -text -noout
