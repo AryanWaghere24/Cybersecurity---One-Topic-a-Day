@@ -46,3 +46,5 @@ In 2017, Google's Chrome team discovered that Symantec (one of the world's large
 
 ## Why It Matters
 From an attacker's side, PKI attacks target the chain of trust — a compromised CA can issue fraudulent certificates for any domain, making MitM attacks (day 01-03) against HTTPS sites possible. Certificate transparency logs (public records of all issued certificates) were introduced specifically to detect fraudulent certificate issuance. Stolen private keys allow impersonating a legitimate server. Expired certificates cause service outages and browser warnings that users click through.
+
+From a defender's side, keeping certificates current, using short validity periods, implementing Certificate Transparency monitoring, and pinning certificates in mobile apps (certificate pinning) are the core PKI security practices. Let's Encrypt democratized free automated DV certificates, eliminating the cost barrier for HTTPS adoption.
