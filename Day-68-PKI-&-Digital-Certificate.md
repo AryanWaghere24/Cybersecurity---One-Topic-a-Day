@@ -12,3 +12,10 @@ Root CA (self-signed, trusted by operating systems and browsers)
 Intermediate CA (issued by Root CA)
     ↓ signs
 End-entity Certificate (issued to a website or organization)
+
+When you visit https://example.com:
+1. Server presents its certificate (contains its public key + CA signature)
+2. Browser verifies the CA's signature using the CA's public key
+3. Browser checks the CA is in its trusted root store
+4. Browser checks certificate hasn't expired or been revoked
+5. Browser uses the verified public key to establish secure session
