@@ -66,3 +66,19 @@ openssl s_client -connect example.com:443 -showcerts
 
 # view certificate details from a file
 openssl x509 -in certificate.pem -text -noout
+
+# check certificate expiry date
+openssl x509 -in certificate.pem -noout -dates
+
+# check a live site's certificate expiry
+echo | openssl s_client -connect example.com:443 2>/dev/null | \
+  openssl x509 -noout -dates
+
+# get a free Let's Encrypt certificate with Certbot
+apt install certbot
+certbot certonly --standalone -d example.com
+
+# check Certificate Transparency logs for your domain
+# (find all certificates ever issued for your domain)
+curl "https://crt.sh/?q=%.example.com&output=json" | jq '.[].name_value' | sort -u
+```
