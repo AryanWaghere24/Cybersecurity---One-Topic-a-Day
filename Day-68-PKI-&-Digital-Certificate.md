@@ -29,3 +29,14 @@ Certificate contents (X.509 format):
 - Serial Number: unique identifier
 - Digital Signature: CA's signature proving authenticity
 ```
+
+Certificate types by validation level:
+```
+DV (Domain Validation)    - CA verifies domain ownership only
+                            fastest to get, cheapest, used by most sites
+OV (Organization Validation) - CA verifies domain + organization identity
+EV (Extended Validation)  - most thorough verification, green bar (legacy)
+                            expensive, used by banks and financial sites
+Wildcard Certificate      - *.example.com covers all subdomains
+SAN Certificate           - covers multiple different domains in one cert
+```
