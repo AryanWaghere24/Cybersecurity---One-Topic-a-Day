@@ -82,3 +82,5 @@ certbot certonly --standalone -d example.com
 # (find all certificates ever issued for your domain)
 curl "https://crt.sh/?q=%.example.com&output=json" | jq '.[].name_value' | sort -u
 ```
+
+Certificate Transparency log monitoring is one of the most underused security controls — by watching for new certificates issued for your domain you can detect phishing infrastructure (attackers getting certificates for lookalike domains) and unauthorized certificate issuance within minutes of it happening, rather than discovering it after a phishing campaign has already run.
